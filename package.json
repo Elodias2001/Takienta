@@ -1,0 +1,23 @@
+{
+  "name": "takienta-monorepo",
+  "private": true,
+  "packageManager": "pnpm@10.28.2",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "data": "node scripts/build-data.mjs",
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "type-check": "pnpm -r type-check",
+    "build:brand": "node scripts/build-brand.mjs",
+    "build:carte": "node scripts/build-carte.mjs",
+    "build:og": "node scripts/build-og.mjs",
+    "build:site": "node scripts/build-site.mjs",
+    "test:site": "vitest run"
+  },
+  "devDependencies": {
+    "marked": "^18.0.14",
+    "vitest": "^5.0.1"
+  }
+}

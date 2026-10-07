@@ -1,0 +1,3283 @@
+{
+ "schemaVersion": 1,
+ "figeLe": "2026-10-07",
+ "regle": "BJ-<dép>-<com>-<NN> : numéro = position dans la commune au moment de la figeage (numérotés par rang légal, les autres par ordre alphabétique du nom), jamais renuméroté ni réattribué. La clé est le libellé imprimé dans la loi, ou 'rang:N' pour les arrondissements numérotés ; le nom affiché peut être corrigé, pas l'identifiant.",
+ "identifiants": [
+  {
+   "id": "BJ-AK-BOU-01",
+   "type": "arrondissement",
+   "parent": "BJ-AK-BOU",
+   "cle": "BOUKOUMBE"
+  },
+  {
+   "id": "BJ-AK-BOU-02",
+   "type": "arrondissement",
+   "parent": "BJ-AK-BOU",
+   "cle": "DIPOLI"
+  },
+  {
+   "id": "BJ-AK-BOU-03",
+   "type": "arrondissement",
+   "parent": "BJ-AK-BOU",
+   "cle": "KORONTIERE"
+  },
+  {
+   "id": "BJ-AK-BOU-04",
+   "type": "arrondissement",
+   "parent": "BJ-AK-BOU",
+   "cle": "KOUSSOUCOINGOU"
+  },
+  {
+   "id": "BJ-AK-BOU-05",
+   "type": "arrondissement",
+   "parent": "BJ-AK-BOU",
+   "cle": "MANTA"
+  },
+  {
+   "id": "BJ-AK-BOU-06",
+   "type": "arrondissement",
+   "parent": "BJ-AK-BOU",
+   "cle": "NATA"
+  },
+  {
+   "id": "BJ-AK-BOU-07",
+   "type": "arrondissement",
+   "parent": "BJ-AK-BOU",
+   "cle": "TABOTA"
+  },
+  {
+   "id": "BJ-AK-COB-01",
+   "type": "arrondissement",
+   "parent": "BJ-AK-COB",
+   "cle": "COBLY"
+  },
+  {
+   "id": "BJ-AK-COB-02",
+   "type": "arrondissement",
+   "parent": "BJ-AK-COB",
+   "cle": "DATORI"
+  },
+  {
+   "id": "BJ-AK-COB-03",
+   "type": "arrondissement",
+   "parent": "BJ-AK-COB",
+   "cle": "KOUNTORI"
+  },
+  {
+   "id": "BJ-AK-COB-04",
+   "type": "arrondissement",
+   "parent": "BJ-AK-COB",
+   "cle": "TAPOGA"
+  },
+  {
+   "id": "BJ-AK-KER-01",
+   "type": "arrondissement",
+   "parent": "BJ-AK-KER",
+   "cle": "BRIGNAMARO"
+  },
+  {
+   "id": "BJ-AK-KER-02",
+   "type": "arrondissement",
+   "parent": "BJ-AK-KER",
+   "cle": "FIROU"
+  },
+  {
+   "id": "BJ-AK-KER-03",
+   "type": "arrondissement",
+   "parent": "BJ-AK-KER",
+   "cle": "KAOBAGOU"
+  },
+  {
+   "id": "BJ-AK-KER-04",
+   "type": "arrondissement",
+   "parent": "BJ-AK-KER",
+   "cle": "KEROU"
+  },
+  {
+   "id": "BJ-AK-KOU-01",
+   "type": "arrondissement",
+   "parent": "BJ-AK-KOU",
+   "cle": "BIRNI"
+  },
+  {
+   "id": "BJ-AK-KOU-02",
+   "type": "arrondissement",
+   "parent": "BJ-AK-KOU",
+   "cle": "CHABI – COUMA"
+  },
+  {
+   "id": "BJ-AK-KOU-03",
+   "type": "arrondissement",
+   "parent": "BJ-AK-KOU",
+   "cle": "FOO-TANCE"
+  },
+  {
+   "id": "BJ-AK-KOU-04",
+   "type": "arrondissement",
+   "parent": "BJ-AK-KOU",
+   "cle": "GUILMARO"
+  },
+  {
+   "id": "BJ-AK-KOU-05",
+   "type": "arrondissement",
+   "parent": "BJ-AK-KOU",
+   "cle": "KOUANDE"
+  },
+  {
+   "id": "BJ-AK-KOU-06",
+   "type": "arrondissement",
+   "parent": "BJ-AK-KOU",
+   "cle": "OROUKAYO"
+  },
+  {
+   "id": "BJ-AK-MAT-01",
+   "type": "arrondissement",
+   "parent": "BJ-AK-MAT",
+   "cle": "DASSARI"
+  },
+  {
+   "id": "BJ-AK-MAT-02",
+   "type": "arrondissement",
+   "parent": "BJ-AK-MAT",
+   "cle": "GOUANDE"
+  },
+  {
+   "id": "BJ-AK-MAT-03",
+   "type": "arrondissement",
+   "parent": "BJ-AK-MAT",
+   "cle": "MATERI"
+  },
+  {
+   "id": "BJ-AK-MAT-04",
+   "type": "arrondissement",
+   "parent": "BJ-AK-MAT",
+   "cle": "NODI"
+  },
+  {
+   "id": "BJ-AK-MAT-05",
+   "type": "arrondissement",
+   "parent": "BJ-AK-MAT",
+   "cle": "TANTEGA"
+  },
+  {
+   "id": "BJ-AK-MAT-06",
+   "type": "arrondissement",
+   "parent": "BJ-AK-MAT",
+   "cle": "TCHANHOUNCOSSI"
+  },
+  {
+   "id": "BJ-AK-NAT-01",
+   "type": "arrondissement",
+   "parent": "BJ-AK-NAT",
+   "cle": "KOTOPOUNGA"
+  },
+  {
+   "id": "BJ-AK-NAT-02",
+   "type": "arrondissement",
+   "parent": "BJ-AK-NAT",
+   "cle": "KOUABA"
+  },
+  {
+   "id": "BJ-AK-NAT-03",
+   "type": "arrondissement",
+   "parent": "BJ-AK-NAT",
+   "cle": "KOUANDATA"
+  },
+  {
+   "id": "BJ-AK-NAT-04",
+   "type": "arrondissement",
+   "parent": "BJ-AK-NAT",
+   "cle": "NATITINGOU I"
+  },
+  {
+   "id": "BJ-AK-NAT-05",
+   "type": "arrondissement",
+   "parent": "BJ-AK-NAT",
+   "cle": "NATITINGOU II"
+  },
+  {
+   "id": "BJ-AK-NAT-06",
+   "type": "arrondissement",
+   "parent": "BJ-AK-NAT",
+   "cle": "NATITINGOU III"
+  },
+  {
+   "id": "BJ-AK-NAT-07",
+   "type": "arrondissement",
+   "parent": "BJ-AK-NAT",
+   "cle": "PEPORIYAKOU"
+  },
+  {
+   "id": "BJ-AK-NAT-08",
+   "type": "arrondissement",
+   "parent": "BJ-AK-NAT",
+   "cle": "PERMA"
+  },
+  {
+   "id": "BJ-AK-NAT-09",
+   "type": "arrondissement",
+   "parent": "BJ-AK-NAT",
+   "cle": "TCHOUMI-TCHOUMI"
+  },
+  {
+   "id": "BJ-AK-PEH-01",
+   "type": "arrondissement",
+   "parent": "BJ-AK-PEH",
+   "cle": "GNEMASSON"
+  },
+  {
+   "id": "BJ-AK-PEH-02",
+   "type": "arrondissement",
+   "parent": "BJ-AK-PEH",
+   "cle": "PEHUNCO"
+  },
+  {
+   "id": "BJ-AK-PEH-03",
+   "type": "arrondissement",
+   "parent": "BJ-AK-PEH",
+   "cle": "TOBRE"
+  },
+  {
+   "id": "BJ-AK-TAN-01",
+   "type": "arrondissement",
+   "parent": "BJ-AK-TAN",
+   "cle": "COTIAKOU"
+  },
+  {
+   "id": "BJ-AK-TAN-02",
+   "type": "arrondissement",
+   "parent": "BJ-AK-TAN",
+   "cle": "N’DAHONTA"
+  },
+  {
+   "id": "BJ-AK-TAN-03",
+   "type": "arrondissement",
+   "parent": "BJ-AK-TAN",
+   "cle": "TAIACOU"
+  },
+  {
+   "id": "BJ-AK-TAN-04",
+   "type": "arrondissement",
+   "parent": "BJ-AK-TAN",
+   "cle": "TANGUIETA"
+  },
+  {
+   "id": "BJ-AK-TAN-05",
+   "type": "arrondissement",
+   "parent": "BJ-AK-TAN",
+   "cle": "TANONGOU"
+  },
+  {
+   "id": "BJ-AK-TOU-01",
+   "type": "arrondissement",
+   "parent": "BJ-AK-TOU",
+   "cle": "KOUARFA"
+  },
+  {
+   "id": "BJ-AK-TOU-02",
+   "type": "arrondissement",
+   "parent": "BJ-AK-TOU",
+   "cle": "TAMPEGRE"
+  },
+  {
+   "id": "BJ-AK-TOU-03",
+   "type": "arrondissement",
+   "parent": "BJ-AK-TOU",
+   "cle": "TOUKOUNTOUNA"
+  },
+  {
+   "id": "BJ-AL-BAN-01",
+   "type": "arrondissement",
+   "parent": "BJ-AL-BAN",
+   "cle": "BANIKOARA"
+  },
+  {
+   "id": "BJ-AL-BAN-02",
+   "type": "arrondissement",
+   "parent": "BJ-AL-BAN",
+   "cle": "FOUNOUGO"
+  },
+  {
+   "id": "BJ-AL-BAN-03",
+   "type": "arrondissement",
+   "parent": "BJ-AL-BAN",
+   "cle": "GOMPAROU"
+  },
+  {
+   "id": "BJ-AL-BAN-04",
+   "type": "arrondissement",
+   "parent": "BJ-AL-BAN",
+   "cle": "GOUMORI"
+  },
+  {
+   "id": "BJ-AL-BAN-05",
+   "type": "arrondissement",
+   "parent": "BJ-AL-BAN",
+   "cle": "KOKEY"
+  },
+  {
+   "id": "BJ-AL-BAN-06",
+   "type": "arrondissement",
+   "parent": "BJ-AL-BAN",
+   "cle": "KOKIBOROU"
+  },
+  {
+   "id": "BJ-AL-BAN-07",
+   "type": "arrondissement",
+   "parent": "BJ-AL-BAN",
+   "cle": "OUNET"
+  },
+  {
+   "id": "BJ-AL-BAN-08",
+   "type": "arrondissement",
+   "parent": "BJ-AL-BAN",
+   "cle": "SOMPEROUKOU"
+  },
+  {
+   "id": "BJ-AL-BAN-09",
+   "type": "arrondissement",
+   "parent": "BJ-AL-BAN",
+   "cle": "SOROKO"
+  },
+  {
+   "id": "BJ-AL-BAN-10",
+   "type": "arrondissement",
+   "parent": "BJ-AL-BAN",
+   "cle": "TOURA"
+  },
+  {
+   "id": "BJ-AL-GOG-01",
+   "type": "arrondissement",
+   "parent": "BJ-AL-GOG",
+   "cle": "BAGOU"
+  },
+  {
+   "id": "BJ-AL-GOG-02",
+   "type": "arrondissement",
+   "parent": "BJ-AL-GOG",
+   "cle": "GOGOUNOU"
+  },
+  {
+   "id": "BJ-AL-GOG-03",
+   "type": "arrondissement",
+   "parent": "BJ-AL-GOG",
+   "cle": "GOUNAROU"
+  },
+  {
+   "id": "BJ-AL-GOG-04",
+   "type": "arrondissement",
+   "parent": "BJ-AL-GOG",
+   "cle": "SORI"
+  },
+  {
+   "id": "BJ-AL-GOG-05",
+   "type": "arrondissement",
+   "parent": "BJ-AL-GOG",
+   "cle": "SOUGOU-KPAN-TROSSI"
+  },
+  {
+   "id": "BJ-AL-GOG-06",
+   "type": "arrondissement",
+   "parent": "BJ-AL-GOG",
+   "cle": "WARA"
+  },
+  {
+   "id": "BJ-AL-KAN-01",
+   "type": "arrondissement",
+   "parent": "BJ-AL-KAN",
+   "cle": "ANGARADEBOU"
+  },
+  {
+   "id": "BJ-AL-KAN-02",
+   "type": "arrondissement",
+   "parent": "BJ-AL-KAN",
+   "cle": "BENSEKOU"
+  },
+  {
+   "id": "BJ-AL-KAN-03",
+   "type": "arrondissement",
+   "parent": "BJ-AL-KAN",
+   "cle": "DONWARI"
+  },
+  {
+   "id": "BJ-AL-KAN-04",
+   "type": "arrondissement",
+   "parent": "BJ-AL-KAN",
+   "cle": "KANDI 1"
+  },
+  {
+   "id": "BJ-AL-KAN-05",
+   "type": "arrondissement",
+   "parent": "BJ-AL-KAN",
+   "cle": "KANDI 2"
+  },
+  {
+   "id": "BJ-AL-KAN-06",
+   "type": "arrondissement",
+   "parent": "BJ-AL-KAN",
+   "cle": "KANDI 3"
+  },
+  {
+   "id": "BJ-AL-KAN-07",
+   "type": "arrondissement",
+   "parent": "BJ-AL-KAN",
+   "cle": "KASSAKOU"
+  },
+  {
+   "id": "BJ-AL-KAN-08",
+   "type": "arrondissement",
+   "parent": "BJ-AL-KAN",
+   "cle": "SAAH"
+  },
+  {
+   "id": "BJ-AL-KAN-09",
+   "type": "arrondissement",
+   "parent": "BJ-AL-KAN",
+   "cle": "SAM"
+  },
+  {
+   "id": "BJ-AL-KAN-10",
+   "type": "arrondissement",
+   "parent": "BJ-AL-KAN",
+   "cle": "SONSORO"
+  },
+  {
+   "id": "BJ-AL-KAR-01",
+   "type": "arrondissement",
+   "parent": "BJ-AL-KAR",
+   "cle": "BIRNI LAFIA"
+  },
+  {
+   "id": "BJ-AL-KAR-02",
+   "type": "arrondissement",
+   "parent": "BJ-AL-KAR",
+   "cle": "BOGO-BOGO"
+  },
+  {
+   "id": "BJ-AL-KAR-03",
+   "type": "arrondissement",
+   "parent": "BJ-AL-KAR",
+   "cle": "KARIMAMA"
+  },
+  {
+   "id": "BJ-AL-KAR-04",
+   "type": "arrondissement",
+   "parent": "BJ-AL-KAR",
+   "cle": "KOMPA"
+  },
+  {
+   "id": "BJ-AL-KAR-05",
+   "type": "arrondissement",
+   "parent": "BJ-AL-KAR",
+   "cle": "MONSEY"
+  },
+  {
+   "id": "BJ-AL-MAL-01",
+   "type": "arrondissement",
+   "parent": "BJ-AL-MAL",
+   "cle": "GAROU"
+  },
+  {
+   "id": "BJ-AL-MAL-02",
+   "type": "arrondissement",
+   "parent": "BJ-AL-MAL",
+   "cle": "GUENE"
+  },
+  {
+   "id": "BJ-AL-MAL-03",
+   "type": "arrondissement",
+   "parent": "BJ-AL-MAL",
+   "cle": "MADECALI"
+  },
+  {
+   "id": "BJ-AL-MAL-04",
+   "type": "arrondissement",
+   "parent": "BJ-AL-MAL",
+   "cle": "MALANVILLE"
+  },
+  {
+   "id": "BJ-AL-MAL-05",
+   "type": "arrondissement",
+   "parent": "BJ-AL-MAL",
+   "cle": "TOUMBOUTOU"
+  },
+  {
+   "id": "BJ-AL-SEG-01",
+   "type": "arrondissement",
+   "parent": "BJ-AL-SEG",
+   "cle": "LIBANTE"
+  },
+  {
+   "id": "BJ-AL-SEG-02",
+   "type": "arrondissement",
+   "parent": "BJ-AL-SEG",
+   "cle": "LIBOUSSOU"
+  },
+  {
+   "id": "BJ-AL-SEG-03",
+   "type": "arrondissement",
+   "parent": "BJ-AL-SEG",
+   "cle": "LOUGOU"
+  },
+  {
+   "id": "BJ-AL-SEG-04",
+   "type": "arrondissement",
+   "parent": "BJ-AL-SEG",
+   "cle": "SEGBANA"
+  },
+  {
+   "id": "BJ-AL-SEG-05",
+   "type": "arrondissement",
+   "parent": "BJ-AL-SEG",
+   "cle": "SOKOTINDJI"
+  },
+  {
+   "id": "BJ-AQ-ABO-01",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-ABO",
+   "cle": "ABOMEY-CALAVI"
+  },
+  {
+   "id": "BJ-AQ-ABO-02",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-ABO",
+   "cle": "AKASSATO"
+  },
+  {
+   "id": "BJ-AQ-ABO-03",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-ABO",
+   "cle": "GODOMEY"
+  },
+  {
+   "id": "BJ-AQ-ABO-04",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-ABO",
+   "cle": "GOLO-DJIGBE"
+  },
+  {
+   "id": "BJ-AQ-ABO-05",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-ABO",
+   "cle": "HEVIE"
+  },
+  {
+   "id": "BJ-AQ-ABO-06",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-ABO",
+   "cle": "KPANROUN"
+  },
+  {
+   "id": "BJ-AQ-ABO-07",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-ABO",
+   "cle": "OUEDO"
+  },
+  {
+   "id": "BJ-AQ-ABO-08",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-ABO",
+   "cle": "TOGBA"
+  },
+  {
+   "id": "BJ-AQ-ABO-09",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-ABO",
+   "cle": "ZINVIE"
+  },
+  {
+   "id": "BJ-AQ-ALL-01",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-ALL",
+   "cle": "AGBANOU"
+  },
+  {
+   "id": "BJ-AQ-ALL-02",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-ALL",
+   "cle": "AHOUANNONZOUN"
+  },
+  {
+   "id": "BJ-AQ-ALL-03",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-ALL",
+   "cle": "ALLADA CENTRE"
+  },
+  {
+   "id": "BJ-AQ-ALL-04",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-ALL",
+   "cle": "ATTOGON"
+  },
+  {
+   "id": "BJ-AQ-ALL-05",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-ALL",
+   "cle": "AVAKPA"
+  },
+  {
+   "id": "BJ-AQ-ALL-06",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-ALL",
+   "cle": "AYOU"
+  },
+  {
+   "id": "BJ-AQ-ALL-07",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-ALL",
+   "cle": "HINVI"
+  },
+  {
+   "id": "BJ-AQ-ALL-08",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-ALL",
+   "cle": "LISSEGAZOUN"
+  },
+  {
+   "id": "BJ-AQ-ALL-09",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-ALL",
+   "cle": "LON-AGONMEY"
+  },
+  {
+   "id": "BJ-AQ-ALL-10",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-ALL",
+   "cle": "SEKOU"
+  },
+  {
+   "id": "BJ-AQ-ALL-11",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-ALL",
+   "cle": "TOGOUDO"
+  },
+  {
+   "id": "BJ-AQ-ALL-12",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-ALL",
+   "cle": "TOKPA"
+  },
+  {
+   "id": "BJ-AQ-KPO-01",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-KPO",
+   "cle": "AGANMALOME"
+  },
+  {
+   "id": "BJ-AQ-KPO-02",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-KPO",
+   "cle": "AGBANTO"
+  },
+  {
+   "id": "BJ-AQ-KPO-03",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-KPO",
+   "cle": "AGONKANME"
+  },
+  {
+   "id": "BJ-AQ-KPO-04",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-KPO",
+   "cle": "DEDOME"
+  },
+  {
+   "id": "BJ-AQ-KPO-05",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-KPO",
+   "cle": "DEKANME"
+  },
+  {
+   "id": "BJ-AQ-KPO-06",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-KPO",
+   "cle": "KPOMASSE CENTRE"
+  },
+  {
+   "id": "BJ-AQ-KPO-07",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-KPO",
+   "cle": "SEGBEYA"
+  },
+  {
+   "id": "BJ-AQ-KPO-08",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-KPO",
+   "cle": "SEGBOHOUE"
+  },
+  {
+   "id": "BJ-AQ-KPO-09",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-KPO",
+   "cle": "TOKPA-DOME"
+  },
+  {
+   "id": "BJ-AQ-OUI-01",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-OUI",
+   "cle": "AVLEKETE"
+  },
+  {
+   "id": "BJ-AQ-OUI-02",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-OUI",
+   "cle": "DJEGBADJI"
+  },
+  {
+   "id": "BJ-AQ-OUI-03",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-OUI",
+   "cle": "GAKPE"
+  },
+  {
+   "id": "BJ-AQ-OUI-04",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-OUI",
+   "cle": "HOUAKPE-DAHO"
+  },
+  {
+   "id": "BJ-AQ-OUI-05",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-OUI",
+   "cle": "OUIDAH I"
+  },
+  {
+   "id": "BJ-AQ-OUI-06",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-OUI",
+   "cle": "OUIDAH II"
+  },
+  {
+   "id": "BJ-AQ-OUI-07",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-OUI",
+   "cle": "OUIDAH III"
+  },
+  {
+   "id": "BJ-AQ-OUI-08",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-OUI",
+   "cle": "OUIDAH IV"
+  },
+  {
+   "id": "BJ-AQ-OUI-09",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-OUI",
+   "cle": "PAHOU"
+  },
+  {
+   "id": "BJ-AQ-OUI-10",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-OUI",
+   "cle": "SAVI"
+  },
+  {
+   "id": "BJ-AQ-SOA-01",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-SOA",
+   "cle": "AHOMEY-LOKPO"
+  },
+  {
+   "id": "BJ-AQ-SOA-02",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-SOA",
+   "cle": "DEKANMEY"
+  },
+  {
+   "id": "BJ-AQ-SOA-03",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-SOA",
+   "cle": "GANVIE 1"
+  },
+  {
+   "id": "BJ-AQ-SOA-04",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-SOA",
+   "cle": "GANVIE 2"
+  },
+  {
+   "id": "BJ-AQ-SOA-05",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-SOA",
+   "cle": "HOUEDO-AGUEKON"
+  },
+  {
+   "id": "BJ-AQ-SOA-06",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-SOA",
+   "cle": "SÔ-AVA"
+  },
+  {
+   "id": "BJ-AQ-SOA-07",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-SOA",
+   "cle": "VEKKY"
+  },
+  {
+   "id": "BJ-AQ-TOF-01",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-TOF",
+   "cle": "AGUE"
+  },
+  {
+   "id": "BJ-AQ-TOF-02",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-TOF",
+   "cle": "COLLI"
+  },
+  {
+   "id": "BJ-AQ-TOF-03",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-TOF",
+   "cle": "COUSSI"
+  },
+  {
+   "id": "BJ-AQ-TOF-04",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-TOF",
+   "cle": "DAME"
+  },
+  {
+   "id": "BJ-AQ-TOF-05",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-TOF",
+   "cle": "DJANGLANME"
+  },
+  {
+   "id": "BJ-AQ-TOF-06",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-TOF",
+   "cle": "HOUEGBO"
+  },
+  {
+   "id": "BJ-AQ-TOF-07",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-TOF",
+   "cle": "KPOME"
+  },
+  {
+   "id": "BJ-AQ-TOF-08",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-TOF",
+   "cle": "SEHOUE"
+  },
+  {
+   "id": "BJ-AQ-TOF-09",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-TOF",
+   "cle": "SEY"
+  },
+  {
+   "id": "BJ-AQ-TOF-10",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-TOF",
+   "cle": "TOFFO"
+  },
+  {
+   "id": "BJ-AQ-TOR-01",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-TOR",
+   "cle": "AVAME"
+  },
+  {
+   "id": "BJ-AQ-TOR-02",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-TOR",
+   "cle": "AZOHOUE-ALIHO"
+  },
+  {
+   "id": "BJ-AQ-TOR-03",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-TOR",
+   "cle": "AZOHOUE-CADA"
+  },
+  {
+   "id": "BJ-AQ-TOR-04",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-TOR",
+   "cle": "TORI-BOSSITO"
+  },
+  {
+   "id": "BJ-AQ-TOR-05",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-TOR",
+   "cle": "TORI-CADA"
+  },
+  {
+   "id": "BJ-AQ-TOR-06",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-TOR",
+   "cle": "TORI-GARE"
+  },
+  {
+   "id": "BJ-AQ-ZE-01",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-ZE",
+   "cle": "ADJAN"
+  },
+  {
+   "id": "BJ-AQ-ZE-02",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-ZE",
+   "cle": "DAWE"
+  },
+  {
+   "id": "BJ-AQ-ZE-03",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-ZE",
+   "cle": "DJIGBE"
+  },
+  {
+   "id": "BJ-AQ-ZE-04",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-ZE",
+   "cle": "DODJI-BATA"
+  },
+  {
+   "id": "BJ-AQ-ZE-05",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-ZE",
+   "cle": "HEKANME"
+  },
+  {
+   "id": "BJ-AQ-ZE-06",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-ZE",
+   "cle": "KOUNDOKPOE"
+  },
+  {
+   "id": "BJ-AQ-ZE-07",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-ZE",
+   "cle": "SEDJE-DENOU"
+  },
+  {
+   "id": "BJ-AQ-ZE-08",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-ZE",
+   "cle": "SEDJE-HOUEGOUDO"
+  },
+  {
+   "id": "BJ-AQ-ZE-09",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-ZE",
+   "cle": "TANGBO"
+  },
+  {
+   "id": "BJ-AQ-ZE-10",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-ZE",
+   "cle": "YOKPO"
+  },
+  {
+   "id": "BJ-AQ-ZE-11",
+   "type": "arrondissement",
+   "parent": "BJ-AQ-ZE",
+   "cle": "ZE"
+  },
+  {
+   "id": "BJ-BO-BEM-01",
+   "type": "arrondissement",
+   "parent": "BJ-BO-BEM",
+   "cle": "BEMBEREKE"
+  },
+  {
+   "id": "BJ-BO-BEM-02",
+   "type": "arrondissement",
+   "parent": "BJ-BO-BEM",
+   "cle": "BEROUBOUAY"
+  },
+  {
+   "id": "BJ-BO-BEM-03",
+   "type": "arrondissement",
+   "parent": "BJ-BO-BEM",
+   "cle": "BOUANRI"
+  },
+  {
+   "id": "BJ-BO-BEM-04",
+   "type": "arrondissement",
+   "parent": "BJ-BO-BEM",
+   "cle": "GAMIA"
+  },
+  {
+   "id": "BJ-BO-BEM-05",
+   "type": "arrondissement",
+   "parent": "BJ-BO-BEM",
+   "cle": "INA"
+  },
+  {
+   "id": "BJ-BO-KAL-01",
+   "type": "arrondissement",
+   "parent": "BJ-BO-KAL",
+   "cle": "BASSO"
+  },
+  {
+   "id": "BJ-BO-KAL-02",
+   "type": "arrondissement",
+   "parent": "BJ-BO-KAL",
+   "cle": "BOUCA"
+  },
+  {
+   "id": "BJ-BO-KAL-03",
+   "type": "arrondissement",
+   "parent": "BJ-BO-KAL",
+   "cle": "DERASSI"
+  },
+  {
+   "id": "BJ-BO-KAL-04",
+   "type": "arrondissement",
+   "parent": "BJ-BO-KAL",
+   "cle": "DUNKASSA"
+  },
+  {
+   "id": "BJ-BO-KAL-05",
+   "type": "arrondissement",
+   "parent": "BJ-BO-KAL",
+   "cle": "KALALE"
+  },
+  {
+   "id": "BJ-BO-KAL-06",
+   "type": "arrondissement",
+   "parent": "BJ-BO-KAL",
+   "cle": "PEONGA"
+  },
+  {
+   "id": "BJ-BO-NDA-01",
+   "type": "arrondissement",
+   "parent": "BJ-BO-NDA",
+   "cle": "BORI"
+  },
+  {
+   "id": "BJ-BO-NDA-02",
+   "type": "arrondissement",
+   "parent": "BJ-BO-NDA",
+   "cle": "GBEGOUROU"
+  },
+  {
+   "id": "BJ-BO-NDA-03",
+   "type": "arrondissement",
+   "parent": "BJ-BO-NDA",
+   "cle": "N’DALI"
+  },
+  {
+   "id": "BJ-BO-NDA-04",
+   "type": "arrondissement",
+   "parent": "BJ-BO-NDA",
+   "cle": "OUENOU"
+  },
+  {
+   "id": "BJ-BO-NDA-05",
+   "type": "arrondissement",
+   "parent": "BJ-BO-NDA",
+   "cle": "SIRAROU"
+  },
+  {
+   "id": "BJ-BO-NIK-01",
+   "type": "arrondissement",
+   "parent": "BJ-BO-NIK",
+   "cle": "BIRO"
+  },
+  {
+   "id": "BJ-BO-NIK-02",
+   "type": "arrondissement",
+   "parent": "BJ-BO-NIK",
+   "cle": "GNONKOUROKALI"
+  },
+  {
+   "id": "BJ-BO-NIK-03",
+   "type": "arrondissement",
+   "parent": "BJ-BO-NIK",
+   "cle": "NIKKI"
+  },
+  {
+   "id": "BJ-BO-NIK-04",
+   "type": "arrondissement",
+   "parent": "BJ-BO-NIK",
+   "cle": "OUENOU"
+  },
+  {
+   "id": "BJ-BO-NIK-05",
+   "type": "arrondissement",
+   "parent": "BJ-BO-NIK",
+   "cle": "SEREKALI"
+  },
+  {
+   "id": "BJ-BO-NIK-06",
+   "type": "arrondissement",
+   "parent": "BJ-BO-NIK",
+   "cle": "SUYA"
+  },
+  {
+   "id": "BJ-BO-NIK-07",
+   "type": "arrondissement",
+   "parent": "BJ-BO-NIK",
+   "cle": "TASSO"
+  },
+  {
+   "id": "BJ-BO-PAR-01",
+   "type": "arrondissement",
+   "parent": "BJ-BO-PAR",
+   "cle": "rang:1"
+  },
+  {
+   "id": "BJ-BO-PAR-02",
+   "type": "arrondissement",
+   "parent": "BJ-BO-PAR",
+   "cle": "rang:2"
+  },
+  {
+   "id": "BJ-BO-PAR-03",
+   "type": "arrondissement",
+   "parent": "BJ-BO-PAR",
+   "cle": "rang:3"
+  },
+  {
+   "id": "BJ-BO-PER-01",
+   "type": "arrondissement",
+   "parent": "BJ-BO-PER",
+   "cle": "GNINSY"
+  },
+  {
+   "id": "BJ-BO-PER-02",
+   "type": "arrondissement",
+   "parent": "BJ-BO-PER",
+   "cle": "GUINAGOUROU"
+  },
+  {
+   "id": "BJ-BO-PER-03",
+   "type": "arrondissement",
+   "parent": "BJ-BO-PER",
+   "cle": "KPEBIE"
+  },
+  {
+   "id": "BJ-BO-PER-04",
+   "type": "arrondissement",
+   "parent": "BJ-BO-PER",
+   "cle": "PANE"
+  },
+  {
+   "id": "BJ-BO-PER-05",
+   "type": "arrondissement",
+   "parent": "BJ-BO-PER",
+   "cle": "PERERE"
+  },
+  {
+   "id": "BJ-BO-PER-06",
+   "type": "arrondissement",
+   "parent": "BJ-BO-PER",
+   "cle": "SONTOU"
+  },
+  {
+   "id": "BJ-BO-SIN-01",
+   "type": "arrondissement",
+   "parent": "BJ-BO-SIN",
+   "cle": "FÔ-BOURE"
+  },
+  {
+   "id": "BJ-BO-SIN-02",
+   "type": "arrondissement",
+   "parent": "BJ-BO-SIN",
+   "cle": "SEKERE"
+  },
+  {
+   "id": "BJ-BO-SIN-03",
+   "type": "arrondissement",
+   "parent": "BJ-BO-SIN",
+   "cle": "SIKKI"
+  },
+  {
+   "id": "BJ-BO-SIN-04",
+   "type": "arrondissement",
+   "parent": "BJ-BO-SIN",
+   "cle": "SINENDE"
+  },
+  {
+   "id": "BJ-BO-TCH-01",
+   "type": "arrondissement",
+   "parent": "BJ-BO-TCH",
+   "cle": "ALAFIAROU"
+  },
+  {
+   "id": "BJ-BO-TCH-02",
+   "type": "arrondissement",
+   "parent": "BJ-BO-TCH",
+   "cle": "BETEROU"
+  },
+  {
+   "id": "BJ-BO-TCH-03",
+   "type": "arrondissement",
+   "parent": "BJ-BO-TCH",
+   "cle": "GORO"
+  },
+  {
+   "id": "BJ-BO-TCH-04",
+   "type": "arrondissement",
+   "parent": "BJ-BO-TCH",
+   "cle": "KIKA"
+  },
+  {
+   "id": "BJ-BO-TCH-05",
+   "type": "arrondissement",
+   "parent": "BJ-BO-TCH",
+   "cle": "SANSON"
+  },
+  {
+   "id": "BJ-BO-TCH-06",
+   "type": "arrondissement",
+   "parent": "BJ-BO-TCH",
+   "cle": "TCHAOUROU"
+  },
+  {
+   "id": "BJ-BO-TCH-07",
+   "type": "arrondissement",
+   "parent": "BJ-BO-TCH",
+   "cle": "TCHATCHOU"
+  },
+  {
+   "id": "BJ-CO-BAN-01",
+   "type": "arrondissement",
+   "parent": "BJ-CO-BAN",
+   "cle": "AGOUA"
+  },
+  {
+   "id": "BJ-CO-BAN-02",
+   "type": "arrondissement",
+   "parent": "BJ-CO-BAN",
+   "cle": "AKPASSI"
+  },
+  {
+   "id": "BJ-CO-BAN-03",
+   "type": "arrondissement",
+   "parent": "BJ-CO-BAN",
+   "cle": "ATOKOLIBE"
+  },
+  {
+   "id": "BJ-CO-BAN-04",
+   "type": "arrondissement",
+   "parent": "BJ-CO-BAN",
+   "cle": "BANTE"
+  },
+  {
+   "id": "BJ-CO-BAN-05",
+   "type": "arrondissement",
+   "parent": "BJ-CO-BAN",
+   "cle": "BOBE"
+  },
+  {
+   "id": "BJ-CO-BAN-06",
+   "type": "arrondissement",
+   "parent": "BJ-CO-BAN",
+   "cle": "GOUKA"
+  },
+  {
+   "id": "BJ-CO-BAN-07",
+   "type": "arrondissement",
+   "parent": "BJ-CO-BAN",
+   "cle": "KOKO"
+  },
+  {
+   "id": "BJ-CO-BAN-08",
+   "type": "arrondissement",
+   "parent": "BJ-CO-BAN",
+   "cle": "LOUGBA"
+  },
+  {
+   "id": "BJ-CO-BAN-09",
+   "type": "arrondissement",
+   "parent": "BJ-CO-BAN",
+   "cle": "PIRA"
+  },
+  {
+   "id": "BJ-CO-DAS-01",
+   "type": "arrondissement",
+   "parent": "BJ-CO-DAS",
+   "cle": "AKOFFODJOULE"
+  },
+  {
+   "id": "BJ-CO-DAS-02",
+   "type": "arrondissement",
+   "parent": "BJ-CO-DAS",
+   "cle": "DASSA I"
+  },
+  {
+   "id": "BJ-CO-DAS-03",
+   "type": "arrondissement",
+   "parent": "BJ-CO-DAS",
+   "cle": "DASSA II"
+  },
+  {
+   "id": "BJ-CO-DAS-04",
+   "type": "arrondissement",
+   "parent": "BJ-CO-DAS",
+   "cle": "GBAFFO"
+  },
+  {
+   "id": "BJ-CO-DAS-05",
+   "type": "arrondissement",
+   "parent": "BJ-CO-DAS",
+   "cle": "KERE"
+  },
+  {
+   "id": "BJ-CO-DAS-06",
+   "type": "arrondissement",
+   "parent": "BJ-CO-DAS",
+   "cle": "KPINGNI"
+  },
+  {
+   "id": "BJ-CO-DAS-07",
+   "type": "arrondissement",
+   "parent": "BJ-CO-DAS",
+   "cle": "LEMA"
+  },
+  {
+   "id": "BJ-CO-DAS-08",
+   "type": "arrondissement",
+   "parent": "BJ-CO-DAS",
+   "cle": "PAOUINGNAN"
+  },
+  {
+   "id": "BJ-CO-DAS-09",
+   "type": "arrondissement",
+   "parent": "BJ-CO-DAS",
+   "cle": "SOCLOGBO"
+  },
+  {
+   "id": "BJ-CO-DAS-10",
+   "type": "arrondissement",
+   "parent": "BJ-CO-DAS",
+   "cle": "TRE"
+  },
+  {
+   "id": "BJ-CO-GLA-01",
+   "type": "arrondissement",
+   "parent": "BJ-CO-GLA",
+   "cle": "AKLAMPA"
+  },
+  {
+   "id": "BJ-CO-GLA-02",
+   "type": "arrondissement",
+   "parent": "BJ-CO-GLA",
+   "cle": "ASSANTE"
+  },
+  {
+   "id": "BJ-CO-GLA-03",
+   "type": "arrondissement",
+   "parent": "BJ-CO-GLA",
+   "cle": "GLAZOUE"
+  },
+  {
+   "id": "BJ-CO-GLA-04",
+   "type": "arrondissement",
+   "parent": "BJ-CO-GLA",
+   "cle": "GOME"
+  },
+  {
+   "id": "BJ-CO-GLA-05",
+   "type": "arrondissement",
+   "parent": "BJ-CO-GLA",
+   "cle": "KPAKPAZA"
+  },
+  {
+   "id": "BJ-CO-GLA-06",
+   "type": "arrondissement",
+   "parent": "BJ-CO-GLA",
+   "cle": "MAGOUMI"
+  },
+  {
+   "id": "BJ-CO-GLA-07",
+   "type": "arrondissement",
+   "parent": "BJ-CO-GLA",
+   "cle": "OUEDEME"
+  },
+  {
+   "id": "BJ-CO-GLA-08",
+   "type": "arrondissement",
+   "parent": "BJ-CO-GLA",
+   "cle": "SOKPONTA"
+  },
+  {
+   "id": "BJ-CO-GLA-09",
+   "type": "arrondissement",
+   "parent": "BJ-CO-GLA",
+   "cle": "THIO"
+  },
+  {
+   "id": "BJ-CO-GLA-10",
+   "type": "arrondissement",
+   "parent": "BJ-CO-GLA",
+   "cle": "ZAFFE"
+  },
+  {
+   "id": "BJ-CO-OUE-01",
+   "type": "arrondissement",
+   "parent": "BJ-CO-OUE",
+   "cle": "CHALLA-OGOÏ"
+  },
+  {
+   "id": "BJ-CO-OUE-02",
+   "type": "arrondissement",
+   "parent": "BJ-CO-OUE",
+   "cle": "DJEGBE"
+  },
+  {
+   "id": "BJ-CO-OUE-03",
+   "type": "arrondissement",
+   "parent": "BJ-CO-OUE",
+   "cle": "GBANLIN"
+  },
+  {
+   "id": "BJ-CO-OUE-04",
+   "type": "arrondissement",
+   "parent": "BJ-CO-OUE",
+   "cle": "IKEMON"
+  },
+  {
+   "id": "BJ-CO-OUE-05",
+   "type": "arrondissement",
+   "parent": "BJ-CO-OUE",
+   "cle": "KILIBO"
+  },
+  {
+   "id": "BJ-CO-OUE-06",
+   "type": "arrondissement",
+   "parent": "BJ-CO-OUE",
+   "cle": "LAMINOU"
+  },
+  {
+   "id": "BJ-CO-OUE-07",
+   "type": "arrondissement",
+   "parent": "BJ-CO-OUE",
+   "cle": "ODOUGBA"
+  },
+  {
+   "id": "BJ-CO-OUE-08",
+   "type": "arrondissement",
+   "parent": "BJ-CO-OUE",
+   "cle": "OUESSE"
+  },
+  {
+   "id": "BJ-CO-OUE-09",
+   "type": "arrondissement",
+   "parent": "BJ-CO-OUE",
+   "cle": "TOUI"
+  },
+  {
+   "id": "BJ-CO-SAVA-01",
+   "type": "arrondissement",
+   "parent": "BJ-CO-SAVA",
+   "cle": "DJALLOUKOU"
+  },
+  {
+   "id": "BJ-CO-SAVA-02",
+   "type": "arrondissement",
+   "parent": "BJ-CO-SAVA",
+   "cle": "DOUME"
+  },
+  {
+   "id": "BJ-CO-SAVA-03",
+   "type": "arrondissement",
+   "parent": "BJ-CO-SAVA",
+   "cle": "GOBADA"
+  },
+  {
+   "id": "BJ-CO-SAVA-04",
+   "type": "arrondissement",
+   "parent": "BJ-CO-SAVA",
+   "cle": "KPATABA"
+  },
+  {
+   "id": "BJ-CO-SAVA-05",
+   "type": "arrondissement",
+   "parent": "BJ-CO-SAVA",
+   "cle": "LAHOTAN"
+  },
+  {
+   "id": "BJ-CO-SAVA-06",
+   "type": "arrondissement",
+   "parent": "BJ-CO-SAVA",
+   "cle": "LEMA"
+  },
+  {
+   "id": "BJ-CO-SAVA-07",
+   "type": "arrondissement",
+   "parent": "BJ-CO-SAVA",
+   "cle": "LOGOZOHE"
+  },
+  {
+   "id": "BJ-CO-SAVA-08",
+   "type": "arrondissement",
+   "parent": "BJ-CO-SAVA",
+   "cle": "MONKPA"
+  },
+  {
+   "id": "BJ-CO-SAVA-09",
+   "type": "arrondissement",
+   "parent": "BJ-CO-SAVA",
+   "cle": "OTTOLA"
+  },
+  {
+   "id": "BJ-CO-SAVA-10",
+   "type": "arrondissement",
+   "parent": "BJ-CO-SAVA",
+   "cle": "OUESSE"
+  },
+  {
+   "id": "BJ-CO-SAVA-11",
+   "type": "arrondissement",
+   "parent": "BJ-CO-SAVA",
+   "cle": "SAVALOU- AGBADO"
+  },
+  {
+   "id": "BJ-CO-SAVA-12",
+   "type": "arrondissement",
+   "parent": "BJ-CO-SAVA",
+   "cle": "SAVALOU-AGA"
+  },
+  {
+   "id": "BJ-CO-SAVA-13",
+   "type": "arrondissement",
+   "parent": "BJ-CO-SAVA",
+   "cle": "SAVALOU-ATTAKE"
+  },
+  {
+   "id": "BJ-CO-SAVA-14",
+   "type": "arrondissement",
+   "parent": "BJ-CO-SAVA",
+   "cle": "TCHETTI"
+  },
+  {
+   "id": "BJ-CO-SAVE-01",
+   "type": "arrondissement",
+   "parent": "BJ-CO-SAVE",
+   "cle": "ADIDO"
+  },
+  {
+   "id": "BJ-CO-SAVE-02",
+   "type": "arrondissement",
+   "parent": "BJ-CO-SAVE",
+   "cle": "BESSE"
+  },
+  {
+   "id": "BJ-CO-SAVE-03",
+   "type": "arrondissement",
+   "parent": "BJ-CO-SAVE",
+   "cle": "BONI"
+  },
+  {
+   "id": "BJ-CO-SAVE-04",
+   "type": "arrondissement",
+   "parent": "BJ-CO-SAVE",
+   "cle": "KABOUA"
+  },
+  {
+   "id": "BJ-CO-SAVE-05",
+   "type": "arrondissement",
+   "parent": "BJ-CO-SAVE",
+   "cle": "OFFE"
+  },
+  {
+   "id": "BJ-CO-SAVE-06",
+   "type": "arrondissement",
+   "parent": "BJ-CO-SAVE",
+   "cle": "OKPARA"
+  },
+  {
+   "id": "BJ-CO-SAVE-07",
+   "type": "arrondissement",
+   "parent": "BJ-CO-SAVE",
+   "cle": "PLATEAU"
+  },
+  {
+   "id": "BJ-CO-SAVE-08",
+   "type": "arrondissement",
+   "parent": "BJ-CO-SAVE",
+   "cle": "SAKIN"
+  },
+  {
+   "id": "BJ-DO-BAS-01",
+   "type": "arrondissement",
+   "parent": "BJ-DO-BAS",
+   "cle": "ALEDJO"
+  },
+  {
+   "id": "BJ-DO-BAS-02",
+   "type": "arrondissement",
+   "parent": "BJ-DO-BAS",
+   "cle": "BASSILA"
+  },
+  {
+   "id": "BJ-DO-BAS-03",
+   "type": "arrondissement",
+   "parent": "BJ-DO-BAS",
+   "cle": "MANIGRI"
+  },
+  {
+   "id": "BJ-DO-BAS-04",
+   "type": "arrondissement",
+   "parent": "BJ-DO-BAS",
+   "cle": "PENESSOULOU"
+  },
+  {
+   "id": "BJ-DO-COP-01",
+   "type": "arrondissement",
+   "parent": "BJ-DO-COP",
+   "cle": "ANANDANA"
+  },
+  {
+   "id": "BJ-DO-COP-02",
+   "type": "arrondissement",
+   "parent": "BJ-DO-COP",
+   "cle": "COPARGO"
+  },
+  {
+   "id": "BJ-DO-COP-03",
+   "type": "arrondissement",
+   "parent": "BJ-DO-COP",
+   "cle": "PABEGOU"
+  },
+  {
+   "id": "BJ-DO-COP-04",
+   "type": "arrondissement",
+   "parent": "BJ-DO-COP",
+   "cle": "SINGRE"
+  },
+  {
+   "id": "BJ-DO-DJO-01",
+   "type": "arrondissement",
+   "parent": "BJ-DO-DJO",
+   "cle": "BAREI"
+  },
+  {
+   "id": "BJ-DO-DJO-02",
+   "type": "arrondissement",
+   "parent": "BJ-DO-DJO",
+   "cle": "BARIENOU"
+  },
+  {
+   "id": "BJ-DO-DJO-03",
+   "type": "arrondissement",
+   "parent": "BJ-DO-DJO",
+   "cle": "BELLEFOUNGOU"
+  },
+  {
+   "id": "BJ-DO-DJO-04",
+   "type": "arrondissement",
+   "parent": "BJ-DO-DJO",
+   "cle": "BOUGOU"
+  },
+  {
+   "id": "BJ-DO-DJO-05",
+   "type": "arrondissement",
+   "parent": "BJ-DO-DJO",
+   "cle": "DJOUGOU I"
+  },
+  {
+   "id": "BJ-DO-DJO-06",
+   "type": "arrondissement",
+   "parent": "BJ-DO-DJO",
+   "cle": "DJOUGOU II"
+  },
+  {
+   "id": "BJ-DO-DJO-07",
+   "type": "arrondissement",
+   "parent": "BJ-DO-DJO",
+   "cle": "DJOUGOU III"
+  },
+  {
+   "id": "BJ-DO-DJO-08",
+   "type": "arrondissement",
+   "parent": "BJ-DO-DJO",
+   "cle": "KOLOCONDE"
+  },
+  {
+   "id": "BJ-DO-DJO-09",
+   "type": "arrondissement",
+   "parent": "BJ-DO-DJO",
+   "cle": "ONKLOU"
+  },
+  {
+   "id": "BJ-DO-DJO-10",
+   "type": "arrondissement",
+   "parent": "BJ-DO-DJO",
+   "cle": "PARTAGO"
+  },
+  {
+   "id": "BJ-DO-DJO-11",
+   "type": "arrondissement",
+   "parent": "BJ-DO-DJO",
+   "cle": "PELEBINA"
+  },
+  {
+   "id": "BJ-DO-DJO-12",
+   "type": "arrondissement",
+   "parent": "BJ-DO-DJO",
+   "cle": "SEROU"
+  },
+  {
+   "id": "BJ-DO-OUA-01",
+   "type": "arrondissement",
+   "parent": "BJ-DO-OUA",
+   "cle": "BADJOUDE"
+  },
+  {
+   "id": "BJ-DO-OUA-02",
+   "type": "arrondissement",
+   "parent": "BJ-DO-OUA",
+   "cle": "KOMDE"
+  },
+  {
+   "id": "BJ-DO-OUA-03",
+   "type": "arrondissement",
+   "parent": "BJ-DO-OUA",
+   "cle": "OUAKE"
+  },
+  {
+   "id": "BJ-DO-OUA-04",
+   "type": "arrondissement",
+   "parent": "BJ-DO-OUA",
+   "cle": "SEMERE 1"
+  },
+  {
+   "id": "BJ-DO-OUA-05",
+   "type": "arrondissement",
+   "parent": "BJ-DO-OUA",
+   "cle": "SEMERE 2"
+  },
+  {
+   "id": "BJ-DO-OUA-06",
+   "type": "arrondissement",
+   "parent": "BJ-DO-OUA",
+   "cle": "TCHALINGA"
+  },
+  {
+   "id": "BJ-KO-APL-01",
+   "type": "arrondissement",
+   "parent": "BJ-KO-APL",
+   "cle": "APLAHOUE"
+  },
+  {
+   "id": "BJ-KO-APL-02",
+   "type": "arrondissement",
+   "parent": "BJ-KO-APL",
+   "cle": "ATOMEY"
+  },
+  {
+   "id": "BJ-KO-APL-03",
+   "type": "arrondissement",
+   "parent": "BJ-KO-APL",
+   "cle": "AZOVE"
+  },
+  {
+   "id": "BJ-KO-APL-04",
+   "type": "arrondissement",
+   "parent": "BJ-KO-APL",
+   "cle": "DEKPO-CENTRE"
+  },
+  {
+   "id": "BJ-KO-APL-05",
+   "type": "arrondissement",
+   "parent": "BJ-KO-APL",
+   "cle": "GODOHOU"
+  },
+  {
+   "id": "BJ-KO-APL-06",
+   "type": "arrondissement",
+   "parent": "BJ-KO-APL",
+   "cle": "KISSAMEY"
+  },
+  {
+   "id": "BJ-KO-APL-07",
+   "type": "arrondissement",
+   "parent": "BJ-KO-APL",
+   "cle": "LONKLY"
+  },
+  {
+   "id": "BJ-KO-DJA-01",
+   "type": "arrondissement",
+   "parent": "BJ-KO-DJA",
+   "cle": "ADJINTIMEY"
+  },
+  {
+   "id": "BJ-KO-DJA-02",
+   "type": "arrondissement",
+   "parent": "BJ-KO-DJA",
+   "cle": "BETOUMEY"
+  },
+  {
+   "id": "BJ-KO-DJA-03",
+   "type": "arrondissement",
+   "parent": "BJ-KO-DJA",
+   "cle": "DJAKOTOMEY I"
+  },
+  {
+   "id": "BJ-KO-DJA-04",
+   "type": "arrondissement",
+   "parent": "BJ-KO-DJA",
+   "cle": "DJAKOTOMEY II"
+  },
+  {
+   "id": "BJ-KO-DJA-05",
+   "type": "arrondissement",
+   "parent": "BJ-KO-DJA",
+   "cle": "GOHOMEY"
+  },
+  {
+   "id": "BJ-KO-DJA-06",
+   "type": "arrondissement",
+   "parent": "BJ-KO-DJA",
+   "cle": "HOUEGAMEY"
+  },
+  {
+   "id": "BJ-KO-DJA-07",
+   "type": "arrondissement",
+   "parent": "BJ-KO-DJA",
+   "cle": "KINKINHOUE"
+  },
+  {
+   "id": "BJ-KO-DJA-08",
+   "type": "arrondissement",
+   "parent": "BJ-KO-DJA",
+   "cle": "KOKOHOUE"
+  },
+  {
+   "id": "BJ-KO-DJA-09",
+   "type": "arrondissement",
+   "parent": "BJ-KO-DJA",
+   "cle": "KPOBA"
+  },
+  {
+   "id": "BJ-KO-DJA-10",
+   "type": "arrondissement",
+   "parent": "BJ-KO-DJA",
+   "cle": "SOKOUHOUE"
+  },
+  {
+   "id": "BJ-KO-DOG-01",
+   "type": "arrondissement",
+   "parent": "BJ-KO-DOG",
+   "cle": "AYOMI"
+  },
+  {
+   "id": "BJ-KO-DOG-02",
+   "type": "arrondissement",
+   "parent": "BJ-KO-DOG",
+   "cle": "DEVE"
+  },
+  {
+   "id": "BJ-KO-DOG-03",
+   "type": "arrondissement",
+   "parent": "BJ-KO-DOG",
+   "cle": "HONTON"
+  },
+  {
+   "id": "BJ-KO-DOG-04",
+   "type": "arrondissement",
+   "parent": "BJ-KO-DOG",
+   "cle": "LOKOGOHOUE"
+  },
+  {
+   "id": "BJ-KO-DOG-05",
+   "type": "arrondissement",
+   "parent": "BJ-KO-DOG",
+   "cle": "MADJRE"
+  },
+  {
+   "id": "BJ-KO-DOG-06",
+   "type": "arrondissement",
+   "parent": "BJ-KO-DOG",
+   "cle": "TOTA"
+  },
+  {
+   "id": "BJ-KO-DOG-07",
+   "type": "arrondissement",
+   "parent": "BJ-KO-DOG",
+   "cle": "TOTCHANGNI CENTRE"
+  },
+  {
+   "id": "BJ-KO-KLO-01",
+   "type": "arrondissement",
+   "parent": "BJ-KO-KLO",
+   "cle": "ADJAHONME"
+  },
+  {
+   "id": "BJ-KO-KLO-02",
+   "type": "arrondissement",
+   "parent": "BJ-KO-KLO",
+   "cle": "AHOGBEYA"
+  },
+  {
+   "id": "BJ-KO-KLO-03",
+   "type": "arrondissement",
+   "parent": "BJ-KO-KLO",
+   "cle": "AYAHOHOUE"
+  },
+  {
+   "id": "BJ-KO-KLO-04",
+   "type": "arrondissement",
+   "parent": "BJ-KO-KLO",
+   "cle": "DJOTTO"
+  },
+  {
+   "id": "BJ-KO-KLO-05",
+   "type": "arrondissement",
+   "parent": "BJ-KO-KLO",
+   "cle": "HONDJIN"
+  },
+  {
+   "id": "BJ-KO-KLO-06",
+   "type": "arrondissement",
+   "parent": "BJ-KO-KLO",
+   "cle": "KLOUEKANME"
+  },
+  {
+   "id": "BJ-KO-KLO-07",
+   "type": "arrondissement",
+   "parent": "BJ-KO-KLO",
+   "cle": "LANTA"
+  },
+  {
+   "id": "BJ-KO-KLO-08",
+   "type": "arrondissement",
+   "parent": "BJ-KO-KLO",
+   "cle": "TCHIKPE"
+  },
+  {
+   "id": "BJ-KO-LAL-01",
+   "type": "arrondissement",
+   "parent": "BJ-KO-LAL",
+   "cle": "ADOUKANDJI"
+  },
+  {
+   "id": "BJ-KO-LAL-02",
+   "type": "arrondissement",
+   "parent": "BJ-KO-LAL",
+   "cle": "AHODJINNAKO"
+  },
+  {
+   "id": "BJ-KO-LAL-03",
+   "type": "arrondissement",
+   "parent": "BJ-KO-LAL",
+   "cle": "AHOMADEGBE"
+  },
+  {
+   "id": "BJ-KO-LAL-04",
+   "type": "arrondissement",
+   "parent": "BJ-KO-LAL",
+   "cle": "BANIGBE"
+  },
+  {
+   "id": "BJ-KO-LAL-05",
+   "type": "arrondissement",
+   "parent": "BJ-KO-LAL",
+   "cle": "GNIZOUNME"
+  },
+  {
+   "id": "BJ-KO-LAL-06",
+   "type": "arrondissement",
+   "parent": "BJ-KO-LAL",
+   "cle": "HLASSAME"
+  },
+  {
+   "id": "BJ-KO-LAL-07",
+   "type": "arrondissement",
+   "parent": "BJ-KO-LAL",
+   "cle": "LALO"
+  },
+  {
+   "id": "BJ-KO-LAL-08",
+   "type": "arrondissement",
+   "parent": "BJ-KO-LAL",
+   "cle": "LOKOGBA"
+  },
+  {
+   "id": "BJ-KO-LAL-09",
+   "type": "arrondissement",
+   "parent": "BJ-KO-LAL",
+   "cle": "TCHITO"
+  },
+  {
+   "id": "BJ-KO-LAL-10",
+   "type": "arrondissement",
+   "parent": "BJ-KO-LAL",
+   "cle": "TOHOU"
+  },
+  {
+   "id": "BJ-KO-LAL-11",
+   "type": "arrondissement",
+   "parent": "BJ-KO-LAL",
+   "cle": "ZALLI"
+  },
+  {
+   "id": "BJ-KO-TOV-01",
+   "type": "arrondissement",
+   "parent": "BJ-KO-TOV",
+   "cle": "ADJIDO"
+  },
+  {
+   "id": "BJ-KO-TOV-02",
+   "type": "arrondissement",
+   "parent": "BJ-KO-TOV",
+   "cle": "AVEDJIN"
+  },
+  {
+   "id": "BJ-KO-TOV-03",
+   "type": "arrondissement",
+   "parent": "BJ-KO-TOV",
+   "cle": "DOKO"
+  },
+  {
+   "id": "BJ-KO-TOV-04",
+   "type": "arrondissement",
+   "parent": "BJ-KO-TOV",
+   "cle": "HOUEDOGLI"
+  },
+  {
+   "id": "BJ-KO-TOV-05",
+   "type": "arrondissement",
+   "parent": "BJ-KO-TOV",
+   "cle": "MISSINKO"
+  },
+  {
+   "id": "BJ-KO-TOV-06",
+   "type": "arrondissement",
+   "parent": "BJ-KO-TOV",
+   "cle": "TANNOU-GOLA"
+  },
+  {
+   "id": "BJ-KO-TOV-07",
+   "type": "arrondissement",
+   "parent": "BJ-KO-TOV",
+   "cle": "TOVIKLIN"
+  },
+  {
+   "id": "BJ-LI-COT-01",
+   "type": "arrondissement",
+   "parent": "BJ-LI-COT",
+   "cle": "rang:1"
+  },
+  {
+   "id": "BJ-LI-COT-02",
+   "type": "arrondissement",
+   "parent": "BJ-LI-COT",
+   "cle": "rang:2"
+  },
+  {
+   "id": "BJ-LI-COT-03",
+   "type": "arrondissement",
+   "parent": "BJ-LI-COT",
+   "cle": "rang:3"
+  },
+  {
+   "id": "BJ-LI-COT-04",
+   "type": "arrondissement",
+   "parent": "BJ-LI-COT",
+   "cle": "rang:4"
+  },
+  {
+   "id": "BJ-LI-COT-05",
+   "type": "arrondissement",
+   "parent": "BJ-LI-COT",
+   "cle": "rang:5"
+  },
+  {
+   "id": "BJ-LI-COT-06",
+   "type": "arrondissement",
+   "parent": "BJ-LI-COT",
+   "cle": "rang:6"
+  },
+  {
+   "id": "BJ-LI-COT-07",
+   "type": "arrondissement",
+   "parent": "BJ-LI-COT",
+   "cle": "rang:7"
+  },
+  {
+   "id": "BJ-LI-COT-08",
+   "type": "arrondissement",
+   "parent": "BJ-LI-COT",
+   "cle": "rang:8"
+  },
+  {
+   "id": "BJ-LI-COT-09",
+   "type": "arrondissement",
+   "parent": "BJ-LI-COT",
+   "cle": "rang:9"
+  },
+  {
+   "id": "BJ-LI-COT-10",
+   "type": "arrondissement",
+   "parent": "BJ-LI-COT",
+   "cle": "rang:10"
+  },
+  {
+   "id": "BJ-LI-COT-11",
+   "type": "arrondissement",
+   "parent": "BJ-LI-COT",
+   "cle": "rang:11"
+  },
+  {
+   "id": "BJ-LI-COT-12",
+   "type": "arrondissement",
+   "parent": "BJ-LI-COT",
+   "cle": "rang:12"
+  },
+  {
+   "id": "BJ-LI-COT-13",
+   "type": "arrondissement",
+   "parent": "BJ-LI-COT",
+   "cle": "rang:13"
+  },
+  {
+   "id": "BJ-MO-ATH-01",
+   "type": "arrondissement",
+   "parent": "BJ-MO-ATH",
+   "cle": "ADOHOUN"
+  },
+  {
+   "id": "BJ-MO-ATH-02",
+   "type": "arrondissement",
+   "parent": "BJ-MO-ATH",
+   "cle": "ATCHANNOU"
+  },
+  {
+   "id": "BJ-MO-ATH-03",
+   "type": "arrondissement",
+   "parent": "BJ-MO-ATH",
+   "cle": "ATHIEME"
+  },
+  {
+   "id": "BJ-MO-ATH-04",
+   "type": "arrondissement",
+   "parent": "BJ-MO-ATH",
+   "cle": "DEDEKPOE"
+  },
+  {
+   "id": "BJ-MO-ATH-05",
+   "type": "arrondissement",
+   "parent": "BJ-MO-ATH",
+   "cle": "KPINNOU"
+  },
+  {
+   "id": "BJ-MO-BOP-01",
+   "type": "arrondissement",
+   "parent": "BJ-MO-BOP",
+   "cle": "AGBODJI"
+  },
+  {
+   "id": "BJ-MO-BOP-02",
+   "type": "arrondissement",
+   "parent": "BJ-MO-BOP",
+   "cle": "BADAZOUIN"
+  },
+  {
+   "id": "BJ-MO-BOP-03",
+   "type": "arrondissement",
+   "parent": "BJ-MO-BOP",
+   "cle": "BOPA"
+  },
+  {
+   "id": "BJ-MO-BOP-04",
+   "type": "arrondissement",
+   "parent": "BJ-MO-BOP",
+   "cle": "GBAKPODJI"
+  },
+  {
+   "id": "BJ-MO-BOP-05",
+   "type": "arrondissement",
+   "parent": "BJ-MO-BOP",
+   "cle": "LOBOGO"
+  },
+  {
+   "id": "BJ-MO-BOP-06",
+   "type": "arrondissement",
+   "parent": "BJ-MO-BOP",
+   "cle": "POSSOTOME"
+  },
+  {
+   "id": "BJ-MO-BOP-07",
+   "type": "arrondissement",
+   "parent": "BJ-MO-BOP",
+   "cle": "YEGODOE"
+  },
+  {
+   "id": "BJ-MO-COM-01",
+   "type": "arrondissement",
+   "parent": "BJ-MO-COM",
+   "cle": "AGATOGBO"
+  },
+  {
+   "id": "BJ-MO-COM-02",
+   "type": "arrondissement",
+   "parent": "BJ-MO-COM",
+   "cle": "AKODEHA"
+  },
+  {
+   "id": "BJ-MO-COM-03",
+   "type": "arrondissement",
+   "parent": "BJ-MO-COM",
+   "cle": "COME"
+  },
+  {
+   "id": "BJ-MO-COM-04",
+   "type": "arrondissement",
+   "parent": "BJ-MO-COM",
+   "cle": "OUEDEME-PEDAH"
+  },
+  {
+   "id": "BJ-MO-COM-05",
+   "type": "arrondissement",
+   "parent": "BJ-MO-COM",
+   "cle": "OUMAKO"
+  },
+  {
+   "id": "BJ-MO-GRA-01",
+   "type": "arrondissement",
+   "parent": "BJ-MO-GRA",
+   "cle": "ADJAHA"
+  },
+  {
+   "id": "BJ-MO-GRA-02",
+   "type": "arrondissement",
+   "parent": "BJ-MO-GRA",
+   "cle": "AGOUE"
+  },
+  {
+   "id": "BJ-MO-GRA-03",
+   "type": "arrondissement",
+   "parent": "BJ-MO-GRA",
+   "cle": "AVLO"
+  },
+  {
+   "id": "BJ-MO-GRA-04",
+   "type": "arrondissement",
+   "parent": "BJ-MO-GRA",
+   "cle": "DJANGLANMEY"
+  },
+  {
+   "id": "BJ-MO-GRA-05",
+   "type": "arrondissement",
+   "parent": "BJ-MO-GRA",
+   "cle": "GBEHOUE"
+  },
+  {
+   "id": "BJ-MO-GRA-06",
+   "type": "arrondissement",
+   "parent": "BJ-MO-GRA",
+   "cle": "GRAND-POPO"
+  },
+  {
+   "id": "BJ-MO-GRA-07",
+   "type": "arrondissement",
+   "parent": "BJ-MO-GRA",
+   "cle": "SAZUE"
+  },
+  {
+   "id": "BJ-MO-HOU-01",
+   "type": "arrondissement",
+   "parent": "BJ-MO-HOU",
+   "cle": "DAHE"
+  },
+  {
+   "id": "BJ-MO-HOU-02",
+   "type": "arrondissement",
+   "parent": "BJ-MO-HOU",
+   "cle": "DOUTOU"
+  },
+  {
+   "id": "BJ-MO-HOU-03",
+   "type": "arrondissement",
+   "parent": "BJ-MO-HOU",
+   "cle": "HONHOUE"
+  },
+  {
+   "id": "BJ-MO-HOU-04",
+   "type": "arrondissement",
+   "parent": "BJ-MO-HOU",
+   "cle": "HOUEYOGBE"
+  },
+  {
+   "id": "BJ-MO-HOU-05",
+   "type": "arrondissement",
+   "parent": "BJ-MO-HOU",
+   "cle": "SE"
+  },
+  {
+   "id": "BJ-MO-HOU-06",
+   "type": "arrondissement",
+   "parent": "BJ-MO-HOU",
+   "cle": "ZOUNGBONOU"
+  },
+  {
+   "id": "BJ-MO-LOK-01",
+   "type": "arrondissement",
+   "parent": "BJ-MO-LOK",
+   "cle": "AGAME"
+  },
+  {
+   "id": "BJ-MO-LOK-02",
+   "type": "arrondissement",
+   "parent": "BJ-MO-LOK",
+   "cle": "HOUIN"
+  },
+  {
+   "id": "BJ-MO-LOK-03",
+   "type": "arrondissement",
+   "parent": "BJ-MO-LOK",
+   "cle": "KOUDO"
+  },
+  {
+   "id": "BJ-MO-LOK-04",
+   "type": "arrondissement",
+   "parent": "BJ-MO-LOK",
+   "cle": "LOKOSSA"
+  },
+  {
+   "id": "BJ-MO-LOK-05",
+   "type": "arrondissement",
+   "parent": "BJ-MO-LOK",
+   "cle": "OUEDEME-ADJA"
+  },
+  {
+   "id": "BJ-OU-ADJA-01",
+   "type": "arrondissement",
+   "parent": "BJ-OU-ADJA",
+   "cle": "ADJARRA 1"
+  },
+  {
+   "id": "BJ-OU-ADJA-02",
+   "type": "arrondissement",
+   "parent": "BJ-OU-ADJA",
+   "cle": "ADJARRA 2"
+  },
+  {
+   "id": "BJ-OU-ADJA-03",
+   "type": "arrondissement",
+   "parent": "BJ-OU-ADJA",
+   "cle": "AGLOGBE"
+  },
+  {
+   "id": "BJ-OU-ADJA-04",
+   "type": "arrondissement",
+   "parent": "BJ-OU-ADJA",
+   "cle": "HONVIE"
+  },
+  {
+   "id": "BJ-OU-ADJA-05",
+   "type": "arrondissement",
+   "parent": "BJ-OU-ADJA",
+   "cle": "MALANHOUI"
+  },
+  {
+   "id": "BJ-OU-ADJA-06",
+   "type": "arrondissement",
+   "parent": "BJ-OU-ADJA",
+   "cle": "MEDEDJONOU"
+  },
+  {
+   "id": "BJ-OU-ADJO-01",
+   "type": "arrondissement",
+   "parent": "BJ-OU-ADJO",
+   "cle": "ADJOHOUN"
+  },
+  {
+   "id": "BJ-OU-ADJO-02",
+   "type": "arrondissement",
+   "parent": "BJ-OU-ADJO",
+   "cle": "AKPADANOU"
+  },
+  {
+   "id": "BJ-OU-ADJO-03",
+   "type": "arrondissement",
+   "parent": "BJ-OU-ADJO",
+   "cle": "AWONOU"
+  },
+  {
+   "id": "BJ-OU-ADJO-04",
+   "type": "arrondissement",
+   "parent": "BJ-OU-ADJO",
+   "cle": "AZOWLISSE"
+  },
+  {
+   "id": "BJ-OU-ADJO-05",
+   "type": "arrondissement",
+   "parent": "BJ-OU-ADJO",
+   "cle": "DEME"
+  },
+  {
+   "id": "BJ-OU-ADJO-06",
+   "type": "arrondissement",
+   "parent": "BJ-OU-ADJO",
+   "cle": "GANGBAN"
+  },
+  {
+   "id": "BJ-OU-ADJO-07",
+   "type": "arrondissement",
+   "parent": "BJ-OU-ADJO",
+   "cle": "KODE"
+  },
+  {
+   "id": "BJ-OU-ADJO-08",
+   "type": "arrondissement",
+   "parent": "BJ-OU-ADJO",
+   "cle": "TOGBOTA"
+  },
+  {
+   "id": "BJ-OU-AGU-01",
+   "type": "arrondissement",
+   "parent": "BJ-OU-AGU",
+   "cle": "AVAGBODJI"
+  },
+  {
+   "id": "BJ-OU-AGU-02",
+   "type": "arrondissement",
+   "parent": "BJ-OU-AGU",
+   "cle": "HOUEDOME"
+  },
+  {
+   "id": "BJ-OU-AGU-03",
+   "type": "arrondissement",
+   "parent": "BJ-OU-AGU",
+   "cle": "ZOUNGAME"
+  },
+  {
+   "id": "BJ-OU-AKP-01",
+   "type": "arrondissement",
+   "parent": "BJ-OU-AKP",
+   "cle": "AKPRO-MISSERETE"
+  },
+  {
+   "id": "BJ-OU-AKP-02",
+   "type": "arrondissement",
+   "parent": "BJ-OU-AKP",
+   "cle": "GOME-SOTA"
+  },
+  {
+   "id": "BJ-OU-AKP-03",
+   "type": "arrondissement",
+   "parent": "BJ-OU-AKP",
+   "cle": "KATAGON"
+  },
+  {
+   "id": "BJ-OU-AKP-04",
+   "type": "arrondissement",
+   "parent": "BJ-OU-AKP",
+   "cle": "VAKON"
+  },
+  {
+   "id": "BJ-OU-AKP-05",
+   "type": "arrondissement",
+   "parent": "BJ-OU-AKP",
+   "cle": "ZOUNGBOME"
+  },
+  {
+   "id": "BJ-OU-AVR-01",
+   "type": "arrondissement",
+   "parent": "BJ-OU-AVR",
+   "cle": "ATCHOUKPA"
+  },
+  {
+   "id": "BJ-OU-AVR-02",
+   "type": "arrondissement",
+   "parent": "BJ-OU-AVR",
+   "cle": "AVRANKOU"
+  },
+  {
+   "id": "BJ-OU-AVR-03",
+   "type": "arrondissement",
+   "parent": "BJ-OU-AVR",
+   "cle": "DJOMON"
+  },
+  {
+   "id": "BJ-OU-AVR-04",
+   "type": "arrondissement",
+   "parent": "BJ-OU-AVR",
+   "cle": "GBOZOUME"
+  },
+  {
+   "id": "BJ-OU-AVR-05",
+   "type": "arrondissement",
+   "parent": "BJ-OU-AVR",
+   "cle": "KOUTI"
+  },
+  {
+   "id": "BJ-OU-AVR-06",
+   "type": "arrondissement",
+   "parent": "BJ-OU-AVR",
+   "cle": "OUANHO"
+  },
+  {
+   "id": "BJ-OU-AVR-07",
+   "type": "arrondissement",
+   "parent": "BJ-OU-AVR",
+   "cle": "SADO"
+  },
+  {
+   "id": "BJ-OU-BON-01",
+   "type": "arrondissement",
+   "parent": "BJ-OU-BON",
+   "cle": "AFFAME"
+  },
+  {
+   "id": "BJ-OU-BON-02",
+   "type": "arrondissement",
+   "parent": "BJ-OU-BON",
+   "cle": "ATCHONSA"
+  },
+  {
+   "id": "BJ-OU-BON-03",
+   "type": "arrondissement",
+   "parent": "BJ-OU-BON",
+   "cle": "BONOU"
+  },
+  {
+   "id": "BJ-OU-BON-04",
+   "type": "arrondissement",
+   "parent": "BJ-OU-BON",
+   "cle": "DAME-WOGON"
+  },
+  {
+   "id": "BJ-OU-BON-05",
+   "type": "arrondissement",
+   "parent": "BJ-OU-BON",
+   "cle": "HOUNVIGUE"
+  },
+  {
+   "id": "BJ-OU-DAN-01",
+   "type": "arrondissement",
+   "parent": "BJ-OU-DAN",
+   "cle": "DANGBO"
+  },
+  {
+   "id": "BJ-OU-DAN-02",
+   "type": "arrondissement",
+   "parent": "BJ-OU-DAN",
+   "cle": "DEKIN"
+  },
+  {
+   "id": "BJ-OU-DAN-03",
+   "type": "arrondissement",
+   "parent": "BJ-OU-DAN",
+   "cle": "GBEKO"
+  },
+  {
+   "id": "BJ-OU-DAN-04",
+   "type": "arrondissement",
+   "parent": "BJ-OU-DAN",
+   "cle": "HOUEDOMEY"
+  },
+  {
+   "id": "BJ-OU-DAN-05",
+   "type": "arrondissement",
+   "parent": "BJ-OU-DAN",
+   "cle": "HOZIN"
+  },
+  {
+   "id": "BJ-OU-DAN-06",
+   "type": "arrondissement",
+   "parent": "BJ-OU-DAN",
+   "cle": "KESSOUNOU"
+  },
+  {
+   "id": "BJ-OU-DAN-07",
+   "type": "arrondissement",
+   "parent": "BJ-OU-DAN",
+   "cle": "ZOUNGUE"
+  },
+  {
+   "id": "BJ-OU-POR-01",
+   "type": "arrondissement",
+   "parent": "BJ-OU-POR",
+   "cle": "rang:1"
+  },
+  {
+   "id": "BJ-OU-POR-02",
+   "type": "arrondissement",
+   "parent": "BJ-OU-POR",
+   "cle": "rang:2"
+  },
+  {
+   "id": "BJ-OU-POR-03",
+   "type": "arrondissement",
+   "parent": "BJ-OU-POR",
+   "cle": "rang:3"
+  },
+  {
+   "id": "BJ-OU-POR-04",
+   "type": "arrondissement",
+   "parent": "BJ-OU-POR",
+   "cle": "rang:4"
+  },
+  {
+   "id": "BJ-OU-POR-05",
+   "type": "arrondissement",
+   "parent": "BJ-OU-POR",
+   "cle": "rang:5"
+  },
+  {
+   "id": "BJ-OU-SEM-01",
+   "type": "arrondissement",
+   "parent": "BJ-OU-SEM",
+   "cle": "AGBLANGANDAN"
+  },
+  {
+   "id": "BJ-OU-SEM-02",
+   "type": "arrondissement",
+   "parent": "BJ-OU-SEM",
+   "cle": "AHOLOUYEME"
+  },
+  {
+   "id": "BJ-OU-SEM-03",
+   "type": "arrondissement",
+   "parent": "BJ-OU-SEM",
+   "cle": "DJEREGBE"
+  },
+  {
+   "id": "BJ-OU-SEM-04",
+   "type": "arrondissement",
+   "parent": "BJ-OU-SEM",
+   "cle": "EKPE"
+  },
+  {
+   "id": "BJ-OU-SEM-05",
+   "type": "arrondissement",
+   "parent": "BJ-OU-SEM",
+   "cle": "SEME- PODJI"
+  },
+  {
+   "id": "BJ-OU-SEM-06",
+   "type": "arrondissement",
+   "parent": "BJ-OU-SEM",
+   "cle": "TOHOUE"
+  },
+  {
+   "id": "BJ-PL-ADJ-01",
+   "type": "arrondissement",
+   "parent": "BJ-PL-ADJ",
+   "cle": "ADJA-OUERE"
+  },
+  {
+   "id": "BJ-PL-ADJ-02",
+   "type": "arrondissement",
+   "parent": "BJ-PL-ADJ",
+   "cle": "IKPINLE"
+  },
+  {
+   "id": "BJ-PL-ADJ-03",
+   "type": "arrondissement",
+   "parent": "BJ-PL-ADJ",
+   "cle": "KPOULOU"
+  },
+  {
+   "id": "BJ-PL-ADJ-04",
+   "type": "arrondissement",
+   "parent": "BJ-PL-ADJ",
+   "cle": "MASSE"
+  },
+  {
+   "id": "BJ-PL-ADJ-05",
+   "type": "arrondissement",
+   "parent": "BJ-PL-ADJ",
+   "cle": "OKO-AKARE"
+  },
+  {
+   "id": "BJ-PL-ADJ-06",
+   "type": "arrondissement",
+   "parent": "BJ-PL-ADJ",
+   "cle": "TATONNONKON"
+  },
+  {
+   "id": "BJ-PL-IFA-01",
+   "type": "arrondissement",
+   "parent": "BJ-PL-IFA",
+   "cle": "BANIGBE"
+  },
+  {
+   "id": "BJ-PL-IFA-02",
+   "type": "arrondissement",
+   "parent": "BJ-PL-IFA",
+   "cle": "DAAGBE"
+  },
+  {
+   "id": "BJ-PL-IFA-03",
+   "type": "arrondissement",
+   "parent": "BJ-PL-IFA",
+   "cle": "IFANGNI"
+  },
+  {
+   "id": "BJ-PL-IFA-04",
+   "type": "arrondissement",
+   "parent": "BJ-PL-IFA",
+   "cle": "KO-KOUMOLOU"
+  },
+  {
+   "id": "BJ-PL-IFA-05",
+   "type": "arrondissement",
+   "parent": "BJ-PL-IFA",
+   "cle": "LAGBE"
+  },
+  {
+   "id": "BJ-PL-IFA-06",
+   "type": "arrondissement",
+   "parent": "BJ-PL-IFA",
+   "cle": "TCHAADA"
+  },
+  {
+   "id": "BJ-PL-KET-01",
+   "type": "arrondissement",
+   "parent": "BJ-PL-KET",
+   "cle": "ADAKPLAME"
+  },
+  {
+   "id": "BJ-PL-KET-02",
+   "type": "arrondissement",
+   "parent": "BJ-PL-KET",
+   "cle": "IDIGNY"
+  },
+  {
+   "id": "BJ-PL-KET-03",
+   "type": "arrondissement",
+   "parent": "BJ-PL-KET",
+   "cle": "KETOU"
+  },
+  {
+   "id": "BJ-PL-KET-04",
+   "type": "arrondissement",
+   "parent": "BJ-PL-KET",
+   "cle": "KPANKOU"
+  },
+  {
+   "id": "BJ-PL-KET-05",
+   "type": "arrondissement",
+   "parent": "BJ-PL-KET",
+   "cle": "ODOMETA"
+  },
+  {
+   "id": "BJ-PL-KET-06",
+   "type": "arrondissement",
+   "parent": "BJ-PL-KET",
+   "cle": "OKPOMETA"
+  },
+  {
+   "id": "BJ-PL-POB-01",
+   "type": "arrondissement",
+   "parent": "BJ-PL-POB",
+   "cle": "AHOYEYE"
+  },
+  {
+   "id": "BJ-PL-POB-02",
+   "type": "arrondissement",
+   "parent": "BJ-PL-POB",
+   "cle": "IGANA"
+  },
+  {
+   "id": "BJ-PL-POB-03",
+   "type": "arrondissement",
+   "parent": "BJ-PL-POB",
+   "cle": "ISSABA"
+  },
+  {
+   "id": "BJ-PL-POB-04",
+   "type": "arrondissement",
+   "parent": "BJ-PL-POB",
+   "cle": "POBE"
+  },
+  {
+   "id": "BJ-PL-POB-05",
+   "type": "arrondissement",
+   "parent": "BJ-PL-POB",
+   "cle": "TOWE"
+  },
+  {
+   "id": "BJ-PL-SAK-01",
+   "type": "arrondissement",
+   "parent": "BJ-PL-SAK",
+   "cle": "AGUIDI"
+  },
+  {
+   "id": "BJ-PL-SAK-02",
+   "type": "arrondissement",
+   "parent": "BJ-PL-SAK",
+   "cle": "ITA-DJEBOU"
+  },
+  {
+   "id": "BJ-PL-SAK-03",
+   "type": "arrondissement",
+   "parent": "BJ-PL-SAK",
+   "cle": "SAKETE 1"
+  },
+  {
+   "id": "BJ-PL-SAK-04",
+   "type": "arrondissement",
+   "parent": "BJ-PL-SAK",
+   "cle": "SAKETE 2"
+  },
+  {
+   "id": "BJ-PL-SAK-05",
+   "type": "arrondissement",
+   "parent": "BJ-PL-SAK",
+   "cle": "TAKON"
+  },
+  {
+   "id": "BJ-PL-SAK-06",
+   "type": "arrondissement",
+   "parent": "BJ-PL-SAK",
+   "cle": "YOKO"
+  },
+  {
+   "id": "BJ-ZO-ABO-01",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-ABO",
+   "cle": "AGBOKPA"
+  },
+  {
+   "id": "BJ-ZO-ABO-02",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-ABO",
+   "cle": "DETOHOU"
+  },
+  {
+   "id": "BJ-ZO-ABO-03",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-ABO",
+   "cle": "DJEGBE"
+  },
+  {
+   "id": "BJ-ZO-ABO-04",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-ABO",
+   "cle": "HOUNLI"
+  },
+  {
+   "id": "BJ-ZO-ABO-05",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-ABO",
+   "cle": "SEHOUN"
+  },
+  {
+   "id": "BJ-ZO-ABO-06",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-ABO",
+   "cle": "VIDOLE"
+  },
+  {
+   "id": "BJ-ZO-ABO-07",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-ABO",
+   "cle": "ZOUNZONME"
+  },
+  {
+   "id": "BJ-ZO-AGB-01",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-AGB",
+   "cle": "ADANHONDJIGO"
+  },
+  {
+   "id": "BJ-ZO-AGB-02",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-AGB",
+   "cle": "ADINGNIGON"
+  },
+  {
+   "id": "BJ-ZO-AGB-03",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-AGB",
+   "cle": "AGBANGNIZOUN"
+  },
+  {
+   "id": "BJ-ZO-AGB-04",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-AGB",
+   "cle": "KINTA"
+  },
+  {
+   "id": "BJ-ZO-AGB-05",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-AGB",
+   "cle": "KPOTA"
+  },
+  {
+   "id": "BJ-ZO-AGB-06",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-AGB",
+   "cle": "LISSAZOUNME"
+  },
+  {
+   "id": "BJ-ZO-AGB-07",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-AGB",
+   "cle": "SAHE"
+  },
+  {
+   "id": "BJ-ZO-AGB-08",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-AGB",
+   "cle": "SINWE"
+  },
+  {
+   "id": "BJ-ZO-AGB-09",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-AGB",
+   "cle": "TANVE"
+  },
+  {
+   "id": "BJ-ZO-AGB-10",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-AGB",
+   "cle": "ZOUNGOUNDO"
+  },
+  {
+   "id": "BJ-ZO-BOH-01",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-BOH",
+   "cle": "AGONGOINTO"
+  },
+  {
+   "id": "BJ-ZO-BOH-02",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-BOH",
+   "cle": "AVOGBANNA"
+  },
+  {
+   "id": "BJ-ZO-BOH-03",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-BOH",
+   "cle": "BOHICON I"
+  },
+  {
+   "id": "BJ-ZO-BOH-04",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-BOH",
+   "cle": "BOHICON II"
+  },
+  {
+   "id": "BJ-ZO-BOH-05",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-BOH",
+   "cle": "GNIDJAZOUN"
+  },
+  {
+   "id": "BJ-ZO-BOH-06",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-BOH",
+   "cle": "LISSEZOUN"
+  },
+  {
+   "id": "BJ-ZO-BOH-07",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-BOH",
+   "cle": "OUASSAHO"
+  },
+  {
+   "id": "BJ-ZO-BOH-08",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-BOH",
+   "cle": "PASSAGON"
+  },
+  {
+   "id": "BJ-ZO-BOH-09",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-BOH",
+   "cle": "SACLO"
+  },
+  {
+   "id": "BJ-ZO-BOH-10",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-BOH",
+   "cle": "SODOHOME"
+  },
+  {
+   "id": "BJ-ZO-COV-01",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-COV",
+   "cle": "ADOGBE"
+  },
+  {
+   "id": "BJ-ZO-COV-02",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-COV",
+   "cle": "GOUNLI"
+  },
+  {
+   "id": "BJ-ZO-COV-03",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-COV",
+   "cle": "HOUEKO"
+  },
+  {
+   "id": "BJ-ZO-COV-04",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-COV",
+   "cle": "HOUIN-HOUNSO"
+  },
+  {
+   "id": "BJ-ZO-COV-05",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-COV",
+   "cle": "LAÏNTA-COGBE"
+  },
+  {
+   "id": "BJ-ZO-COV-06",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-COV",
+   "cle": "NAOGON"
+  },
+  {
+   "id": "BJ-ZO-COV-07",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-COV",
+   "cle": "SOLI"
+  },
+  {
+   "id": "BJ-ZO-COV-08",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-COV",
+   "cle": "ZOGBA"
+  },
+  {
+   "id": "BJ-ZO-DJI-01",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-DJI",
+   "cle": "AGONDJI"
+  },
+  {
+   "id": "BJ-ZO-DJI-02",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-DJI",
+   "cle": "AGOUNA"
+  },
+  {
+   "id": "BJ-ZO-DJI-03",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-DJI",
+   "cle": "DAN"
+  },
+  {
+   "id": "BJ-ZO-DJI-04",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-DJI",
+   "cle": "DJIDJA"
+  },
+  {
+   "id": "BJ-ZO-DJI-05",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-DJI",
+   "cle": "DOHOUIME"
+  },
+  {
+   "id": "BJ-ZO-DJI-06",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-DJI",
+   "cle": "GOBAIX"
+  },
+  {
+   "id": "BJ-ZO-DJI-07",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-DJI",
+   "cle": "HOUTO"
+  },
+  {
+   "id": "BJ-ZO-DJI-08",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-DJI",
+   "cle": "MONSOUROU"
+  },
+  {
+   "id": "BJ-ZO-DJI-09",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-DJI",
+   "cle": "MOUGNON"
+  },
+  {
+   "id": "BJ-ZO-DJI-10",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-DJI",
+   "cle": "OUMBEGAME"
+  },
+  {
+   "id": "BJ-ZO-DJI-11",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-DJI",
+   "cle": "SETTO"
+  },
+  {
+   "id": "BJ-ZO-DJI-12",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-DJI",
+   "cle": "ZOUNKON"
+  },
+  {
+   "id": "BJ-ZO-OUI-01",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-OUI",
+   "cle": "DASSO"
+  },
+  {
+   "id": "BJ-ZO-OUI-02",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-OUI",
+   "cle": "OUINHI"
+  },
+  {
+   "id": "BJ-ZO-OUI-03",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-OUI",
+   "cle": "SAGON"
+  },
+  {
+   "id": "BJ-ZO-OUI-04",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-OUI",
+   "cle": "TOHOUES"
+  },
+  {
+   "id": "BJ-ZO-ZAK-01",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-ZAK",
+   "cle": "ALLAHE"
+  },
+  {
+   "id": "BJ-ZO-ZAK-02",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-ZAK",
+   "cle": "ASSANLIN"
+  },
+  {
+   "id": "BJ-ZO-ZAK-03",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-ZAK",
+   "cle": "HOUNGOME"
+  },
+  {
+   "id": "BJ-ZO-ZAK-04",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-ZAK",
+   "cle": "KPAKPAME"
+  },
+  {
+   "id": "BJ-ZO-ZAK-05",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-ZAK",
+   "cle": "KPOZOUN"
+  },
+  {
+   "id": "BJ-ZO-ZAK-06",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-ZAK",
+   "cle": "ZA-KPOTA"
+  },
+  {
+   "id": "BJ-ZO-ZAK-07",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-ZAK",
+   "cle": "ZA-TANTA"
+  },
+  {
+   "id": "BJ-ZO-ZAK-08",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-ZAK",
+   "cle": "ZEKO"
+  },
+  {
+   "id": "BJ-ZO-ZAG-01",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-ZAG",
+   "cle": "AGONLIN-HOUEGBO"
+  },
+  {
+   "id": "BJ-ZO-ZAG-02",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-ZAG",
+   "cle": "BANAME"
+  },
+  {
+   "id": "BJ-ZO-ZAG-03",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-ZAG",
+   "cle": "DON-TAN"
+  },
+  {
+   "id": "BJ-ZO-ZAG-04",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-ZAG",
+   "cle": "DOVI"
+  },
+  {
+   "id": "BJ-ZO-ZAG-05",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-ZAG",
+   "cle": "KPEDEKPO"
+  },
+  {
+   "id": "BJ-ZO-ZAG-06",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-ZAG",
+   "cle": "ZAGNANADO"
+  },
+  {
+   "id": "BJ-ZO-ZOG-01",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-ZOG",
+   "cle": "AKIZA"
+  },
+  {
+   "id": "BJ-ZO-ZOG-02",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-ZOG",
+   "cle": "AVLAME"
+  },
+  {
+   "id": "BJ-ZO-ZOG-03",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-ZOG",
+   "cle": "CANA I"
+  },
+  {
+   "id": "BJ-ZO-ZOG-04",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-ZOG",
+   "cle": "CANA II"
+  },
+  {
+   "id": "BJ-ZO-ZOG-05",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-ZOG",
+   "cle": "DOME"
+  },
+  {
+   "id": "BJ-ZO-ZOG-06",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-ZOG",
+   "cle": "KOUSSOUKPA"
+  },
+  {
+   "id": "BJ-ZO-ZOG-07",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-ZOG",
+   "cle": "KPOKISSA"
+  },
+  {
+   "id": "BJ-ZO-ZOG-08",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-ZOG",
+   "cle": "MASSI"
+  },
+  {
+   "id": "BJ-ZO-ZOG-09",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-ZOG",
+   "cle": "TANWE-HESSOU"
+  },
+  {
+   "id": "BJ-ZO-ZOG-10",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-ZOG",
+   "cle": "ZOGBODOMEY"
+  },
+  {
+   "id": "BJ-ZO-ZOG-11",
+   "type": "arrondissement",
+   "parent": "BJ-ZO-ZOG",
+   "cle": "ZOUKOU"
+  }
+ ]
+}

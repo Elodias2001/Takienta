@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "sources": {
+    "loi-97-028": {
+      "intitule": "Loi n°97-028 du 15 janvier 1999 portant organisation de l'administration territoriale de la République du Bénin",
+      "editeur": "Secrétariat général du Gouvernement du Bénin",
+      "nature": "loi",
+      "datePublication": "1999-01-15",
+      "url": "https://sgg.gouv.bj/doc/loi-97-028/download",
+      "dateReleve": "2026-09-28",
+      "sha256": "7380362e3f8abe679f26bbeda9bee193ceceb9f5a7617ccff7bb3919ebc520f1",
+      "archive": "data/sources/loi-97-028.pdf",
+      "confiance": "officielle",
+      "note": "L'article 6 découpe le territoire en douze départements et les nomme. Le texte ne liste ni les communes ni les arrondissements."
+    },
+    "loi-2013-05": {
+      "intitule": "Loi n°2013-05 du 27 mai 2013 portant création, organisation, attributions et fonctionnement des unités administratives locales en République du Bénin, avec son annexe « Liste des unités administratives locales (5290 villages et quartiers de ville) »",
+      "editeur": "Secrétariat général du Gouvernement du Bénin",
+      "nature": "loi",
+      "datePublication": "2013-05-27",
+      "url": "https://sgg.gouv.bj/doc/loi-2013-05/download",
+      "urlsComplementaires": [
+        "https://sgg.gouv.bj/upload/files/documentheque/0341818001477910485.pdf"
+      ],
+      "dateReleve": "2026-10-07",
+      "sha256": "4a894836aaa60045e39711faaadb55c8555874ad0258950b416392ac75c2eb00",
+      "archive": "data/sources/loi-2013-05.pdf",
+      "confiance": "officielle",
+      "note": "Scan de 193 pages, identique octet pour octet au fichier téléchargé sur sgg.gouv.bj le 2026-10-07. L'article 14 annexe à la loi la liste des arrondissements avec leur commune d'appartenance et les villages ou quartiers qui les composent. L'annexe range les communes par département et nomme les 77 communes du Bénin : elle fonde la liste des communes comme celle des arrondissements. Elle imprime les noms en majuscules sans accents, d'où les alias et le champ libelleLoi. Texte adopté le 15 février 2013 et promulgué le 27 mai 2013 : il décrit l'état de 2013. Les modifications ultérieures éventuelles (article 16 : tout changement est fixé par la loi) n'ont pas été recherchées. Le scan est océrisé avec des erreurs de chiffres : les nombres de villages se lisent sur la transcription ci-dessous, recoupée avec lui."
+    },
+    "annexe-loi-2013-05-transcription": {
+      "intitule": "Décentralisation au Bénin : voici l'intégralité des 5290 villages et quartiers créés par l'Assemblée (transcription numérique de l'annexe de la loi 2013-05)",
+      "editeur": "OGE Bénin (Ordre des géomètres-experts du Bénin), d'après le nom de domaine de l'adresse indiquée",
+      "nature": "transcription",
+      "datePublication": null,
+      "url": "https://www.geometre-expert.ogebenin.com/site/1736702149decentralisationaubeninvoicilintegralitedes5290villagesetquartierscreesparlassemblee",
+      "dateReleve": "2026-10-07",
+      "sha256": "5034d7e9ad8be22e2b0fa6b211b7b4db2db9079baf716bb6d0f6d141da4e3fbf",
+      "archive": null,
+      "extrait": "data/sources/loi-2013-05-arrondissements.json",
+      "confiance": "derivee",
+      "note": "PDF de 180 pages fourni par l'auteur du projet, non archivé dans le dépôt (droits de reproduction incertains). Adresse indiquée par l'auteur, non revérifiée : elle répondait 403 le 2026-10-07. Sert uniquement à lire correctement les libellés et les nombres de l'annexe, que le scan océrisé de la loi abîme. Son contenu a été recoupé avec la loi : mêmes totaux de départements (12 sur 12), mêmes nombres de villages pour toutes les communes lisibles sur le scan (64 sur 68, aucun écart), Kandi et Kaobagou vérifiés à l'image."
+    },
+    "decret-2009-202": {
+      "intitule": "Décret n°2009-202 du 13 mai 2009 portant approbation du schéma directeur d'aménagement et d'urbanisme (S.D.A.U.) de la conurbation « Ouidah, Abomey-Calavi, Cotonou, Sème-Kpodji, Porto-Novo » dénommée « Grand Nokoué »",
+      "editeur": "Présidence de la République du Bénin",
+      "nature": "decret",
+      "datePublication": "2009-05-13",
+      "url": null,
+      "dateReleve": "2026-10-07",
+      "sha256": "bda241e61ed34aea71515b34a162be77ab7a7a236ee548ab1ae62a2b785bda06",
+      "archive": "data/sources/decret-2009-202.pdf",
+      "confiance": "officielle",
+      "note": "Copie scannée fournie par l'auteur du projet, URL d'origine inconnue. Texte officiel établissant en 2009 un ensemble « Grand Nokoué » de cinq communes (Ouidah, Abomey-Calavi, Cotonou, Sèmè-Kpodji, Porto-Novo), relevant des départements de l'Ouémé, de l'Atlantique et du Littoral (article 3). Il porte sur l'aménagement et l'urbanisme : ce n'est pas le texte des pôles de développement de 2026, dont il ne fait pas un fondement légal. Il ne désigne aucun chef-lieu et ne traite pas des arrondissements."
+    },
+    "avocevou-2013": {
+      "intitule": "Le Bénin à travers ses 77 communes, 546 arrondissements et 5290 villages et quartiers de ville",
+      "editeur": "Éditions ROGAV",
+      "auteur": "Roger Gbétognon Avocevou",
+      "nature": "ouvrage",
+      "datePublication": "2013",
+      "url": "https://mediatheque-ifbenin.centredoc.org/index.php?lvl=notice_display&id=34652",
+      "urlsComplementaires": [
+        "https://searchworks.stanford.edu/view/10343527"
+      ],
+      "dateReleve": "2026-10-06",
+      "sha256": null,
+      "archive": null,
+      "confiance": "derivee",
+      "note": "Seules les notices de catalogue ont été consultées : le chiffre 546 figure dans le titre, sans méthode de comptage. Les deux notices décrivent le même ouvrage. Source secondaire, antérieure de treize ans."
+    },
+    "communique-marina-2026-09-23": {
+      "intitule": "Présentation des six pôles de développement territorial, Palais de la Marina, Cotonou",
+      "editeur": "Presse béninoise",
+      "nature": "communique-presse",
+      "datePublication": "2026-09-23",
+      "url": null,
+      "dateReleve": "2026-09-27",
+      "sha256": null,
+      "archive": null,
+      "confiance": "provisoire",
+      "note": "Aucun décret ni publication de l'INStaD retrouvé. Liste recoupée en interne (77 communes, aucun doublon ni orphelin face aux 12 départements) : voir data/poles/poles-2026-09-23.json et scripts/verif-poles.py."
+    },
+    "iso-3166-2-bj": {
+      "intitule": "ISO 3166-2:BJ, codes des subdivisions du Bénin",
+      "editeur": "Organisation internationale de normalisation (ISO)",
+      "nature": "norme",
+      "datePublication": null,
+      "url": "https://en.wikipedia.org/wiki/ISO_3166-2:BJ",
+      "dateReleve": "2026-10-06",
+      "sha256": null,
+      "archive": null,
+      "confiance": "derivee",
+      "note": "Source des codes de départements. Consultée par relais (Wikipédia, liste RDF de l'OMG), la norme elle-même n'a pas pu être lue. Dernier changement relevé : graphie de Atakora et Couffo, 2015-11-27."
+    }
+  }
+}

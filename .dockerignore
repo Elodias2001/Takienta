@@ -1,0 +1,19 @@
+node_modules
+**/node_modules
+**/dist
+dist-site
+.venv
+.git
+.github
+local-secrets
+**/__pycache__
+.pytest_cache
+.mypy_cache
+.og-tmp
+*.log
+# Le site n'a besoin ni des paquets Python, ni des archives de sources, ni des contours bruts.
+packages/python
+data/sources
+assets/carte/*.geojson
+assets/carte/*.metadata.json
+docs/cadrage

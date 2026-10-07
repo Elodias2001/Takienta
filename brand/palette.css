@@ -1,0 +1,41 @@
+/* Généré par scripts/build-brand.mjs depuis brand/tokens.json. Ne pas modifier. */
+:root {
+  --tk-banco: #E8DCC8;
+  --tk-encre: #2A211A;
+  --tk-laterite: #B5532A;
+  --tk-chaume: #D9A441;
+  --tk-plaine: #5C7A4A;
+  --tk-laterite-texte: #9C4824;
+  --tk-laterite-sur-encre: #D46F44;
+  --tk-plaine-texte: #4E673E;
+  --tk-plaine-sur-encre: #70955A;
+  --tk-fond: var(--tk-banco);
+  --tk-texte: var(--tk-encre);
+  --tk-secondaire: var(--tk-chaume);
+  --tk-accent: var(--tk-laterite);
+  --tk-accent-texte: var(--tk-laterite-texte);
+  --tk-signal: var(--tk-plaine);
+  --tk-signal-texte: var(--tk-plaine-texte);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --tk-fond: var(--tk-encre);
+    --tk-texte: var(--tk-banco);
+    --tk-secondaire: var(--tk-chaume);
+    --tk-accent: var(--tk-laterite);
+    --tk-accent-texte: var(--tk-laterite-sur-encre);
+    --tk-signal: var(--tk-plaine);
+    --tk-signal-texte: var(--tk-plaine-sur-encre);
+  }
+}
+
+:root[data-theme="dark"] {
+  --tk-fond: var(--tk-encre);
+  --tk-texte: var(--tk-banco);
+  --tk-secondaire: var(--tk-chaume);
+  --tk-accent: var(--tk-laterite);
+  --tk-accent-texte: var(--tk-laterite-sur-encre);
+  --tk-signal: var(--tk-plaine);
+  --tk-signal-texte: var(--tk-plaine-sur-encre);
+}

@@ -1,0 +1,187 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Registre des sources",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "sources"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "sources": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/source"
+      }
+    }
+  },
+  "$defs": {
+    "date": {
+      "type": "string",
+      "pattern": "^\\d{4}(-\\d{2}-\\d{2})?$"
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "intitule",
+        "editeur",
+        "nature",
+        "datePublication",
+        "url",
+        "dateReleve",
+        "sha256",
+        "archive",
+        "confiance",
+        "note"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "intitule": {
+          "type": "string",
+          "minLength": 1
+        },
+        "editeur": {
+          "type": "string",
+          "minLength": 1
+        },
+        "auteur": {
+          "type": "string"
+        },
+        "nature": {
+          "enum": [
+            "loi",
+            "decret",
+            "publication-officielle",
+            "fichier-institutionnel",
+            "ouvrage",
+            "communique-presse",
+            "norme",
+            "transcription"
+          ]
+        },
+        "datePublication": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "url": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "urlsComplementaires": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "dateReleve": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "sha256": {
+          "oneOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "archive": {
+          "oneOf": [
+            {
+              "type": "string",
+              "pattern": "^data/sources/"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "extrait": {
+          "type": "string",
+          "pattern": "^data/sources/"
+        },
+        "confiance": {
+          "enum": [
+            "officielle",
+            "derivee",
+            "provisoire"
+          ]
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "archive": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "archive"
+            ]
+          },
+          "then": {
+            "properties": {
+              "sha256": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "confiance": {
+                "const": "officielle"
+              }
+            },
+            "required": [
+              "confiance"
+            ]
+          },
+          "then": {
+            "properties": {
+              "nature": {
+                "enum": [
+                  "loi",
+                  "decret",
+                  "publication-officielle"
+                ]
+              },
+              "archive": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

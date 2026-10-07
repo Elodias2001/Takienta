@@ -1,0 +1,22 @@
+# Production : même VPS et même Traefik que Sabar, Kpanlingan et Récade.
+# Le projet vivra dans /opt/takienta. SITE_HOST (takienta.sabar.app) se pose dans le .env du serveur,
+# jamais dans le dépôt. Ce fichier n'est utilisé qu'au premier déploiement, que l'auteur demande.
+services:
+  takienta-site:
+    build: !reset null
+    image: ghcr.io/${GHCR_OWNER:-elodias2001}/takienta-site:${IMAGE_TAG:-main}
+    networks: [gcw-public]
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=gcw-public"
+      - "traefik.http.routers.${COMPOSE_PROJECT_NAME:-takienta}-site.rule=Host(`${SITE_HOST}`)"
+      - "traefik.http.routers.${COMPOSE_PROJECT_NAME:-takienta}-site.entrypoints=websecure"
+      - "traefik.http.routers.${COMPOSE_PROJECT_NAME:-takienta}-site.tls=true"
+      - "traefik.http.routers.${COMPOSE_PROJECT_NAME:-takienta}-site.tls.certresolver=letsencrypt"
+      - "traefik.http.services.${COMPOSE_PROJECT_NAME:-takienta}-site.loadbalancer.server.port=8080"
+
+networks:
+  # Réseau partagé avec le stack Traefik, créé une seule fois côté /opt/gcw/traefik/
+  # et référencé en `external` par tous les projets.
+  gcw-public:
+    external: true

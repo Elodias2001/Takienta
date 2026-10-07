@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "calque": "poles",
+  "effectifAu": "2026-09-23",
+  "provisoire": true,
+  "poles": [
+    {
+      "id": "PO-NO",
+      "nom": "Nord-Ouest",
+      "chefLieu": "BJ-AK-NAT",
+      "communes": [
+        "BJ-AK-NAT",
+        "BJ-DO-BAS",
+        "BJ-AK-BOU",
+        "BJ-AK-COB",
+        "BJ-DO-COP",
+        "BJ-DO-DJO",
+        "BJ-AK-KER",
+        "BJ-AK-KOU",
+        "BJ-AK-MAT",
+        "BJ-DO-OUA",
+        "BJ-AK-PEH",
+        "BJ-AK-TAN",
+        "BJ-AK-TOU"
+      ],
+      "source": "communique-marina-2026-09-23",
+      "confiance": "provisoire"
+    },
+    {
+      "id": "PO-NE",
+      "nom": "Nord-Est",
+      "chefLieu": "BJ-BO-PAR",
+      "communes": [
+        "BJ-BO-PAR",
+        "BJ-AL-BAN",
+        "BJ-BO-BEM",
+        "BJ-AL-GOG",
+        "BJ-BO-KAL",
+        "BJ-AL-KAN",
+        "BJ-AL-KAR",
+        "BJ-AL-MAL",
+        "BJ-BO-NDA",
+        "BJ-BO-NIK",
+        "BJ-BO-PER",
+        "BJ-AL-SEG",
+        "BJ-BO-SIN",
+        "BJ-BO-TCH"
+      ],
+      "source": "communique-marina-2026-09-23",
+      "confiance": "provisoire"
+    },
+    {
+      "id": "PO-CE",
+      "nom": "Centre",
+      "chefLieu": "BJ-ZO-ABO",
+      "communes": [
+        "BJ-ZO-ABO",
+        "BJ-ZO-AGB",
+        "BJ-CO-BAN",
+        "BJ-ZO-BOH",
+        "BJ-ZO-COV",
+        "BJ-CO-DAS",
+        "BJ-ZO-DJI",
+        "BJ-CO-GLA",
+        "BJ-CO-OUE",
+        "BJ-ZO-OUI",
+        "BJ-CO-SAVA",
+        "BJ-CO-SAVE",
+        "BJ-ZO-ZAK",
+        "BJ-ZO-ZAG",
+        "BJ-ZO-ZOG"
+      ],
+      "source": "communique-marina-2026-09-23",
+      "confiance": "provisoire"
+    },
+    {
+      "id": "PO-SO",
+      "nom": "Sud-Ouest",
+      "chefLieu": "BJ-MO-LOK",
+      "communes": [
+        "BJ-MO-LOK",
+        "BJ-AQ-ALL",
+        "BJ-KO-APL",
+        "BJ-MO-ATH",
+        "BJ-MO-BOP",
+        "BJ-MO-COM",
+        "BJ-KO-DJA",
+        "BJ-KO-DOG",
+        "BJ-MO-GRA",
+        "BJ-MO-HOU",
+        "BJ-KO-KLO",
+        "BJ-AQ-KPO",
+        "BJ-KO-LAL",
+        "BJ-AQ-SOA",
+        "BJ-AQ-TOF",
+        "BJ-AQ-TOR",
+        "BJ-KO-TOV",
+        "BJ-AQ-ZE"
+      ],
+      "source": "communique-marina-2026-09-23",
+      "confiance": "provisoire"
+    },
+    {
+      "id": "PO-SE",
+      "nom": "Sud-Est",
+      "chefLieu": "BJ-PL-POB",
+      "communes": [
+        "BJ-PL-POB",
+        "BJ-PL-ADJ",
+        "BJ-OU-ADJA",
+        "BJ-OU-ADJO",
+        "BJ-OU-AGU",
+        "BJ-OU-AKP",
+        "BJ-OU-AVR",
+        "BJ-OU-BON",
+        "BJ-OU-DAN",
+        "BJ-PL-IFA",
+        "BJ-PL-KET",
+        "BJ-PL-SAK"
+      ],
+      "source": "communique-marina-2026-09-23",
+      "confiance": "provisoire"
+    },
+    {
+      "id": "PO-GN",
+      "nom": "Grand-Nokoué",
+      "chefLieu": null,
+      "communes": [
+        "BJ-AQ-ABO",
+        "BJ-LI-COT",
+        "BJ-AQ-OUI",
+        "BJ-OU-POR",
+        "BJ-OU-SEM"
+      ],
+      "source": "communique-marina-2026-09-23",
+      "confiance": "provisoire"
+    }
+  ]
+}

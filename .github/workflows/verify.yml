@@ -1,0 +1,50 @@
+# Portail qualité : types, tests des deux paquets, parité JS/Python, site, image.
+# Rien ne se construit ni ne se déploie si ce workflow échoue.
+# Il n'y a volontairement AUCUN workflow de déploiement dans ce dépôt : il sera ajouté sur demande,
+# et ne devra jamais se déclencher seul sur un push.
+name: Verify
+
+on:
+  workflow_call: {}
+
+jobs:
+  verify:
+    name: Types · tests · parité · site
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      matrix:
+        python: ["3.9", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: pnpm install --frozen-lockfile
+      - run: python -m pip install -r requirements-dev.txt
+      # Les données canoniques doivent être celles que le pipeline produit : zéro réseau.
+      - run: python scripts/construire-donnees.py --verifier
+      - run: pnpm type-check
+      # Génère, construit, teste le paquet JS, dont le poids de l'import par défaut.
+      - run: pnpm --filter benin-geo test
+      - run: python -m mypy --strict packages/python/src/benin_geo
+      - run: python -m pytest packages/python
+      # Données, schémas, marque, carte, et parité JS/Python (lit packages/js/dist).
+      - run: python -m pytest tests
+      - run: pnpm test:site
+      - run: pnpm build:site
+      - run: python -m build packages/python
+
+  image:
+    name: Image du site
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      # Construit, ne pousse rien.
+      - run: docker build -t takienta-site:ci .
