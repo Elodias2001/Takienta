@@ -1,0 +1,790 @@
+[
+  {
+    "id": "BJ-AK-BOU",
+    "type": "commune",
+    "nom": "Boukombé",
+    "tri": "boukombe",
+    "parent": "BJ-AK",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle",
+    "alias": [
+      "BOUKOUMBE"
+    ]
+  },
+  {
+    "id": "BJ-AK-COB",
+    "type": "commune",
+    "nom": "Cobly",
+    "tri": "cobly",
+    "parent": "BJ-AK",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-AK-KER",
+    "type": "commune",
+    "nom": "Kérou",
+    "tri": "kerou",
+    "parent": "BJ-AK",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-AK-KOU",
+    "type": "commune",
+    "nom": "Kouandé",
+    "tri": "kouande",
+    "parent": "BJ-AK",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-AK-MAT",
+    "type": "commune",
+    "nom": "Matéri",
+    "tri": "materi",
+    "parent": "BJ-AK",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-AK-NAT",
+    "type": "commune",
+    "nom": "Natitingou",
+    "tri": "natitingou",
+    "parent": "BJ-AK",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-AK-PEH",
+    "type": "commune",
+    "nom": "Péhunco",
+    "tri": "pehunco",
+    "parent": "BJ-AK",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle",
+    "alias": [
+      "OUASSA-PEHUNCO"
+    ]
+  },
+  {
+    "id": "BJ-AK-TAN",
+    "type": "commune",
+    "nom": "Tanguiéta",
+    "tri": "tanguieta",
+    "parent": "BJ-AK",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-AK-TOU",
+    "type": "commune",
+    "nom": "Toucountouna",
+    "tri": "toucountouna",
+    "parent": "BJ-AK",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle",
+    "alias": [
+      "TOUKOUNTOUNA"
+    ]
+  },
+  {
+    "id": "BJ-AL-BAN",
+    "type": "commune",
+    "nom": "Banikoara",
+    "tri": "banikoara",
+    "parent": "BJ-AL",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-AL-GOG",
+    "type": "commune",
+    "nom": "Gogounou",
+    "tri": "gogounou",
+    "parent": "BJ-AL",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-AL-KAN",
+    "type": "commune",
+    "nom": "Kandi",
+    "tri": "kandi",
+    "parent": "BJ-AL",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-AL-KAR",
+    "type": "commune",
+    "nom": "Karimama",
+    "tri": "karimama",
+    "parent": "BJ-AL",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-AL-MAL",
+    "type": "commune",
+    "nom": "Malanville",
+    "tri": "malanville",
+    "parent": "BJ-AL",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-AL-SEG",
+    "type": "commune",
+    "nom": "Ségbana",
+    "tri": "segbana",
+    "parent": "BJ-AL",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-AQ-ABO",
+    "type": "commune",
+    "nom": "Abomey-Calavi",
+    "tri": "abomey-calavi",
+    "parent": "BJ-AQ",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-AQ-ALL",
+    "type": "commune",
+    "nom": "Allada",
+    "tri": "allada",
+    "parent": "BJ-AQ",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-AQ-KPO",
+    "type": "commune",
+    "nom": "Kpomassè",
+    "tri": "kpomasse",
+    "parent": "BJ-AQ",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-AQ-OUI",
+    "type": "commune",
+    "nom": "Ouidah",
+    "tri": "ouidah",
+    "parent": "BJ-AQ",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-AQ-SOA",
+    "type": "commune",
+    "nom": "Sô-Ava",
+    "tri": "so-ava",
+    "parent": "BJ-AQ",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-AQ-TOF",
+    "type": "commune",
+    "nom": "Toffo",
+    "tri": "toffo",
+    "parent": "BJ-AQ",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-AQ-TOR",
+    "type": "commune",
+    "nom": "Tori-Bossito",
+    "tri": "tori-bossito",
+    "parent": "BJ-AQ",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-AQ-ZE",
+    "type": "commune",
+    "nom": "Zè",
+    "tri": "ze",
+    "parent": "BJ-AQ",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-BO-BEM",
+    "type": "commune",
+    "nom": "Bembèrèkè",
+    "tri": "bembereke",
+    "parent": "BJ-BO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-BO-KAL",
+    "type": "commune",
+    "nom": "Kalalé",
+    "tri": "kalale",
+    "parent": "BJ-BO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-BO-NDA",
+    "type": "commune",
+    "nom": "N'Dali",
+    "tri": "n'dali",
+    "parent": "BJ-BO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-BO-NIK",
+    "type": "commune",
+    "nom": "Nikki",
+    "tri": "nikki",
+    "parent": "BJ-BO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-BO-PAR",
+    "type": "commune",
+    "nom": "Parakou",
+    "tri": "parakou",
+    "parent": "BJ-BO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-BO-PER",
+    "type": "commune",
+    "nom": "Pèrèrè",
+    "tri": "perere",
+    "parent": "BJ-BO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-BO-SIN",
+    "type": "commune",
+    "nom": "Sinendé",
+    "tri": "sinende",
+    "parent": "BJ-BO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-BO-TCH",
+    "type": "commune",
+    "nom": "Tchaourou",
+    "tri": "tchaourou",
+    "parent": "BJ-BO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-CO-BAN",
+    "type": "commune",
+    "nom": "Bantè",
+    "tri": "bante",
+    "parent": "BJ-CO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-CO-DAS",
+    "type": "commune",
+    "nom": "Dassa-Zoumè",
+    "tri": "dassa-zoume",
+    "parent": "BJ-CO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-CO-GLA",
+    "type": "commune",
+    "nom": "Glazoué",
+    "tri": "glazoue",
+    "parent": "BJ-CO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-CO-OUE",
+    "type": "commune",
+    "nom": "Ouèssè",
+    "tri": "ouesse",
+    "parent": "BJ-CO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-CO-SAVA",
+    "type": "commune",
+    "nom": "Savalou",
+    "tri": "savalou",
+    "parent": "BJ-CO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-CO-SAVE",
+    "type": "commune",
+    "nom": "Savè",
+    "tri": "save",
+    "parent": "BJ-CO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-DO-BAS",
+    "type": "commune",
+    "nom": "Bassila",
+    "tri": "bassila",
+    "parent": "BJ-DO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-DO-COP",
+    "type": "commune",
+    "nom": "Copargo",
+    "tri": "copargo",
+    "parent": "BJ-DO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-DO-DJO",
+    "type": "commune",
+    "nom": "Djougou",
+    "tri": "djougou",
+    "parent": "BJ-DO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-DO-OUA",
+    "type": "commune",
+    "nom": "Ouaké",
+    "tri": "ouake",
+    "parent": "BJ-DO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-KO-APL",
+    "type": "commune",
+    "nom": "Aplahoué",
+    "tri": "aplahoue",
+    "parent": "BJ-KO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-KO-DJA",
+    "type": "commune",
+    "nom": "Djakotomey",
+    "tri": "djakotomey",
+    "parent": "BJ-KO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-KO-DOG",
+    "type": "commune",
+    "nom": "Dogbo",
+    "tri": "dogbo",
+    "parent": "BJ-KO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-KO-KLO",
+    "type": "commune",
+    "nom": "Klouékanmè",
+    "tri": "klouekanme",
+    "parent": "BJ-KO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle",
+    "alias": [
+      "KLOUEKANMEY"
+    ]
+  },
+  {
+    "id": "BJ-KO-LAL",
+    "type": "commune",
+    "nom": "Lalo",
+    "tri": "lalo",
+    "parent": "BJ-KO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-KO-TOV",
+    "type": "commune",
+    "nom": "Toviklin",
+    "tri": "toviklin",
+    "parent": "BJ-KO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-LI-COT",
+    "type": "commune",
+    "nom": "Cotonou",
+    "tri": "cotonou",
+    "parent": "BJ-LI",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-MO-ATH",
+    "type": "commune",
+    "nom": "Athiémé",
+    "tri": "athieme",
+    "parent": "BJ-MO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-MO-BOP",
+    "type": "commune",
+    "nom": "Bopa",
+    "tri": "bopa",
+    "parent": "BJ-MO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-MO-COM",
+    "type": "commune",
+    "nom": "Comè",
+    "tri": "come",
+    "parent": "BJ-MO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-MO-GRA",
+    "type": "commune",
+    "nom": "Grand-Popo",
+    "tri": "grand-popo",
+    "parent": "BJ-MO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-MO-HOU",
+    "type": "commune",
+    "nom": "Houéyogbé",
+    "tri": "houeyogbe",
+    "parent": "BJ-MO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-MO-LOK",
+    "type": "commune",
+    "nom": "Lokossa",
+    "tri": "lokossa",
+    "parent": "BJ-MO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-OU-ADJA",
+    "type": "commune",
+    "nom": "Adjarra",
+    "tri": "adjarra",
+    "parent": "BJ-OU",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-OU-ADJO",
+    "type": "commune",
+    "nom": "Adjohoun",
+    "tri": "adjohoun",
+    "parent": "BJ-OU",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-OU-AGU",
+    "type": "commune",
+    "nom": "Les Aguégués",
+    "tri": "aguegues",
+    "parent": "BJ-OU",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle",
+    "alias": [
+      "AGUEGUES"
+    ]
+  },
+  {
+    "id": "BJ-OU-AKP",
+    "type": "commune",
+    "nom": "Akpro-Missérété",
+    "tri": "akpro-misserete",
+    "parent": "BJ-OU",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-OU-AVR",
+    "type": "commune",
+    "nom": "Avrankou",
+    "tri": "avrankou",
+    "parent": "BJ-OU",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-OU-BON",
+    "type": "commune",
+    "nom": "Bonou",
+    "tri": "bonou",
+    "parent": "BJ-OU",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-OU-DAN",
+    "type": "commune",
+    "nom": "Dangbo",
+    "tri": "dangbo",
+    "parent": "BJ-OU",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-OU-POR",
+    "type": "commune",
+    "nom": "Porto-Novo",
+    "tri": "porto-novo",
+    "parent": "BJ-OU",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-OU-SEM",
+    "type": "commune",
+    "nom": "Sèmè-Kpodji",
+    "tri": "seme-kpodji",
+    "parent": "BJ-OU",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle",
+    "alias": [
+      "SEME-PODJI"
+    ]
+  },
+  {
+    "id": "BJ-PL-ADJ",
+    "type": "commune",
+    "nom": "Adja-Ouèrè",
+    "tri": "adja-ouere",
+    "parent": "BJ-PL",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-PL-IFA",
+    "type": "commune",
+    "nom": "Ifangni",
+    "tri": "ifangni",
+    "parent": "BJ-PL",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-PL-KET",
+    "type": "commune",
+    "nom": "Kétou",
+    "tri": "ketou",
+    "parent": "BJ-PL",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-PL-POB",
+    "type": "commune",
+    "nom": "Pobè",
+    "tri": "pobe",
+    "parent": "BJ-PL",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-PL-SAK",
+    "type": "commune",
+    "nom": "Sakété",
+    "tri": "sakete",
+    "parent": "BJ-PL",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-ZO-ABO",
+    "type": "commune",
+    "nom": "Abomey",
+    "tri": "abomey",
+    "parent": "BJ-ZO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-ZO-AGB",
+    "type": "commune",
+    "nom": "Agbangnizoun",
+    "tri": "agbangnizoun",
+    "parent": "BJ-ZO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-ZO-BOH",
+    "type": "commune",
+    "nom": "Bohicon",
+    "tri": "bohicon",
+    "parent": "BJ-ZO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-ZO-COV",
+    "type": "commune",
+    "nom": "Covè",
+    "tri": "cove",
+    "parent": "BJ-ZO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-ZO-DJI",
+    "type": "commune",
+    "nom": "Djidja",
+    "tri": "djidja",
+    "parent": "BJ-ZO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-ZO-OUI",
+    "type": "commune",
+    "nom": "Ouinhi",
+    "tri": "ouinhi",
+    "parent": "BJ-ZO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-ZO-ZAK",
+    "type": "commune",
+    "nom": "Za-Kpota",
+    "tri": "za-kpota",
+    "parent": "BJ-ZO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-ZO-ZAG",
+    "type": "commune",
+    "nom": "Zagnanado",
+    "tri": "zagnanado",
+    "parent": "BJ-ZO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-ZO-ZOG",
+    "type": "commune",
+    "nom": "Zogbodomey",
+    "tri": "zogbodomey",
+    "parent": "BJ-ZO",
+    "source": "loi-2013-05",
+    "releveLe": "2026-10-07",
+    "confiance": "officielle"
+  }
+]

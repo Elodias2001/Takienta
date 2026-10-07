@@ -1,0 +1,122 @@
+[
+  {
+    "id": "BJ-AL",
+    "type": "departement",
+    "nom": "Alibori",
+    "tri": "alibori",
+    "parent": null,
+    "source": "loi-97-028",
+    "releveLe": "2026-09-28",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-AK",
+    "type": "departement",
+    "nom": "Atacora",
+    "tri": "atacora",
+    "parent": null,
+    "source": "loi-97-028",
+    "releveLe": "2026-09-28",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-AQ",
+    "type": "departement",
+    "nom": "Atlantique",
+    "tri": "atlantique",
+    "parent": null,
+    "source": "loi-97-028",
+    "releveLe": "2026-09-28",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-BO",
+    "type": "departement",
+    "nom": "Borgou",
+    "tri": "borgou",
+    "parent": null,
+    "source": "loi-97-028",
+    "releveLe": "2026-09-28",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-CO",
+    "type": "departement",
+    "nom": "Collines",
+    "tri": "collines",
+    "parent": null,
+    "source": "loi-97-028",
+    "releveLe": "2026-09-28",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-KO",
+    "type": "departement",
+    "nom": "Couffo",
+    "tri": "couffo",
+    "parent": null,
+    "source": "loi-97-028",
+    "releveLe": "2026-09-28",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-DO",
+    "type": "departement",
+    "nom": "Donga",
+    "tri": "donga",
+    "parent": null,
+    "source": "loi-97-028",
+    "releveLe": "2026-09-28",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-LI",
+    "type": "departement",
+    "nom": "Littoral",
+    "tri": "littoral",
+    "parent": null,
+    "source": "loi-97-028",
+    "releveLe": "2026-09-28",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-MO",
+    "type": "departement",
+    "nom": "Mono",
+    "tri": "mono",
+    "parent": null,
+    "source": "loi-97-028",
+    "releveLe": "2026-09-28",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-OU",
+    "type": "departement",
+    "nom": "Ouémé",
+    "tri": "oueme",
+    "parent": null,
+    "source": "loi-97-028",
+    "releveLe": "2026-09-28",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-PL",
+    "type": "departement",
+    "nom": "Plateau",
+    "tri": "plateau",
+    "parent": null,
+    "source": "loi-97-028",
+    "releveLe": "2026-09-28",
+    "confiance": "officielle"
+  },
+  {
+    "id": "BJ-ZO",
+    "type": "departement",
+    "nom": "Zou",
+    "tri": "zou",
+    "parent": null,
+    "source": "loi-97-028",
+    "releveLe": "2026-09-28",
+    "confiance": "officielle"
+  }
+]

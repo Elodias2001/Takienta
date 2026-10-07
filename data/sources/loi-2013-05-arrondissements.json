@@ -1,0 +1,10654 @@
+{
+ "schemaVersion": 1,
+ "source": {
+  "loi": {
+   "fichier": "loi-2013-05.pdf",
+   "sha256": "4a894836aaa60045e39711faaadb55c8555874ad0258950b416392ac75c2eb00",
+   "archive": "data/sources/loi-2013-05.pdf"
+  },
+  "transcription": {
+   "fichier": "1736702108-161080646pdfpdf.pdf",
+   "sha256": "5034d7e9ad8be22e2b0fa6b211b7b4db2db9079baf716bb6d0f6d141da4e3fbf",
+   "archive": null
+  }
+ },
+ "note": "Libellés d'arrondissement tels qu'imprimés dans l'annexe (majuscules sans accents), noms de villages avec leur graphie. Aucune correction. Chaque liste de villages compte le nombre annoncé dans son en-tête.",
+ "departements": [
+  {
+   "libelle": "ALIBORI",
+   "villagesAnnonces": 395
+  },
+  {
+   "libelle": "ATACORA",
+   "villagesAnnonces": 517
+  },
+  {
+   "libelle": "ATLANTIQUE",
+   "villagesAnnonces": null
+  },
+  {
+   "libelle": "BORGOU",
+   "villagesAnnonces": 541
+  },
+  {
+   "libelle": "COLLINES",
+   "villagesAnnonces": 444
+  },
+  {
+   "libelle": "COUFFO",
+   "villagesAnnonces": 450
+  },
+  {
+   "libelle": "DONGA",
+   "villagesAnnonces": 281
+  },
+  {
+   "libelle": "LITTORAL",
+   "villagesAnnonces": 165
+  },
+  {
+   "libelle": "MONO",
+   "villagesAnnonces": 400
+  },
+  {
+   "libelle": "OUEME",
+   "villagesAnnonces": 488
+  },
+  {
+   "libelle": "PLATEAU",
+   "villagesAnnonces": 362
+  },
+  {
+   "libelle": "ZOU",
+   "villagesAnnonces": 527
+  }
+ ],
+ "communes": [
+  {
+   "departement": "ALIBORI",
+   "libelle": "KANDI",
+   "villagesAnnonces": 82
+  },
+  {
+   "departement": "ALIBORI",
+   "libelle": "MALANVILLE",
+   "villagesAnnonces": 58
+  },
+  {
+   "departement": "ALIBORI",
+   "libelle": "KARIMAMA",
+   "villagesAnnonces": 37
+  },
+  {
+   "departement": "ALIBORI",
+   "libelle": "BANIKOARA",
+   "villagesAnnonces": 112
+  },
+  {
+   "departement": "ALIBORI",
+   "libelle": "GOGOUNOU",
+   "villagesAnnonces": 66
+  },
+  {
+   "departement": "ALIBORI",
+   "libelle": "SEGBANA",
+   "villagesAnnonces": 40
+  },
+  {
+   "departement": "ATACORA",
+   "libelle": "BOUKOUMBE",
+   "villagesAnnonces": 93
+  },
+  {
+   "departement": "ATACORA",
+   "libelle": "COBLY",
+   "villagesAnnonces": 34
+  },
+  {
+   "departement": "ATACORA",
+   "libelle": "MATERI",
+   "villagesAnnonces": 77
+  },
+  {
+   "departement": "ATACORA",
+   "libelle": "TANGUIETA",
+   "villagesAnnonces": 59
+  },
+  {
+   "departement": "ATACORA",
+   "libelle": "KEROU",
+   "villagesAnnonces": 43
+  },
+  {
+   "departement": "ATACORA",
+   "libelle": "KOUANDE",
+   "villagesAnnonces": 72
+  },
+  {
+   "departement": "ATACORA",
+   "libelle": "NATITINGOU",
+   "villagesAnnonces": 76
+  },
+  {
+   "departement": "ATACORA",
+   "libelle": "OUASSA-PEHUNCO",
+   "villagesAnnonces": 35
+  },
+  {
+   "departement": "ATACORA",
+   "libelle": "TOUKOUNTOUNA",
+   "villagesAnnonces": 30
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "libelle": "ALLADA",
+   "villagesAnnonces": 112
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "libelle": "KPOMASSE",
+   "villagesAnnonces": 76
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "libelle": "OUIDAH",
+   "villagesAnnonces": 77
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "libelle": "TOFFO",
+   "villagesAnnonces": 76
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "libelle": "TORI-BOSSITO",
+   "villagesAnnonces": 58
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "libelle": "ABOMEY-CALAVI",
+   "villagesAnnonces": 149
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "libelle": "SO-AVA",
+   "villagesAnnonces": 69
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "libelle": "ZE",
+   "villagesAnnonces": 101
+  },
+  {
+   "departement": "BORGOU",
+   "libelle": "BEMBEREKE",
+   "villagesAnnonces": 58
+  },
+  {
+   "departement": "BORGOU",
+   "libelle": "NIKKI",
+   "villagesAnnonces": 91
+  },
+  {
+   "departement": "BORGOU",
+   "libelle": "SINENDE",
+   "villagesAnnonces": 43
+  },
+  {
+   "departement": "BORGOU",
+   "libelle": "KALALE",
+   "villagesAnnonces": 76
+  },
+  {
+   "departement": "BORGOU",
+   "libelle": "PARAKOU",
+   "villagesAnnonces": 58
+  },
+  {
+   "departement": "BORGOU",
+   "libelle": "N’DALI",
+   "villagesAnnonces": 64
+  },
+  {
+   "departement": "BORGOU",
+   "libelle": "PERERE",
+   "villagesAnnonces": 61
+  },
+  {
+   "departement": "BORGOU",
+   "libelle": "TCHAOUROU",
+   "villagesAnnonces": 90
+  },
+  {
+   "departement": "COLLINES",
+   "libelle": "BANTE",
+   "villagesAnnonces": 49
+  },
+  {
+   "departement": "COLLINES",
+   "libelle": "DASSA-ZOUME",
+   "villagesAnnonces": 93
+  },
+  {
+   "departement": "COLLINES",
+   "libelle": "SAVALOU",
+   "villagesAnnonces": 111
+  },
+  {
+   "departement": "COLLINES",
+   "libelle": "GLAZOUE",
+   "villagesAnnonces": 68
+  },
+  {
+   "departement": "COLLINES",
+   "libelle": "OUESSE",
+   "villagesAnnonces": 63
+  },
+  {
+   "departement": "COLLINES",
+   "libelle": "SAVE",
+   "villagesAnnonces": 60
+  },
+  {
+   "departement": "COUFFO",
+   "libelle": "APLAHOUE",
+   "villagesAnnonces": 92
+  },
+  {
+   "departement": "COUFFO",
+   "libelle": "DJAKOTOMEY",
+   "villagesAnnonces": 85
+  },
+  {
+   "departement": "COUFFO",
+   "libelle": "KLOUEKANMEY",
+   "villagesAnnonces": 76
+  },
+  {
+   "departement": "COUFFO",
+   "libelle": "DOGBO",
+   "villagesAnnonces": 65
+  },
+  {
+   "departement": "COUFFO",
+   "libelle": "LALO",
+   "villagesAnnonces": 67
+  },
+  {
+   "departement": "COUFFO",
+   "libelle": "TOVIKLIN",
+   "villagesAnnonces": 65
+  },
+  {
+   "departement": "DONGA",
+   "libelle": "DJOUGOU",
+   "villagesAnnonces": 122
+  },
+  {
+   "departement": "DONGA",
+   "libelle": "BASSILA",
+   "villagesAnnonces": 52
+  },
+  {
+   "departement": "DONGA",
+   "libelle": "COPARGO",
+   "villagesAnnonces": 46
+  },
+  {
+   "departement": "DONGA",
+   "libelle": "OUAKE",
+   "villagesAnnonces": 61
+  },
+  {
+   "departement": "MONO",
+   "libelle": "ATHIEME",
+   "villagesAnnonces": 61
+  },
+  {
+   "departement": "MONO",
+   "libelle": "COME",
+   "villagesAnnonces": 51
+  },
+  {
+   "departement": "MONO",
+   "libelle": "GRAND-POPO",
+   "villagesAnnonces": 60
+  },
+  {
+   "departement": "MONO",
+   "libelle": "BOPA",
+   "villagesAnnonces": 83
+  },
+  {
+   "departement": "MONO",
+   "libelle": "HOUEYOGBE",
+   "villagesAnnonces": 80
+  },
+  {
+   "departement": "MONO",
+   "libelle": "LOKOSSA",
+   "villagesAnnonces": 65
+  },
+  {
+   "departement": "OUEME",
+   "libelle": "PORTO-NOVO",
+   "villagesAnnonces": 100
+  },
+  {
+   "departement": "OUEME",
+   "libelle": "ADJARRA",
+   "villagesAnnonces": 53
+  },
+  {
+   "departement": "OUEME",
+   "libelle": "AGUEGUES",
+   "villagesAnnonces": 23
+  },
+  {
+   "departement": "OUEME",
+   "libelle": "SEME-PODJI",
+   "villagesAnnonces": 55
+  },
+  {
+   "departement": "OUEME",
+   "libelle": "ADJOHOUN",
+   "villagesAnnonces": 64
+  },
+  {
+   "departement": "OUEME",
+   "libelle": "AKPRO-MISSERETE",
+   "villagesAnnonces": 50
+  },
+  {
+   "departement": "OUEME",
+   "libelle": "AVRANKOU",
+   "villagesAnnonces": 59
+  },
+  {
+   "departement": "OUEME",
+   "libelle": "BONOU",
+   "villagesAnnonces": 34
+  },
+  {
+   "departement": "OUEME",
+   "libelle": "DANGBO",
+   "villagesAnnonces": 50
+  },
+  {
+   "departement": "PLATEAU",
+   "libelle": "ADJA-OUERE",
+   "villagesAnnonces": 76
+  },
+  {
+   "departement": "PLATEAU",
+   "libelle": "IFANGNI",
+   "villagesAnnonces": 69
+  },
+  {
+   "departement": "PLATEAU",
+   "libelle": "SAKETE",
+   "villagesAnnonces": 80
+  },
+  {
+   "departement": "PLATEAU",
+   "libelle": "KETOU",
+   "villagesAnnonces": 79
+  },
+  {
+   "departement": "PLATEAU",
+   "libelle": "POBE",
+   "villagesAnnonces": 58
+  },
+  {
+   "departement": "ZOU",
+   "libelle": "ABOMEY",
+   "villagesAnnonces": 41
+  },
+  {
+   "departement": "ZOU",
+   "libelle": "AGBANGNIZOUN",
+   "villagesAnnonces": 53
+  },
+  {
+   "departement": "ZOU",
+   "libelle": "BOHICON",
+   "villagesAnnonces": 66
+  },
+  {
+   "departement": "ZOU",
+   "libelle": "DJIDJA",
+   "villagesAnnonces": 95
+  },
+  {
+   "departement": "ZOU",
+   "libelle": "COVE",
+   "villagesAnnonces": 40
+  },
+  {
+   "departement": "ZOU",
+   "libelle": "OUINHI",
+   "villagesAnnonces": 40
+  },
+  {
+   "departement": "ZOU",
+   "libelle": "ZAGNANADO",
+   "villagesAnnonces": 43
+  },
+  {
+   "departement": "ZOU",
+   "libelle": "ZA-KPOTA",
+   "villagesAnnonces": 69
+  },
+  {
+   "departement": "ZOU",
+   "libelle": "ZOGBODOMEY",
+   "villagesAnnonces": 80
+  }
+ ],
+ "arrondissements": [
+  {
+   "departement": "ALIBORI",
+   "commune": "KANDI",
+   "libelle": "ANGARADEBOU",
+   "rang": null,
+   "villagesAnnonces": 14,
+   "villages": [
+    "Akoïtchaou",
+    "Alfakoara",
+    "Angaradébou",
+    "Dogban",
+    "Fafa",
+    "Fouet",
+    "Kabagbèdè",
+    "Kpalolo",
+    "Sékalé",
+    "Sondo",
+    "Soundou",
+    "Tchoka",
+    "Thuy",
+    "Thya"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "KANDI",
+   "libelle": "BENSEKOU",
+   "rang": null,
+   "villagesAnnonces": 3,
+   "villages": [
+    "Bensékou",
+    "Gogbêdé",
+    "Koutakroukou"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "KANDI",
+   "libelle": "DONWARI",
+   "rang": null,
+   "villagesAnnonces": 13,
+   "villages": [
+    "Dinin",
+    "Dinin Peulh",
+    "Donwari",
+    "Donwari-Peulh",
+    "Gambanè",
+    "Gambanè-Peulh",
+    "Kpéssarou",
+    "Mongo",
+    "Mongo-Peulh",
+    "Sidérou",
+    "Tissarou",
+    "Tissarou-Peulh",
+    "Touko"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "KANDI",
+   "libelle": "KANDI 1",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Damadi",
+    "Dodopanin",
+    "Gando-Kossikana",
+    "Gansosso-Gbiga",
+    "Gansosso-Yiroussé",
+    "Kadjèrè",
+    "Kéféri-Hinkanté",
+    "Kéféri-Sinté",
+    "Pédé"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "KANDI",
+   "libelle": "KANDI 2",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Al Barika",
+    "Alékparé",
+    "Banigourou",
+    "Baobab",
+    "Kossarou",
+    "Madina",
+    "Zerman-Kouré"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "KANDI",
+   "libelle": "KANDI 3",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Bakpara",
+    "Héboumey",
+    "Kandi-Fô",
+    "Kandi-Fô-Peulh",
+    "Lafiarou",
+    "Podo",
+    "Sinikoussou-Béri"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "KANDI",
+   "libelle": "KASSAKOU",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Firi",
+    "Gbokoukou",
+    "Gogoré",
+    "Kassakou",
+    "Padé",
+    "Padé-Peulh",
+    "Pégon"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "KANDI",
+   "libelle": "SAAH",
+   "rang": null,
+   "villagesAnnonces": 4,
+   "villages": [
+    "Banikani",
+    "Fouré",
+    "Lolo",
+    "Saah"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "KANDI",
+   "libelle": "SAM",
+   "rang": null,
+   "villagesAnnonces": 12,
+   "villages": [
+    "Bikongou",
+    "Bodérou",
+    "Bodérou-Peulh",
+    "Gbindarou",
+    "Sakatoussa",
+    "Sam",
+    "Sam-Gokirou",
+    "Sam-Peulh",
+    "Tankongou",
+    "Tankongou-Dagourou",
+    "Téri",
+    "Wonga"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "KANDI",
+   "libelle": "SONSORO",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Alibori-Yankin",
+    "Pédigui",
+    "Sinawongourou",
+    "Sinawongourou-Peulh",
+    "Sonsoro",
+    "Sonsoro-Peulh"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "MALANVILLE",
+   "libelle": "GAROU",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Djindégabi-Tounga",
+    "Gaabo",
+    "Garou-Béri",
+    "Garou-Tédji-Gorobani",
+    "Garou-Tédji",
+    "Garou- Wénou-Kannin",
+    "Kambouwo-Tounga",
+    "Monkassa",
+    "Tounga-Tédji",
+    "Wanda"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "MALANVILLE",
+   "libelle": "GUENE",
+   "rang": null,
+   "villagesAnnonces": 16,
+   "villages": [
+    "Bangou",
+    "Banitè-Koubéri",
+    "Banitè-Fèrè Kirè",
+    "Boïffo",
+    "Fiafounfoun",
+    "Goun-Goun",
+    "Guéné-Guidigo",
+    "Guéné-Zermé",
+    "Isséné",
+    "Kantoro",
+    "Koara-Tédji",
+    "Lakali-Kaney",
+    "Mokollé",
+    "Sounbey-Gorou",
+    "Tondi-Banda",
+    "Toro-Zougou"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "MALANVILLE",
+   "libelle": "MADECALI",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Godjékoara",
+    "Goroussoundougou",
+    "Illoua",
+    "Kassa",
+    "Koualérou",
+    "Kouara-tédji",
+    "Madécali",
+    "Madécali-Zongo",
+    "Mélayakouara",
+    "Sendé"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "MALANVILLE",
+   "libelle": "MALANVILLE",
+   "rang": null,
+   "villagesAnnonces": 13,
+   "villages": [
+    "Bodjécali",
+    "Bodjécali-Château",
+    "Galiel",
+    "Golobanda",
+    "Kotchi",
+    "Tassi-Djindé",
+    "Tassi-tédji",
+    "Tassi-Tédji-Banizounbou",
+    "Tassi-Tédji-Boulanga",
+    "Tassi-Zénon",
+    "Wollo",
+    "Wollo-Château",
+    "Wouro-Yesso"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "MALANVILLE",
+   "libelle": "TOUMBOUTOU",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Baniloua",
+    "Dèguè-Dègué",
+    "Gorou-Djindé",
+    "Molla",
+    "Sakawan-Tédji",
+    "Sakawan-Zénon",
+    "Santché",
+    "Toumboutou",
+    "Wanzam-Koara"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "KARIMAMA",
+   "libelle": "BIRNI LAFIA",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Birni Lafia",
+    "Fadama",
+    "Goroukambou",
+    "Kangara-Peulh",
+    "Karigui",
+    "Missira",
+    "Saboula",
+    "Tondikoaria",
+    "Tondoobon"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "KARIMAMA",
+   "libelle": "BOGO-BOGO",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Banikani",
+    "Bogo-Bogo",
+    "Koaratédji",
+    "Kofounou",
+    "Mamassy-Gourma",
+    "Torioh",
+    "Toura"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "KARIMAMA",
+   "libelle": "KARIMAMA",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Bello-Tounga",
+    "Fakara",
+    "Gourou Béri",
+    "Karimama-Batouma-Béri",
+    "Karimama-Dendi-Kouré",
+    "Mamassy-Peulh"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "KARIMAMA",
+   "libelle": "KOMPA",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Banizoumbou",
+    "Dangazori",
+    "Garbey-Koara",
+    "Goungou-Béri",
+    "Kéné-Tounga",
+    "Kompa",
+    "Kompanti"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "KARIMAMA",
+   "libelle": "MONSEY",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Bako-Maka",
+    "Bongnami",
+    "Fandou",
+    "Goumbitchigoura",
+    "Loumbou-Loumbou",
+    "Machayan-Marché",
+    "Monsey",
+    "Pétchinga"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "BANIKOARA",
+   "libelle": "BANIKOARA",
+   "rang": null,
+   "villagesAnnonces": 18,
+   "villages": [
+    "Arbonga",
+    "Aviation",
+    "Batran",
+    "Demanou",
+    "Dérou Garou",
+    "Glégbabi",
+    "Guiguiri",
+    "Kingarou",
+    "Kokiré",
+    "Kommon",
+    "Kori Guiguiri",
+    "Kpagaguèdou",
+    "Orou Gnonrou",
+    "Samanga",
+    "Tokey-Banta",
+    "Wagou",
+    "Wétérou",
+    "Yadikparou"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "BANIKOARA",
+   "libelle": "FOUNOUGO",
+   "rang": null,
+   "villagesAnnonces": 19,
+   "villages": [
+    "Bofounou",
+    "Founougo-Boutèra",
+    "Founougo-Gorobani",
+    "Founougo-Gah",
+    "Gama",
+    "Gaméré-Zongo",
+    "Gougnirou",
+    "Gougnirou-Gah",
+    "Iboto",
+    "Igrigou",
+    "Kandérou",
+    "Kandérou-Kotchera",
+    "Koney",
+    "Kpako-Gbabi",
+    "Pogoussorou",
+    "Sampèto",
+    "Sissianganrou",
+    "Yanguéri",
+    "Yinyinpogou"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "BANIKOARA",
+   "libelle": "GOMPAROU",
+   "rang": null,
+   "villagesAnnonces": 13,
+   "villages": [
+    "Bonhanrou",
+    "Gnambanou",
+    "Gomparou-Gokpadou",
+    "Gomparou Goussinrou",
+    "Gomparou",
+    "Gourè-Edé",
+    "Kali",
+    "Kpessanrou",
+    "Niékoubanta",
+    "Pampime",
+    "Sionkpékoka",
+    "Tiganson",
+    "Yossinandé"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "BANIKOARA",
+   "libelle": "GOUMORI",
+   "rang": null,
+   "villagesAnnonces": 15,
+   "villages": [
+    "Bonni",
+    "Bontè",
+    "Dombouré",
+    "Dombouré-Gah",
+    "Dondagou",
+    "Gbassa",
+    "Ggangbanga",
+    "Goumori-Gbissarou",
+    "Goumori-Bayèdou",
+    "Goumori-Gah",
+    "Mondoukoka",
+    "Mondoukoka-Gah",
+    "Sakassinnou",
+    "Satouba",
+    "Tihourè"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "BANIKOARA",
+   "libelle": "KOKEY",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Gamarou",
+    "Kokey-Sinakparou",
+    "Kokey-Filo",
+    "Nimbéré",
+    "Piguiré",
+    "Sonwari",
+    "Yambérou"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "BANIKOARA",
+   "libelle": "KOKIBOROU",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Bonkéré",
+    "Kokiborou",
+    "Sounsoun",
+    "Guinningou-Gah",
+    "Sirikou"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "BANIKOARA",
+   "libelle": "OUNET",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Boniki",
+    "Kihouhou",
+    "Kpéborogou",
+    "Ounet-Sinakparou",
+    "Ounet-Sékogbaourou",
+    "Ounet-Gah",
+    "Sonnou",
+    "Sonnou-Gah"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "BANIKOARA",
+   "libelle": "SOMPEROUKOU",
+   "rang": null,
+   "villagesAnnonces": 11,
+   "villages": [
+    "Bonyangou",
+    "Bourin",
+    "Gnandarou",
+    "Kégamorou",
+    "Poto",
+    "Poto-Gah",
+    "Simpérou",
+    "Simpérou-Gah",
+    "Sompéroukou-Gbessara",
+    "Sompéroukou-Yorounon",
+    "Sompéroukou-Gah"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "BANIKOARA",
+   "libelle": "SOROKO",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Gbéniki",
+    "Mékrou",
+    "Soroko Yorounon",
+    "Soroko",
+    "Soroko Gah",
+    "Soudou"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "BANIKOARA",
+   "libelle": "TOURA",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Atabénou",
+    "Gnambourankorou",
+    "Guimbagou",
+    "Kakourogou",
+    "Siwougourou",
+    "Tintinmou",
+    "Tintinmou-Gah",
+    "Toura-Bio N’Worou",
+    "Toura-Yokparou",
+    "Toura Gah"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "GOGOUNOU",
+   "libelle": "BAGOU",
+   "rang": null,
+   "villagesAnnonces": 18,
+   "villages": [
+    "Badou",
+    "Kérou-Bagou",
+    "Bagou-Sinkparou",
+    "Bagou-Yagbo",
+    "Banigouré",
+    "Bépororo",
+    "Bouyagourou",
+    "Diadia",
+    "Gandobou",
+    "Garagoro",
+    "Kali",
+    "Kangnan",
+    "Kassirou",
+    "Kpakaguèrè",
+    "Nafarou",
+    "Orou-Bédou",
+    "Taïti",
+    "Yankpannou"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "GOGOUNOU",
+   "libelle": "GOGOUNOU",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Djinmélé",
+    "Gogounou-Gbanin",
+    "Gogounou-Nassabara",
+    "Goubéra",
+    "Konsénin",
+    "Ouèrè-Bani",
+    "Ouèrè-Sonkérou",
+    "Sonkorou",
+    "Sorou"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "GOGOUNOU",
+   "libelle": "GOUNAROU",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Bantansoué",
+    "Boro",
+    "Borodarou",
+    "Dagourou",
+    "Diguisson",
+    "Gounarou",
+    "Lafiarou",
+    "Pariki"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "GOGOUNOU",
+   "libelle": "SORI",
+   "rang": null,
+   "villagesAnnonces": 17,
+   "villages": [
+    "Dimdimnou",
+    "Donwari",
+    "Gamagou",
+    "Gasso",
+    "Gbemoussou",
+    "Gnindarou",
+    "Gouré Dantcha",
+    "Kantakpara-Wokparou",
+    "Kantakpara-Wokpérou",
+    "Kpigourou",
+    "Ouessènè-Worou",
+    "Petit-Paris",
+    "Sori-Boro Wanrou",
+    "Sori-Kpankpanou",
+    "Sori-Peulh",
+    "Tawali",
+    "Tchoupounga"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "GOGOUNOU",
+   "libelle": "SOUGOU-KPAN-TROSSI",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Binga",
+    "Gando-Dari",
+    "Dougoulaye",
+    "Fanan",
+    "Gbessa",
+    "Sougou-Gourou",
+    "Sougou-Kpantrossi"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "GOGOUNOU",
+   "libelle": "WARA",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Dassari",
+    "Dougou",
+    "Kalé",
+    "Soukarou",
+    "Wara",
+    "Wara-Gbidogo",
+    "Wara-Gah"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "SEGBANA",
+   "libelle": "LIBANTE",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Bobéna",
+    "Diapéou",
+    "Goungbè",
+    "Kouté",
+    "Libantè",
+    "Saonzi"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "SEGBANA",
+   "libelle": "LIBOUSSOU",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Gbéssaka",
+    "Kambara",
+    "Lété",
+    "Liboussou",
+    "Tounga-Issa",
+    "Waranzi"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "SEGBANA",
+   "libelle": "LOUGOU",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Boumoussou",
+    "Gandoloukassa",
+    "Gbassè",
+    "Gbèkakarou",
+    "Guénélaga",
+    "Kamanan",
+    "Lougou",
+    "Niambara",
+    "Sinwan",
+    "Zonzi"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "SEGBANA",
+   "libelle": "SEGBANA",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Batazi",
+    "Fondo",
+    "Gbessarè",
+    "Guéné Kouzi",
+    "Korowi",
+    "Kpassana",
+    "Limafrani",
+    "Mafouta-Waassarè",
+    "Piami",
+    "Samtimbara"
+   ]
+  },
+  {
+   "departement": "ALIBORI",
+   "commune": "SEGBANA",
+   "libelle": "SOKOTINDJI",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Bèdafou",
+    "Gbarana",
+    "Morou",
+    "Poéla",
+    "Sèrèbani",
+    "Sèrèkibè",
+    "Sokotindji",
+    "Tchakama"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "BOUKOUMBE",
+   "libelle": "BOUKOUMBE",
+   "rang": null,
+   "villagesAnnonces": 22,
+   "villages": [
+    "Ikounga",
+    "Kototougou",
+    "Koudahongou",
+    "Koukouangou-Boukoumbé",
+    "Koukouatchiengou",
+    "Koumaagou",
+    "Koumagou",
+    "Koumontchirgou",
+    "Koumatié",
+    "Kounadogou",
+    "Kountchougou",
+    "Koupagou",
+    "Koussayagou",
+    "Koussetiegou",
+    "Koussocoingou",
+    "Koutagou",
+    "Koutchata",
+    "Koutchatahongou",
+    "Tatouta",
+    "Zongo",
+    "Ditchendia",
+    "Koutatiégou"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "BOUKOUMBE",
+   "libelle": "DIPOLI",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Dikoumini",
+    "Dimansouri",
+    "Dipoli",
+    "Dissapoli",
+    "Kpérinkpé",
+    "Mantchari",
+    "Natchénté",
+    "Otanongou",
+    "Oukounsérihoun"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "BOUKOUMBE",
+   "libelle": "KORONTIERE",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Agbontê",
+    "Kêyordakê",
+    "Koucongou",
+    "Koupagou-Korontière",
+    "Koutchatié",
+    "Kouya",
+    "Natiéni",
+    "Okouaro",
+    "Tadowonta",
+    "Tassayota"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "BOUKOUMBE",
+   "libelle": "KOUSSOUCOINGOU",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Didompê",
+    "Kougnangou",
+    "Koukouankpangou",
+    "Koussoucoingou",
+    "Koussounoungou",
+    "Koutayagou",
+    "Kouwetakouangou",
+    "Takpanta",
+    "Tchapéta",
+    "Tipaoti"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "BOUKOUMBE",
+   "libelle": "MANTA",
+   "rang": null,
+   "villagesAnnonces": 15,
+   "villages": [
+    "Dikon Hein",
+    "Dikouténi",
+    "Dimatadoni",
+    "Dimatima",
+    "Dipokor",
+    "Dipokor-Tchaaba",
+    "Kouhingou",
+    "Koukouakoumagou",
+    "Koukouangou",
+    "Koumadogou",
+    "Kounatchatiégou",
+    "Koutangou-Manta",
+    "Koutchantié",
+    "Takotiéta",
+    "Tatchadiéta"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "BOUKOUMBE",
+   "libelle": "NATA",
+   "rang": null,
+   "villagesAnnonces": 13,
+   "villages": [
+    "DipokorFontri",
+    "Koudogou",
+    "Koukoua",
+    "Koukpintiegou",
+    "Koutcha-Koumagou",
+    "Kounagnigou",
+    "Kounakogou",
+    "Kouporgou",
+    "Koussakou",
+    "Koutangou",
+    "Koutoutougou",
+    "Kouwonatougou",
+    "Kouwotchirgou"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "BOUKOUMBE",
+   "libelle": "TABOTA",
+   "rang": null,
+   "villagesAnnonces": 14,
+   "villages": [
+    "Dikouani",
+    "Dimatékor",
+    "Dipintakouani",
+    "Katchagniga",
+    "Koubêgou",
+    "Koubentiégou",
+    "Koucogou",
+    "Koudadagou",
+    "Koukouatougou",
+    "Koukpêtihagou",
+    "Tabota",
+    "Takotchienta",
+    "Tatouta",
+    "Yatié"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "COBLY",
+   "libelle": "COBLY",
+   "rang": null,
+   "villagesAnnonces": 12,
+   "villages": [
+    "Bagapodi",
+    "Cobly",
+    "Kanadékè",
+    "Koukontouga",
+    "Kpétiénou",
+    "Nouangou",
+    "Oukodoo",
+    "Ouorou",
+    "Ouyérihoun",
+    "Tchokita",
+    "Touga",
+    "Yimpissiri"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "COBLY",
+   "libelle": "TAPOGA",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Gnangou",
+    "Kolgou",
+    "Pentinga",
+    "Siénou",
+    "Zanniouri"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "COBLY",
+   "libelle": "DATORI",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Datori",
+    "Kadiéni",
+    "Matalè",
+    "Nagnandé",
+    "Namatiénou",
+    "Tchamonga",
+    "Tokibi"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "COBLY",
+   "libelle": "KOUNTORI",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Kountori",
+    "Kpetissohoun",
+    "Namoutchaga",
+    "Oroukouaré",
+    "Oukpètouhoun",
+    "Oukpintihoun",
+    "Outanonhoun",
+    "Serhounguè",
+    "Sinni",
+    "Tarpingou"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "MATERI",
+   "libelle": "DASSARI",
+   "rang": null,
+   "villagesAnnonces": 18,
+   "villages": [
+    "Coupiani",
+    "Dassari",
+    "Firihoun",
+    "Koundri",
+    "Kourou-Koualou",
+    "Nagassega",
+    "Niéhoun-Laloga",
+    "Nouari",
+    "Ouriyori",
+    "Porga",
+    "Pouri",
+    "Sétchindika",
+    "Tankouari",
+    "Tankouayokouhoun",
+    "Tétonga",
+    "Tigninga",
+    "Tihoun",
+    "Tinwéga"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "MATERI",
+   "libelle": "GOUANDE",
+   "rang": null,
+   "villagesAnnonces": 12,
+   "villages": [
+    "Bahoun",
+    "Doga",
+    "Gouandé",
+    "Kandeguehoun",
+    "Kouantiéni",
+    "Kouforpissiga",
+    "Sindori-Toni",
+    "Tassahoun",
+    "Tcharikouanga",
+    "Tchassaga",
+    "Tiari",
+    "Toubougnini"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "MATERI",
+   "libelle": "MATERI",
+   "rang": null,
+   "villagesAnnonces": 16,
+   "villages": [
+    "Bourporga",
+    "Boutouhounpingou",
+    "Kankini-Séri",
+    "Matéri",
+    "Merhoun",
+    "Mihihoun",
+    "Nagassega-Kani",
+    "Pingou",
+    "Sèkanou",
+    "Souomou",
+    "Tampinti-Yerou",
+    "Tantouri",
+    "Tintonsi",
+    "Toussari",
+    "Yondisseri",
+    "Yopiaka"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "MATERI",
+   "libelle": "NODI",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Borifiéri",
+    "Holli",
+    "Kotari",
+    "Kouarhoun",
+    "Kpéréhoun",
+    "Mahontika",
+    "N’ Tchiéga",
+    "Nodi",
+    "Tampouré-Pogué",
+    "Yédékahoun"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "MATERI",
+   "libelle": "TANTEGA",
+   "rang": null,
+   "villagesAnnonces": 14,
+   "villages": [
+    "Bampora",
+    "Bogodori",
+    "Dabogohoun",
+    "Kandjo",
+    "Konéandri",
+    "Kousséga",
+    "Madoga",
+    "Nambouli",
+    "Pourniari",
+    "Tambogou-Kondri",
+    "Tampanga",
+    "Tanhoun",
+    "Tantega",
+    "Tébiwogou"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "MATERI",
+   "libelle": "TCHANHOUNCOSSI",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Féhoun",
+    "Fékérou",
+    "Koutoukondiga",
+    "Sakonou",
+    "Tchanhouncossi",
+    "Yanga",
+    "Yansaga"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "TANGUIETA",
+   "libelle": "COTIAKOU",
+   "rang": null,
+   "villagesAnnonces": 12,
+   "villages": [
+    "Bounta",
+    "Coroncoré",
+    "Cotiakou",
+    "Daguimagninni",
+    "Manougou",
+    "Nowêrèrè",
+    "Parabou",
+    "Pémombou",
+    "Penitingou",
+    "Tanféré",
+    "Toriconconé",
+    "Tora"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "TANGUIETA",
+   "libelle": "N’DAHONTA",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Dondongou",
+    "Kougnieri",
+    "N’Dahonta",
+    "Natagata",
+    "Nignèri",
+    "Sammongou",
+    "Sonta",
+    "Tahinkou",
+    "Tapèkou",
+    "Tchaéta"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "TANGUIETA",
+   "libelle": "TAIACOU",
+   "rang": null,
+   "villagesAnnonces": 17,
+   "villages": [
+    "Bongou",
+    "Douani",
+    "Finta",
+    "Hantèkou",
+    "Kogniga",
+    "Kotchekongou",
+    "Kouayoti",
+    "Koutchoutchougou",
+    "Matanrgui",
+    "Nafayoti",
+    "Nontingou",
+    "Ouankou",
+    "Tahongou",
+    "Taïacou",
+    "Yehongou",
+    "Yéyédi",
+    "Youakou"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "TANGUIETA",
+   "libelle": "TANGUIETA",
+   "rang": null,
+   "villagesAnnonces": 12,
+   "villages": [
+    "Biacou",
+    "Bourgniéssou",
+    "Djidjiré-Beri",
+    "Goro-bani",
+    "Mamoussa",
+    "Nanébou",
+    "Porhoum",
+    "Porka",
+    "Sépounga",
+    "Tchoutchoubou",
+    "Tiélé",
+    "Yarka"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "TANGUIETA",
+   "libelle": "TANONGOU",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Batia",
+    "Kayarika",
+    "Sangou",
+    "Tanongou",
+    "Tchafarga",
+    "Tchatingou",
+    "Tchawassaka",
+    "Yangou"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "KEROU",
+   "libelle": "BRIGNAMARO",
+   "rang": null,
+   "villagesAnnonces": 11,
+   "villages": [
+    "Bagoubagou",
+    "Bambaba",
+    "Bassini",
+    "Bérékossou",
+    "Brignamaro",
+    "Gando baka",
+    "Kongourou",
+    "Kossou",
+    "Kossou-Ouinra",
+    "Tchoukagnin",
+    "Yakrigorou"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "KEROU",
+   "libelle": "FIROU",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Baténin",
+    "Djoléni",
+    "Gori",
+    "Gorobani",
+    "Kabongourou",
+    "Sokoungourou",
+    "Yiroubara"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "KEROU",
+   "libelle": "KAOBAGOU",
+   "rang": null,
+   "villagesAnnonces": 3,
+   "villages": [
+    "Gnampoli",
+    "Kaobagou",
+    "Yinsiga"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "KEROU",
+   "libelle": "KEROU",
+   "rang": null,
+   "villagesAnnonces": 22,
+   "villages": [
+    "Bakoussarou",
+    "Bipotoko",
+    "Boukoubourou",
+    "Fêtêkou",
+    "Fêtêkou -Alaga",
+    "Gamboré",
+    "Gantodo",
+    "Gnangnanou",
+    "Gougninnou",
+    "Karigourou",
+    "Kédarou",
+    "Kérou Wirou",
+    "Kokokou",
+    "Kparatégui",
+    "Manou",
+    "Ouoré",
+    "Pikiré-Adaga",
+    "Pikiré",
+    "Sinagourou",
+    "Toudakou Banyirou",
+    "Warou N’Gourou",
+    "Yakin-Motoko"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "KOUANDE",
+   "libelle": "BIRNI",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Birni Maro",
+    "Birni-Kankoulka",
+    "Birni-Kpébirou",
+    "Gorgoba",
+    "Goufanrou",
+    "Hongon",
+    "Kouboro",
+    "Tamandé",
+    "Tassigourou",
+    "Yakabissi"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "KOUANDE",
+   "libelle": "CHABI – COUMA",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Chabi Couma",
+    "Gantiéco",
+    "Gbéniki",
+    "Papatia",
+    "Sakasson-Ditamari",
+    "Sakasson-Dompago",
+    "Wémè"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "KOUANDE",
+   "libelle": "FOO-TANCE",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Boroyindé",
+    "Danri",
+    "Foo",
+    "Kabaré",
+    "Maka",
+    "Orouboussoukou",
+    "Tancé",
+    "Tikou"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "KOUANDE",
+   "libelle": "GUILMARO",
+   "rang": null,
+   "villagesAnnonces": 15,
+   "villages": [
+    "Boro",
+    "Damouti",
+    "Foo-mama",
+    "Gora -Peulh",
+    "Goutéré",
+    "Guilmaro-Bounkossorou",
+    "Guilmaro-Garkousson",
+    "Guilmaro-Sinakpagourou",
+    "Kèdékou",
+    "Kpakou-Tankonga",
+    "Kpikiré koka",
+    "Nassoukou",
+    "Ouroufina",
+    "Séri",
+    "Sonnougobérou"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "KOUANDE",
+   "libelle": "KOUANDE",
+   "rang": null,
+   "villagesAnnonces": 16,
+   "villages": [
+    "Bassilou",
+    "Becket-Bouramè",
+    "Becket-Peulh",
+    "Boré",
+    "Darou-Wirou",
+    "Kpessinin",
+    "Makrou-Gourou",
+    "Maro",
+    "Mary",
+    "Sakabou",
+    "Sékogourou",
+    "Sékogourou-Baïla",
+    "Sinakpaworou",
+    "Sowa",
+    "Tokoro",
+    "Zongo"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "KOUANDE",
+   "libelle": "OROUKAYO",
+   "rang": null,
+   "villagesAnnonces": 16,
+   "villages": [
+    "Boroukou-Peulh",
+    "Dèkèrou",
+    "Ganikpérou",
+    "Poupouré",
+    "Niarissinra",
+    "Niaro-Gninon",
+    "Orougbéni",
+    "Niarosson",
+    "Kètéré",
+    "Nièkènè-Bansou",
+    "Somboko",
+    "Kpankpankou",
+    "Oroukayo",
+    "Yinkènè",
+    "Pélima",
+    "Kpéssourou"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "NATITINGOU",
+   "libelle": "KOUABA",
+   "rang": null,
+   "villagesAnnonces": 11,
+   "villages": [
+    "Dikouan",
+    "Katanginka",
+    "Kouaba",
+    "Koukouabirgou",
+    "Kounitchangou",
+    "Koutanongou",
+    "Kouwanwangou",
+    "Moussansamou",
+    "Tagahei",
+    "Tedonté",
+    "Tipéti"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "NATITINGOU",
+   "libelle": "KOUANDATA",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Kouandata",
+    "Kouatidabirgou",
+    "Kounadorgou",
+    "Koutie",
+    "Tigninti"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "NATITINGOU",
+   "libelle": "KOTOPOUNGA",
+   "rang": null,
+   "villagesAnnonces": 14,
+   "villages": [
+    "Bangrétamou",
+    "Dokondé",
+    "Fayouré",
+    "Kampouya",
+    "Kota-Monnongou",
+    "Kotopounga",
+    "Onsikoto",
+    "Pouya",
+    "Souroukou",
+    "Tampèdèma",
+    "Tchantangou",
+    "Wètipounga",
+    "Yakpangoutingou",
+    "Yarikou"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "NATITINGOU",
+   "libelle": "PEPORIYAKOU",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Ditawan",
+    "Doyakou",
+    "Koudengou",
+    "Péporiyakou",
+    "Tétanté",
+    "Tikouani",
+    "Toroubou"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "NATITINGOU",
+   "libelle": "PERMA",
+   "rang": null,
+   "villagesAnnonces": 13,
+   "villages": [
+    "Gnagnammou",
+    "Koka",
+    "Koubirgou",
+    "Kouètèna",
+    "Kounapèigou",
+    "Koupéico",
+    "Koussigou",
+    "Pam-pam",
+    "Perma Centre",
+    "Sinaïciré",
+    "Tènounkontè",
+    "Tèpéntè",
+    "Tignanpéti"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "NATITINGOU",
+   "libelle": "NATITINGOU I",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Bagri",
+    "Djindjiré-béri",
+    "Kantchagoutamou",
+    "Sountchirantikou",
+    "Tchirimina",
+    "Yokossi"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "NATITINGOU",
+   "libelle": "NATITINGOU II",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Bokoro",
+    "Boriyouré",
+    "Dassakaté",
+    "Ouroubonna",
+    "Ourkparbou",
+    "Santa"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "NATITINGOU",
+   "libelle": "NATITINGOU III",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Bérécingou",
+    "Didapoumbor",
+    "Kantaborifa",
+    "Koussantikou",
+    "Ourbouga",
+    "Winkè",
+    "Yétapo",
+    "Yimporima"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "NATITINGOU",
+   "libelle": "TCHOUMI-TCHOUMI",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Koutié Tchatido",
+    "Kouwa n’pongou",
+    "Moupémou",
+    "Takonta",
+    "Tchoumi-tchoumi",
+    "Wimmou"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "OUASSA-PEHUNCO",
+   "libelle": "GNEMASSON",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Bonigourou",
+    "Dôh",
+    "Gnémasson",
+    "Gnémasson-Gando",
+    "Sayakrou",
+    "Sayakrou – Gah"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "OUASSA-PEHUNCO",
+   "libelle": "PEHUNCO",
+   "rang": null,
+   "villagesAnnonces": 15,
+   "villages": [
+    "Bêket",
+    "Bêket – Gah",
+    "Bouérou",
+    "Gbéba",
+    "Nassou",
+    "Péhonco-Tatapouranou",
+    "Péhunco I",
+    "Péhunco II",
+    "Péhunco-Gah",
+    "Sinaourarou",
+    "Sinaourarou-Gah",
+    "Soaodou",
+    "Soassararou",
+    "Somparérou-Gah",
+    "Wokou"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "OUASSA-PEHUNCO",
+   "libelle": "TOBRE",
+   "rang": null,
+   "villagesAnnonces": 14,
+   "villages": [
+    "Bana",
+    "Boudé",
+    "Gambinou",
+    "Gonri",
+    "Gountia",
+    "Guimbérérou",
+    "Maré Orou Gah",
+    "Ningoussourou",
+    "Ouassa – Kika",
+    "Ouassa-Maro",
+    "Sinaou",
+    "Tobré",
+    "Tonri",
+    "Wakarou"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "TOUKOUNTOUNA",
+   "libelle": "KOUARFA",
+   "rang": null,
+   "villagesAnnonces": 11,
+   "villages": [
+    "Bouyagnindi",
+    "Kouarfa",
+    "Kouba",
+    "Mounoumborifa",
+    "Péperkou",
+    "Takissari",
+    "Tampobré",
+    "Tandafa",
+    "Tankokona",
+    "Tchoundékou",
+    "Wabou"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "TOUKOUNTOUNA",
+   "libelle": "TAMPEGRE",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Batitamou",
+    "Dikokoré",
+    "Kokota",
+    "Mako",
+    "Nabaga",
+    "Tampégré",
+    "Tantougou",
+    "Tchanhorta",
+    "Wansokou"
+   ]
+  },
+  {
+   "departement": "ATACORA",
+   "commune": "TOUKOUNTOUNA",
+   "libelle": "TOUKOUNTOUNA",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Boribansifa",
+    "Datakou",
+    "Fatiya",
+    "Kokokou",
+    "Kpentikou",
+    "Moussitingou",
+    "Tampatou",
+    "Tchakalakou",
+    "Téctibayaou",
+    "Toukountouna"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "ALLADA",
+   "libelle": "AGBANOU",
+   "rang": null,
+   "villagesAnnonces": 13,
+   "villages": [
+    "Acclohoué",
+    "Agbanou",
+    "Agondokpoé",
+    "Agongblamey",
+    "Attotinga",
+    "Gbéta",
+    "Gounontomey",
+    "Goussikpota",
+    "Lokokpa",
+    "Tègbo",
+    "Tokpa- Avagoudo",
+    "Wadon",
+    "Zounta"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "ALLADA",
+   "libelle": "AHOUANNONZOUN",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Ahito",
+    "Bawekanmey",
+    "Dahsramey",
+    "Hanafin",
+    "Hessa",
+    "Hêtin",
+    "Loto-Dénou",
+    "Zoungbodji"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "ALLADA",
+   "libelle": "ALLADA CENTRE",
+   "rang": null,
+   "villagesAnnonces": 14,
+   "villages": [
+    "Ahito",
+    "Allomey",
+    "Avazounkpa",
+    "Dagleta",
+    "Dodomey",
+    "Dogoudo",
+    "Dogoudo CEG",
+    "Donou",
+    "Gbégamey",
+    "Gbowèlè",
+    "Houinbatin",
+    "Sokoudénou",
+    "Soyo",
+    "Tokpota"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "ALLADA",
+   "libelle": "ATTOGON",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Assihoui",
+    "Attogon centre",
+    "Avankamey",
+    "Kpoguétomey",
+    "Niaouli",
+    "Nouzounkpa"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "ALLADA",
+   "libelle": "AVAKPA",
+   "rang": null,
+   "villagesAnnonces": 4,
+   "villages": [
+    "Adjohoun",
+    "Avakpa",
+    "Glotomey",
+    "Houkpokpoué"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "ALLADA",
+   "libelle": "AYOU",
+   "rang": null,
+   "villagesAnnonces": 11,
+   "villages": [
+    "Ahota",
+    "Gbédji",
+    "Gbéova",
+    "Hangnan",
+    "Hounkpa",
+    "Lanmandji",
+    "Sèbo",
+    "Tanmey",
+    "Tokpa",
+    "Zindagba",
+    "Zoungoudo"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "ALLADA",
+   "libelle": "HINVI",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Aligoudo",
+    "Dovo",
+    "Tanga",
+    "Tanga-Tôdo",
+    "Zoungbomey"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "ALLADA",
+   "libelle": "LISSEGAZOUN",
+   "rang": null,
+   "villagesAnnonces": 14,
+   "villages": [
+    "Adjadji-Atinkousa",
+    "Adjadji-Bata",
+    "Adjadji-Cossoé",
+    "Adjadji-Zoungbomey",
+    "Aota",
+    "Attouhonou",
+    "Azohouè-Gbédjicomè",
+    "Azohouè-Hongbo",
+    "Djohoungbonou",
+    "Gbéto",
+    "Houégoudo",
+    "Lisségazoun",
+    "Solokoué",
+    "Zounmè-Aga"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "ALLADA",
+   "libelle": "LON-AGONMEY",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Adjrakandji",
+    "Ayakpata",
+    "Ayamè",
+    "Kpodji",
+    "Sèhounsa",
+    "Togazoun",
+    "Tôgo",
+    "Winyikpa"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "ALLADA",
+   "libelle": "SEKOU",
+   "rang": null,
+   "villagesAnnonces": 19,
+   "villages": [
+    "Adimalé",
+    "Adjadangan",
+    "Agbandonou",
+    "Agbantokpa",
+    "Dodji-Aliho",
+    "Dodjidangban",
+    "Dovènou",
+    "Gandaho",
+    "Hedjannansoun",
+    "Hollansatin",
+    "Houndadja",
+    "Migbehouè",
+    "Sehè",
+    "Sékou",
+    "Yaahouè",
+    "Sohoun",
+    "Vehoui",
+    "Wedjame",
+    "Wibatin"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "ALLADA",
+   "libelle": "TOGOUDO",
+   "rang": null,
+   "villagesAnnonces": 4,
+   "villages": [
+    "Govié",
+    "Kpodjava",
+    "Tôgô",
+    "Zèbou"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "ALLADA",
+   "libelle": "TOKPA",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Boli",
+    "Gbédji",
+    "Houngbado",
+    "Kotovi",
+    "Wogo",
+    "Zounledji"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "KPOMASSE",
+   "libelle": "AGANMALOME",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Aganmalomè-Centre",
+    "Aidjèdo",
+    "Hessa",
+    "Kougbédji",
+    "Kouzoumè",
+    "Lokossa",
+    "Nougboyifi"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "KPOMASSE",
+   "libelle": "AGBANTO",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Agbanto-Maga",
+    "Agbanto-Sotoncodji",
+    "Agbanto-Zounmin",
+    "Agonvodji–Daho",
+    "Agonvodji-Kpèvi",
+    "Gogotinkponmè",
+    "Nazoumè"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "KPOMASSE",
+   "libelle": "AGONKANME",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Adjaglo",
+    "Adjamè",
+    "Agonkanmè Centre",
+    "Assogbénou-Daho",
+    "Assogbènou-Kpèvi",
+    "Godonoutin",
+    "Gomè",
+    "Kpota",
+    "Oussa"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "KPOMASSE",
+   "libelle": "DEKANME",
+   "rang": null,
+   "villagesAnnonces": 12,
+   "villages": [
+    "Ahouango Agbidicomè",
+    "Ahouango Hinsocomè",
+    "Azizonkanmè",
+    "Foncomè",
+    "Glégbotonou",
+    "Houédjro",
+    "Houéyogbé",
+    "Kpago",
+    "Kpodji Atingo",
+    "Kpodji Clotomè",
+    "Sèbo",
+    "Yèmè"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "KPOMASSE",
+   "libelle": "DEDOME",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Couffonou",
+    "Dédomè Aclomè",
+    "Dédomè Kpodji",
+    "Hinmadou",
+    "Kpindjakanmè",
+    "Télokoé-Ahouya"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "KPOMASSE",
+   "libelle": "KPOMASSE CENTRE",
+   "rang": null,
+   "villagesAnnonces": 11,
+   "villages": [
+    "Aidjèdo",
+    "Cocoundji",
+    "Lokossa",
+    "Doga",
+    "Fifadji",
+    "Ganganhouli",
+    "Gbèdjèwin Adjibamey",
+    "Nonvignon",
+    "Houégan",
+    "Missèbo",
+    "Missité"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "KPOMASSE",
+   "libelle": "SEGBEYA",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Atchakanmè",
+    "Danzounmè",
+    "Gbèfadji",
+    "Sègbèya Akpoutouhoué",
+    "Sègbèya Amonlè",
+    "Sègbèya Zoundomè"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "KPOMASSE",
+   "libelle": "SEGBOHOUE",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Adjatokpa",
+    "Guézohoué",
+    "Sègbohouè Centre",
+    "Sègbohouè Assito",
+    "Tokpa-Daho",
+    "Vovio"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "KPOMASSE",
+   "libelle": "TOKPA-DOME",
+   "rang": null,
+   "villagesAnnonces": 12,
+   "villages": [
+    "Amoukonou",
+    "Gbèfadji-Aidjèdo",
+    "Gbétozo",
+    "Gboho",
+    "Hinzoumè",
+    "Houéton",
+    "Houngbogba",
+    "Lokogbo Zounta",
+    "Lokogbo Gnonwa",
+    "Ountoun",
+    "Sècomè",
+    "Xwlacomè"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "OUIDAH",
+   "libelle": "AVLEKETE",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Adounko",
+    "Adounko Ayignon",
+    "Agbanzin-Kpota",
+    "Agbanzin-Kpota Zounvlamè",
+    "Agouin",
+    "Ahouandji",
+    "Avlékété",
+    "Hio",
+    "Hio Vinawa"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "OUIDAH",
+   "libelle": "DJEGBADJI",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Agbanlindjèhoué",
+    "Aïdo",
+    "Dégouè",
+    "Djègbadji",
+    "Djondji",
+    "Kouvènanfidé",
+    "Mèko"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "OUIDAH",
+   "libelle": "GAKPE",
+   "rang": null,
+   "villagesAnnonces": 4,
+   "villages": [
+    "Amoulèhoué",
+    "Fonkounmè",
+    "Gakpé",
+    "Tohonou"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "OUIDAH",
+   "libelle": "HOUAKPE-DAHO",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Azizakouè",
+    "Djègbamè",
+    "Gbéhonou",
+    "Gbèzounmè",
+    "Houakpè-Daho",
+    "Sèyigbé",
+    "Toligbé"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "OUIDAH",
+   "libelle": "PAHOU",
+   "rang": null,
+   "villagesAnnonces": 11,
+   "villages": [
+    "Acadjamè",
+    "Adjra-Adovié",
+    "Adjra-Hounvè",
+    "Ahouicodji",
+    "Ahozon",
+    "Houndjava",
+    "Hounhanmèdé",
+    "Kpovié",
+    "Pahou Centre",
+    "Selloli-Bazounkpa",
+    "Zoungoudo"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "OUIDAH",
+   "libelle": "OUIDAH I",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Abatta",
+    "Agbessikpè Djika",
+    "Dangbéhouè",
+    "Oké-Agbèdè",
+    "Sogbadji",
+    "Zomaï",
+    "Zomaï-Kpota",
+    "Zoungbodji Centre"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "OUIDAH",
+   "libelle": "OUIDAH II",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Ahouandjigo",
+    "Ganvè",
+    "Gbèna-Nord",
+    "Gbèna-Sud",
+    "Gbéto-Nord",
+    "Gbéto-Sud",
+    "Houédjèdo",
+    "Lèbou Campto",
+    "Lèbou Alafia"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "OUIDAH",
+   "libelle": "OUIDAH III",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Agbadjihonto",
+    "Agbanou",
+    "Fonsramè",
+    "Gomey",
+    "Hèhounli",
+    "Kpassè",
+    "Yamadjako",
+    "Zongo Malècomè"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "OUIDAH",
+   "libelle": "OUIDAH IV",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Docomey",
+    "Tovè Zobèto",
+    "Tovè Kpassèzounto",
+    "Vassèho",
+    "Wagniho",
+    "Womey"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "OUIDAH",
+   "libelle": "SAVI",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Adjohoundja-Monso",
+    "Assogbénou-Daho",
+    "Bossouvi",
+    "Dèkouènou",
+    "Houéyiho",
+    "Minantinkpon",
+    "Ouèssè",
+    "Savi-Houéton"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "TOFFO",
+   "libelle": "AGUE",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Agué",
+    "Badovita",
+    "Houéglé",
+    "Kinzoun",
+    "Niarin",
+    "Sèdjè",
+    "Takon"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "TOFFO",
+   "libelle": "COLLI",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Agbamè",
+    "Bossouvi",
+    "Dogoudo",
+    "Hêlita",
+    "Hounyèmè",
+    "Koudjananko"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "TOFFO",
+   "libelle": "COUSSI",
+   "rang": null,
+   "villagesAnnonces": 12,
+   "villages": [
+    "Abolou",
+    "Adjaho",
+    "Agaga",
+    "Agbaga",
+    "Agblomè",
+    "Ahogbèmè",
+    "Cassagbo",
+    "Dowa",
+    "Honli",
+    "Sêdéssa Aligoudo",
+    "Za",
+    "Zimbènou"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "TOFFO",
+   "libelle": "DAME",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Adjakamè",
+    "Agbotagon",
+    "Agon",
+    "Cogbo-Campement",
+    "Damè Centre",
+    "Dolouvi",
+    "Guèmè",
+    "Hessavi -Comè",
+    "Mazounkpa",
+    "Togo"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "TOFFO",
+   "libelle": "DJANGLANME",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Damè-Gbédji",
+    "Houngo-Damè",
+    "Houngo-Govè",
+    "Kpokpa",
+    "Togouin",
+    "Togoudo",
+    "Zohounkpo",
+    "Zoundji"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "TOFFO",
+   "libelle": "KPOME",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Adjido",
+    "Agladokpa",
+    "Azonmè",
+    "Domè",
+    "Ganmè"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "TOFFO",
+   "libelle": "HOUEGBO",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Akpè",
+    "Houègbo Tohomè",
+    "Houègbo-Gare",
+    "Houénoussou",
+    "Yénawa"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "TOFFO",
+   "libelle": "SEHOUE",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Agaga",
+    "Aclonmè",
+    "Agbozounkpa",
+    "Aklissa",
+    "Bakanmè",
+    "Fandji",
+    "Somè",
+    "Vodjè",
+    "Zoungamè"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "TOFFO",
+   "libelle": "SEY",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Agahounkpokon",
+    "Agonmè",
+    "Ahlankpa",
+    "Avissa",
+    "Ayahonou",
+    "Azonsa",
+    "Kpozounmè",
+    "Lanhonnou"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "TOFFO",
+   "libelle": "TOFFO",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Gbédé-Agonsa",
+    "Gomey",
+    "Hounnouvié",
+    "Sèdji",
+    "Toffo-Gare",
+    "Zèko"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "TORI-BOSSITO",
+   "libelle": "AVAME",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Aguéta",
+    "Avamè Centre",
+    "Gbédjougo",
+    "Hla",
+    "Houngo",
+    "Massètomè"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "TORI-BOSSITO",
+   "libelle": "AZOHOUE-ALIHO",
+   "rang": null,
+   "villagesAnnonces": 3,
+   "villages": [
+    "Dénou",
+    "Hayakpa",
+    "Tandahota"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "TORI-BOSSITO",
+   "libelle": "AZOHOUE-CADA",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Azohoué Cada Houngo",
+    "Azohoué Cada Nord",
+    "Azohoué Cada Sud",
+    "Azohouè-Cada Centre",
+    "Azongo",
+    "Gbèdakonou",
+    "Kétessa Agladji",
+    "Zoungbomè",
+    "Zounvessèhou"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "TORI-BOSSITO",
+   "libelle": "TORI-CADA",
+   "rang": null,
+   "villagesAnnonces": 15,
+   "villages": [
+    "Adjahassa",
+    "Anavié",
+    "Dohinonko",
+    "Dokanmè",
+    "Gbégoudo",
+    "Gbétaga",
+    "Gbohouè",
+    "Hêtin-Yénawa",
+    "Houédaga",
+    "Lokossa",
+    "Sogbé",
+    "Soklogbo",
+    "Tori-Cada Centre",
+    "Zèbè",
+    "Zoungoudo"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "TORI-BOSSITO",
+   "libelle": "TORI-GARE",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Agazoun",
+    "Agouako",
+    "Akadjamè",
+    "Ayikinko",
+    "Dossou-somey",
+    "Gbègoudo",
+    "Sèïgonmè",
+    "Tori-Gare Centre"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "TORI-BOSSITO",
+   "libelle": "TORI-BOSSITO",
+   "rang": null,
+   "villagesAnnonces": 17,
+   "villages": [
+    "Agonkon",
+    "Ahouèmè",
+    "Aïdohoué",
+    "Bossito",
+    "Fassinouhokon",
+    "Gbédéwahoué",
+    "Gbovié",
+    "Hèkandji",
+    "Honvié",
+    "Houngbagba",
+    "Hounnonco",
+    "Kokanhoué",
+    "Maguévié",
+    "Tocoli",
+    "Togoudo",
+    "Wanho",
+    "Zounmè"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "ABOMEY-CALAVI",
+   "libelle": "ABOMEY-CALAVI",
+   "rang": null,
+   "villagesAnnonces": 20,
+   "villages": [
+    "Agamandin",
+    "Agori",
+    "Aîfa",
+    "Aîtchédji",
+    "Alédjo",
+    "Cité la Victoire",
+    "Cité les palmiers",
+    "Fandji",
+    "Finafa",
+    "Gbodjo",
+    "Kansounkpa",
+    "Sèmè",
+    "Tankpê",
+    "Tchinangbégbo",
+    "Tokpa-Zoungo",
+    "Tokpa-Zoungo Nord",
+    "Tokpa-Zoungo Sud",
+    "Zogbadjè",
+    "Zopah",
+    "Zoundja"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "ABOMEY-CALAVI",
+   "libelle": "AKASSATO",
+   "rang": null,
+   "villagesAnnonces": 14,
+   "villages": [
+    "Adjagbo",
+    "Agassa-Godomey",
+    "Agonmé",
+    "Agonsoundja",
+    "Akassato centre",
+    "Gbétagbo",
+    "Glo-tokpa",
+    "Houèkè-gbo",
+    "Houèkè-Honou",
+    "Kolètin",
+    "Kpodji-les-Monts",
+    "Missessinto",
+    "Zekanmey-Domè",
+    "Zopah Palmeraie"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "ABOMEY-CALAVI",
+   "libelle": "GOLO-DJIGBE",
+   "rang": null,
+   "villagesAnnonces": 14,
+   "villages": [
+    "Adjamè",
+    "Agongbé",
+    "Agonkessa",
+    "Alladacomè",
+    "Azonsa",
+    "Djissoukpa",
+    "Domey-Gbo",
+    "Golo-Djigbé",
+    "Golo-fanto",
+    "Lohoussa",
+    "Missèbo- Espace saint",
+    "Yékon -Do",
+    "Yékon-Aga",
+    "Zèkanmey"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "ABOMEY-CALAVI",
+   "libelle": "GODOMEY",
+   "rang": null,
+   "villagesAnnonces": 49,
+   "villages": [
+    "Abikouholi",
+    "Agbo-Codji-Sèdégbé",
+    "Agonkanmey",
+    "Aïmevo",
+    "Alègléta",
+    "Amanhoun",
+    "Assrossa",
+    "Atrokpo-Codji",
+    "Cococodji",
+    "Cocotomey",
+    "Dèkoungbé-Eglise",
+    "Dèkoungbé-Usine",
+    "Dénou",
+    "Djèkpota",
+    "Djoukpa-togoudo",
+    "Fandji",
+    "Fignonhou",
+    "Finafa",
+    "Ganganzounmè",
+    "Gbègnigan-Midokpo",
+    "Gbodjè-Womey",
+    "Gninkindji",
+    "Godomey-N’Gbèho",
+    "Godomey-Togoudo",
+    "Hélouto",
+    "Hedomè",
+    "Houakomey",
+    "Hounsa –agbodokpa",
+    "La paix",
+    "Lobozounkpa",
+    "Maria-gléta",
+    "Ningboto",
+    "Nonhouénou",
+    "Ounvènoumèdé",
+    "Plateau",
+    "Salamey",
+    "Sèdjannanko",
+    "Sèdomey",
+    "Sèloli-Fandji",
+    "Sodo",
+    "Tankpè",
+    "Togbin –Daho",
+    "Togbin-Fandji",
+    "Togbin-Kpèvi",
+    "Tokpa",
+    "Womey Centre",
+    "Yénandjro",
+    "Yolomahouto",
+    "Zounga"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "ABOMEY-CALAVI",
+   "libelle": "HEVIE",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Adovié",
+    "Akossavié",
+    "Dossounou",
+    "Hèvié Centre",
+    "Houinmè",
+    "Hounyèva",
+    "Hounzèvié",
+    "Sogan",
+    "Zoungo"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "ABOMEY-CALAVI",
+   "libelle": "KPANROUN",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Anagbo",
+    "Avagbé",
+    "Bozoun",
+    "Djigbo",
+    "Hadjanaho",
+    "Kpanroun",
+    "Kpanroun-Dodomey",
+    "Kpaviédja",
+    "Kpé"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "ABOMEY-CALAVI",
+   "libelle": "OUEDO",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Adjagbo",
+    "Dessato",
+    "Ahouato",
+    "Adjagbo -Aïdjèdo",
+    "Alansankomè",
+    "Dassèkomey",
+    "Kpossidja",
+    "Ouèdo Centre"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "ABOMEY-CALAVI",
+   "libelle": "TOGBA",
+   "rang": null,
+   "villagesAnnonces": 11,
+   "villages": [
+    "Ahossougbéta",
+    "Drabo",
+    "Fifonsi",
+    "Houèto",
+    "Ouéga-Agué",
+    "Ouéga-Tokpa",
+    "Somè",
+    "Tankpè",
+    "Togba Maria-Gléta",
+    "Tokan",
+    "Tokan Aîdégnon"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "ABOMEY-CALAVI",
+   "libelle": "ZINVIE",
+   "rang": null,
+   "villagesAnnonces": 15,
+   "villages": [
+    "Adjogansa",
+    "Dangbodji",
+    "Dokomey",
+    "Gbodjè",
+    "Gbodjoko",
+    "Houégoudo",
+    "Kpotomey",
+    "Sokan",
+    "Wawata",
+    "Wawata-Todja",
+    "Yèvié",
+    "Yèvié-Nougo",
+    "Zinvié-Agolèdji",
+    "Zinvié-fandji",
+    "Zinvié-Zounmè"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "SO-AVA",
+   "libelle": "AHOMEY-LOKPO",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Ahomey-Lokpo Centre",
+    "Ahomey-Ounmey",
+    "Assédokpa",
+    "Bessétonou",
+    "Hêni",
+    "Kinto Agué",
+    "Kinto Dokpakpa",
+    "Kinto Oudjra",
+    "Zoungomey",
+    "Zounkpodé"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "SO-AVA",
+   "libelle": "DEKANMEY",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Anaviécomey",
+    "Djèkpé",
+    "Kpafè",
+    "Kpoviécomey",
+    "Sakomey"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "SO-AVA",
+   "libelle": "GANVIE 1",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Agonmèkomey",
+    "Agoundankomey",
+    "Gansougbamey",
+    "Gbamey-Tchèwa",
+    "Gounsoédji",
+    "Hindagao",
+    "Kpassikomey",
+    "Sokomey",
+    "Tohokomey",
+    "Yokagao"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "SO-AVA",
+   "libelle": "GANVIE 2",
+   "rang": null,
+   "villagesAnnonces": 11,
+   "villages": [
+    "Agbongamey",
+    "Ahouanmongao",
+    "Dakomey",
+    "Dakomey-Yohonoukon",
+    "Dossougao",
+    "Gounsoégbamey",
+    "Guèdèvié",
+    "Guèdèvié-Gbègbèssa",
+    "Havè",
+    "Kindji",
+    "Sinhoungbomey"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "SO-AVA",
+   "libelle": "HOUEDO-AGUEKON",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Domèguédji",
+    "Gblonto",
+    "Gbégodo",
+    "Gbagbodji",
+    "Ganviécomey",
+    "Gbégbomè Ouèkèkomè",
+    "Gbessou",
+    "Sokomey"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "SO-AVA",
+   "libelle": "SÔ-AVA",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Ahomey Domey-Zounmey",
+    "Ahomey-Fonsa",
+    "Ahomey-Gbékpa",
+    "Ahomey-Gblon",
+    "Dogodo",
+    "Dokodji",
+    "Houndomey",
+    "Sindomey"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "SO-AVA",
+   "libelle": "VEKKY",
+   "rang": null,
+   "villagesAnnonces": 17,
+   "villages": [
+    "Aniankomey",
+    "Avlézounmey",
+    "Dogodo",
+    "Eguékomey",
+    "Gbètingao",
+    "Hlouazounmey",
+    "Hounhoué",
+    "Kpacomey",
+    "Lokpodji",
+    "Nonhouéto",
+    "Sô-ChanhouéTodo",
+    "Somaï",
+    "Tchinancomey",
+    "Totakoun",
+    "Vekky Daho",
+    "Vekky dogbodji",
+    "Zounhomey"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "ZE",
+   "libelle": "ADJAN",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Adjan",
+    "Adjan – Gla",
+    "Adjan –Houéta",
+    "Anagbo",
+    "Dodji-Aga",
+    "Tanta",
+    "Wassa",
+    "Zanzoun"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "ZE",
+   "libelle": "DAWE",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Agonzounkpa",
+    "Ahouali",
+    "Akadjamè",
+    "Dawè-Centre",
+    "Domè-Sèko",
+    "Tomasséahoua"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "ZE",
+   "libelle": "DJIGBE",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Agoundji",
+    "Awassou",
+    "Djigbé-Aguè",
+    "Djigbé-Gbodjè",
+    "Gbagodo",
+    "Sèssivali",
+    "Wo-Togoudo"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "ZE",
+   "libelle": "DODJI-BATA",
+   "rang": null,
+   "villagesAnnonces": 12,
+   "villages": [
+    "Adjamè",
+    "Adohounsa",
+    "Agondotan",
+    "Akouédjromèdé",
+    "Djoko",
+    "Gandaho",
+    "Gbéto-Fongbo",
+    "Gonfandji",
+    "Hountakon",
+    "Kpatchamè",
+    "Wankon",
+    "Wédji"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "ZE",
+   "libelle": "HEKANME",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Agbata",
+    "Akpalihonou",
+    "Awokpa",
+    "Gbozounmè",
+    "Hèkanmè",
+    "Houédota",
+    "Houédota-Djoko",
+    "Houéhounta",
+    "Mangassa",
+    "Togoudo"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "ZE",
+   "libelle": "KOUNDOKPOE",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Aïfa",
+    "Houégnonkpa",
+    "Houéhounta-Tozounkpa",
+    "Koundokpoé",
+    "Tangnigbadji",
+    "Togbonou",
+    "Wédjamè"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "ZE",
+   "libelle": "SEDJE-DENOU",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Agbohounsou",
+    "Agondénou",
+    "Agongbo",
+    "Aguiakpa",
+    "Sèdjè-Dénou",
+    "Sèdjè-Kpota",
+    "Sèdjè-Zounmey-Aga"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "ZE",
+   "libelle": "SEDJE-HOUEGOUDO",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Aglangbin",
+    "Ahozonnoudé",
+    "Akpomey",
+    "Ayahounta-Fifadji",
+    "Bodji",
+    "Missèbo",
+    "Sèdjannako",
+    "Sèdjè-Houégoudo"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "ZE",
+   "libelle": "TANGBO",
+   "rang": null,
+   "villagesAnnonces": 13,
+   "villages": [
+    "Adjago",
+    "Agbodjèdo",
+    "Anavié",
+    "Avléssa",
+    "Azonkanmè",
+    "Djitin-Aga",
+    "Glégbodji Agah",
+    "Glégbodji Do",
+    "Houézè",
+    "Tangbo-Aga",
+    "Tangbo-Do",
+    "Tanmey",
+    "Yèvi"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "ZE",
+   "libelle": "YOKPO",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Adjakpa",
+    "Adjrako",
+    "Awonsèdja",
+    "Hounliko",
+    "Hounsagoudo",
+    "Koudjannada-Tota",
+    "Wawata-Dandji",
+    "Wawata-Zounto",
+    "Yokpo-Centre"
+   ]
+  },
+  {
+   "departement": "ATLANTIQUE",
+   "commune": "ZE",
+   "libelle": "ZE",
+   "rang": null,
+   "villagesAnnonces": 14,
+   "villages": [
+    "Akpali",
+    "Akpali-Do",
+    "Dokota",
+    "Dokota-Aga",
+    "Goulo",
+    "Guékoumèdé",
+    "Havikpa",
+    "Houédazounkpa",
+    "Sodji",
+    "Waga",
+    "Zannoudji",
+    "Zè",
+    "Zè-Wédji",
+    "Zoungbomey"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "BEMBEREKE",
+   "libelle": "BEMBEREKE",
+   "rang": null,
+   "villagesAnnonces": 14,
+   "villages": [
+    "Bèmbèrèkè Peulh",
+    "Bèmbèrèkè-Est",
+    "Bèmbèrèkè-Ouest",
+    "Bérou",
+    "Gamaré",
+    "Gando",
+    "Guéré",
+    "Kénékou",
+    "Kéroukpogo",
+    "Kokabo",
+    "Kossou",
+    "Pédarou",
+    "Saoré",
+    "Wanrarou"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "BEMBEREKE",
+   "libelle": "BEROUBOUAY",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Béroubouay Peulh",
+    "Béroubouay-Est",
+    "Béroubouay-Ouest",
+    "Bouratèbè",
+    "Kabanou",
+    "Kongou-Peulh",
+    "Sombouan"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "BEMBEREKE",
+   "libelle": "BOUANRI",
+   "rang": null,
+   "villagesAnnonces": 11,
+   "villages": [
+    "Boro",
+    "Bouanri-Gourou",
+    "Bouanri-Songoura",
+    "Bouanri-Maro",
+    "Gando-Borou",
+    "Gbérou-Daba",
+    "Guéra-N’kali",
+    "Guéra-N’kali-Tassi",
+    "Kassarou",
+    "Sissigourou",
+    "Témé"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "BEMBEREKE",
+   "libelle": "GAMIA",
+   "rang": null,
+   "villagesAnnonces": 13,
+   "villages": [
+    "Baoura",
+    "Bèrèkè-Gando",
+    "Bèrèkè-Gourou",
+    "Bouay",
+    "Bouri",
+    "Dantcha",
+    "Gamia-Ouest",
+    "Gamia-Est",
+    "Ganro",
+    "Guessou-Nord",
+    "Kpébéra",
+    "Mani-Boké",
+    "Timbouré"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "BEMBEREKE",
+   "libelle": "INA",
+   "rang": null,
+   "villagesAnnonces": 13,
+   "villages": [
+    "Goua",
+    "Guessou-Banm Taka",
+    "Guessou-Banm Taka-Peulh",
+    "Guessou-Banm Taka-Ouest",
+    "Ina",
+    "Ina-Gando",
+    "Ina-Peulh",
+    "Ina-Est",
+    "Ina-Ouest",
+    "Konou",
+    "Sikouro",
+    "Wodora",
+    "Wonka-Gourou"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "NIKKI",
+   "libelle": "BIRO",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Biro",
+    "Gnanhoun",
+    "Massiagourou",
+    "Nallou",
+    "Ningouarou",
+    "Ourarou",
+    "Sonsonrè",
+    "Tèbo"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "NIKKI",
+   "libelle": "GNONKOUROKALI",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Gbari",
+    "Gneltoko",
+    "Gnonkourakali",
+    "Gourou-Pibou",
+    "Guema",
+    "Guinrou",
+    "Guinrou-Peulh",
+    "Soubo-Baraworou",
+    "Soubo-Gandérou",
+    "Woroumangassarou"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "NIKKI",
+   "libelle": "NIKKI",
+   "rang": null,
+   "villagesAnnonces": 31,
+   "villages": [
+    "Angankirou",
+    "Barkèdjè",
+    "Barougouroussi",
+    "Bellè",
+    "Boo",
+    "Boukanèrè",
+    "Danri",
+    "Donkparawi",
+    "Gah- Maro-Peulh",
+    "Gah-Maro",
+    "Gbaoussi",
+    "Gbaoussi-Kpaa",
+    "Gori",
+    "Gouré-Gbata",
+    "Gourou",
+    "Guidandolé",
+    "Kali",
+    "Koussoukou",
+    "Kparissérou",
+    "Kpawolou",
+    "Maro",
+    "Monnon",
+    "Sakabansi",
+    "Sonworé",
+    "Takou",
+    "Tépa",
+    "Tontarou",
+    "Tontarou-Peulh",
+    "Totorou",
+    "Wonko",
+    "Yako-Kparou"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "NIKKI",
+   "libelle": "OUENOU",
+   "rang": null,
+   "villagesAnnonces": 13,
+   "villages": [
+    "Alafiarou",
+    "Fombawi",
+    "Gnelkiradjé",
+    "Gnelsanda",
+    "Gossogui-Gourébata",
+    "Gotel",
+    "Goure baba",
+    "Ouroumon",
+    "Ouroumonsi- Peulh",
+    "Ouénou -Nikki",
+    "Sansi",
+    "Tchicandou",
+    "Wékétèrè"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "NIKKI",
+   "libelle": "SEREKALI",
+   "rang": null,
+   "villagesAnnonces": 12,
+   "villages": [
+    "Baani",
+    "Ganrou",
+    "Ganrou -Peulh",
+    "Gbégourou",
+    "Kassapéré",
+    "Koni",
+    "Moussouré",
+    "Ouenra-Peulh",
+    "Sérékali -Baka",
+    "Séréwondirou",
+    "Yao-Gourou",
+    "Yorarou"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "NIKKI",
+   "libelle": "SUYA",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Bantérè",
+    "Chein-Daroukpara",
+    "Dannon",
+    "Daroukpara",
+    "Ganchon",
+    "Soumarou",
+    "Suya"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "NIKKI",
+   "libelle": "TASSO",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Chein-Tasso",
+    "Déman",
+    "Fo- Darou",
+    "Gan -Gbérou",
+    "Gbabiré",
+    "Goré",
+    "Kpébourabou",
+    "Sinangourou",
+    "Tanakpé",
+    "Tasso"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "SINENDE",
+   "libelle": "FÔ-BOURE",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Fô-Bouko",
+    "Fô-Bouré",
+    "Fô-Bouré-Peulh",
+    "Gamagui",
+    "Narérou",
+    "Sakarou",
+    "Sèrou",
+    "Sokka",
+    "Sonkorou",
+    "Toumè"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "SINENDE",
+   "libelle": "SEKERE",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Kparo",
+    "Sèkèrè-Maro",
+    "Sèkèrè-Gando",
+    "Sèkèrè-Peulh",
+    "Séko-Kparou",
+    "Yarra-Bariba",
+    "Yarra-Gando",
+    "Yarra-Kouri",
+    "Yarra-Peulh"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "SINENDE",
+   "libelle": "SIKKI",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Dombouri",
+    "Gah-Baka",
+    "Goro-Bani",
+    "Monsi",
+    "Sikki-Gando",
+    "Sikki-Gourou",
+    "Sikki-Maro",
+    "Wari",
+    "Wari-Gando",
+    "Wari-Peulh"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "SINENDE",
+   "libelle": "SINENDE",
+   "rang": null,
+   "villagesAnnonces": 14,
+   "villages": [
+    "Bouro",
+    "Diadia",
+    "Didi",
+    "Gakpérou",
+    "Gnanro-Baatonworou",
+    "Gnanro-Gando",
+    "Gouré-Guessou",
+    "Gourou",
+    "Gourou-Kpérou",
+    "Guessou-Bani",
+    "Guessou-Bani-Peulh",
+    "Haoussa",
+    "Kossia",
+    "Lémanou"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "KALALE",
+   "libelle": "BASSO",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Banagbasson",
+    "Banézi",
+    "Basso",
+    "Basso-Peulh",
+    "Gawézi",
+    "Gbèkona",
+    "Gorogawo",
+    "Néganzi",
+    "Néganzi-Peulh"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "KALALE",
+   "libelle": "BOUCA",
+   "rang": null,
+   "villagesAnnonces": 15,
+   "villages": [
+    "Ada-Kpané",
+    "Bessassi-Bouca",
+    "Bouca",
+    "Bouca-Gando",
+    "Bouca-Peulh",
+    "Bouca-Woorou",
+    "Bouraourè",
+    "Gando-Gourou",
+    "Gbassi",
+    "Gbérougbassi",
+    "Gnel-Boucatou",
+    "Kaala",
+    "Karèl",
+    "Kourel",
+    "Sérégourou"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "KALALE",
+   "libelle": "DERASSI",
+   "rang": null,
+   "villagesAnnonces": 11,
+   "villages": [
+    "Alafiarou-Dérassi",
+    "Dérassi",
+    "Gannourè-Hèrè",
+    "Gnel-Kélé",
+    "Guiri-Peulh",
+    "Guiri-Gando",
+    "Kakatinnin",
+    "Mareguinta",
+    "Matchorè",
+    "Toucarè",
+    "Wonko"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "KALALE",
+   "libelle": "DUNKASSA",
+   "rang": null,
+   "villagesAnnonces": 13,
+   "villages": [
+    "Alafiarou-Gando",
+    "Batin",
+    "Dadi",
+    "Dangorou",
+    "Gnel-Gamadjè",
+    "Djèga-Dunkassa",
+    "Djilidjalaré",
+    "Dunkassa",
+    "Dunkassa-Peulh",
+    "Gbéssakpérou",
+    "Gorobani",
+    "Kiricoubè",
+    "Ouénagourou"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "KALALE",
+   "libelle": "KALALE",
+   "rang": null,
+   "villagesAnnonces": 17,
+   "villages": [
+    "Bessassi",
+    "Bessassi-Béa",
+    "Bessassi-Gando",
+    "Danganzi",
+    "Djega-Kalalé",
+    "Goudéma",
+    "Kalalé",
+    "Kalalé-Peulh",
+    "Kalalé-Sessouan",
+    "Kalalé-Zina",
+    "Kidaroukpérou",
+    "Lou",
+    "Nassiconzi",
+    "Sébana",
+    "Wobadjè",
+    "Yolla",
+    "Zambara"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "KALALE",
+   "libelle": "PEONGA",
+   "rang": null,
+   "villagesAnnonces": 11,
+   "villages": [
+    "Angaradébou",
+    "Bagaria",
+    "Boa",
+    "Boa-Gando",
+    "Gando-Baka",
+    "Gbéï",
+    "Gnel-Djobo",
+    "Gnel-Yakan",
+    "Gossodji",
+    "Korodji",
+    "Péonga"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "PARAKOU",
+   "libelle": null,
+   "rang": 1,
+   "villagesAnnonces": 29,
+   "villages": [
+    "Albarika",
+    "Alaga",
+    "Bakinkoura",
+    "Bakpérou",
+    "Banikanni-Douwérou",
+    "Bèyarou",
+    "Boundarou",
+    "Camp-Adagbè",
+    "Bosso-Camps-Peulhs",
+    "Damagourou",
+    "Dépôt",
+    "Gaanon",
+    "Gounin",
+    "Kabassira",
+    "Kadéra",
+    "Kpébié",
+    "Kpérou-Guéra",
+    "Madina",
+    "Monnon",
+    "Ouézé",
+    "Sawararou",
+    "Sinagourou",
+    "Sourou",
+    "Thian",
+    "Titirou",
+    "Tourou-Dispensaire",
+    "Tourou-Palais-Royal",
+    "Worou-Tokorou",
+    "Zazira"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "PARAKOU",
+   "libelle": null,
+   "rang": 2,
+   "villagesAnnonces": 17,
+   "villages": [
+    "Agba agba",
+    "Assagbinin- Baka",
+    "Bakounourou",
+    "Banikanni",
+    "Banikanni-ENI",
+    "Banikanni-Madjatom",
+    "Baparapé",
+    "Goromosso",
+    "Korobororou",
+    "Korobororou-Peulh",
+    "Ladjifarani",
+    "Ladjifarani-Petit Père",
+    "Lémanda",
+    "Nima-Sokounon",
+    "Rose-Croix Bah Mora",
+    "Woubékou-Gah",
+    "Zongo-Zénon"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "PARAKOU",
+   "libelle": null,
+   "rang": 3,
+   "villagesAnnonces": 12,
+   "villages": [
+    "Amanwignon",
+    "Dokparou",
+    "Gah",
+    "Ganou",
+    "Gbira",
+    "Guéma",
+    "Nikkikpérou",
+    "Swinrou-Kpassagambou",
+    "Tranza",
+    "Wansirou",
+    "Woré",
+    "Zongo"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "N’DALI",
+   "libelle": "BORI",
+   "rang": null,
+   "villagesAnnonces": 17,
+   "villages": [
+    "Angaradébou",
+    "Bio-Sika",
+    "Bori",
+    "Bori-N’Darnon",
+    "Bori-Peulh",
+    "Darnon-Gourou",
+    "Gbitébou",
+    "Gounin",
+    "Kori",
+    "Marégourou",
+    "Marégourou-Peulh",
+    "Sonnoumon",
+    "Sonnoumon-Gando",
+    "Sonnoumon-Peulh",
+    "Souarou",
+    "Témé",
+    "Témé-Peulh"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "N’DALI",
+   "libelle": "GBEGOUROU",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Alafiarou",
+    "Binassi",
+    "Darnon",
+    "Douroubé",
+    "Gbégourou",
+    "Guessou",
+    "Sinawourarou"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "N’DALI",
+   "libelle": "N’DALI",
+   "rang": null,
+   "villagesAnnonces": 13,
+   "villages": [
+    "Banhoun",
+    "Banhoun-Gando",
+    "Kèri",
+    "N’Dali-Peulh",
+    "Sakarou",
+    "Sinisson",
+    "Suanin",
+    "Tèpa",
+    "Tréboun",
+    "Wari-Goura",
+    "Woasson",
+    "Wobakarou",
+    "Yèroumarou"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "N’DALI",
+   "libelle": "SIRAROU",
+   "rang": null,
+   "villagesAnnonces": 15,
+   "villages": [
+    "Boko",
+    "Dabou",
+    "Gah Alérou",
+    "Gah-Sankounin",
+    "Gandou-Nomba",
+    "Gbéguina",
+    "Kakara",
+    "Komiguéa",
+    "Maréborou",
+    "Sakarou",
+    "Samounin",
+    "Sirarou",
+    "Tinré",
+    "Tounré",
+    "Yankoï"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "N’DALI",
+   "libelle": "OUENOU",
+   "rang": null,
+   "villagesAnnonces": 12,
+   "villages": [
+    "Banhoun-Kpo",
+    "Bounin",
+    "Bouyérou",
+    "Dankourou",
+    "Gah-Winra",
+    "Moussoukouré",
+    "Ouénou",
+    "Ouénou-Peulh",
+    "Pouramparè",
+    "Tamarou",
+    "Warikpa",
+    "Wèrèkè"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "PERERE",
+   "libelle": "GNINSY",
+   "rang": null,
+   "villagesAnnonces": 13,
+   "villages": [
+    "Assagnahoun",
+    "Boro",
+    "Diguidirou",
+    "Diguidirou -Peulh",
+    "Gninsy",
+    "Gninsy-Gando",
+    "Gninsy-Peulh",
+    "Gorobani",
+    "Koukoumbou",
+    "Sandilo",
+    "Sandilo-Gando",
+    "Sanrékou",
+    "Sombirikpérou"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "PERERE",
+   "libelle": "GUINAGOUROU",
+   "rang": null,
+   "villagesAnnonces": 20,
+   "villages": [
+    "Banigourou",
+    "Bérékoudo",
+    "Bougnankou",
+    "Gah-Maro",
+    "Gando-Alafiarou",
+    "Gbandé",
+    "Gommey",
+    "Gounkparé",
+    "Guinagourou",
+    "Guinagourou-Peulh",
+    "Kabadou",
+    "Kpawolou",
+    "Nanin",
+    "Nassy",
+    "Nassy-Gando",
+    "Ogamoin",
+    "Sinanimoin",
+    "Sonon",
+    "Wokparou",
+    "Wondou"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "PERERE",
+   "libelle": "KPEBIE",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Guinro",
+    "Kpébié",
+    "Kpébié-Gando",
+    "Tchori",
+    "Won"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "PERERE",
+   "libelle": "PANE",
+   "rang": null,
+   "villagesAnnonces": 3,
+   "villages": [
+    "Bougnérou",
+    "Panè-Guéa",
+    "Tabérou"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "PERERE",
+   "libelle": "PERERE",
+   "rang": null,
+   "villagesAnnonces": 14,
+   "villages": [
+    "Bawèra",
+    "Bohérou",
+    "Bokérou",
+    "Borikirou",
+    "Kousso",
+    "Nima-Béri",
+    "Ourarou",
+    "Pèrèrè-Gourou",
+    "Pèrèrè -Peulh",
+    "Sakparou",
+    "Soria",
+    "Soubado",
+    "Tissèrou",
+    "Worokpo"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "PERERE",
+   "libelle": "SONTOU",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Alafiarou",
+    "Bani-Peulh",
+    "Bonrou",
+    "Bonrou-Gando",
+    "Gbamon",
+    "Sontou"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "TCHAOUROU",
+   "libelle": "ALAFIAROU",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Agbassa",
+    "Agramarou",
+    "Alafiarou",
+    "Ayégourou",
+    "Babarou",
+    "Koda",
+    "Koko",
+    "Oloungbé"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "TCHAOUROU",
+   "libelle": "BETEROU",
+   "rang": null,
+   "villagesAnnonces": 12,
+   "villages": [
+    "Adamou-Kpara",
+    "Banigri",
+    "Bétérou",
+    "Kaki Koka",
+    "Kpawa",
+    "Kpessou",
+    "Oubérou",
+    "Sinahou",
+    "Somou – Gah",
+    "Tchokpassi",
+    "Wari-Maro",
+    "Yébessi"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "TCHAOUROU",
+   "libelle": "GORO",
+   "rang": null,
+   "villagesAnnonces": 4,
+   "villages": [
+    "Gah -Gourou",
+    "Gbéba",
+    "Goro",
+    "Nim Souambou"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "TCHAOUROU",
+   "libelle": "KIKA",
+   "rang": null,
+   "villagesAnnonces": 21,
+   "villages": [
+    "Bonwoubérou",
+    "Bouay",
+    "Camp Zato",
+    "Gouroubara",
+    "Kabo",
+    "Kika",
+    "Kika-Barrage",
+    "Kokobè",
+    "Kpari",
+    "Kpassa",
+    "Kpéwonkou",
+    "Monrawonkourou",
+    "Nannonrou",
+    "Sonna",
+    "Sui -Gourou",
+    "Tandou",
+    "Tangué",
+    "Tourou-Souanré",
+    "Warankpérou",
+    "Winra",
+    "Yèroumarou"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "TCHAOUROU",
+   "libelle": "SANSON",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Amadou-Kpara",
+    "Barérou",
+    "Gbétébou",
+    "Gombouerou",
+    "Kaya",
+    "Kpassatona",
+    "Sanson",
+    "Sébou",
+    "Téou-Kpara",
+    "Toko- Bio"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "TCHAOUROU",
+   "libelle": "TCHATCHOU",
+   "rang": null,
+   "villagesAnnonces": 16,
+   "villages": [
+    "Atira-Kparou",
+    "Badékparou",
+    "Boukousséra",
+    "Gararou",
+    "Gbékpanin",
+    "Gokanna",
+    "Goussouambou",
+    "Kinnou-Kparou",
+    "Kontoubarou",
+    "Koubou",
+    "Sakana- Kpéba",
+    "Soumon-Gah",
+    "Tchatchou",
+    "Tékparou",
+    "Toukossari",
+    "Woria"
+   ]
+  },
+  {
+   "departement": "BORGOU",
+   "commune": "TCHAOUROU",
+   "libelle": "TCHAOUROU",
+   "rang": null,
+   "villagesAnnonces": 19,
+   "villages": [
+    "Akoundanmon",
+    "Boronin",
+    "Borori",
+    "Dagbara-Gourou",
+    "Gah-Kpénou",
+    "Gango",
+    "Gbéyèkèrou",
+    "Guinirou",
+    "Kassouala",
+    "Kèra",
+    "Kpakpanin",
+    "Lafia-Bido",
+    "Owodé",
+    "Tchalla",
+    "Tchaourou",
+    "Tchaourou-Gobi-Alédji",
+    "Tchaourou-Issalè",
+    "Worogui-Goura",
+    "Yambouan"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "BANTE",
+   "libelle": "AGOUA",
+   "rang": null,
+   "villagesAnnonces": 4,
+   "villages": [
+    "Cloubou",
+    "Kadjogbé",
+    "N’Tchoché",
+    "N’Tchon"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "BANTE",
+   "libelle": "AKPASSI",
+   "rang": null,
+   "villagesAnnonces": 4,
+   "villages": [
+    "Banon",
+    "Illagbo",
+    "Illaré",
+    "Okoto"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "BANTE",
+   "libelle": "ATOKOLIBE",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Agbon",
+    "Aloba",
+    "Atokolibé",
+    "Malomi",
+    "Odjogbilè",
+    "Oguédé",
+    "Okouta-Oro"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "BANTE",
+   "libelle": "BANTE",
+   "rang": null,
+   "villagesAnnonces": 4,
+   "villages": [
+    "Adjantè",
+    "Basson",
+    "Gbégamey",
+    "Illélakoun"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "BANTE",
+   "libelle": "BOBE",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Assaba",
+    "Bobè",
+    "Djagballo",
+    "Fomon",
+    "Soula"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "BANTE",
+   "libelle": "GOUKA",
+   "rang": null,
+   "villagesAnnonces": 11,
+   "villages": [
+    "Galata",
+    "Galata-Igberi",
+    "Gbèdjè",
+    "Gouka",
+    "Kafégnigbé",
+    "Kamala-Idjou",
+    "Mamatchoké",
+    "Mayamon",
+    "Montèwo- Atakè- Agbado",
+    "Sako",
+    "Zongo"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "BANTE",
+   "libelle": "LOUGBA",
+   "rang": null,
+   "villagesAnnonces": 4,
+   "villages": [
+    "Agongni",
+    "Alétan",
+    "Gotcha",
+    "Kotakpa"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "BANTE",
+   "libelle": "KOKO",
+   "rang": null,
+   "villagesAnnonces": 3,
+   "villages": [
+    "Akpaka",
+    "Issalè",
+    "Itchocobo"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "BANTE",
+   "libelle": "PIRA",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Adjigo",
+    "Ayigbo-Koto",
+    "Djèro",
+    "Ela-Meta",
+    "Idi-Ogou",
+    "Oké-kagourè",
+    "Okouta-Ossé"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "DASSA-ZOUME",
+   "libelle": "AKOFFODJOULE",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Agondokpo",
+    "Akoffodjoulé",
+    "Attinkpayé",
+    "Banigbé",
+    "Bêtêcoucou",
+    "Holli-Gamba-Itchèdoun",
+    "N’gbèga"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "DASSA-ZOUME",
+   "libelle": "DASSA I",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Agbégbé",
+    "Amangassa",
+    "Arigbokoto",
+    "Essèbrè",
+    "Essèkpa",
+    "Latin",
+    "Yara",
+    "Zongo"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "DASSA-ZOUME",
+   "libelle": "DASSA II",
+   "rang": null,
+   "villagesAnnonces": 13,
+   "villages": [
+    "Akpari-Arobassa",
+    "Ayédèro",
+    "Ayétou",
+    "Bêtou",
+    "Essèkpré",
+    "Idaho",
+    "Iloulé",
+    "Issalou",
+    "kpékouté",
+    "Mahou",
+    "Modji-Gangan",
+    "Moudja",
+    "Moumoudji"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "DASSA-ZOUME",
+   "libelle": "GBAFFO",
+   "rang": null,
+   "villagesAnnonces": 4,
+   "villages": [
+    "Awaya",
+    "Dovi-Some",
+    "Gbaffo",
+    "Gnonkpingnon"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "DASSA-ZOUME",
+   "libelle": "LEMA",
+   "rang": null,
+   "villagesAnnonces": 4,
+   "villages": [
+    "Agbagoulè",
+    "Erokoya",
+    "Kpakpa",
+    "Lèma"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "DASSA-ZOUME",
+   "libelle": "KERE",
+   "rang": null,
+   "villagesAnnonces": 11,
+   "villages": [
+    "Ataké",
+    "Erokowari",
+    "Godogossou",
+    "Igoho",
+    "Itagui",
+    "Kèrè",
+    "Kpakpada-Agbakossaré",
+    "Odo-Otchèrè",
+    "Okéméré",
+    "Tangbé",
+    "Tini-Kodjatchan"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "DASSA-ZOUME",
+   "libelle": "KPINGNI",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Adihinlidji",
+    "Bakèma",
+    "Fita",
+    "Kpingni",
+    "Togon",
+    "Vèdji",
+    "Zougoudo"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "DASSA-ZOUME",
+   "libelle": "PAOUINGNAN",
+   "rang": null,
+   "villagesAnnonces": 20,
+   "villages": [
+    "Agbogbomè",
+    "Agnanmè",
+    "Assiyo",
+    "Domè",
+    "Gbédavo",
+    "Gbowêlè",
+    "Goussoé",
+    "Hasséou",
+    "Hounkpogon",
+    "Kindji",
+    "Lissa",
+    "Lokossa",
+    "Lotogo",
+    "Manonfi",
+    "Ouémé",
+    "Ouissi",
+    "Sovogo",
+    "Vidjinatoun",
+    "Zotèdji",
+    "Zouto"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "DASSA-ZOUME",
+   "libelle": "SOCLOGBO",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Agao",
+    "Agbondjèdo",
+    "Akoba",
+    "Djigbé",
+    "Dogbo",
+    "Gbonou",
+    "Lamanou",
+    "Miniffi",
+    "Sourhèdji-Okpè Olouwa",
+    "Tchaounka"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "DASSA-ZOUME",
+   "libelle": "TRE",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Adjalè",
+    "Adjokan",
+    "Gankpètin",
+    "Itchégou",
+    "Itchogué-sotré",
+    "Kpékpédè",
+    "Lèma",
+    "Sèmè",
+    "Tchamissi-Laguêma-Atakéagbassa"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "SAVALOU",
+   "libelle": "SAVALOU-AGA",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Dagadoho",
+    "Djantadoho",
+    "Djimè",
+    "Dodomey",
+    "Honnoukon",
+    "Kpakpassa",
+    "Lowo",
+    "Missè",
+    "Sohèdji",
+    "Zoundji"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "SAVALOU",
+   "libelle": "SAVALOU- AGBADO",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Ahossèdo",
+    "Dozoundji",
+    "Gbaffo Dogoudo",
+    "Gbaffo Houégbo",
+    "Makinnou",
+    "Zongo",
+    "Zouzonkanmè"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "SAVALOU",
+   "libelle": "SAVALOU-ATTAKE",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Azonkangoudo",
+    "Covèdji",
+    "Doïssa Honnoukon",
+    "Doïssa Sokpa",
+    "Logbo",
+    "Moussoungo",
+    "N’gbèhan"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "SAVALOU",
+   "libelle": "DJALLOUKOU",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Attakplakanmè",
+    "Djalloukou",
+    "Djallouma",
+    "Gbaglodji",
+    "Konkondji",
+    "Monfio",
+    "Zoukpa"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "SAVALOU",
+   "libelle": "DOUME",
+   "rang": null,
+   "villagesAnnonces": 18,
+   "villages": [
+    "Aballa",
+    "Abèokouta",
+    "Adjégounlè",
+    "Affé Zongo",
+    "Amou",
+    "Amou Sakaou",
+    "Aroundé",
+    "Bèbiani",
+    "Coffé Agballa",
+    "Doumè Lakoun",
+    "Ekpa",
+    "Felma",
+    "Idjou",
+    "Iroukou",
+    "Kannahoun",
+    "Kpékpélou",
+    "Lèkpa",
+    "Olouwakèmi"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "SAVALOU",
+   "libelle": "GOBADA",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Abiadji-Sogoudo",
+    "Gobada",
+    "Govi",
+    "Lama",
+    "Lékè",
+    "Zadowin",
+    "Zankpé-Houéssinhoué"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "SAVALOU",
+   "libelle": "KPATABA",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Codji",
+    "Ekpa",
+    "Koutago",
+    "Lozin",
+    "Mèdétèkpo",
+    "Miniki",
+    "Mondji",
+    "N’Dasso"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "SAVALOU",
+   "libelle": "LAHOTAN",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Agbomadin",
+    "Ahito",
+    "Awiankanmè",
+    "Damè",
+    "Kpakpavissa",
+    "Sègbèya",
+    "Zomakidji"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "SAVALOU",
+   "libelle": "LEMA",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Kitikpli",
+    "Kokoro",
+    "Léma",
+    "Okouffo",
+    "Zongo"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "SAVALOU",
+   "libelle": "LOGOZOHE",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Bamè",
+    "Honnoukon",
+    "Klougo",
+    "Loukintowin",
+    "Naoudji",
+    "Sègui",
+    "Sozoumè"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "SAVALOU",
+   "libelle": "MONKPA",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Agah",
+    "Anigbé",
+    "Dodomey",
+    "Walla",
+    "Zongo"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "SAVALOU",
+   "libelle": "OUESSE",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Agbodranfo",
+    "Aglamidjodji",
+    "Agonmey",
+    "Akété",
+    "Lowozoungo",
+    "Ouèssè",
+    "Tchogodo"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "SAVALOU",
+   "libelle": "OTTOLA",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Akpaki",
+    "Allè",
+    "Alloudi-Gourè",
+    "Igbéri",
+    "Issalè",
+    "Kadjotché",
+    "Kaman",
+    "Zongo-Albarika"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "SAVALOU",
+   "libelle": "TCHETTI",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Adjoya",
+    "Djabigon",
+    "Igbéri",
+    "Koffodoua",
+    "Obicro",
+    "Odo-Agbon",
+    "Ottélé",
+    "Tchetti"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "GLAZOUE",
+   "libelle": "AKLAMPA",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Affizoungo",
+    "Affizoungo-Kpota",
+    "Agbagbadji",
+    "Allawénonsa",
+    "Allawénonsa-Tchaha",
+    "Amanhoungavissa",
+    "Antadji",
+    "Djanmandji",
+    "Lagbo",
+    "Sowiandji"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "GLAZOUE",
+   "libelle": "ASSANTE",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Assanté",
+    "Gbanlin",
+    "Gbanlin-fifadji",
+    "Houin",
+    "Houin-Sègbèya"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "GLAZOUE",
+   "libelle": "GLAZOUE",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Affécia",
+    "Ayédèro",
+    "Houndjro Kpogandji",
+    "Ogoudako",
+    "Orokoto",
+    "Yémanlin",
+    "Yévèdo",
+    "Zongo"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "GLAZOUE",
+   "libelle": "GOME",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Gomé",
+    "Haya",
+    "Ifada-Zounguè",
+    "Tankossi",
+    "Tchatchégou"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "GLAZOUE",
+   "libelle": "KPAKPAZA",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Atogbo",
+    "Kpakpaza",
+    "Sowé",
+    "Sowé-Ikpakpada",
+    "Yawa"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "GLAZOUE",
+   "libelle": "MAGOUMI",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Aïdjesso",
+    "Boubou",
+    "Haï",
+    "Houala",
+    "Monso",
+    "Oguirin"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "GLAZOUE",
+   "libelle": "OUEDEME",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Atéguédji",
+    "Déhoudoho",
+    "Goto",
+    "Kpota",
+    "Ouèdèmè Centre",
+    "Yagbo"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "GLAZOUE",
+   "libelle": "SOKPONTA",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Akouègba",
+    "Camaté",
+    "Oké-Okounou",
+    "Sokponta Centre",
+    "Tchakaloké"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "GLAZOUE",
+   "libelle": "THIO",
+   "rang": null,
+   "villagesAnnonces": 11,
+   "villages": [
+    "Abéssouhoué",
+    "Agouagon",
+    "Agouagon-Gnonnougbo",
+    "Akomyan",
+    "Assromihoué",
+    "Béthel",
+    "Dokoundji",
+    "Hlassoé",
+    "Hoco",
+    "Kpassali",
+    "Riffo"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "GLAZOUE",
+   "libelle": "ZAFFE",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Adourékoman",
+    "Egbessi",
+    "Kabolé",
+    "Kpakpazounmè",
+    "Madengbé",
+    "Okéo",
+    "Zaffé Centre"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "OUESSE",
+   "libelle": "CHALLA-OGOÏ",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Agboro-Idouya",
+    "Agboro-Kombon",
+    "Ansêkê",
+    "Botti-Houégbo",
+    "Challa-Ogoï Alougbèdè",
+    "Challa-Ogoï Guêdon",
+    "Gbédé",
+    "Kokoro Awoyo",
+    "Kokoro Centre"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "OUESSE",
+   "libelle": "DJEGBE",
+   "rang": null,
+   "villagesAnnonces": 4,
+   "villages": [
+    "Djègbé-Lokossa",
+    "Djègbé-Odjaha",
+    "Ohoula",
+    "Vodjè"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "OUESSE",
+   "libelle": "GBANLIN",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Azraou",
+    "Gbanlin",
+    "Gbanlin-Aïzon",
+    "Idadjo",
+    "Tosso",
+    "Vossa",
+    "Wokpa"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "OUESSE",
+   "libelle": "IKEMON",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Akpéro",
+    "Ekpa",
+    "Ikèmon-Ewonda",
+    "Ikèmon-Ewontoutou",
+    "Ogbê"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "OUESSE",
+   "libelle": "KILIBO",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Affèssomou",
+    "Kilibo-Adjougou",
+    "Kilibo-Gare",
+    "Kilibo-Olata",
+    "Olouni-N’gbé",
+    "Owolafè",
+    "Suru-Léré",
+    "Yaoui"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "OUESSE",
+   "libelle": "LAMINOU",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Attannondoho",
+    "Botti",
+    "Gbémè",
+    "Kpassa",
+    "Laminou",
+    "Laminou -Aïdjèdo",
+    "Wodji"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "OUESSE",
+   "libelle": "ODOUGBA",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Dokoundoho",
+    "Evaï-Gbaffo",
+    "N’gbèhouédo",
+    "N’gbéhouédo-Routo",
+    "Odougba",
+    "Tchédjannangnon",
+    "Zogba-Trékou"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "OUESSE",
+   "libelle": "OUESSE",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Adougou",
+    "Adougou-Agah",
+    "Attata",
+    "Lakoko",
+    "Ouèssè Centre",
+    "Ouèssè-Aïzon",
+    "Zogba-Gaou"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "OUESSE",
+   "libelle": "TOUI",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Ayédèro",
+    "Ayétoro",
+    "Malété",
+    "Odo-Akaba",
+    "Ogoutèdo",
+    "Toui-Gare",
+    "Toui-Odélakou",
+    "Toui-Odjoulè",
+    "Toui-PK"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "SAVE",
+   "libelle": "ADIDO",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Agbaboué",
+    "Atti",
+    "Djaloumon",
+    "Igboè",
+    "Issalè Otin",
+    "Kingoun",
+    "Tchoui"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "SAVE",
+   "libelle": "BESSE",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Bessé Owodé",
+    "Djabata",
+    "Igbodja",
+    "Kadjogbé",
+    "Okpa"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "SAVE",
+   "libelle": "BONI",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Adjégoulè",
+    "Agbadjo",
+    "Agbaïgodo",
+    "Awo Sériki",
+    "Djangbé",
+    "Kilibo-Ogbo",
+    "Madina",
+    "Tchougbé"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "SAVE",
+   "libelle": "KABOUA",
+   "rang": null,
+   "villagesAnnonces": 11,
+   "villages": [
+    "Alafia",
+    "Atèssè",
+    "Baako",
+    "Babaguidaï",
+    "Gah Akéékéé",
+    "Gogoro",
+    "Montèwo",
+    "Oké Olou -Ossin",
+    "Oké Olou-Otin",
+    "Okounfo",
+    "Tchayagbangba"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "SAVE",
+   "libelle": "OKPARA",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Akon",
+    "Gbéré",
+    "Monka",
+    "Oké Owo",
+    "Oké Owo-Aga",
+    "Sandéhou"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "SAVE",
+   "libelle": "PLATEAU",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Boubouhou",
+    "Dakpa",
+    "Dépôt Centre",
+    "Fatchodjonin",
+    "Kpabaï",
+    "Savè-Nouveau",
+    "Zongo"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "SAVE",
+   "libelle": "SAKIN",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Banigbé",
+    "Diho-Agbongui",
+    "Diho-Ogbo",
+    "Iwéé",
+    "Kadjola",
+    "Ouoghi-Centre",
+    "Ouoghi-Gare",
+    "Ouoghi-Titon",
+    "Tchintchin"
+   ]
+  },
+  {
+   "departement": "COLLINES",
+   "commune": "SAVE",
+   "libelle": "OFFE",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Atchakpa",
+    "Atchakpa-Kpingni",
+    "Ayédjoko",
+    "Dani",
+    "Eétou",
+    "Etiofè",
+    "Gobé"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "APLAHOUE",
+   "libelle": "APLAHOUE",
+   "rang": null,
+   "villagesAnnonces": 16,
+   "villages": [
+    "Aflantan",
+    "Aplahoué",
+    "Avégodo",
+    "Azondogahoué",
+    "Bossouhoué",
+    "Dannouhoué",
+    "Dhossouhoué",
+    "Djikpamè",
+    "Gbezé",
+    "Hêvi-Sènouhoué",
+    "Hounsahoué",
+    "Kaïtémey",
+    "Kpodji",
+    "Lokogba",
+    "Tchiglihoué",
+    "Zohoudji"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "APLAHOUE",
+   "libelle": "ATOMEY",
+   "rang": null,
+   "villagesAnnonces": 16,
+   "villages": [
+    "Agbotavou",
+    "Agnamey",
+    "Agodogoui",
+    "Atomey-Avéganmey",
+    "Bavou",
+    "Couffokpa",
+    "Datcha",
+    "Dousso",
+    "Gougouta",
+    "Hevi",
+    "Hontonou",
+    "Kpodji",
+    "Lanhouetomey",
+    "Sodjagohoué",
+    "Vivimey",
+    "Volly-Latadji"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "APLAHOUE",
+   "libelle": "AZOVE",
+   "rang": null,
+   "villagesAnnonces": 11,
+   "villages": [
+    "Avégodoui",
+    "Avétuimey",
+    "Azové centre",
+    "Dékanmey",
+    "Djimadohoué",
+    "Ekinhoué",
+    "Gblofoly",
+    "Hessouhoué",
+    "Kpakomey",
+    "Ouchihoué",
+    "Yehouémey"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "APLAHOUE",
+   "libelle": "DEKPO-CENTRE",
+   "rang": null,
+   "villagesAnnonces": 14,
+   "villages": [
+    "Adamè",
+    "Adandéhoué",
+    "Akémé",
+    "Atto-Houé",
+    "Bozinkpe",
+    "Dékandji",
+    "Dékpo-Centre",
+    "Gbètohoué",
+    "Gnonfihoué",
+    "Hontonmey",
+    "Koyohoué",
+    "Lagbavé",
+    "Sèhonouhoué",
+    "Tchatéhoué"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "APLAHOUE",
+   "libelle": "GODOHOU",
+   "rang": null,
+   "villagesAnnonces": 12,
+   "villages": [
+    "Djowé",
+    "Fandjigahoué",
+    "Gadekohounhoué",
+    "Godohou",
+    "Hontoui",
+    "Kogbétohoué",
+    "Mahougbèhoué",
+    "Sinlita",
+    "Takpatchiomè",
+    "Totchikémè",
+    "Wakpé",
+    "Zamè"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "APLAHOUE",
+   "libelle": "KISSAMEY",
+   "rang": null,
+   "villagesAnnonces": 14,
+   "villages": [
+    "Bogandji",
+    "Dogohoué",
+    "Edéhoué",
+    "Gbakonou",
+    "Havou",
+    "Hedjinnawa",
+    "Hélétoumey",
+    "Houétan",
+    "Houngbamey",
+    "Kissamey",
+    "Koumakohoué",
+    "Lokossouhoué",
+    "Tannou",
+    "Touvou"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "APLAHOUE",
+   "libelle": "LONKLY",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Aboloumè",
+    "Agbannaté",
+    "Badjamè",
+    "Bayamè",
+    "Donoumè",
+    "Eglimè",
+    "Hoky",
+    "Kidji",
+    "Lonkly"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "DJAKOTOMEY",
+   "libelle": "ADJINTIMEY",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Agohoué-Balimey",
+    "Doumahou",
+    "Fannahinhoué",
+    "Gbotohoué",
+    "Hekpé",
+    "Mahinouhoué",
+    "Sebiohoué-Adjintimey"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "DJAKOTOMEY",
+   "libelle": "BETOUMEY",
+   "rang": null,
+   "villagesAnnonces": 13,
+   "villages": [
+    "Ablomey",
+    "Aïssanhoué",
+    "Aïvohoué",
+    "Betoumey Centre",
+    "Bota",
+    "Dogohoué",
+    "Goméhouin",
+    "Holou-Loko",
+    "Houngbédjihoué",
+    "Kpatohoué",
+    "Tchanhoué",
+    "Titongon",
+    "Zohoudji"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "DJAKOTOMEY",
+   "libelle": "DJAKOTOMEY I",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Djakotomey centre",
+    "Danssouhoué",
+    "Agbédranfo",
+    "Améganhoué",
+    "Atchouhoué",
+    "Béotchi",
+    "Hounhomey",
+    "Gbognonhoué",
+    "Sogbavihoué"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "DJAKOTOMEY",
+   "libelle": "DJAKOTOMEY II",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "1. Babohoué",
+    "Gbognonhoué",
+    "Golamey",
+    "Houngbezanmè",
+    "Kpayahoué",
+    "Lokoui-Bedjamey",
+    "Tohouéhoué"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "DJAKOTOMEY",
+   "libelle": "GOHOMEY",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Démahouhoué",
+    "Dowomey",
+    "Godouhoué",
+    "Gohomey Centre",
+    "Hagoumey Centre",
+    "Loko-Atoui",
+    "Mouzoukpokpohoué"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "DJAKOTOMEY",
+   "libelle": "HOUEGAMEY",
+   "rang": null,
+   "villagesAnnonces": 12,
+   "villages": [
+    "Danmakahoué",
+    "Djonouhoué",
+    "Edjihoué",
+    "Gamè-Fodé",
+    "Gamè-Houègbo",
+    "Houégamey",
+    "Houngba",
+    "Kanvihoué",
+    "Kpeladjamey",
+    "Nouboudji",
+    "Tédéhoué",
+    "Wanou"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "DJAKOTOMEY",
+   "libelle": "KINKINHOUE",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Dassouhoué",
+    "Etonhoué",
+    "Kessahouédji",
+    "Kinkinhoué",
+    "Segbèhoué",
+    "Seglahoué"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "DJAKOTOMEY",
+   "libelle": "KOKOHOUE",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Fogbadja centre",
+    "Gbemahlouehoué",
+    "Gboyouhoué",
+    "Kansouhoué",
+    "Kokohoué",
+    "Migbowomey",
+    "Sèmanouhoué"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "DJAKOTOMEY",
+   "libelle": "KPOBA",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Bahoué",
+    "Fantchoutchéhoué",
+    "Kpoba",
+    "Mekpohoué",
+    "Nakidahohoué",
+    "Zohoudji"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "DJAKOTOMEY",
+   "libelle": "SOKOUHOUE",
+   "rang": null,
+   "villagesAnnonces": 11,
+   "villages": [
+    "Akodébakou",
+    "Assogbahoué",
+    "Avodjihoué",
+    "Avonnouhoué",
+    "Gbékéhoué",
+    "Hounkémey",
+    "Mededjihoué",
+    "Sahou-Sohoué",
+    "Sokouhoué",
+    "Tokpohoué",
+    "Zouzouvou"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "KLOUEKANMEY",
+   "libelle": "ADJAHONME",
+   "rang": null,
+   "villagesAnnonces": 12,
+   "villages": [
+    "Adjahonmè",
+    "Bétoumè",
+    "Dayéhoué",
+    "Edahoué",
+    "Godohou",
+    "Hohluimè",
+    "Kpévidji",
+    "Olouhoué",
+    "Sawamè-Hossouhoué",
+    "Tchanhouiwanwoui",
+    "Tchokpohoué",
+    "Toïmè"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "KLOUEKANMEY",
+   "libelle": "AHOGBEYA",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Aglali",
+    "Ahogbèya",
+    "Dadji",
+    "Djihami",
+    "Gahayadji",
+    "Gahayanou",
+    "Klossou",
+    "Kplakatagon",
+    "Madémè",
+    "Tchéton"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "KLOUEKANMEY",
+   "libelle": "AYAHOHOUE",
+   "rang": null,
+   "villagesAnnonces": 4,
+   "villages": [
+    "Ahoudji",
+    "Avégandji",
+    "Ayahohoué",
+    "Kédji"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "KLOUEKANMEY",
+   "libelle": "DJOTTO",
+   "rang": null,
+   "villagesAnnonces": 16,
+   "villages": [
+    "Adahoué",
+    "Akimè",
+    "Avéganmè",
+    "Dangnonchihoué",
+    "Davihoué",
+    "Dékandji",
+    "Djotto",
+    "Fidégnonhoué",
+    "Gbéhounkochihoué",
+    "Glolihoué",
+    "Gnigbou",
+    "Gnigbougan",
+    "Houénoussou",
+    "Yénawa",
+    "Yèvihoué",
+    "Zohoudji"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "KLOUEKANMEY",
+   "libelle": "HONDJIN",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Gbébléhoué",
+    "Hondjin centre",
+    "Hondjingan",
+    "Kogbétohoué",
+    "Komè",
+    "Soglonouhoué"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "KLOUEKANMEY",
+   "libelle": "KLOUEKANME",
+   "rang": null,
+   "villagesAnnonces": 13,
+   "villages": [
+    "Agblécomè",
+    "Agbodonhouin",
+    "Tchanvédji",
+    "Davitohoué",
+    "Djidjoli",
+    "Ehuzu",
+    "Klouékanmè-Gare",
+    "Honhlonmitonhou",
+    "Nanome",
+    "Sèglahoué",
+    "Totroyoyou",
+    "Zondrébohoué",
+    "Zouvou"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "KLOUEKANMEY",
+   "libelle": "LANTA",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Dékandji",
+    "Gbowimè",
+    "Golouhoué",
+    "Lanta Centre",
+    "Sawamè-Houéyiho",
+    "Tokanmè-Kpodji",
+    "Tokanmè-Montou"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "KLOUEKANMEY",
+   "libelle": "TCHIKPE",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Agbago",
+    "Akouègbadja",
+    "Gnantchimè",
+    "Kpakpassa",
+    "Sokpamè",
+    "Tangbanvimè",
+    "Tchikpé",
+    "Zouzoukanmè"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "DOGBO",
+   "libelle": "AYOMI",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Agbédranfo",
+    "Avédjin",
+    "Ayomi Centre",
+    "Gbannavé",
+    "Ketchandji-kpolédji",
+    "Kpodaha centre",
+    "Kpodaha Deka",
+    "Tokpota",
+    "Zohoudji",
+    "Zokpédji"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "DOGBO",
+   "libelle": "DEVE",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Adidévo",
+    "Agnavo",
+    "Dévé-Homey",
+    "Gbakèhoué",
+    "Kpodji",
+    "Zohoudji"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "DOGBO",
+   "libelle": "HONTON",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Atchanhoué",
+    "Avégodé",
+    "Codjohoué",
+    "Dadohoué",
+    "Koutimé",
+    "Kpoha"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "DOGBO",
+   "libelle": "LOKOGOHOUE",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Hédjamè",
+    "Houndromé",
+    "Hounsa",
+    "Lokogohoué",
+    "Midangbé",
+    "Segba",
+    "Touléhoudji",
+    "Véhidji"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "DOGBO",
+   "libelle": "MADJRE",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Adandro-Akodé",
+    "Ayésso",
+    "Botagbé",
+    "Fafadji",
+    "Godohou",
+    "Kénavo",
+    "Madjrè Centre",
+    "Togannou"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "DOGBO",
+   "libelle": "TOTA",
+   "rang": null,
+   "villagesAnnonces": 24,
+   "villages": [
+    "Achitou",
+    "Agbégnidohoué",
+    "Ahomey",
+    "Dahoué",
+    "Déguihoué",
+    "Dékandji",
+    "Fambohoué",
+    "Foncomé Agandannonhoué",
+    "Foncomé Agbohoué",
+    "Foncomé Gouhoun",
+    "Foncomé Tétéhoué",
+    "Houédjamey",
+    "Houngloui",
+    "Kégbéhoué",
+    "Kénouhoué",
+    "Kpodavé",
+    "Kpogodou",
+    "Lokogba",
+    "Madankanmey",
+    "Tota Balimè",
+    "Tota Kpodji",
+    "Zaphi Gnamamey",
+    "Zaphi Houéganmè",
+    "Zaphi Hounsa"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "DOGBO",
+   "libelle": "TOTCHANGNI CENTRE",
+   "rang": null,
+   "villagesAnnonces": 3,
+   "villages": [
+    "Allada",
+    "Gnigbé",
+    "Totchangni"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "LALO",
+   "libelle": "ADOUKANDJI",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Adoukandji",
+    "Ahouada",
+    "Eguehoue",
+    "Hazin",
+    "Kingnenouhoué",
+    "Lome",
+    "Sewahoué",
+    "Yamontou"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "LALO",
+   "libelle": "AHODJINNAKO",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Adonou",
+    "Ahodjinnako",
+    "Dogouedeta",
+    "Helli",
+    "Lokoli"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "LALO",
+   "libelle": "AHOMADEGBE",
+   "rang": null,
+   "villagesAnnonces": 4,
+   "villages": [
+    "Adjaïgbonou",
+    "Ahomadégbé",
+    "Alloya",
+    "Hagnonhoué"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "LALO",
+   "libelle": "BANIGBE",
+   "rang": null,
+   "villagesAnnonces": 4,
+   "villages": [
+    "Affomaï",
+    "Banigbé",
+    "Dolohoué",
+    "Koutchikanhoué"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "LALO",
+   "libelle": "GNIZOUNME",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Assogbahoué",
+    "Djibahoun",
+    "Gnizounmè",
+    "Hangbannou",
+    "Tandji"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "LALO",
+   "libelle": "HLASSAME",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Adjaglimey",
+    "Edah-Gbawlahoué",
+    "Gnigbandjimè",
+    "Kpassakanmè",
+    "Oukanmè",
+    "Klabessihoué",
+    "Sohounouhoué",
+    "Sowanouhoué",
+    "Wéwéhoué"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "LALO",
+   "libelle": "LALO",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Lalo",
+    "Adjacomè",
+    "Gouloko",
+    "Koutimè",
+    "Gbéfandji",
+    "Zonmondji"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "LALO",
+   "libelle": "LOKOGBA",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Davihoué",
+    "Gnamamè",
+    "Kaïhoué",
+    "Kondjon",
+    "Kuivonhoué",
+    "Lokogba",
+    "Touléhoudji",
+    "Yobohoué",
+    "Zoundjamè"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "LALO",
+   "libelle": "TCHITO",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Aboti",
+    "Ouinfa",
+    "Tchito",
+    "Zounhomè",
+    "Zountokpa"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "LALO",
+   "libelle": "TOHOU",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Bayékpa Centre",
+    "Govéta",
+    "Hehoukpa",
+    "Sawanou",
+    "Tohou-Centre",
+    "Zoundotan"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "LALO",
+   "libelle": "ZALLI",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Adjassagon",
+    "Azangbé",
+    "Kadébou",
+    "Kindji",
+    "Kowomè",
+    "Zalli"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "TOVIKLIN",
+   "libelle": "ADJIDO",
+   "rang": null,
+   "villagesAnnonces": 12,
+   "villages": [
+    "Adjido Centre",
+    "Agbozohoudji",
+    "Atchioumè",
+    "Awandji",
+    "Dansouhoué",
+    "Dékandji",
+    "Glidji",
+    "Hedjamè",
+    "Houndéhoussohoué",
+    "Kpodji",
+    "Maïboui Kpota",
+    "Maïboui Sodokpohoué"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "TOVIKLIN",
+   "libelle": "AVEDJIN",
+   "rang": null,
+   "villagesAnnonces": 4,
+   "villages": [
+    "Dandjekpohoué",
+    "Natabouhoué",
+    "Sognonnouhoué",
+    "Tohounhoué"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "TOVIKLIN",
+   "libelle": "DOKO",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Djidowanou",
+    "Djouganmè",
+    "Djouvimè",
+    "Doko Centre",
+    "Gboyizounhoué",
+    "Klémè",
+    "Nanonmè",
+    "Tchouléhoudji",
+    "Zohoudji"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "TOVIKLIN",
+   "libelle": "HOUEDOGLI",
+   "rang": null,
+   "villagesAnnonces": 12,
+   "villages": [
+    "Abloganmè",
+    "Adjohoué",
+    "Affomadi",
+    "Hewogbé",
+    "Houédogli Centre",
+    "Houégangbé",
+    "Kpakouihoué",
+    "Lagbahomè",
+    "Lagbakada",
+    "Tadokomè",
+    "Tchankada",
+    "12. Zougoumè"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "TOVIKLIN",
+   "libelle": "MISSINKO",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Agbédoumè",
+    "Agomè",
+    "Ayidjèdo",
+    "Djoudomè",
+    "Kodohoué",
+    "Missinko Centre",
+    "Zaffi"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "TOVIKLIN",
+   "libelle": "TANNOU-GOLA",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Djikemè",
+    "Dohodji",
+    "Gbayedji",
+    "Gbinnouhoué",
+    "Oussoumè",
+    "Tannou-Gola Centre",
+    "Tchankoué",
+    "Tossèhoué"
+   ]
+  },
+  {
+   "departement": "COUFFO",
+   "commune": "TOVIKLIN",
+   "libelle": "TOVIKLIN",
+   "rang": null,
+   "villagesAnnonces": 13,
+   "villages": [
+    "Akomè",
+    "Davi",
+    "Djigangnonhou",
+    "Doko Atchanviguémè",
+    "Doko Djoudomè",
+    "Kpévé",
+    "Kpohoudjou",
+    "Kpohoudjougan",
+    "Sèkouhoué",
+    "Tannou Avédji",
+    "Toviklin Centre",
+    "Toviklin Quartier",
+    "Zohénou"
+   ]
+  },
+  {
+   "departement": "DONGA",
+   "commune": "DJOUGOU",
+   "libelle": "BAREI",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Anoum",
+    "Bandessar",
+    "Bandétchohi",
+    "Barèi-Vaaha",
+    "Barèi-Saoupèhoun",
+    "Dangoussar",
+    "Gondessar",
+    "Kourli",
+    "Sèlra"
+   ]
+  },
+  {
+   "departement": "DONGA",
+   "commune": "DJOUGOU",
+   "libelle": "BARIENOU",
+   "rang": null,
+   "villagesAnnonces": 19,
+   "villages": [
+    "Afatalanga",
+    "Akèkèrou",
+    "Bariénou",
+    "Bortoko",
+    "Dèdèra",
+    "Donga",
+    "Foyo",
+    "Gaouga",
+    "Gnansonga",
+    "Gnogambi",
+    "Gnonri",
+    "Gosso",
+    "Kokossika",
+    "Koua",
+    "Kpayèroun",
+    "Monè",
+    "Potokou",
+    "Tamohoun",
+    "Toko-Toko"
+   ]
+  },
+  {
+   "departement": "DONGA",
+   "commune": "DJOUGOU",
+   "libelle": "BELLEFOUNGOU",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Angba",
+    "Belléfoungou",
+    "Kpégounou",
+    "Sosso",
+    "Tolra"
+   ]
+  },
+  {
+   "departement": "DONGA",
+   "commune": "DJOUGOU",
+   "libelle": "BOUGOU",
+   "rang": null,
+   "villagesAnnonces": 4,
+   "villages": [
+    "1. Bougou Fana",
+    "Bougou Lira",
+    "Kpandouga",
+    "Kpaouya"
+   ]
+  },
+  {
+   "departement": "DONGA",
+   "commune": "DJOUGOU",
+   "libelle": "DJOUGOU I",
+   "rang": null,
+   "villagesAnnonces": 15,
+   "villages": [
+    "Founga",
+    "Gah",
+    "Gogoniga",
+    "Kamouhou",
+    "Kilir",
+    "Madina",
+    "Morwatchohi",
+    "Pétoni-Poho- Partago",
+    "Pétoni-Poho-Gorobani",
+    "Sapaha",
+    "Sassirou",
+    "Sèlrou",
+    "Soubroukou",
+    "Taïfa",
+    "Zongo"
+   ]
+  },
+  {
+   "departement": "DONGA",
+   "commune": "DJOUGOU",
+   "libelle": "DJOUGOU II",
+   "rang": null,
+   "villagesAnnonces": 13,
+   "villages": [
+    "Alfa-Issa",
+    "Angaradébou",
+    "Bassala",
+    "Bonborh",
+    "Djakpingou",
+    "Kakabounou-béri",
+    "Kparsi",
+    "Kpatouhou",
+    "Léman-Bogou",
+    "Léman-mandè",
+    "Nalohou",
+    "Timtim-Bongo",
+    "Wargou"
+   ]
+  },
+  {
+   "departement": "DONGA",
+   "commune": "DJOUGOU",
+   "libelle": "DJOUGOU III",
+   "rang": null,
+   "villagesAnnonces": 12,
+   "villages": [
+    "Angara",
+    "Baparapé",
+    "Batoulou",
+    "Batoulou Mounla",
+    "Noumanè",
+    "Déndougou",
+    "Sinassingou",
+    "Formagazi",
+    "Kpamalangou",
+    "Zémbougou-Béri",
+    "Zountori",
+    "Sehvessi"
+   ]
+  },
+  {
+   "departement": "DONGA",
+   "commune": "DJOUGOU",
+   "libelle": "KOLOCONDE",
+   "rang": null,
+   "villagesAnnonces": 11,
+   "villages": [
+    "Agorogossi",
+    "Bari",
+    "Boungourou",
+    "Foumbéa",
+    "Gangamou",
+    "Kolokondé-Saoupèhoun",
+    "Kolocondé Zongo",
+    "Kpébouco",
+    "Tébou",
+    "Tèwaou",
+    "Yorossonga"
+   ]
+  },
+  {
+   "departement": "DONGA",
+   "commune": "DJOUGOU",
+   "libelle": "ONKLOU",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Bakou",
+    "Danogou",
+    "Daringa",
+    "Gorobani",
+    "Issamanga",
+    "Onklou Pahanoun",
+    "Onklou Saoupèhoun",
+    "Wèwè"
+   ]
+  },
+  {
+   "departement": "DONGA",
+   "commune": "DJOUGOU",
+   "libelle": "PARTAGO",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Abintaga",
+    "Dabogou",
+    "Démsihou",
+    "Donwari",
+    "Korokou",
+    "Monmongou",
+    "Nanogou",
+    "Partago",
+    "Téprédjissi",
+    "Vanhoui"
+   ]
+  },
+  {
+   "departement": "DONGA",
+   "commune": "DJOUGOU",
+   "libelle": "PELEBINA",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Gbessou",
+    "Goumbakou",
+    "Kakindoni",
+    "Koha",
+    "Pélébina",
+    "Wassa",
+    "Yarakèou"
+   ]
+  },
+  {
+   "departement": "DONGA",
+   "commune": "DJOUGOU",
+   "libelle": "SEROU",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Alfa kpara",
+    "Bouloum",
+    "Boumvari",
+    "Déwa",
+    "Kpali",
+    "Minanga",
+    "Nagatchohi",
+    "Paparanga",
+    "Sérou"
+   ]
+  },
+  {
+   "departement": "DONGA",
+   "commune": "BASSILA",
+   "libelle": "ALEDJO",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Akaradè",
+    "Alédjo",
+    "Boutou",
+    "Igadougou",
+    "Kadégué",
+    "Kaouté",
+    "Nibadara",
+    "Partago",
+    "Tchimbéri"
+   ]
+  },
+  {
+   "departement": "DONGA",
+   "commune": "BASSILA",
+   "libelle": "BASSILA",
+   "rang": null,
+   "villagesAnnonces": 20,
+   "villages": [
+    "Adjimon",
+    "Adjiro",
+    "Aoro-Lokpa",
+    "Aoro-Nago",
+    "Appi",
+    "Assion",
+    "Bassila Abiguédou",
+    "Bassila Allan",
+    "Bassila Bakabaka",
+    "Biguina Akpassa",
+    "11. Biguina Holoudè",
+    "Biguina Tosso",
+    "Diépani-Balimboli",
+    "Doguè",
+    "Frigniou",
+    "Guiguisso",
+    "Igbomakro",
+    "Kikélé",
+    "Koïwali",
+    "Kprèkètè"
+   ]
+  },
+  {
+   "departement": "DONGA",
+   "commune": "BASSILA",
+   "libelle": "MANIGRI",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Igbèrè",
+    "Manigri Oké Igboélé",
+    "Manigri-Ikanni",
+    "Manigri-Oké Souangbé",
+    "Modogui",
+    "Tèkè-Térou",
+    "Wannou"
+   ]
+  },
+  {
+   "departement": "DONGA",
+   "commune": "BASSILA",
+   "libelle": "PENESSOULOU",
+   "rang": null,
+   "villagesAnnonces": 16,
+   "villages": [
+    "Awo",
+    "Bayakou",
+    "Bodi",
+    "Dingou",
+    "Kodowari",
+    "Mêlan",
+    "Nagayilé",
+    "Nioro- Kolina",
+    "Ouli",
+    "Pénélan",
+    "Pénessoulou",
+    "Salmanga",
+    "Taba",
+    "Tchétou",
+    "Wolo",
+    "Yari"
+   ]
+  },
+  {
+   "departement": "DONGA",
+   "commune": "COPARGO",
+   "libelle": "ANANDANA",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Anandana",
+    "Foungou",
+    "Koubénébéné",
+    "Koubokouborè",
+    "Koukoulbendi",
+    "Koutchanti",
+    "N’Dam",
+    "Pargoutè",
+    "Sètrah"
+   ]
+  },
+  {
+   "departement": "DONGA",
+   "commune": "COPARGO",
+   "libelle": "COPARGO",
+   "rang": null,
+   "villagesAnnonces": 14,
+   "villages": [
+    "Babanzaouré",
+    "Copargo",
+    "Dalkpalahou",
+    "Djéssékou",
+    "Galora-Yabaga",
+    "Gossina",
+    "Lèfendi",
+    "Passabia",
+    "Satiéka-Gbamdi",
+    "Tani",
+    "Tchakléro Yarou",
+    "Tchoutchou",
+    "Yaka",
+    "Yaoura"
+   ]
+  },
+  {
+   "departement": "DONGA",
+   "commune": "COPARGO",
+   "libelle": "PABEGOU",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Bamisso",
+    "Bom-Bom",
+    "Boro-Kouri",
+    "Gnanfounoum",
+    "Pabégou",
+    "Palampagou",
+    "Tchakléro",
+    "Tigninoun"
+   ]
+  },
+  {
+   "departement": "DONGA",
+   "commune": "COPARGO",
+   "libelle": "SINGRE",
+   "rang": null,
+   "villagesAnnonces": 15,
+   "villages": [
+    "Bissinra",
+    "Cana",
+    "Dakpera",
+    "Kankoulga",
+    "Karhum-Dora",
+    "Karhum-Maléro",
+    "Karhum-Yaourou",
+    "Katabam",
+    "Maho",
+    "Nimourou",
+    "Passangré",
+    "Séma",
+    "Singré",
+    "Taho",
+    "Wadhèrou"
+   ]
+  },
+  {
+   "departement": "DONGA",
+   "commune": "OUAKE",
+   "libelle": "BADJOUDE",
+   "rang": null,
+   "villagesAnnonces": 13,
+   "villages": [
+    "Akpadè",
+    "Alitokoum",
+    "Atchankomou",
+    "Badjoudè",
+    "Bissétougou",
+    "Bohomdo",
+    "Itchodè",
+    "Kadolassi",
+    "Kakpala",
+    "Komtcha",
+    "Pamou",
+    "Talinta",
+    "Tchitchakou"
+   ]
+  },
+  {
+   "departement": "DONGA",
+   "commune": "OUAKE",
+   "libelle": "KOMDE",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Adjêdè",
+    "Akoussitè",
+    "Assodè",
+    "Komdè",
+    "Mankpassi",
+    "Wèkètè",
+    "Yamsalé"
+   ]
+  },
+  {
+   "departement": "DONGA",
+   "commune": "OUAKE",
+   "libelle": "OUAKE",
+   "rang": null,
+   "villagesAnnonces": 13,
+   "villages": [
+    "Alayomdè",
+    "Assaradè",
+    "Awanla",
+    "Kantè",
+    "Kassua-Allah",
+    "Koukoulounda",
+    "Kpélité",
+    "Kpéloudè",
+    "Sobitè",
+    "Sonaholou",
+    "Sonaté",
+    "Tchaladè",
+    "Wakitè"
+   ]
+  },
+  {
+   "departement": "DONGA",
+   "commune": "OUAKE",
+   "libelle": "SEMERE 1",
+   "rang": null,
+   "villagesAnnonces": 11,
+   "villages": [
+    "Agbandarè",
+    "Atchakitam",
+    "Atchankpa-Kolah",
+    "Baparapéï",
+    "Daka",
+    "Gnalo",
+    "Kim-Kim",
+    "Koubly",
+    "Mami",
+    "Ouramaré",
+    "Tchingayaré"
+   ]
+  },
+  {
+   "departement": "DONGA",
+   "commune": "OUAKE",
+   "libelle": "SEMERE 2",
+   "rang": null,
+   "villagesAnnonces": 13,
+   "villages": [
+    "Adédéwo",
+    "Aguéou-garba",
+    "Awotobi",
+    "Gao",
+    "Gbaou",
+    "Gnangba Kabia",
+    "Itchèlli",
+    "Kagnifêlê",
+    "Kakpéssia",
+    "Kpakpalaré",
+    "Kpéli-fada",
+    "N’Djakada",
+    "Troucaré-Bas"
+   ]
+  },
+  {
+   "departement": "DONGA",
+   "commune": "OUAKE",
+   "libelle": "TCHALINGA",
+   "rang": null,
+   "villagesAnnonces": 4,
+   "villages": [
+    "Kawado",
+    "Landa",
+    "Madjatom",
+    "Tchalinga"
+   ]
+  },
+  {
+   "departement": "LITTORAL",
+   "commune": null,
+   "libelle": null,
+   "rang": 1,
+   "villagesAnnonces": 13,
+   "villages": [
+    "Avotrou Aïmonlonfidé",
+    "Avotrou Gbègo",
+    "Avotrou Houézèkomè",
+    "Dandji",
+    "Dandji Hokanmè",
+    "Donaten",
+    "Finagnon",
+    "N’vènamèdé",
+    "Suru Léré",
+    "Tanto",
+    "Tchanhounkpamè",
+    "Tokplégbé",
+    "Yagbé"
+   ]
+  },
+  {
+   "departement": "LITTORAL",
+   "commune": null,
+   "libelle": null,
+   "rang": 2,
+   "villagesAnnonces": 13,
+   "villages": [
+    "Ahouassa",
+    "Djèdjè-Layé",
+    "Gankpodo",
+    "Irédé",
+    "Kowégbo",
+    "Kpondéhou",
+    "Kpondéhou Tchémè",
+    "Lom-Nava",
+    "Minontchou",
+    "Sènandé",
+    "Sènadé Sékou",
+    "Yénawa",
+    "Yénawa Daho"
+   ]
+  },
+  {
+   "departement": "LITTORAL",
+   "commune": null,
+   "libelle": null,
+   "rang": 3,
+   "villagesAnnonces": 13,
+   "villages": [
+    "Adjégounlè",
+    "Adogléta",
+    "Agbato",
+    "Agbodjèdo",
+    "Ayélawadjè",
+    "Ayélawadjè Agongomè",
+    "Fifatin",
+    "Gbénonkpo",
+    "Hlacomey",
+    "Kpankpan",
+    "Midombo",
+    "Sègbèya Nord",
+    "Sègbèya Sud"
+   ]
+  },
+  {
+   "departement": "LITTORAL",
+   "commune": null,
+   "libelle": null,
+   "rang": 4,
+   "villagesAnnonces": 12,
+   "villages": [
+    "Abokicodji Centre",
+    "Abokicodji Lagune",
+    "Akpakpa Dodomè",
+    "Dédokpo",
+    "Enagnon",
+    "Fifadji Houto",
+    "Gbèdjèwin",
+    "Missessin",
+    "Ohe",
+    "Sodjèatinmè Centre",
+    "Sodjèatinmè Est",
+    "Sodjèatinmè Ouest"
+   ]
+  },
+  {
+   "departement": "LITTORAL",
+   "commune": null,
+   "libelle": null,
+   "rang": 5,
+   "villagesAnnonces": 15,
+   "villages": [
+    "Avlékété Jonquet",
+    "Bocossi Tokpa",
+    "Dota",
+    "Gbédokpo",
+    "Gbéto",
+    "Guinkomey",
+    "Mifongou",
+    "Missèbo",
+    "Missité",
+    "Nouveau Pont",
+    "Tokpa Hoho",
+    "Xwlacodji Kpodji",
+    "Xwlacodji Plage",
+    "Zongo Ehuzu",
+    "Zongo Nima"
+   ]
+  },
+  {
+   "departement": "LITTORAL",
+   "commune": null,
+   "libelle": null,
+   "rang": 6,
+   "villagesAnnonces": 19,
+   "villages": [
+    "Ahouansori Agata",
+    "Ahouansori Agué",
+    "Ahouansori Ladji",
+    "Ahouansori Towéta",
+    "Ahouansori Towéta Kpota",
+    "Aidjèdo",
+    "Aidjèdo Ahito",
+    "Aidjèdo Gbègo",
+    "Aidjèdo Vignon",
+    "Dantokpa",
+    "Djidjè",
+    "Djidjè Aïchédji",
+    "Gbèdjromèdé",
+    "Gbèdjromèdé Sud",
+    "Hindé Nord",
+    "Hindé Sud",
+    "Jéricho Nord",
+    "Jéricho Sud",
+    "Vossa"
+   ]
+  },
+  {
+   "departement": "LITTORAL",
+   "commune": null,
+   "libelle": null,
+   "rang": 7,
+   "villagesAnnonces": 11,
+   "villages": [
+    "Dagbédji-Sikê",
+    "Enagnon-Sikê",
+    "Fignon-Sikê",
+    "Gbèdomidji",
+    "Gbènan",
+    "Missité-Sikê",
+    "Sèdami",
+    "Sèdjro Saint Michel",
+    "Sèhogan-Sikê",
+    "Todoté",
+    "Yévèdo"
+   ]
+  },
+  {
+   "departement": "LITTORAL",
+   "commune": null,
+   "libelle": null,
+   "rang": 8,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Agbodjèdo Ste Rita",
+    "Agontinkon",
+    "Gbèdagba",
+    "Houéhoun",
+    "Houénoussou Ste Rita",
+    "Mèdédjro",
+    "Minonkpo Wologuèdè",
+    "Tonato"
+   ]
+  },
+  {
+   "departement": "LITTORAL",
+   "commune": null,
+   "libelle": null,
+   "rang": 9,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Fifadji",
+    "Kindonou",
+    "Mènontin",
+    "Vossa-Kpodji",
+    "Zogbo",
+    "Zogbohouè"
+   ]
+  },
+  {
+   "departement": "LITTORAL",
+   "commune": null,
+   "libelle": null,
+   "rang": 10,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Agounvocodji",
+    "Gbénonkpo",
+    "Kouhounou",
+    "Midédji",
+    "Missèkplé",
+    "Missogbé",
+    "Sètovi",
+    "Vèdoko",
+    "Yénawa-Fifadji"
+   ]
+  },
+  {
+   "departement": "LITTORAL",
+   "commune": null,
+   "libelle": null,
+   "rang": 11,
+   "villagesAnnonces": 13,
+   "villages": [
+    "Gbèdiga Guêdêhoungue",
+    "Gbégamey Ahito",
+    "Gbégamey Centre",
+    "Gbégamey Dodo Ayidjè",
+    "Gbégamey Gbagoudo",
+    "Gbégamey Mifongou",
+    "Houéyiho",
+    "Houéyiho Tanou",
+    "Saint Jean Gbèdiga",
+    "Vodjè Allobatin",
+    "Vodjè Ayidoté",
+    "Vodjè Centre",
+    "Vodjè Finagnon"
+   ]
+  },
+  {
+   "departement": "LITTORAL",
+   "commune": null,
+   "libelle": null,
+   "rang": 12,
+   "villagesAnnonces": 19,
+   "villages": [
+    "Ahouanlèko",
+    "Aibatin dodo",
+    "Akogbato",
+    "Cadjèhoun Agonga",
+    "Cadjèhoun Aupiais",
+    "Cadjèhoun Azalokogon",
+    "Cadjèhoun Détinsa",
+    "Cadjèhoun Gare",
+    "Cadjèhoun Kpota",
+    "Fidjrossè Centre",
+    "Fidjrossè Kpota",
+    "Fiyégnon Houta",
+    "Fiyégnon Jacquot",
+    "Gbodjètin",
+    "Haie Vive",
+    "Hlazounto",
+    "Les Cocotiers",
+    "Vodjè kpota",
+    "Yémicodji"
+   ]
+  },
+  {
+   "departement": "LITTORAL",
+   "commune": null,
+   "libelle": null,
+   "rang": 13,
+   "villagesAnnonces": 14,
+   "villages": [
+    "Adjaha- Cité",
+    "Agla-Agongbomey",
+    "Agla-Akplomey",
+    "Agla-Figaro",
+    "Agla-Finafa",
+    "Agla-les Pylônes",
+    "Agla-Petit Château",
+    "Agla-Sud",
+    "Ahogbohouè-Cité de l’expérience",
+    "Ahogbohouè-Cité Eucaristie",
+    "Aibatin Kpota",
+    "Gbèdégbé",
+    "Houénoussou",
+    "Missité"
+   ]
+  },
+  {
+   "departement": "MONO",
+   "commune": "ATHIEME",
+   "libelle": "ADOHOUN",
+   "rang": null,
+   "villagesAnnonces": 15,
+   "villages": [
+    "Adamè",
+    "Adankpossi",
+    "Agbogbomey",
+    "Aguidahoué",
+    "Anatohoué",
+    "Ayoucomè",
+    "Dékpoé",
+    "Dévèdodji",
+    "Donon",
+    "Gléta",
+    "Kodji",
+    "Kpodji",
+    "Sèvotinou",
+    "Tchicomey",
+    "Toguido"
+   ]
+  },
+  {
+   "departement": "MONO",
+   "commune": "ATHIEME",
+   "libelle": "ATCHANNOU",
+   "rang": null,
+   "villagesAnnonces": 13,
+   "villages": [
+    "Adhamè",
+    "Agbédranfo",
+    "Akonana",
+    "Allounkoui",
+    "Atchannou",
+    "Avégodo",
+    "Goudon",
+    "Hokpamè",
+    "Houèglé",
+    "Hounkpon",
+    "Konouhoué",
+    "Tadocomè",
+    "Togblo"
+   ]
+  },
+  {
+   "departement": "MONO",
+   "commune": "ATHIEME",
+   "libelle": "ATHIEME",
+   "rang": null,
+   "villagesAnnonces": 17,
+   "villages": [
+    "Adanlokpé",
+    "Adjovè",
+    "Agbobada",
+    "Agniwédji",
+    "Assèdji-Agonsa",
+    "Assèdji-Daho",
+    "Assékomè",
+    "Atchontoé",
+    "Athiémégan",
+    "Awakou",
+    "Awamè-Agbovèdji",
+    "Awamè-Kponou",
+    "Gbédji",
+    "Gbéhossou-Kponou",
+    "Koundohounhoué",
+    "Sazué Kpota",
+    "Zounhouè Kpakpassa"
+   ]
+  },
+  {
+   "departement": "MONO",
+   "commune": "ATHIEME",
+   "libelle": "DEDEKPOE",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Abloganmè",
+    "Adjassinhoun – Condji",
+    "Ahoho",
+    "Dévèmè",
+    "Madéboui",
+    "Zindonou"
+   ]
+  },
+  {
+   "departement": "MONO",
+   "commune": "ATHIEME",
+   "libelle": "KPINNOU",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Avédji",
+    "Azonlihoué",
+    "Bocohoué",
+    "Condji-Agnamè",
+    "Don-Agbodougbé",
+    "Don-Kondji",
+    "Hahamè",
+    "Kodji Kponou",
+    "Kpinnou",
+    "Sazouékpa"
+   ]
+  },
+  {
+   "departement": "MONO",
+   "commune": "COME",
+   "libelle": "AGATOGBO",
+   "rang": null,
+   "villagesAnnonces": 12,
+   "villages": [
+    "Agatogbo",
+    "Ahouandjigo Codji",
+    "Cocoucodji",
+    "Dohi",
+    "Gonguêgbo",
+    "Gonguêkpè",
+    "Guézin Ahouandjigo",
+    "Guézin Donhuinou",
+    "Guézin Gbadou",
+    "Guézin Zinkpanou",
+    "Kpétou",
+    "Kpétou-Gahouê"
+   ]
+  },
+  {
+   "departement": "MONO",
+   "commune": "COME",
+   "libelle": "AKODEHA",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Aclomè",
+    "Bowé-Gbédji",
+    "Dégouè",
+    "Gboguinhoué",
+    "Kpodji",
+    "Mèdémahoué",
+    "Mongnonhoui",
+    "Tokan",
+    "Tossouhon"
+   ]
+  },
+  {
+   "departement": "MONO",
+   "commune": "COME",
+   "libelle": "COME",
+   "rang": null,
+   "villagesAnnonces": 18,
+   "villages": [
+    "Agoutomè",
+    "Apéhvédji",
+    "Avédji",
+    "Azannou",
+    "Deux Kilos",
+    "Djacoté",
+    "Gadomé",
+    "Gativé",
+    "Hongodé",
+    "Honvê-comè",
+    "Hôtel de ville",
+    "Kandé",
+    "Kpongonou",
+    "Maison des jeunes",
+    "Mon Berger",
+    "Nongo",
+    "Sossigbé",
+    "Soukpotomé"
+   ]
+  },
+  {
+   "departement": "MONO",
+   "commune": "COME",
+   "libelle": "OUEDEME-PEDAH",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Agblotomé",
+    "Honnougbo",
+    "Kpétékan",
+    "Kpodji",
+    "Mèzintomè",
+    "Pédacomè",
+    "Totchon-Agni",
+    "Zounta"
+   ]
+  },
+  {
+   "departement": "MONO",
+   "commune": "COME",
+   "libelle": "OUMAKO",
+   "rang": null,
+   "villagesAnnonces": 4,
+   "villages": [
+    "Djacoté",
+    "Gbèdévinou",
+    "Sivamé",
+    "Tovè"
+   ]
+  },
+  {
+   "departement": "MONO",
+   "commune": "GRAND-POPO",
+   "libelle": "ADJAHA",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Adjaha",
+    "Conho",
+    "Cotocoli",
+    "Kpovidji",
+    "Seho Condji",
+    "Todjonoukoin",
+    "Tokpa Monoto",
+    "Tokpa-Aïzo"
+   ]
+  },
+  {
+   "departement": "MONO",
+   "commune": "GRAND-POPO",
+   "libelle": "AGOUE",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Agoué",
+    "Agoué Gbédjin",
+    "Ayiguinnou",
+    "Hilla Condji",
+    "Louis Condji",
+    "Missihoun Condji",
+    "Nicoué Condji",
+    "Zogbédji"
+   ]
+  },
+  {
+   "departement": "MONO",
+   "commune": "GRAND-POPO",
+   "libelle": "AVLO",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Allongo",
+    "Avlo",
+    "Avlo Houta",
+    "Gninhountimè",
+    "Hakouè",
+    "Heyi Gbadji",
+    "Hounkounnou",
+    "Kouèta",
+    "Kpêko"
+   ]
+  },
+  {
+   "departement": "MONO",
+   "commune": "GRAND-POPO",
+   "libelle": "DJANGLANMEY",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Dévikanmey",
+    "Djanglamey",
+    "Folly Condji",
+    "Gbédji",
+    "Gountoeto",
+    "Hanmlangni",
+    "Kpatcha-Condji",
+    "Tolèbèkpa",
+    "Tomadjihoué"
+   ]
+  },
+  {
+   "departement": "MONO",
+   "commune": "GRAND-POPO",
+   "libelle": "GBEHOUE",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Adimado",
+    "Gbèawa",
+    "Gbéhoué Ouatchi",
+    "Gbéhoué Pédah",
+    "Kpablè",
+    "Sohon",
+    "Tala",
+    "Zogbédji"
+   ]
+  },
+  {
+   "departement": "MONO",
+   "commune": "GRAND-POPO",
+   "libelle": "GRAND-POPO",
+   "rang": null,
+   "villagesAnnonces": 11,
+   "villages": [
+    "Agonnèkanmey",
+    "Akodessewa",
+    "Apoutagbo",
+    "Ewé Condji",
+    "Hêvê",
+    "Houndjohoundji",
+    "Hounsoukoè",
+    "Onkuihoué",
+    "Saligato",
+    "Toklanhon",
+    "Yodo Condji"
+   ]
+  },
+  {
+   "departement": "MONO",
+   "commune": "GRAND-POPO",
+   "libelle": "SAZUE",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Adankpé",
+    "Adjigo",
+    "Awamè",
+    "Bathoto",
+    "Gnito",
+    "Sazué",
+    "Vodomey"
+   ]
+  },
+  {
+   "departement": "MONO",
+   "commune": "BOPA",
+   "libelle": "AGBODJI",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Agbodji",
+    "Agboh",
+    "Djidjozoun",
+    "Houègbo",
+    "Hounviatouin",
+    "Kowèho",
+    "Logloé",
+    "Mèdétogbo",
+    "Zizaguè",
+    "Zoungbo-Mission"
+   ]
+  },
+  {
+   "departement": "MONO",
+   "commune": "BOPA",
+   "libelle": "BADAZOUIN",
+   "rang": null,
+   "villagesAnnonces": 13,
+   "villages": [
+    "Akplènou",
+    "Atoè",
+    "Badazouin",
+    "Gnidonou",
+    "Hombêtè",
+    "Honhoui",
+    "Kpavè",
+    "Kpodin",
+    "Médéssèdji",
+    "Missiafo",
+    "Ovoun",
+    "Towénou",
+    "Zoungbo"
+   ]
+  },
+  {
+   "departement": "MONO",
+   "commune": "BOPA",
+   "libelle": "BOPA",
+   "rang": null,
+   "villagesAnnonces": 14,
+   "villages": [
+    "Agonsa",
+    "Dado",
+    "Dansatingo",
+    "Doguia",
+    "Gantitomey",
+    "Gbédji-Comè",
+    "Hinkpèmè",
+    "Kpindjicomè",
+    "Kpindjigbédji",
+    "Massè",
+    "Sèhougbato",
+    "Tchanhoué-Comè",
+    "Tohonou",
+    "Tokpoé"
+   ]
+  },
+  {
+   "departement": "MONO",
+   "commune": "BOPA",
+   "libelle": "GBAKPODJI",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Ahloumè",
+    "Bolimè",
+    "Djadji",
+    "Gbakpodji",
+    "Hontokpomè",
+    "Houéganmey",
+    "Kplatoè",
+    "Tchantchankpo"
+   ]
+  },
+  {
+   "departement": "MONO",
+   "commune": "BOPA",
+   "libelle": "LOBOGO",
+   "rang": null,
+   "villagesAnnonces": 18,
+   "villages": [
+    "Adjamè",
+    "Agongoh",
+    "Atohoué",
+    "Dakpla",
+    "Dévèdji",
+    "Dhodho",
+    "Djofloun",
+    "Foncomè",
+    "Gbèdècomè",
+    "Gbètocomè",
+    "Gbozèhouè",
+    "Hangnanmè",
+    "Hêgoh",
+    "Houngoh",
+    "Hounvè",
+    "Kpota",
+    "Tanvè",
+    "Yêtoè"
+   ]
+  },
+  {
+   "departement": "MONO",
+   "commune": "BOPA",
+   "libelle": "POSSOTOME",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Akokponawa",
+    "Ouassa-Kpodji",
+    "Ouocomè",
+    "Oussa Tokpa",
+    "Possotomè",
+    "Sèhomi-Datoh",
+    "Sèhomi-Kogbomè",
+    "Zinwégoh"
+   ]
+  },
+  {
+   "departement": "MONO",
+   "commune": "BOPA",
+   "libelle": "YEGODOE",
+   "rang": null,
+   "villagesAnnonces": 12,
+   "villages": [
+    "Avéganmè",
+    "Djèkian",
+    "Fandihouin",
+    "Houanguia",
+    "Hounguémè",
+    "Lonfin",
+    "Ozouédjamè",
+    "Sinkpè-Gbolossouhoué",
+    "Tèkozouin",
+    "Tohouéta",
+    "Tohouéta Akloh",
+    "Yêgodoé"
+   ]
+  },
+  {
+   "departement": "MONO",
+   "commune": "HOUEYOGBE",
+   "libelle": "DAHE",
+   "rang": null,
+   "villagesAnnonces": 12,
+   "villages": [
+    "Aguêhon",
+    "Dahè-Aklo",
+    "Dahè-Gbédji",
+    "Dahè-Kpodji",
+    "Danhoué",
+    "Djètoè",
+    "Djibio",
+    "Gnamako",
+    "Houankpa",
+    "Houankpato",
+    "Kpassakanmè",
+    "Tohouin"
+   ]
+  },
+  {
+   "departement": "MONO",
+   "commune": "HOUEYOGBE",
+   "libelle": "DOUTOU",
+   "rang": null,
+   "villagesAnnonces": 26,
+   "villages": [
+    "Adjamè",
+    "Adromè Gbéto",
+    "Adromè Kpovidji",
+    "Agongoh",
+    "Ahouloumè",
+    "Didongbogoh",
+    "Dodji",
+    "Doutou",
+    "Doutou – Akloh",
+    "Doutou- Fifadji",
+    "Doutou- Hèhouin",
+    "Doutou -Kpodji",
+    "Gahoué",
+    "Gbagbonou",
+    "Gbahossouhoué",
+    "Gboho",
+    "Gogohondji",
+    "Hlassigounmè",
+    "Hlassigounmè-Akloh",
+    "Hounvi Atchago",
+    "Kowénou",
+    "Kpansouingoh",
+    "Maïboui",
+    "Maïboui -Akloh",
+    "N’konouhoué",
+    "Tokpa"
+   ]
+  },
+  {
+   "departement": "MONO",
+   "commune": "HOUEYOGBE",
+   "libelle": "HOUEYOGBE",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Agongoh",
+    "Dincomè",
+    "Hounvi",
+    "Kédji",
+    "Kpodji",
+    "Tohon",
+    "Vègodoé",
+    "Zindjihoué"
+   ]
+  },
+  {
+   "departement": "MONO",
+   "commune": "HOUEYOGBE",
+   "libelle": "HONHOUE",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Aglè",
+    "Akloh",
+    "Dévèdji",
+    "Gavè",
+    "Gnitonou",
+    "Kpétou-Gbadji",
+    "Togbonou"
+   ]
+  },
+  {
+   "departement": "MONO",
+   "commune": "HOUEYOGBE",
+   "libelle": "SE",
+   "rang": null,
+   "villagesAnnonces": 19,
+   "villages": [
+    "Adjigo",
+    "Allogo",
+    "Danklo",
+    "Drè",
+    "Drè-Lonmnava",
+    "Ekindji",
+    "Gahouin",
+    "Gbadagli",
+    "Gbédji",
+    "Gonfiocomey-Nord",
+    "Gonfiocomey-Sud",
+    "Hindè",
+    "Honnougbo",
+    "Houétihoué",
+    "Logohoué",
+    "Lokohoué",
+    "Sèbo",
+    "Sohounmè",
+    "Zounmè"
+   ]
+  },
+  {
+   "departement": "MONO",
+   "commune": "HOUEYOGBE",
+   "libelle": "ZOUNGBONOU",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Davè",
+    "Hécondji",
+    "Houingah-Houégbé",
+    "Houingah-Salahoué",
+    "Manonkpon",
+    "Séwacomey",
+    "Tohonou",
+    "Zoungbonou"
+   ]
+  },
+  {
+   "departement": "MONO",
+   "commune": "LOKOSSA",
+   "libelle": "AGAME",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Adrogbo",
+    "Agamè",
+    "Agnigbavèdji",
+    "Ahotissa",
+    "Aligoudo",
+    "Azizossa",
+    "Gandjazounmè",
+    "Ganwotissa",
+    "Kpota",
+    "Têdéado"
+   ]
+  },
+  {
+   "departement": "MONO",
+   "commune": "LOKOSSA",
+   "libelle": "HOUIN",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Dessa",
+    "Houédaho",
+    "Kessawè",
+    "Logbo",
+    "Sessèhoukanmè",
+    "Tokpa",
+    "Vêha"
+   ]
+  },
+  {
+   "departement": "MONO",
+   "commune": "LOKOSSA",
+   "libelle": "KOUDO",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Ablodé",
+    "Adrodji",
+    "Agnito",
+    "Agnito-Tchicomey",
+    "Houanmè",
+    "Koudo",
+    "Kplogodomè",
+    "Tinou",
+    "Tozounmè",
+    "Tozounmè-Gbédji"
+   ]
+  },
+  {
+   "departement": "MONO",
+   "commune": "LOKOSSA",
+   "libelle": "LOKOSSA",
+   "rang": null,
+   "villagesAnnonces": 23,
+   "villages": [
+    "Adjakomey",
+    "Agnivèdji",
+    "Agonvè",
+    "Ahouamè",
+    "Akodédjro",
+    "Atikpéta",
+    "Dékanmè",
+    "Djèhadji",
+    "Doukonta",
+    "Fongba",
+    "Gbodédji",
+    "Glo",
+    "Guéhounkon",
+    "Guinkomey",
+    "Saguè",
+    "Takon-Zongo",
+    "Tchicomey",
+    "Todoga",
+    "Toguèmè",
+    "Tota-Kindji",
+    "Yènawa",
+    "Zoungamè",
+    "Zounhouè"
+   ]
+  },
+  {
+   "departement": "MONO",
+   "commune": "LOKOSSA",
+   "libelle": "OUEDEME-ADJA",
+   "rang": null,
+   "villagesAnnonces": 15,
+   "villages": [
+    "Adjigo-Kpodavè",
+    "Adjohoué",
+    "Agonkanmè",
+    "Atinmado",
+    "Dansihoué",
+    "Djondji-Zounmè",
+    "Hlodo",
+    "Kinwédji",
+    "Lègo",
+    "Médéhounta",
+    "Monkpa-Sèdji",
+    "Ouèdèmè-Cada",
+    "Ouèdèmè-Djanglanmè",
+    "Sèdjè-Gléta",
+    "Totinga"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "PORTO-NOVO",
+   "libelle": null,
+   "rang": 1,
+   "villagesAnnonces": 29,
+   "villages": [
+    "Accron-Gogankomey",
+    "Adjègounlè",
+    "Adomey",
+    "Ahouantikomey",
+    "Akpassa Odo Oba",
+    "Avassa Bagoro Agbokomey",
+    "Ayétoro",
+    "Ayimlonfidé",
+    "Déguèkomè",
+    "Dota-Attingbansa-Azonzakomey",
+    "Ganto",
+    "Gbassou-Itabodo",
+    "Gbêcon",
+    "Guévié-Zinkomey",
+    "Hondji-Honnou Filla",
+    "Houègbo-Hlinkomey",
+    "Houéyogbé-Gbèdji",
+    "Houèzounmey",
+    "Idi-Araba",
+    "Iléfiè",
+    "Kpota Sandodo",
+    "Lokossa",
+    "Oganla-Gare-Est",
+    "Sadognon-Adjégounlè",
+    "Sadognon-Woussa",
+    "Sagbo Kossoukodé",
+    "Sokomey-Toffinkomey",
+    "Togoh – Adankomey",
+    "Vêkpa"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "PORTO-NOVO",
+   "libelle": null,
+   "rang": 2,
+   "villagesAnnonces": 16,
+   "villages": [
+    "Agbokou Aga",
+    "Agbokou Bassodji Mairie",
+    "Agbokou Centre social",
+    "Agbokou Odo",
+    "Attakè Olory-Togbé",
+    "Attakè Yidi",
+    "Djègan Daho",
+    "Donoukin Lissèssa",
+    "Gbèzounkpa",
+    "Guévié Djèganto",
+    "Hinkoudé",
+    "Kandévié Radio Hokon",
+    "Koutongbé",
+    "Sèdjèko",
+    "Tchinvié",
+    "Zounkpa Houèto"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "PORTO-NOVO",
+   "libelle": null,
+   "rang": 3,
+   "villagesAnnonces": 22,
+   "villages": [
+    "Adjina Nord",
+    "Adjina Sud",
+    "Avakpa Kpodji",
+    "Avakpa-Tokpa",
+    "Djassin Daho",
+    "Djassin Zounmè",
+    "Foun-Foun Djaguidi",
+    "Foun-Foun Gbègo",
+    "Foun-Foun Sodji",
+    "Foun-Foun Tokpa",
+    "Hassou Agué",
+    "Oganla Atakpamè",
+    "Oganla Nord",
+    "Oganla Poste",
+    "Oganla Sokè",
+    "Oganla Sud",
+    "Ouinlinda Aholoukomey",
+    "Ouinlinda Hôpital",
+    "Zèbou Aga",
+    "Zèbou Ahouangbo",
+    "Zèbou –Itatigri",
+    "Zèbou –Massè"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "PORTO-NOVO",
+   "libelle": null,
+   "rang": 4,
+   "villagesAnnonces": 18,
+   "villages": [
+    "Anavié",
+    "Anavié Voirie",
+    "Djègan kpèvi",
+    "Dodji",
+    "Gbèdjromèdé Fusion",
+    "Gbodjè",
+    "Guévié",
+    "Hlogou ou Hlongou",
+    "Houinmè Château d’eau",
+    "Houinmè Djaguidi",
+    "Houinmè Ganto",
+    "Houinmè Gbèdjromèdé",
+    "Hounsa",
+    "Hounsouko",
+    "Kandévié Missogbé",
+    "Kandévié Owodé",
+    "Kpogbonmè",
+    "Sèto – Gbodjè"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "PORTO-NOVO",
+   "libelle": null,
+   "rang": 5,
+   "villagesAnnonces": 15,
+   "villages": [
+    "Akonaboè",
+    "Djlado",
+    "Dowa",
+    "Dowa Aliogbogo",
+    "Dowa Dédomè",
+    "Houinvié",
+    "Louho",
+    "Ouando",
+    "Ouando Clékanmè",
+    "Ouando Kotin",
+    "Tokpota Dadjrougbé",
+    "Tokpota Davo",
+    "Tokpota Vèdo",
+    "Tokpota Zèbè",
+    "Tokpota Zinlivali"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "ADJARRA",
+   "libelle": "ADJARRA 1",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "1. Adovié",
+    "Adovié Alaga",
+    "Ahouandji",
+    "Hounhouèko",
+    "Hounsinvié",
+    "Hounvè",
+    "Sèdjè-Gbéta"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "ADJARRA",
+   "libelle": "ADJARRA 2",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Adjinan",
+    "Adjinan-Aga",
+    "Agboto",
+    "Drogbo",
+    "Houêgbo",
+    "Kpota",
+    "Sota",
+    "Sota-Tchémè"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "ADJARRA",
+   "libelle": "HONVIE",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Adjati-Djogbèhouè",
+    "Adjati-vèdo",
+    "Dossouvié",
+    "Gassako",
+    "Honvié Centre",
+    "Hounsa-Assiogbossa",
+    "Kpadovié",
+    "Kpovié-Gbada",
+    "Djèvié -Wadon"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "ADJARRA",
+   "libelle": "AGLOGBE",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Agbomey-Takplikpo",
+    "Aglogbè",
+    "Ayihounzo",
+    "Bokovi-Tchaka",
+    "Do-Hongla",
+    "Hahamè",
+    "Sèdjè",
+    "Tokomè",
+    "Vidjinan"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "ADJARRA",
+   "libelle": "MALANHOUI",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Agaougbéta",
+    "Agata",
+    "Anagbo",
+    "Hêvié-Kpota",
+    "Malanhoui",
+    "Malanhoui-Kpodo",
+    "Ouèkè",
+    "Tanmè",
+    "Yèvié"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "ADJARRA",
+   "libelle": "MEDEDJONOU",
+   "rang": null,
+   "villagesAnnonces": 11,
+   "villages": [
+    "Alladako",
+    "Alladako-Dégoèto",
+    "Djavi",
+    "Djavi-Zèbè",
+    "Gbangnito",
+    "Gbéhamey",
+    "Lindja-Dangbo",
+    "Médédjonou",
+    "Mèdédjonou-Gbéhadji",
+    "Sèmè",
+    "Tchakou"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "AGUEGUES",
+   "libelle": "AVAGBODJI",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Akpadon",
+    "Be’mbè",
+    "Be’mbè Akpa",
+    "Djèkpé",
+    "Gbodjè",
+    "Goussa",
+    "Houinta"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "AGUEGUES",
+   "libelle": "HOUEDOME",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Agbodjèdo",
+    "Aholoukomè",
+    "Akodji",
+    "Akpakomè",
+    "Akpoloukomè",
+    "Dogodo",
+    "Somayi",
+    "Zinviékomè"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "AGUEGUES",
+   "libelle": "ZOUNGAME",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Aniviékomè",
+    "Djigbékomè",
+    "Donoukpa",
+    "Kindji",
+    "Kintokomè",
+    "Sohèkomè",
+    "Trankomè",
+    "Woundékomè"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "SEME-PODJI",
+   "libelle": "AGBLANGANDAN",
+   "rang": null,
+   "villagesAnnonces": 12,
+   "villages": [
+    "Agbalilamè",
+    "Agblangandan",
+    "Akpokpota",
+    "Davatin",
+    "Gbakpodji",
+    "Kadjacomè",
+    "Kpakpakanmè",
+    "Lokokoukoumè",
+    "Moudokomè",
+    "Sèkandji",
+    "Sèkandji Allamandossi",
+    "Sèkandji Houéyogbé"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "SEME-PODJI",
+   "libelle": "AHOLOUYEME",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Agonsa Gbo",
+    "Aholouyèmè",
+    "Djèho",
+    "Goho",
+    "Kétonou",
+    "Kétonou Tchinsa",
+    "Torri-Agonsa"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "SEME-PODJI",
+   "libelle": "DJEREGBE",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Awanou",
+    "Djèrègbé",
+    "Djèrègbé Houèla",
+    "Gbéhonmè",
+    "Gbokpa",
+    "Houinta",
+    "Houèkè"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "SEME-PODJI",
+   "libelle": "EKPE",
+   "rang": null,
+   "villagesAnnonces": 13,
+   "villages": [
+    "Djèffa Glégbonou",
+    "Djèffa Houédomè",
+    "Djèffa Houédomè Gbago",
+    "Djèffa Kowenou",
+    "Ekpè Wéchindahomè",
+    "Ekpè Kanhonnou",
+    "Ekpè Gbédjamè",
+    "Ekpè-Marina",
+    "Ekpè-PK10",
+    "Ekpè-Kpécomè",
+    "Ekpè-Seyivè",
+    "Tchonvi",
+    "Tchonvi Agbologoun"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "SEME-PODJI",
+   "libelle": "SEME- PODJI",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Agongo",
+    "Okoun-Sèmè",
+    "Podji-Agué",
+    "Podji-Agué Gbago",
+    "Podji-Missérété",
+    "Sèmè-Podji"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "SEME-PODJI",
+   "libelle": "TOHOUE",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Ahlomè",
+    "Ayokpo",
+    "Dja",
+    "Glogbo",
+    "Glogbo Plage",
+    "Hovidokpo",
+    "Kpoguidi",
+    "Kraké-Daho",
+    "Tohouè",
+    "Wégbégo-Adiemè"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "ADJOHOUN",
+   "libelle": "ADJOHOUN",
+   "rang": null,
+   "villagesAnnonces": 11,
+   "villages": [
+    "Abato",
+    "Agbakon",
+    "Allanzounmè",
+    "Assrossa",
+    "Goutin",
+    "Houèkpa-Kpota",
+    "Kindji-Anamè",
+    "Lokossa",
+    "Wadon",
+    "Zoungbomè",
+    "Zoungodo"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "ADJOHOUN",
+   "libelle": "AKPADANOU",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Agbossa-Adjakahoué",
+    "Allandohou",
+    "Sèkondji",
+    "Dékanmè",
+    "Fonly",
+    "Houédo-Agué",
+    "Houédo-Wo",
+    "Houinsa",
+    "Kpatinsa",
+    "Sokpètinkon"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "ADJOHOUN",
+   "libelle": "AWONOU",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Abidomey",
+    "Assigui-Gbongodo",
+    "Awogoudo",
+    "Awonou",
+    "Siliko"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "ADJOHOUN",
+   "libelle": "AZOWLISSE",
+   "rang": null,
+   "villagesAnnonces": 16,
+   "villages": [
+    "Abéokouta",
+    "Agué-Milahin",
+    "Akouèhan-Tohoué",
+    "Gbada",
+    "Gbada Kpota",
+    "Gbédogo-Oudanou",
+    "Gbékandji",
+    "Houèda",
+    "Houssa",
+    "Kadébou-Zounmè",
+    "Klogbomey",
+    "Kpodédji",
+    "Kpota",
+    "Saoro",
+    "Sissèkpa",
+    "Todé"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "ADJOHOUN",
+   "libelle": "DEME",
+   "rang": null,
+   "villagesAnnonces": 4,
+   "villages": [
+    "Ahlan",
+    "Démè Centre",
+    "Fanvi",
+    "Gla"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "ADJOHOUN",
+   "libelle": "GANGBAN",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Agonlin",
+    "Ahouandjannafon",
+    "Dannou",
+    "Dannou Ayidagbédji",
+    "Gangban",
+    "Gangban Toganhounsa",
+    "Gbègbessa",
+    "Gogbo",
+    "Lowé"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "ADJOHOUN",
+   "libelle": "KODE",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Gbannan",
+    "Gounouhoué",
+    "Hlankpa",
+    "Kakanitchoé",
+    "Kodé – Akpo",
+    "Kodé-Agué",
+    "Kodé-Gouké"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "ADJOHOUN",
+   "libelle": "TOGBOTA",
+   "rang": null,
+   "villagesAnnonces": 2,
+   "villages": [
+    "Togbota-Agué",
+    "Togbota-Oujra"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "AKPRO-MISSERETE",
+   "libelle": "AKPRO-MISSERETE",
+   "rang": null,
+   "villagesAnnonces": 12,
+   "villages": [
+    "Abogomè",
+    "Abogomè-Hlihouè",
+    "Akpakanmè",
+    "Akpro-Hanzounmè",
+    "Akpro-Misserété",
+    "Blèhouan",
+    "Danmè-Lokonon",
+    "Ganmi",
+    "Gbèdji",
+    "Kouvè",
+    "Kpogon",
+    "Tanmè"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "AKPRO-MISSERETE",
+   "libelle": "GOME-SOTA",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Agondozoun",
+    "Agondozoun Tanmè",
+    "Gomè-Doko",
+    "Gomè-Sota",
+    "Hounli",
+    "Tchoukou-Kpèvi",
+    "Zoundji"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "AKPRO-MISSERETE",
+   "libelle": "KATAGON",
+   "rang": null,
+   "villagesAnnonces": 13,
+   "villages": [
+    "Amouloko",
+    "Anianlin",
+    "Gbakpo-Sèdjè",
+    "Houèzounmè-Daho",
+    "Katagon",
+    "Kiliti",
+    "Ouiya",
+    "Sogbé-Aligo",
+    "Tchian",
+    "Tohouikanmè",
+    "Tokpa-Houété",
+    "Vanté",
+    "Wayi-Sogbé"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "AKPRO-MISSERETE",
+   "libelle": "VAKON",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Danto",
+    "Danto les palmiers",
+    "Gouako-kotoclomè",
+    "Sohomey",
+    "Vakon-Adanhou",
+    "Vakon-Agatha",
+    "Vakon-Anago",
+    "Vakon-Azohouè",
+    "Vakon-Gbo",
+    "Vakon-Kpozoungo"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "AKPRO-MISSERETE",
+   "libelle": "ZOUNGBOME",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Ahouandji",
+    "Allagba",
+    "Houèzounmè-Kpèvi",
+    "Koudjannada",
+    "Kpanou-Kpadé",
+    "Kpolè",
+    "Zoungbomè",
+    "Zoungbomè Kpadjrakanmè"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "AVRANKOU",
+   "libelle": "ATCHOUKPA",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Malé",
+    "Malé-Houngo",
+    "Ouindodji",
+    "Tanzoun",
+    "Tanzoun Bliguédé",
+    "Tchoukou-Daho",
+    "Todèdji",
+    "Tokpa-Yonhossou",
+    "Vodénou",
+    "Zounguè"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "AVRANKOU",
+   "libelle": "AVRANKOU",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Alawa",
+    "Avaligbo",
+    "Dangbodji",
+    "Gbégodo",
+    "Houédakomè",
+    "Houézè",
+    "Houndomè-Aligo",
+    "Kogbomè",
+    "Latchè-Houèzounmè",
+    "Sèdjè"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "AVRANKOU",
+   "libelle": "DJOMON",
+   "rang": null,
+   "villagesAnnonces": 13,
+   "villages": [
+    "Affandji-Tanmè",
+    "Ahovo",
+    "Bokousso",
+    "Danmè-Kpossou",
+    "Djomon",
+    "Gbétchou",
+    "Gbodjè",
+    "Houéli",
+    "Houngo",
+    "Lotin-Gbégodo",
+    "Lotin-Gbèdjèhouin",
+    "Sèdjè-Ahovo",
+    "Sèkanmè"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "AVRANKOU",
+   "libelle": "GBOZOUME",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Agamadin",
+    "Agbomassè",
+    "Gbozounmè",
+    "Houngon-Djinon",
+    "Séligon"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "AVRANKOU",
+   "libelle": "KOUTI",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Affomadjè-Kada",
+    "Gbagla-Ganfan",
+    "Gbagla-Koké",
+    "Gbohoungbo",
+    "Gbagla-Ganfan Flonou",
+    "Kouti- Logon",
+    "Kouti-Karo",
+    "Kouti-Yénawa",
+    "Loko-Davè",
+    "Tokpo"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "AVRANKOU",
+   "libelle": "OUANHO",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Gbakpo-Aclé",
+    "Gbakpo-Yénou",
+    "Hèhoun",
+    "Ouanho",
+    "Tchakla"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "AVRANKOU",
+   "libelle": "SADO",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Danmè-Tovihoudji",
+    "Katé-Kliko",
+    "Kotan",
+    "Sado",
+    "Vagnon",
+    "Wamon"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "BONOU",
+   "libelle": "AFFAME",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Affamè-Centre",
+    "Agbosso",
+    "Agbosso-Kota",
+    "Dasso",
+    "Sota",
+    "Wovimè",
+    "Zomaï"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "BONOU",
+   "libelle": "ATCHONSA",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Agbomahan",
+    "Agonhoui",
+    "Agonkon",
+    "Atchonsa-Centre",
+    "Dogba",
+    "Dogba-Hè",
+    "Gboa"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "BONOU",
+   "libelle": "BONOU",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Agbonan",
+    "Atchabita",
+    "Ayogo",
+    "Azongbossa",
+    "Bonou-Centre",
+    "Lokossa",
+    "Ouébossou",
+    "Sotinkanmè",
+    "Tovoh"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "BONOU",
+   "libelle": "DAME-WOGON",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Ahouanzonmè",
+    "Assrossa",
+    "Avlankanmè",
+    "Damè-Wogon",
+    "Gnanhoui Zounmè"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "BONOU",
+   "libelle": "HOUNVIGUE",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Abêokouta",
+    "Adido",
+    "Allankpon",
+    "Attankpè",
+    "Azonzounmè",
+    "Hounviguè"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "DANGBO",
+   "libelle": "DANGBO",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Dangbo",
+    "Dangbo Honmè",
+    "Dogla",
+    "Dokomè",
+    "Ké",
+    "Monnotokpa",
+    "Tovè"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "DANGBO",
+   "libelle": "DEKIN",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Affio",
+    "Aligbo",
+    "Hounhouè",
+    "Kodékpémè",
+    "Togbohounsou"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "DANGBO",
+   "libelle": "GBEKO",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Agbanta",
+    "Allanwadan",
+    "Danko",
+    "Gbéko Centre",
+    "Gbéko Dékangbo",
+    "Gbéko Sioli",
+    "Gbèssoumè",
+    "Sèho Djigbé"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "DANGBO",
+   "libelle": "HOUEDOMEY",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Adjido",
+    "Agbonou",
+    "Agondo",
+    "Agonguè",
+    "Damè",
+    "Dèwémè-Daho",
+    "Houédomey",
+    "Sodji",
+    "Wozounmey"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "DANGBO",
+   "libelle": "HOZIN",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Akpamè",
+    "Akpamè Vèvi",
+    "Djigbé",
+    "Djigbé Houngon",
+    "Hondji",
+    "Hozin",
+    "Lakè",
+    "Tokpa-Koudjota"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "DANGBO",
+   "libelle": "KESSOUNOU",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Glahounsa",
+    "Glahounsa Sèmè",
+    "Hètin-Gléhoué",
+    "Hètin-Sota",
+    "Kessounou",
+    "Kodonou"
+   ]
+  },
+  {
+   "departement": "OUEME",
+   "commune": "DANGBO",
+   "libelle": "ZOUNGUE",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Akokponawa",
+    "Fingninkanmè",
+    "Mitro",
+    "Yokon",
+    "Zounguè",
+    "Zounguè Saï Lagare",
+    "Zounta"
+   ]
+  },
+  {
+   "departement": "PLATEAU",
+   "commune": "ADJA-OUERE",
+   "libelle": "ADJA-OUERE",
+   "rang": null,
+   "villagesAnnonces": 15,
+   "villages": [
+    "Affacha",
+    "Affessèda",
+    "Dagbla",
+    "Dogbo",
+    "Egbé",
+    "Gbagbata",
+    "Houéli-Gaba",
+    "Igba",
+    "Itchèdè",
+    "Iwoyé-Oko-Igbo",
+    "Obèkè-Ouèrè",
+    "Oké-Odan",
+    "Oké-Odo",
+    "Okoffin",
+    "Toffo"
+   ]
+  },
+  {
+   "departement": "PLATEAU",
+   "commune": "ADJA-OUERE",
+   "libelle": "IKPINLE",
+   "rang": null,
+   "villagesAnnonces": 13,
+   "villages": [
+    "Adjégounlè",
+    "Attan-Ewé",
+    "Attan-Ouignan-Ayétèdjou",
+    "Fouditi",
+    "Igbo-Iroko",
+    "Igbo-Oro",
+    "Ikpinlè-Itaraka",
+    "Ikpinlè-Sèkanmè",
+    "Ikpinlè-Yénawa",
+    "Ilako-Abiala",
+    "Imoro",
+    "Ita-Bolarinwa",
+    "Kadjola"
+   ]
+  },
+  {
+   "departement": "PLATEAU",
+   "commune": "ADJA-OUERE",
+   "libelle": "KPOULOU",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Houédamè",
+    "Igbo-Aïdin",
+    "Igbo-Akporo",
+    "Igbo-Iroko",
+    "Kpoulou",
+    "Kpoulou-Idi-Ekpè",
+    "Kpoulou-Itchougan",
+    "Towi",
+    "Trobossi"
+   ]
+  },
+  {
+   "departement": "PLATEAU",
+   "commune": "ADJA-OUERE",
+   "libelle": "MASSE",
+   "rang": null,
+   "villagesAnnonces": 16,
+   "villages": [
+    "Abadago",
+    "Adjoda",
+    "Ayéladjou",
+    "Danhimè",
+    "Egbè-Agbo",
+    "Ichougbo",
+    "Igbo-Ikoko",
+    "Ita Aholou",
+    "Massè",
+    "Massè-Adjégounlè",
+    "Mowobani",
+    "Ogouro",
+    "Oké-Ola",
+    "Oko-Djèguèdè",
+    "Owochandé",
+    "Teffi-Okéïgbala"
+   ]
+  },
+  {
+   "departement": "PLATEAU",
+   "commune": "ADJA-OUERE",
+   "libelle": "OKO-AKARE",
+   "rang": null,
+   "villagesAnnonces": 12,
+   "villages": [
+    "Adjélémidé",
+    "Ita-Aro",
+    "Ita-Egbèbi",
+    "Ita-Egbèbi-Alakporou",
+    "Ita-Ogou",
+    "Iwinka",
+    "Kokorokèhoun",
+    "Obanigbé-Fouditi",
+    "Ogoukpatè",
+    "Oko-Akaré",
+    "Ologo",
+    "Ologo Akpakpa"
+   ]
+  },
+  {
+   "departement": "PLATEAU",
+   "commune": "ADJA-OUERE",
+   "libelle": "TATONNONKON",
+   "rang": null,
+   "villagesAnnonces": 11,
+   "villages": [
+    "Adjaglo",
+    "Djidagba",
+    "Gbanou",
+    "Itchagba-Gbadodo",
+    "Itchangni",
+    "Logou",
+    "Missèbo",
+    "Olohoungbodjè",
+    "Ouignan-Gbadodo",
+    "Tatonnonkon",
+    "Tatonnonkon Jardin"
+   ]
+  },
+  {
+   "departement": "PLATEAU",
+   "commune": "IFANGNI",
+   "libelle": "IFANGNI",
+   "rang": null,
+   "villagesAnnonces": 17,
+   "villages": [
+    "Araromi",
+    "Ayétèdjou",
+    "Baodjo",
+    "Ganmi",
+    "Gbokou",
+    "Gbokoutou",
+    "Idi-Oro",
+    "Ifangni-Odofin",
+    "Igolo",
+    "Iguignanhoun",
+    "Iko",
+    "Ita-Elèkpètè",
+    "Ita-Kpako",
+    "Ita-Soumba",
+    "Iyoko",
+    "Oké-Odja",
+    "Sori"
+   ]
+  },
+  {
+   "departement": "PLATEAU",
+   "commune": "IFANGNI",
+   "libelle": "BANIGBE",
+   "rang": null,
+   "villagesAnnonces": 15,
+   "villages": [
+    "Akadja",
+    "Akadja-Agamadin",
+    "Akadja-Gbodjè",
+    "Akadja-Goutèdo",
+    "Banigbé Gare",
+    "Banigbé Lokossa",
+    "Banigbé-Nagot",
+    "Dangban",
+    "Doké",
+    "Doké-Hanzoumè",
+    "Doké-Sèdjè",
+    "Hègo",
+    "Lokossa-Alihogodo",
+    "Loubé",
+    "Sèdo"
+   ]
+  },
+  {
+   "departement": "PLATEAU",
+   "commune": "IFANGNI",
+   "libelle": "LAGBE",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Houmbo-Djèdje",
+    "Houmbo-Nagot",
+    "Kouyè",
+    "Lagbè",
+    "Okédjéré",
+    "Sobè",
+    "Sobè-Ayelawadjè",
+    "Sokou",
+    "Sokou-Alihogbogo",
+    "Zian"
+   ]
+  },
+  {
+   "departement": "PLATEAU",
+   "commune": "IFANGNI",
+   "libelle": "KO-KOUMOLOU",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Kitigbo",
+    "Ko-Agonkessa",
+    "Ko-Ayidjèdo",
+    "Ko-Dogba",
+    "Ko-Gbégodo",
+    "Ko-Houézè",
+    "Ko-Koumolou",
+    "Ko-Ogou",
+    "Ko-Zoungodo"
+   ]
+  },
+  {
+   "departement": "PLATEAU",
+   "commune": "IFANGNI",
+   "libelle": "DAAGBE",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Adanmayi",
+    "Daagbé-Djèdje",
+    "Daagbé-Nagot",
+    "Loko-Koukou",
+    "Dan",
+    "Djégou-Djèdje",
+    "Djégou-Ayidjèdo",
+    "Djégou-Nagot",
+    "Gblogblo",
+    "Gblogblo Agbodjèdo"
+   ]
+  },
+  {
+   "departement": "PLATEAU",
+   "commune": "IFANGNI",
+   "libelle": "TCHAADA",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Agbodjèdo",
+    "Dessah",
+    "Kétou Gbécon",
+    "Kétoukpè",
+    "Ko-Anagodo",
+    "Mongba",
+    "Tamondo",
+    "Tchaada Centre"
+   ]
+  },
+  {
+   "departement": "PLATEAU",
+   "commune": "SAKETE",
+   "libelle": "AGUIDI",
+   "rang": null,
+   "villagesAnnonces": 17,
+   "villages": [
+    "Agada-Hounmè",
+    "Akpéchi",
+    "Assa-Gamè",
+    "Assa-Idioché",
+    "Barigbo-Owodé",
+    "Ibadja Sodji",
+    "Idjiboro",
+    "Igbo Egan",
+    "Ikpédjilé",
+    "Illako Idioro",
+    "Illoro Aguidi",
+    "Illougou-Kossomi",
+    "Ita Alabè",
+    "Ita-Ayinla",
+    "Kobèdjo",
+    "Makpa",
+    "Modogan"
+   ]
+  },
+  {
+   "departement": "PLATEAU",
+   "commune": "SAKETE",
+   "libelle": "ITA-DJEBOU",
+   "rang": null,
+   "villagesAnnonces": 12,
+   "villages": [
+    "Adjégounlè",
+    "Araromi Ita-Akadi",
+    "Attan Okouta-Kadjola",
+    "Attan-Onibédji",
+    "Ayétoro Oké Awo",
+    "Igba",
+    "Igbo- Assan",
+    "Igbo-Abikou",
+    "Igbola",
+    "Illako Faadji-Ita AKpinty",
+    "Iwéré",
+    "Makpohou"
+   ]
+  },
+  {
+   "departement": "PLATEAU",
+   "commune": "SAKETE",
+   "libelle": "SAKETE 1",
+   "rang": null,
+   "villagesAnnonces": 17,
+   "villages": [
+    "Araromi",
+    "Aribidessi",
+    "Attêwo Lara",
+    "Dagbao",
+    "Dégoun",
+    "Djoko",
+    "Gbokoudaï",
+    "Igbo-Eyê",
+    "Ita Oro-Irédé",
+    "Kadjola",
+    "Kologbo Mèkè",
+    "Kossi",
+    "Moro",
+    "Odanyogoun",
+    "Odella",
+    "Sodji",
+    "Suru Léré"
+   ]
+  },
+  {
+   "departement": "PLATEAU",
+   "commune": "SAKETE",
+   "libelle": "SAKETE 2",
+   "rang": null,
+   "villagesAnnonces": 11,
+   "villages": [
+    "Agonsa",
+    "Dèguè",
+    "Gbozounmon",
+    "Hounmè",
+    "Igbo-Akpa",
+    "Issalè Eko",
+    "Ita Gbokou",
+    "Odanrégoun",
+    "Waï",
+    "Yogou Tohou",
+    "Zimon"
+   ]
+  },
+  {
+   "departement": "PLATEAU",
+   "commune": "SAKETE",
+   "libelle": "TAKON",
+   "rang": null,
+   "villagesAnnonces": 12,
+   "villages": [
+    "Adjohoun-Kollé",
+    "Adjohoun-Kollédjèdjè",
+    "Akadja",
+    "Ayidjèdo",
+    "Ayita",
+    "Dra",
+    "Gbagla Nounagnon",
+    "Gbougbouta",
+    "Houègbo",
+    "Ikêmon",
+    "Oké",
+    "Takon Centre"
+   ]
+  },
+  {
+   "departement": "PLATEAU",
+   "commune": "SAKETE",
+   "libelle": "YOKO",
+   "rang": null,
+   "villagesAnnonces": 11,
+   "villages": [
+    "Adanmayi",
+    "Araromi",
+    "Gbagla-Yovogbédji",
+    "Illasso Nagot",
+    "Illasso Saharo",
+    "Okéïgbo",
+    "Saharo Djèdjè",
+    "Saharo Nagot",
+    "Sanrin-Kpinlè",
+    "Tota",
+    "Yoko Centre"
+   ]
+  },
+  {
+   "departement": "PLATEAU",
+   "commune": "KETOU",
+   "libelle": "ADAKPLAME",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Adakplamè",
+    "Agonlin-Kpahou",
+    "Aguigadji",
+    "Dogo",
+    "Edènou",
+    "Ewè",
+    "Gbaka-Nanzè",
+    "Kinwo",
+    "Kozounvi",
+    "Ohizihan"
+   ]
+  },
+  {
+   "departement": "PLATEAU",
+   "commune": "KETOU",
+   "libelle": "IDIGNY",
+   "rang": null,
+   "villagesAnnonces": 19,
+   "villages": [
+    "Akpakamè",
+    "Alagbé- Illikimoun",
+    "Awaya",
+    "Ayékotonian",
+    "Effèoutè",
+    "Emèda- Igboïloukan",
+    "Idigny",
+    "Idjédjé",
+    "Igbo-Igannan",
+    "Illadji",
+    "Illara-Kanga",
+    "Illèchin",
+    "Illikimoun",
+    "Illikimoun-Kolly",
+    "Issèlou",
+    "Iwéssoun",
+    "Iwoyé-Bénin",
+    "18. Obatèdo",
+    "Oguélété"
+   ]
+  },
+  {
+   "departement": "PLATEAU",
+   "commune": "KETOU",
+   "libelle": "KETOU",
+   "rang": null,
+   "villagesAnnonces": 19,
+   "villages": [
+    "Assèna",
+    "Atchoubi",
+    "Awaï",
+    "Ayélawadjè",
+    "Dagbandji",
+    "Idadjè",
+    "Idéna",
+    "Idjabo",
+    "Idoufin",
+    "Igui-Olou",
+    "Inansè",
+    "Iradigban",
+    "Massafè",
+    "Obafèmi",
+    "Odi- Aro",
+    "Oguidigbo",
+    "Oké-Ola",
+    "Olorounshogo",
+    "Ossokodjo"
+   ]
+  },
+  {
+   "departement": "PLATEAU",
+   "commune": "KETOU",
+   "libelle": "KPANKOU",
+   "rang": null,
+   "villagesAnnonces": 18,
+   "villages": [
+    "Adjozounmè",
+    "Agozounmè",
+    "Aguidi",
+    "Akpambaou",
+    "Alakouta",
+    "Ayékou",
+    "Ayétèdjou",
+    "Gangnigon",
+    "Gbègon",
+    "Kajola",
+    "Kpankou",
+    "Mowodani",
+    "Odokoto",
+    "Sodji",
+    "Vedji",
+    "Woroko",
+    "Zounguè-Igboola",
+    "Zounkpè-Etigbo"
+   ]
+  },
+  {
+   "departement": "PLATEAU",
+   "commune": "KETOU",
+   "libelle": "ODOMETA",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Atanka",
+    "Atan-Ochoukpa",
+    "Bolorounfè",
+    "Igbo- Edè",
+    "Kêwi",
+    "Odomèta",
+    "Oloka"
+   ]
+  },
+  {
+   "departement": "PLATEAU",
+   "commune": "KETOU",
+   "libelle": "OKPOMETA",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Idjou",
+    "Ikoko",
+    "Imonlè-Ayo",
+    "Ofia",
+    "Okpomèta",
+    "Omou"
+   ]
+  },
+  {
+   "departement": "PLATEAU",
+   "commune": "POBE",
+   "libelle": "AHOYEYE",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Ahoyèyè",
+    "Akpaman",
+    "Banigbé",
+    "Idi-Oro",
+    "Igbidi",
+    "Issalé-Ibèrè",
+    "Ita-Adélèyè",
+    "Oké-Ita"
+   ]
+  },
+  {
+   "departement": "PLATEAU",
+   "commune": "POBE",
+   "libelle": "POBE",
+   "rang": null,
+   "villagesAnnonces": 17,
+   "villages": [
+    "Adjégounlè",
+    "Adjissou",
+    "Akouho",
+    "Ayérè-Agbarou",
+    "Ayétèdjou",
+    "Idogan",
+    "Igboïché",
+    "Illoussa-Ossomou",
+    "Issalè –Affin",
+    "Issalè- Affin Douane",
+    "Ita-Atinga",
+    "Itchéko",
+    "Mamagué",
+    "Oké Ata",
+    "Oké Ola",
+    "Pobè-Nord",
+    "Talala"
+   ]
+  },
+  {
+   "departement": "PLATEAU",
+   "commune": "POBE",
+   "libelle": "IGANA",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Agbelè",
+    "Akpaté",
+    "Eguélou",
+    "Igana",
+    "Igbo-Assogba",
+    "Ihoro",
+    "Illèmon",
+    "Ogouba"
+   ]
+  },
+  {
+   "departement": "PLATEAU",
+   "commune": "POBE",
+   "libelle": "ISSABA",
+   "rang": null,
+   "villagesAnnonces": 16,
+   "villages": [
+    "Abba",
+    "Atchaga",
+    "Gbanago",
+    "Igbo-Ewé",
+    "Illèkpa",
+    "Illoulofin",
+    "Issaba",
+    "Itchagba",
+    "Itchakpo",
+    "Itchédé",
+    "Itchoché",
+    "Iwoyé",
+    "Kadjola",
+    "Ketty",
+    "Onigbolo",
+    "Ouignan-Ilé"
+   ]
+  },
+  {
+   "departement": "PLATEAU",
+   "commune": "POBE",
+   "libelle": "TOWE",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Chaffou",
+    "Ibaté",
+    "Iga",
+    "Igbo-Edè",
+    "Igbokofin-Eguélou",
+    "Igbo-Ocho",
+    "Lafènwa",
+    "Otèkotan",
+    "Towé"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "ABOMEY",
+   "libelle": "AGBOKPA",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Akouessa",
+    "Dokon",
+    "Gnansata",
+    "Ouémè",
+    "Sonou Akouta",
+    "Sonou Fiyè"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "ABOMEY",
+   "libelle": "DETOHOU",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Allomakanmè",
+    "Détohou Centre",
+    "Guèguèzogon",
+    "Kodji Centre",
+    "Wo-Tangadji"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "ABOMEY",
+   "libelle": "DJEGBE",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Djègbé",
+    "Goho",
+    "Tohizanly",
+    "Sohouè",
+    "Gbècon-Houégbo",
+    "Djimè",
+    "Sogbo-Aliho"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "ABOMEY",
+   "libelle": "HOUNLI",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Agblomè",
+    "Agnangnan",
+    "Azali",
+    "Gbèkon Hounli",
+    "Vèkpa",
+    "Wankon",
+    "Zassa"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "ABOMEY",
+   "libelle": "SEHOUN",
+   "rang": null,
+   "villagesAnnonces": 4,
+   "villages": [
+    "Houao",
+    "Houéli",
+    "Lèlè",
+    "Sèhoun"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "ABOMEY",
+   "libelle": "VIDOLE",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Adandokpodji",
+    "Agbodjannangan",
+    "Ahouaga",
+    "Doguèmè",
+    "Dota",
+    "Hountondji",
+    "Sada"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "ABOMEY",
+   "libelle": "ZOUNZONME",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Dilikotcho",
+    "Gbèhizankon",
+    "Lègbaholi",
+    "Lokokanmè",
+    "Zounzonmè"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "AGBANGNIZOUN",
+   "libelle": "ADANHONDJIGO",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Adanhondjigon",
+    "Azozoundji",
+    "Gnizinta",
+    "Kpatinmè",
+    "Tangoudo"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "AGBANGNIZOUN",
+   "libelle": "ADINGNIGON",
+   "rang": null,
+   "villagesAnnonces": 3,
+   "villages": [
+    "Adingnigon",
+    "Makpéhogon",
+    "Tossota"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "AGBANGNIZOUN",
+   "libelle": "AGBANGNIZOUN",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Agbangnizoun",
+    "Akpého-Dokpa",
+    "Akpého-Sèmè",
+    "Avali",
+    "Azankpanto",
+    "Tanta"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "AGBANGNIZOUN",
+   "libelle": "KINTA",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Agbidimè",
+    "Ahissatogon",
+    "Danli",
+    "Gbindounmè",
+    "Wèdjè"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "AGBANGNIZOUN",
+   "libelle": "KPOTA",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Ahouakanmè",
+    "Akodébakou",
+    "Hagbladou",
+    "Kpota",
+    "Zounmè"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "AGBANGNIZOUN",
+   "libelle": "LISSAZOUNME",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Dilly-Fanou",
+    "Houndo",
+    "Lissazounmè",
+    "Mignonhito",
+    "Oungbènoudo",
+    "Sèkidjato",
+    "Zoungbo-Gblomè"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "AGBANGNIZOUN",
+   "libelle": "SAHE",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Abigo",
+    "Fonli",
+    "Gbozoun 1",
+    "Gbozoun 2",
+    "Loukpé",
+    "Sohouè-Dovota"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "AGBANGNIZOUN",
+   "libelle": "SINWE",
+   "rang": null,
+   "villagesAnnonces": 4,
+   "villages": [
+    "Adjido",
+    "Dodomè",
+    "Hounto",
+    "Lègo"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "AGBANGNIZOUN",
+   "libelle": "TANVE",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Dékanmè",
+    "Gboli",
+    "Hodja",
+    "Houala",
+    "Kpodji",
+    "Tanvè",
+    "Towéta"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "AGBANGNIZOUN",
+   "libelle": "ZOUNGOUNDO",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Dodji",
+    "Kanzoun",
+    "Kpoto",
+    "Tokpa",
+    "Zoungoudo"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "BOHICON",
+   "libelle": "AGONGOINTO",
+   "rang": null,
+   "villagesAnnonces": 4,
+   "villages": [
+    "Fléli",
+    "Manaboè",
+    "Zakanmè",
+    "Zoungoudo"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "BOHICON",
+   "libelle": "AVOGBANNA",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Adamè",
+    "Agbokou",
+    "Ahouadanou",
+    "Gbéto",
+    "Zoungoudo",
+    "Zounzonmè"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "BOHICON",
+   "libelle": "BOHICON I",
+   "rang": null,
+   "villagesAnnonces": 12,
+   "villages": [
+    "Agbadjagon",
+    "Agbangon",
+    "Agbanwémè",
+    "Ahouamè",
+    "Aïwémè",
+    "Djèssouhogon",
+    "Djognangbo",
+    "Hèzonho",
+    "Houndonho",
+    "Kpatalocoli",
+    "Sèhouèho",
+    "Sèmè"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "BOHICON",
+   "libelle": "BOHICON II",
+   "rang": null,
+   "villagesAnnonces": 12,
+   "villages": [
+    "Adamè-Ahito",
+    "Agonvèzoun",
+    "Ahouamè-Ahito",
+    "Dokon",
+    "Gancon-Ponsa",
+    "Gbanhicon",
+    "Honmèho",
+    "Kodota",
+    "Kpocon",
+    "Siliho",
+    "Sogba",
+    "Zakpo-Agadamè"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "BOHICON",
+   "libelle": "GNIDJAZOUN",
+   "rang": null,
+   "villagesAnnonces": 3,
+   "villages": [
+    "Adamè-Adato",
+    "Aligoudo",
+    "Gnidjazoun"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "BOHICON",
+   "libelle": "LISSEZOUN",
+   "rang": null,
+   "villagesAnnonces": 4,
+   "villages": [
+    "Adagamè-Lisèzoun",
+    "Dakpa",
+    "Houndon",
+    "Lissèzoun"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "BOHICON",
+   "libelle": "OUASSAHO",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Ahouali",
+    "Attogouin",
+    "Ouassaho",
+    "Volli",
+    "Wangnassa",
+    "Zounzonsa"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "BOHICON",
+   "libelle": "PASSAGON",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Djonouta",
+    "Hélou",
+    "Lotcho",
+    "Massè-Gbamè",
+    "Sokpadelli",
+    "Tovigomè"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "BOHICON",
+   "libelle": "SACLO",
+   "rang": null,
+   "villagesAnnonces": 3,
+   "villages": [
+    "Atchonmè",
+    "Saclo-Alikpa",
+    "Saclo – Sokon"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "BOHICON",
+   "libelle": "SODOHOME",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Adanminakougon",
+    "Alikpa",
+    "Edjêgbinmêgon",
+    "Lokodavè",
+    "Lokozoun",
+    "Madjè",
+    "Sodohomè",
+    "Todo",
+    "Vèhou",
+    "Zounkpa-Agbotogon"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "DJIDJA",
+   "libelle": "AGONDJI",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Agblokpa",
+    "Avokanzoun",
+    "Djoho",
+    "Fonkpamè",
+    "Goutchon",
+    "Savakon"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "DJIDJA",
+   "libelle": "AGOUNA",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Assan",
+    "Awotrele",
+    "Dénou",
+    "Djrékpédji",
+    "Gangan",
+    "Kouékouékanmè",
+    "Koutagba",
+    "Sankpiti",
+    "Tokpé",
+    "Zoungahou"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "DJIDJA",
+   "libelle": "DAN",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Agbohoutogon",
+    "Assantoun",
+    "Daanon-Kpota",
+    "Dan",
+    "Dridji",
+    "Hanagbo",
+    "Lalo",
+    "Linsinlin",
+    "Wokou"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "DJIDJA",
+   "libelle": "DJIDJA",
+   "rang": null,
+   "villagesAnnonces": 15,
+   "villages": [
+    "Agondokpoé",
+    "Agonhohoun",
+    "Djessi",
+    "Djidja-Aligoudo",
+    "Dona",
+    "Gbihoungon",
+    "Hounvi",
+    "Komè",
+    "Madjavi",
+    "Sawlakpa",
+    "Sovlegni",
+    "Wogbaye",
+    "Yè",
+    "Zakan",
+    "Zinkanmè"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "DJIDJA",
+   "libelle": "DOHOUIME",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Bohoué",
+    "Dohouimè",
+    "Hevi",
+    "Honhoun",
+    "Houkpa",
+    "Zadakon"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "DJIDJA",
+   "libelle": "GOBAIX",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Ahokanmè",
+    "Betta",
+    "Bookou",
+    "Gobaix",
+    "Lagbado",
+    "Lakpo"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "DJIDJA",
+   "libelle": "HOUTO",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Aklinmè",
+    "Amontika",
+    "Chié",
+    "Houto",
+    "Kokoroko",
+    "Vévi"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "DJIDJA",
+   "libelle": "MOUGNON",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Adamè-Houeglo",
+    "Kpakpanènè",
+    "Lèlè-Adato",
+    "Mougnon-Aké",
+    "Mougnon-Kossou",
+    "Tossota"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "DJIDJA",
+   "libelle": "MONSOUROU",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Amakpa",
+    "Fonkpodji",
+    "Gounoukouin",
+    "Katakènon",
+    "Kohougon",
+    "Kougbadji",
+    "Lobeta",
+    "Monsourou",
+    "Yagbanougon"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "DJIDJA",
+   "libelle": "OUMBEGAME",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Adamè",
+    "Ahito",
+    "Aïhouidji",
+    "Kingbè",
+    "Kpétèta",
+    "Lotcho-Ahouamè",
+    "Lotcho-Daho",
+    "Sozoun",
+    "Tannouho"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "DJIDJA",
+   "libelle": "SETTO",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Gbadagba",
+    "Kassèhlo",
+    "Magassa",
+    "Nontchédigbé",
+    "Saloudji",
+    "Setto",
+    "Tokégon",
+    "ToKounkoun"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "DJIDJA",
+   "libelle": "ZOUNKON",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Ahozoun",
+    "Ayogbé",
+    "Danmlonkou",
+    "Zounkon",
+    "Zounmè"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "COVE",
+   "libelle": "ADOGBE",
+   "rang": null,
+   "villagesAnnonces": 4,
+   "villages": [
+    "Azéhounholi",
+    "Domè",
+    "Voli",
+    "Zounsègo"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "COVE",
+   "libelle": "HOUEKO",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Agnangan",
+    "Houndo",
+    "Hounviguèli",
+    "Yénawa",
+    "Zoungoudo"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "COVE",
+   "libelle": "HOUIN-HOUNSO",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Agbangnanhoué",
+    "Azonholi",
+    "Dahoué",
+    "Dahouigon",
+    "Gandahogon",
+    "Sèslamè",
+    "Toué"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "COVE",
+   "libelle": "GOUNLI",
+   "rang": null,
+   "villagesAnnonces": 4,
+   "villages": [
+    "Ahito",
+    "Domè",
+    "Hounholi",
+    "Kpagoudo"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "COVE",
+   "libelle": "LAÏNTA-COGBE",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Adja",
+    "Aga",
+    "Bagon",
+    "Dangbéhonou",
+    "Dekpada",
+    "Makpegon"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "COVE",
+   "libelle": "NAOGON",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Aga",
+    "Aïzondo",
+    "Attogon",
+    "Finangnon",
+    "Houeton",
+    "Houeyiho"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "COVE",
+   "libelle": "SOLI",
+   "rang": null,
+   "villagesAnnonces": 4,
+   "villages": [
+    "Abayahoué",
+    "Aga",
+    "Agossouhoué",
+    "Vèmè"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "COVE",
+   "libelle": "ZOGBA",
+   "rang": null,
+   "villagesAnnonces": 4,
+   "villages": [
+    "Akpatchihoué",
+    "Fonli",
+    "Sekon-Djakpa",
+    "Zogoli"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "OUINHI",
+   "libelle": "DASSO",
+   "rang": null,
+   "villagesAnnonces": 11,
+   "villages": [
+    "Agonkon",
+    "Bossa Kpota",
+    "Bossa Togoudo",
+    "Gbokpago",
+    "Gnanli",
+    "Houanvè",
+    "Oussa",
+    "Tannou",
+    "Tozoungo",
+    "Yaago",
+    "Zounguè"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "OUINHI",
+   "libelle": "OUINHI",
+   "rang": null,
+   "villagesAnnonces": 12,
+   "villages": [
+    "Adogon",
+    "Ahicon",
+    "Akantè Zaloko",
+    "Akantè Zoungo",
+    "Ganhounmè",
+    "Holli",
+    "Houaidja",
+    "Kinsodji",
+    "Manfougbon",
+    "Monzoungoudo",
+    "Ouokon-Ahlan",
+    "Ouokon-Zoungomè"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "OUINHI",
+   "libelle": "SAGON",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Adamè",
+    "Ahogo",
+    "Aïzè",
+    "Dolivi",
+    "Gakou",
+    "Hinvédo",
+    "Houédja",
+    "Ilaka- Ozokpodji",
+    "Odja-Idossou",
+    "Tévêdji"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "OUINHI",
+   "libelle": "TOHOUES",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Akassa",
+    "Allabandé",
+    "Dokodji",
+    "Gangban",
+    "Hounnoumè",
+    "Kolly-Houssa",
+    "Midjannangnan"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "ZAGNANADO",
+   "libelle": "AGONLIN-HOUEGBO",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Ayogo",
+    "Bamè",
+    "Dohounmè",
+    "Houégbo-Aga",
+    "Houégbo-Do",
+    "Zoungo-Wokpa"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "ZAGNANADO",
+   "libelle": "BANAME",
+   "rang": null,
+   "villagesAnnonces": 9,
+   "villages": [
+    "Agbladoho",
+    "Akohagon",
+    "Assiangbomè",
+    "Gbatèzounmè",
+    "Gbonou",
+    "Massagbo",
+    "N’Dokpo",
+    "Sowé",
+    "Zingon"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "ZAGNANADO",
+   "libelle": "DON-TAN",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Don-Aliho",
+    "Don-Tohomè",
+    "Goblidji",
+    "Tan-Adja",
+    "Tan-Houègbo"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "ZAGNANADO",
+   "libelle": "DOVI",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Dizigo",
+    "Dovè",
+    "Klobo",
+    "Lègbado",
+    "Sagbovi",
+    "Vodo",
+    "Zounnou"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "ZAGNANADO",
+   "libelle": "KPEDEKPO",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Agongbodji",
+    "Agonvè",
+    "Ahlan",
+    "Azakpa",
+    "Kpoto",
+    "Loko-Alankpé",
+    "Womèto",
+    "Zantan- Igbo-Ola"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "ZAGNANADO",
+   "libelle": "ZAGNANADO",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Doga-Aga",
+    "Doga-Alikon",
+    "Doga-Domè",
+    "Kingon",
+    "Tokplégbé",
+    "Zagnanado",
+    "Zonmon",
+    "Zoungoudo"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "ZA-KPOTA",
+   "libelle": "ALLAHE",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Allahé",
+    "Amlihohoué-Jardin",
+    "Dangbégon",
+    "Dogbanlin",
+    "Ganhoua",
+    "Hêhounli",
+    "Za-Hla"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "ZA-KPOTA",
+   "libelle": "ASSANLIN",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Adjokan",
+    "Akadjamè",
+    "Assanlin",
+    "Kpolokoé",
+    "Sowékpa",
+    "Zounzonmè"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "ZA-KPOTA",
+   "libelle": "HOUNGOME",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Adamè",
+    "Akètèkpa",
+    "Folly",
+    "Houngomè",
+    "Koguédé",
+    "Kpokpoé"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "ZA-KPOTA",
+   "libelle": "KPAKPAME",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Affossowogba",
+    "Davègo",
+    "Dramè",
+    "Kpakpamè",
+    "Mlinkpin-Guingnin",
+    "Somè",
+    "Tangbé",
+    "Togadji"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "ZA-KPOTA",
+   "libelle": "KPOZOUN",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Adovi",
+    "Ahossougon",
+    "Aïtèdékpa",
+    "Dotan",
+    "Houangon",
+    "Kpakpassa",
+    "Lokoli",
+    "Lontonkpa",
+    "Yadin",
+    "Zoungoudo"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "ZA-KPOTA",
+   "libelle": "ZA-KPOTA",
+   "rang": null,
+   "villagesAnnonces": 15,
+   "villages": [
+    "Adjido",
+    "Agbogbomey",
+    "Agbokpa",
+    "Dètèkpa",
+    "Djoïtin",
+    "Dokpa",
+    "Gnadokpa",
+    "Houkanmè",
+    "Kèmondji",
+    "Kodota",
+    "Sogbèlankou",
+    "Sohounta",
+    "Za-Kékéré",
+    "Za-Kpota",
+    "Za-Zounmè"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "ZA-KPOTA",
+   "libelle": "ZA-TANTA",
+   "rang": null,
+   "villagesAnnonces": 12,
+   "villages": [
+    "Adikogon",
+    "Agbakou",
+    "Agondokpoé",
+    "Agonkanmè",
+    "Alligoudo",
+    "Doutin",
+    "Houanlikpa",
+    "Kéou",
+    "Sohoungo",
+    "Tanta",
+    "Yohouè",
+    "Za-Aga"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "ZA-KPOTA",
+   "libelle": "ZEKO",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Adawémè",
+    "Adjoko",
+    "Agongbo",
+    "Dantota",
+    "Zéko"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "ZOGBODOMEY",
+   "libelle": "AKIZA",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Akiza",
+    "Dénou-Lissèzin",
+    "Djihizidè",
+    "Don-Agonlin",
+    "Don-Akadjamè",
+    "Gomè",
+    "Guémè",
+    "Sèmè",
+    "Togbin",
+    "Tovlamè"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "ZOGBODOMEY",
+   "libelle": "AVLAME",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Alladaho",
+    "Avavi",
+    "Avlamè",
+    "Kotokpa 1",
+    "Samionkpa",
+    "Tohomey",
+    "Yokon"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "ZOGBODOMEY",
+   "libelle": "CANA I",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Déguèli",
+    "Dodomè",
+    "Dogoudo",
+    "Gandjèkpindji",
+    "Gbamè",
+    "Kpota",
+    "Malè"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "ZOGBODOMEY",
+   "libelle": "CANA II",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "1. Agouna",
+    "Dohounvè",
+    "Gbangnanmè",
+    "Hadagon",
+    "Zoungbo-Bogon",
+    "Zoungbo-Zounmè"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "ZOGBODOMEY",
+   "libelle": "DOME",
+   "rang": null,
+   "villagesAnnonces": 8,
+   "villages": [
+    "Aga",
+    "Agoïta",
+    "Bolamè",
+    "Domè",
+    "Domè- Go",
+    "Gbaffo",
+    "Gohissanou",
+    "Kessèdjogon"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "ZOGBODOMEY",
+   "libelle": "MASSI",
+   "rang": null,
+   "villagesAnnonces": 10,
+   "villages": [
+    "Hlagba-Dénou 1",
+    "Hlagba-Dénou Atcha",
+    "Hlagba-Zakpo",
+    "Hlagba-Lonmè",
+    "Hlagba-Ouassa",
+    "Zoungoudo",
+    "Massi",
+    "Massi Alligoudo",
+    "Hon",
+    "Zalimey"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "ZOGBODOMEY",
+   "libelle": "KOUSSOUKPA",
+   "rang": null,
+   "villagesAnnonces": 5,
+   "villages": [
+    "Dèmè",
+    "Koussoukpa",
+    "Lokoli",
+    "Samionta",
+    "Tchihéigon"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "ZOGBODOMEY",
+   "libelle": "KPOKISSA",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Kpokissa",
+    "Ahouandjitomè",
+    "Dèhounta",
+    "Avannankanmè",
+    "Gbédin",
+    "Dogo",
+    "Hinzounmè"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "ZOGBODOMEY",
+   "libelle": "TANWE-HESSOU",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Agadjaligbo",
+    "Agblata",
+    "Don-Zoukoutoudja",
+    "Ouassa",
+    "Tanwé-Hessou",
+    "Tègon",
+    "Towé"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "ZOGBODOMEY",
+   "libelle": "ZOGBODOMEY",
+   "rang": null,
+   "villagesAnnonces": 7,
+   "villages": [
+    "Ahoundomè",
+    "Atchia",
+    "Dovogon",
+    "Haya",
+    "Zado-Adagon",
+    "Zado-Gagbé",
+    "Zogbodomey"
+   ]
+  },
+  {
+   "departement": "ZOU",
+   "commune": "ZOGBODOMEY",
+   "libelle": "ZOUKOU",
+   "rang": null,
+   "villagesAnnonces": 6,
+   "villages": [
+    "Agrimey",
+    "Bognongnon",
+    "Dohouè",
+    "Hlanhonou",
+    "Koto",
+    "Zoukou"
+   ]
+  }
+ ]
+}

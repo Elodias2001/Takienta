@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+local-secrets/
+.DS_Store
+.venv/
+node_modules/
+dist/
+packages/*/src/generated/
+packages/*/src/benin_geo/_generated.py
+*.egg-info/
+packages/python/dist/
+dist-site/
+.og-tmp/
+
+# Copie de comparaison d un paquet tiers sous GPL-3.0 : ne jamais la commiter.
+data/sources/decoupage-territorial-benin_goldy98-*.json

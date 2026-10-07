@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "note": "Rapprochements entre le libellé imprimé par l'annexe de la loi n°2013-05 et le nom usuel de la commune, pour les seuls cas où ils diffèrent au-delà des accents, de la casse et de la ponctuation. Les 70 autres communes se rapprochent seules, et le département est vérifié dans les deux cas. Cotonou n'a pas d'en-tête de commune dans l'annexe : ses arrondissements sont rangés sous le département du Littoral.",
+  "communes": {
+    "BJ-AK-BOU": "BOUKOUMBE",
+    "BJ-AK-PEH": "OUASSA-PEHUNCO",
+    "BJ-AK-TOU": "TOUKOUNTOUNA",
+    "BJ-KO-KLO": "KLOUEKANMEY",
+    "BJ-OU-AGU": "AGUEGUES",
+    "BJ-OU-SEM": "SEME-PODJI"
+  }
+}

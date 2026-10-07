@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 1,
+  "niveau": "poles",
+  "effectifAu": "2026-09-23",
+  "provisoire": true,
+  "sources": {
+    "communique-marina-2026-09-23": {
+      "intitule": "Présentation des six pôles de développement territorial",
+      "lieu": "Palais de la Marina, Cotonou",
+      "date": "2026-09-23",
+      "nature": "communiqué de presse",
+      "confiance": "provisoire",
+      "note": "Aucun décret ni publication INStaD retrouvé à ce jour. La liste est cohérente en interne (77 communes, recoupées sur les 12 départements) mais reste non confirmée par un texte officiel."
+    },
+    "loi-97-028": {
+      "intitule": "Loi 97-028 portant organisation de l'administration territoriale",
+      "date": "1999-01-15",
+      "nature": "loi",
+      "confiance": "officielle",
+      "note": "Découpage en 12 départements et 77 communes. À joindre en pièce archivée avant mise en production du paquet."
+    }
+  },
+  "poles": [
+    {
+      "nom": "Nord-Ouest",
+      "chefLieu": "Natitingou",
+      "nbCommunes": 13,
+      "departements": {
+        "Atacora": {
+          "communes": [
+            "Boukombé",
+            "Cobly",
+            "Kérou",
+            "Kouandé",
+            "Matéri",
+            "Natitingou",
+            "Péhunco",
+            "Tanguiéta",
+            "Toucountouna"
+          ],
+          "entier": true
+        },
+        "Donga": {
+          "communes": [
+            "Bassila",
+            "Copargo",
+            "Djougou",
+            "Ouaké"
+          ],
+          "entier": true
+        }
+      },
+      "source": "communique-marina-2026-09-23",
+      "confiance": "provisoire"
+    },
+    {
+      "nom": "Nord-Est",
+      "chefLieu": "Parakou",
+      "nbCommunes": 14,
+      "departements": {
+        "Alibori": {
+          "communes": [
+            "Banikoara",
+            "Gogounou",
+            "Kandi",
+            "Karimama",
+            "Malanville",
+            "Ségbana"
+          ],
+          "entier": true
+        },
+        "Borgou": {
+          "communes": [
+            "Bembèrèkè",
+            "Kalalé",
+            "N'Dali",
+            "Nikki",
+            "Parakou",
+            "Pèrèrè",
+            "Sinendé",
+            "Tchaourou"
+          ],
+          "entier": true
+        }
+      },
+      "source": "communique-marina-2026-09-23",
+      "confiance": "provisoire"
+    },
+    {
+      "nom": "Centre",
+      "chefLieu": "Abomey",
+      "nbCommunes": 15,
+      "departements": {
+        "Collines": {
+          "communes": [
+            "Bantè",
+            "Dassa-Zoumè",
+            "Glazoué",
+            "Ouèssè",
+            "Savalou",
+            "Savè"
+          ],
+          "entier": true
+        },
+        "Zou": {
+          "communes": [
+            "Abomey",
+            "Agbangnizoun",
+            "Bohicon",
+            "Covè",
+            "Djidja",
+            "Ouinhi",
+            "Za-Kpota",
+            "Zagnanado",
+            "Zogbodomey"
+          ],
+          "entier": true
+        }
+      },
+      "source": "communique-marina-2026-09-23",
+      "confiance": "provisoire"
+    },
+    {
+      "nom": "Sud-Ouest",
+      "chefLieu": "Lokossa",
+      "nbCommunes": 18,
+      "departements": {
+        "Atlantique": {
+          "communes": [
+            "Allada",
+            "Kpomassè",
+            "Sô-Ava",
+            "Toffo",
+            "Tori-Bossito",
+            "Zè"
+          ],
+          "entier": false
+        },
+        "Couffo": {
+          "communes": [
+            "Aplahoué",
+            "Djakotomey",
+            "Dogbo",
+            "Klouékanmè",
+            "Lalo",
+            "Toviklin"
+          ],
+          "entier": true
+        },
+        "Mono": {
+          "communes": [
+            "Athiémé",
+            "Bopa",
+            "Comè",
+            "Grand-Popo",
+            "Houéyogbé",
+            "Lokossa"
+          ],
+          "entier": true
+        }
+      },
+      "source": "communique-marina-2026-09-23",
+      "confiance": "provisoire"
+    },
+    {
+      "nom": "Sud-Est",
+      "chefLieu": "Pobè",
+      "nbCommunes": 12,
+      "departements": {
+        "Ouémé": {
+          "communes": [
+            "Adjarra",
+            "Adjohoun",
+            "Les Aguégués",
+            "Akpro-Missérété",
+            "Avrankou",
+            "Bonou",
+            "Dangbo"
+          ],
+          "entier": false
+        },
+        "Plateau": {
+          "communes": [
+            "Adja-Ouèrè",
+            "Ifangni",
+            "Kétou",
+            "Pobè",
+            "Sakété"
+          ],
+          "entier": true
+        }
+      },
+      "source": "communique-marina-2026-09-23",
+      "confiance": "provisoire"
+    },
+    {
+      "nom": "Grand-Nokoué",
+      "chefLieu": "Abomey-Calavi",
+      "nbCommunes": 5,
+      "departements": {
+        "Atlantique": {
+          "communes": [
+            "Abomey-Calavi",
+            "Ouidah"
+          ],
+          "entier": false
+        },
+        "Littoral": {
+          "communes": [
+            "Cotonou"
+          ],
+          "entier": true
+        },
+        "Ouémé": {
+          "communes": [
+            "Porto-Novo",
+            "Sèmè-Kpodji"
+          ],
+          "entier": false
+        }
+      },
+      "source": "communique-marina-2026-09-23",
+      "confiance": "provisoire"
+    }
+  ]
+}

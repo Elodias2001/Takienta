@@ -1,0 +1,545 @@
+{
+  "schemaVersion": 1,
+  "figeLe": "2026-10-06",
+  "regles": {
+    "departement": "BJ-<code ISO 3166-2:BJ>",
+    "commune": "BJ-<dep>-<3 premières lettres du nom sans accents ni article 'Les', 4 en cas de collision dans le département, moins si le nom est plus court>",
+    "arrondissement": "BJ-<dep>-<com>-<NN> numéro séquentiel par commune, ordre alphabétique à la figeage, jamais renuméroté ni réattribué"
+  },
+  "identifiants": [
+    {
+      "id": "BJ-AL",
+      "type": "departement",
+      "nom": "Alibori",
+      "parent": null
+    },
+    {
+      "id": "BJ-AK",
+      "type": "departement",
+      "nom": "Atacora",
+      "parent": null
+    },
+    {
+      "id": "BJ-AQ",
+      "type": "departement",
+      "nom": "Atlantique",
+      "parent": null
+    },
+    {
+      "id": "BJ-BO",
+      "type": "departement",
+      "nom": "Borgou",
+      "parent": null
+    },
+    {
+      "id": "BJ-CO",
+      "type": "departement",
+      "nom": "Collines",
+      "parent": null
+    },
+    {
+      "id": "BJ-KO",
+      "type": "departement",
+      "nom": "Couffo",
+      "parent": null
+    },
+    {
+      "id": "BJ-DO",
+      "type": "departement",
+      "nom": "Donga",
+      "parent": null
+    },
+    {
+      "id": "BJ-LI",
+      "type": "departement",
+      "nom": "Littoral",
+      "parent": null
+    },
+    {
+      "id": "BJ-MO",
+      "type": "departement",
+      "nom": "Mono",
+      "parent": null
+    },
+    {
+      "id": "BJ-OU",
+      "type": "departement",
+      "nom": "Ouémé",
+      "parent": null
+    },
+    {
+      "id": "BJ-PL",
+      "type": "departement",
+      "nom": "Plateau",
+      "parent": null
+    },
+    {
+      "id": "BJ-ZO",
+      "type": "departement",
+      "nom": "Zou",
+      "parent": null
+    },
+    {
+      "id": "BJ-AK-BOU",
+      "type": "commune",
+      "nom": "Boukombé",
+      "parent": "BJ-AK"
+    },
+    {
+      "id": "BJ-AK-COB",
+      "type": "commune",
+      "nom": "Cobly",
+      "parent": "BJ-AK"
+    },
+    {
+      "id": "BJ-AK-KER",
+      "type": "commune",
+      "nom": "Kérou",
+      "parent": "BJ-AK"
+    },
+    {
+      "id": "BJ-AK-KOU",
+      "type": "commune",
+      "nom": "Kouandé",
+      "parent": "BJ-AK"
+    },
+    {
+      "id": "BJ-AK-MAT",
+      "type": "commune",
+      "nom": "Matéri",
+      "parent": "BJ-AK"
+    },
+    {
+      "id": "BJ-AK-NAT",
+      "type": "commune",
+      "nom": "Natitingou",
+      "parent": "BJ-AK"
+    },
+    {
+      "id": "BJ-AK-PEH",
+      "type": "commune",
+      "nom": "Péhunco",
+      "parent": "BJ-AK"
+    },
+    {
+      "id": "BJ-AK-TAN",
+      "type": "commune",
+      "nom": "Tanguiéta",
+      "parent": "BJ-AK"
+    },
+    {
+      "id": "BJ-AK-TOU",
+      "type": "commune",
+      "nom": "Toucountouna",
+      "parent": "BJ-AK"
+    },
+    {
+      "id": "BJ-AL-BAN",
+      "type": "commune",
+      "nom": "Banikoara",
+      "parent": "BJ-AL"
+    },
+    {
+      "id": "BJ-AL-GOG",
+      "type": "commune",
+      "nom": "Gogounou",
+      "parent": "BJ-AL"
+    },
+    {
+      "id": "BJ-AL-KAN",
+      "type": "commune",
+      "nom": "Kandi",
+      "parent": "BJ-AL"
+    },
+    {
+      "id": "BJ-AL-KAR",
+      "type": "commune",
+      "nom": "Karimama",
+      "parent": "BJ-AL"
+    },
+    {
+      "id": "BJ-AL-MAL",
+      "type": "commune",
+      "nom": "Malanville",
+      "parent": "BJ-AL"
+    },
+    {
+      "id": "BJ-AL-SEG",
+      "type": "commune",
+      "nom": "Ségbana",
+      "parent": "BJ-AL"
+    },
+    {
+      "id": "BJ-AQ-ABO",
+      "type": "commune",
+      "nom": "Abomey-Calavi",
+      "parent": "BJ-AQ"
+    },
+    {
+      "id": "BJ-AQ-ALL",
+      "type": "commune",
+      "nom": "Allada",
+      "parent": "BJ-AQ"
+    },
+    {
+      "id": "BJ-AQ-KPO",
+      "type": "commune",
+      "nom": "Kpomassè",
+      "parent": "BJ-AQ"
+    },
+    {
+      "id": "BJ-AQ-OUI",
+      "type": "commune",
+      "nom": "Ouidah",
+      "parent": "BJ-AQ"
+    },
+    {
+      "id": "BJ-AQ-SOA",
+      "type": "commune",
+      "nom": "Sô-Ava",
+      "parent": "BJ-AQ"
+    },
+    {
+      "id": "BJ-AQ-TOF",
+      "type": "commune",
+      "nom": "Toffo",
+      "parent": "BJ-AQ"
+    },
+    {
+      "id": "BJ-AQ-TOR",
+      "type": "commune",
+      "nom": "Tori-Bossito",
+      "parent": "BJ-AQ"
+    },
+    {
+      "id": "BJ-AQ-ZE",
+      "type": "commune",
+      "nom": "Zè",
+      "parent": "BJ-AQ"
+    },
+    {
+      "id": "BJ-BO-BEM",
+      "type": "commune",
+      "nom": "Bembèrèkè",
+      "parent": "BJ-BO"
+    },
+    {
+      "id": "BJ-BO-KAL",
+      "type": "commune",
+      "nom": "Kalalé",
+      "parent": "BJ-BO"
+    },
+    {
+      "id": "BJ-BO-NDA",
+      "type": "commune",
+      "nom": "N'Dali",
+      "parent": "BJ-BO"
+    },
+    {
+      "id": "BJ-BO-NIK",
+      "type": "commune",
+      "nom": "Nikki",
+      "parent": "BJ-BO"
+    },
+    {
+      "id": "BJ-BO-PAR",
+      "type": "commune",
+      "nom": "Parakou",
+      "parent": "BJ-BO"
+    },
+    {
+      "id": "BJ-BO-PER",
+      "type": "commune",
+      "nom": "Pèrèrè",
+      "parent": "BJ-BO"
+    },
+    {
+      "id": "BJ-BO-SIN",
+      "type": "commune",
+      "nom": "Sinendé",
+      "parent": "BJ-BO"
+    },
+    {
+      "id": "BJ-BO-TCH",
+      "type": "commune",
+      "nom": "Tchaourou",
+      "parent": "BJ-BO"
+    },
+    {
+      "id": "BJ-CO-BAN",
+      "type": "commune",
+      "nom": "Bantè",
+      "parent": "BJ-CO"
+    },
+    {
+      "id": "BJ-CO-DAS",
+      "type": "commune",
+      "nom": "Dassa-Zoumè",
+      "parent": "BJ-CO"
+    },
+    {
+      "id": "BJ-CO-GLA",
+      "type": "commune",
+      "nom": "Glazoué",
+      "parent": "BJ-CO"
+    },
+    {
+      "id": "BJ-CO-OUE",
+      "type": "commune",
+      "nom": "Ouèssè",
+      "parent": "BJ-CO"
+    },
+    {
+      "id": "BJ-CO-SAVA",
+      "type": "commune",
+      "nom": "Savalou",
+      "parent": "BJ-CO"
+    },
+    {
+      "id": "BJ-CO-SAVE",
+      "type": "commune",
+      "nom": "Savè",
+      "parent": "BJ-CO"
+    },
+    {
+      "id": "BJ-DO-BAS",
+      "type": "commune",
+      "nom": "Bassila",
+      "parent": "BJ-DO"
+    },
+    {
+      "id": "BJ-DO-COP",
+      "type": "commune",
+      "nom": "Copargo",
+      "parent": "BJ-DO"
+    },
+    {
+      "id": "BJ-DO-DJO",
+      "type": "commune",
+      "nom": "Djougou",
+      "parent": "BJ-DO"
+    },
+    {
+      "id": "BJ-DO-OUA",
+      "type": "commune",
+      "nom": "Ouaké",
+      "parent": "BJ-DO"
+    },
+    {
+      "id": "BJ-KO-APL",
+      "type": "commune",
+      "nom": "Aplahoué",
+      "parent": "BJ-KO"
+    },
+    {
+      "id": "BJ-KO-DJA",
+      "type": "commune",
+      "nom": "Djakotomey",
+      "parent": "BJ-KO"
+    },
+    {
+      "id": "BJ-KO-DOG",
+      "type": "commune",
+      "nom": "Dogbo",
+      "parent": "BJ-KO"
+    },
+    {
+      "id": "BJ-KO-KLO",
+      "type": "commune",
+      "nom": "Klouékanmè",
+      "parent": "BJ-KO"
+    },
+    {
+      "id": "BJ-KO-LAL",
+      "type": "commune",
+      "nom": "Lalo",
+      "parent": "BJ-KO"
+    },
+    {
+      "id": "BJ-KO-TOV",
+      "type": "commune",
+      "nom": "Toviklin",
+      "parent": "BJ-KO"
+    },
+    {
+      "id": "BJ-LI-COT",
+      "type": "commune",
+      "nom": "Cotonou",
+      "parent": "BJ-LI"
+    },
+    {
+      "id": "BJ-MO-ATH",
+      "type": "commune",
+      "nom": "Athiémé",
+      "parent": "BJ-MO"
+    },
+    {
+      "id": "BJ-MO-BOP",
+      "type": "commune",
+      "nom": "Bopa",
+      "parent": "BJ-MO"
+    },
+    {
+      "id": "BJ-MO-COM",
+      "type": "commune",
+      "nom": "Comè",
+      "parent": "BJ-MO"
+    },
+    {
+      "id": "BJ-MO-GRA",
+      "type": "commune",
+      "nom": "Grand-Popo",
+      "parent": "BJ-MO"
+    },
+    {
+      "id": "BJ-MO-HOU",
+      "type": "commune",
+      "nom": "Houéyogbé",
+      "parent": "BJ-MO"
+    },
+    {
+      "id": "BJ-MO-LOK",
+      "type": "commune",
+      "nom": "Lokossa",
+      "parent": "BJ-MO"
+    },
+    {
+      "id": "BJ-OU-ADJA",
+      "type": "commune",
+      "nom": "Adjarra",
+      "parent": "BJ-OU"
+    },
+    {
+      "id": "BJ-OU-ADJO",
+      "type": "commune",
+      "nom": "Adjohoun",
+      "parent": "BJ-OU"
+    },
+    {
+      "id": "BJ-OU-AGU",
+      "type": "commune",
+      "nom": "Les Aguégués",
+      "parent": "BJ-OU"
+    },
+    {
+      "id": "BJ-OU-AKP",
+      "type": "commune",
+      "nom": "Akpro-Missérété",
+      "parent": "BJ-OU"
+    },
+    {
+      "id": "BJ-OU-AVR",
+      "type": "commune",
+      "nom": "Avrankou",
+      "parent": "BJ-OU"
+    },
+    {
+      "id": "BJ-OU-BON",
+      "type": "commune",
+      "nom": "Bonou",
+      "parent": "BJ-OU"
+    },
+    {
+      "id": "BJ-OU-DAN",
+      "type": "commune",
+      "nom": "Dangbo",
+      "parent": "BJ-OU"
+    },
+    {
+      "id": "BJ-OU-POR",
+      "type": "commune",
+      "nom": "Porto-Novo",
+      "parent": "BJ-OU"
+    },
+    {
+      "id": "BJ-OU-SEM",
+      "type": "commune",
+      "nom": "Sèmè-Kpodji",
+      "parent": "BJ-OU"
+    },
+    {
+      "id": "BJ-PL-ADJ",
+      "type": "commune",
+      "nom": "Adja-Ouèrè",
+      "parent": "BJ-PL"
+    },
+    {
+      "id": "BJ-PL-IFA",
+      "type": "commune",
+      "nom": "Ifangni",
+      "parent": "BJ-PL"
+    },
+    {
+      "id": "BJ-PL-KET",
+      "type": "commune",
+      "nom": "Kétou",
+      "parent": "BJ-PL"
+    },
+    {
+      "id": "BJ-PL-POB",
+      "type": "commune",
+      "nom": "Pobè",
+      "parent": "BJ-PL"
+    },
+    {
+      "id": "BJ-PL-SAK",
+      "type": "commune",
+      "nom": "Sakété",
+      "parent": "BJ-PL"
+    },
+    {
+      "id": "BJ-ZO-ABO",
+      "type": "commune",
+      "nom": "Abomey",
+      "parent": "BJ-ZO"
+    },
+    {
+      "id": "BJ-ZO-AGB",
+      "type": "commune",
+      "nom": "Agbangnizoun",
+      "parent": "BJ-ZO"
+    },
+    {
+      "id": "BJ-ZO-BOH",
+      "type": "commune",
+      "nom": "Bohicon",
+      "parent": "BJ-ZO"
+    },
+    {
+      "id": "BJ-ZO-COV",
+      "type": "commune",
+      "nom": "Covè",
+      "parent": "BJ-ZO"
+    },
+    {
+      "id": "BJ-ZO-DJI",
+      "type": "commune",
+      "nom": "Djidja",
+      "parent": "BJ-ZO"
+    },
+    {
+      "id": "BJ-ZO-OUI",
+      "type": "commune",
+      "nom": "Ouinhi",
+      "parent": "BJ-ZO"
+    },
+    {
+      "id": "BJ-ZO-ZAG",
+      "type": "commune",
+      "nom": "Zagnanado",
+      "parent": "BJ-ZO"
+    },
+    {
+      "id": "BJ-ZO-ZAK",
+      "type": "commune",
+      "nom": "Za-Kpota",
+      "parent": "BJ-ZO"
+    },
+    {
+      "id": "BJ-ZO-ZOG",
+      "type": "commune",
+      "nom": "Zogbodomey",
+      "parent": "BJ-ZO"
+    }
+  ]
+}

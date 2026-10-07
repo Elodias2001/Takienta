@@ -1,0 +1,4 @@
+jsonschema>=4.20
+pytest>=8
+build>=1.2
+mypy>=1.10
