@@ -165,7 +165,7 @@ Elodias, hors du dépôt.
   (source Wikimedia Commons, fichier non nommé, impossible à vérifier). **L'attribution à geoBoundaries
   est obligatoire partout où la carte est publiée** (texte dans `source.json`). Contours de 2012,
   simplifiés : illustration seulement. Ne rien télécharger d'autre sans l'accord d'Elodias.
-- Pas encore fait : image de partage `og:image` (dépend de la typographie du site).
+- L'accueil intègre la carte en ligne (`site/carte.mjs`) : le fichier SVG autonome reste dans `assets/carte/`.
 
 ## Site et documentation (site/, docs/)
 
@@ -191,6 +191,16 @@ Elodias, hors du dépôt.
 - **Page À propos** : minimale. L'explication du nom *takienta* (sens, pluriel, exonyme « somba ») ne
   sera publiée qu'avec des sources vérifiées, comme l'exige le cadrage. Pas d'affirmation
   ethnographique sans source.
+- **Mouvement : uniquement du CSS, jamais de JavaScript.** Transitions de page (`@view-transition`), barre de
+  progression et révélations au défilement (`animation-timeline`), tracé de l'emblème, cascade et survol de
+  la carte, schéma de l'emboîtement (`site/carte.mjs`, `site/emboitement.mjs`). Le survol passe par `:has()`.
+  Règles verrouillées par des tests : tout est coupé sous `prefers-reduced-motion`, l'état de départ
+  « caché » n'existe que dans des `@keyframes` (rien n'est invisible sans le support), les ombres sont
+  pleines (`8px 8px 0`), jamais diffuses. Ajouter un script casserait la promesse de confidentialité et la CSP :
+  ne pas le faire sans l'accord d'Elodias, et mettre à jour la page confidentialité si c'est décidé.
+- **Carte de l'accueil** : ne jamais la montrer sans son attribution (testé sur la carte intégrée). Une carte au
+  niveau des communes n'est possible qu'avec des contours publics et vérifiés à leur source ; des tracés dont
+  l'origine est inconnue ne se publient pas.
 - **Charte** : aucune couleur écrite en dur dans le CSS (variables `--tk-*`), jamais de trait de 1 px,
   Caprasimo pour les titres seulement. Une grille à une colonne s'écrit `minmax(0,1fr)`, jamais `1fr`
   (sinon un bloc de code fait déborder un écran de 375 px, c'est arrivé).

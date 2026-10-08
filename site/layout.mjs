@@ -16,8 +16,9 @@ import { VIGNETTES, urlVignette } from "./og.mjs";
 export const esc = (v) =>
   String(v).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
+// Dans l'en-tête, les cadres se tracent un à un au chargement (CSS seul) : l'emboîtement, en miniature.
 const EMBLEME = (taille = 34) =>
-  `<svg viewBox="0 0 100 100" width="${taille}" height="${taille}" aria-hidden="true" focusable="false">${PETIT.join("")}</svg>`;
+  `<svg class="emb-mini" viewBox="0 0 100 100" width="${taille}" height="${taille}" aria-hidden="true" focusable="false">${PETIT.map((f) => f.replace('fill="none"', 'fill="none" pathLength="1"')).join("")}</svg>`;
 
 const STYLE = `
   *{box-sizing:border-box}
@@ -86,7 +87,43 @@ const STYLE = `
   footer .liens a{padding:9px 0;min-height:44px;display:inline-flex;align-items:center}
   footer .credit{margin:0}
 
-  @media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto} *{animation:none!important;transition:none!important} }
+
+  /* ---- mouvement : tout est en CSS, rien n'est en JavaScript ---- */
+  @view-transition{navigation:auto}
+  ::view-transition-old(root),::view-transition-new(root){animation-duration:.4s;animation-timing-function:cubic-bezier(.2,.7,.2,1)}
+  header{view-transition-name:entete}
+
+  body::before{content:"";position:fixed;left:0;right:0;top:0;height:6px;background:var(--tk-accent);transform:scaleX(0);transform-origin:0 50%;z-index:60;pointer-events:none}
+  body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.07;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='g'><feTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .9 0'/></filter><rect width='100%' height='100%' filter='url(%23g)'/></svg>")}
+  header,main,footer{position:relative;z-index:1}
+
+  .emb-mini [pathLength]{stroke-dasharray:1;stroke-dashoffset:1;animation:trace 1.2s cubic-bezier(.3,.7,.2,1) .15s forwards}
+  .emb-mini polygon:not([pathLength]){transform-box:fill-box;transform-origin:center;animation:noyau .6s cubic-bezier(.3,1.4,.4,1) 1s both}
+  .brand:hover .emb-mini{animation:pulse .6s ease}
+  .bar nav a{transition:border-color .2s}
+  a{transition:color .2s}
+  .mur{transition:transform .22s cubic-bezier(.2,.8,.2,1),box-shadow .22s cubic-bezier(.2,.8,.2,1)}
+  .grille>.mur:hover,.grille>.mur:focus-within{transform:translate(-4px,-4px);box-shadow:8px 8px 0 var(--tk-texte)}
+  .bouton{transition:transform .12s,background .2s,color .2s}
+  .bouton:active{transform:translate(3px,3px)}
+  .mot{display:inline-block;animation:monte .8s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--m) * 70ms + 120ms)}
+
+  @keyframes trace{to{stroke-dashoffset:0}}
+  @keyframes noyau{from{opacity:0;transform:scale(.2)}to{opacity:1;transform:none}}
+  @keyframes monte{from{opacity:0;transform:translateY(.55em) rotate(2deg)}to{opacity:1;transform:none}}
+  @keyframes pulse{50%{transform:scale(1.12) rotate(-3deg)}}
+  @keyframes progression{to{transform:scaleX(1)}}
+  @keyframes entree{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:none}}
+
+  @supports (animation-timeline:scroll()){
+    body::before{animation:progression linear both;animation-timeline:scroll(root)}
+  }
+  @supports (animation-timeline:view()){
+    .section{animation:entree linear both;animation-timeline:view();animation-range:entry 0% entry 32%}
+    .tete{animation:entree linear both;animation-timeline:view();animation-range:entry 0% entry 60%}
+  }
+  @media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto} *,*::before,*::after{animation:none!important;transition:none!important} @view-transition{navigation:none} body::before{display:none} }
 `;
 
 const NAV = [

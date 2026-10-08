@@ -1,21 +1,28 @@
 import { publie, registres, site } from "../config.mjs";
 import { donnees } from "../donnees.mjs";
+import { carteInteractive, regles, styleCarte } from "../carte.mjs";
+import { emboitement, styleEmboitement } from "../emboitement.mjs";
 import { coquille, esc } from "../layout.mjs";
 
 const { compte, carte } = donnees;
 
 const style = `
-  .hero{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:44px;align-items:center;padding:56px 0}
+  .hero{display:grid;grid-template-columns:minmax(0,1fr) 310px;gap:44px;align-items:start;padding:56px 0}
   .hero h1{margin-bottom:20px}
   .actions{display:flex;gap:14px 22px;flex-wrap:wrap;align-items:center;margin-top:24px}
   .bouton{display:inline-block;background:var(--tk-texte);color:var(--tk-fond);font-weight:700;padding:12px 22px;
     text-decoration:none;border:4px solid var(--tk-texte)}
   .bouton:hover,.bouton:focus-visible{background:var(--tk-fond);color:var(--tk-texte)}
   figure{margin:0}
-  figcaption{font-size:13.5px;margin-top:10px}
-  .carte img{display:block;margin:0 auto}
-  @media (max-width:820px){.hero{grid-template-columns:minmax(0,1fr)}.carte{max-width:300px}}
+  figcaption{font-size:13.5px;margin-top:10px;max-width:310px}
+  .chiffre{transition:color .2s}
+  @media (max-width:820px){.hero{grid-template-columns:minmax(0,1fr)}.carte{max-width:310px}}
+` + styleCarte + styleEmboitement + `
+  ${regles}
 `;
+
+// Chaque mot du titre monte à son tour : le texte reste celui de l'accroche, mot pour mot.
+const titre = site.accroche.split(" ").map((m, i) => `<span class="mot" style="--m:${i}">${esc(m)}</span>`).join(" ");
 
 const installation = [
   publie.npm ? `<pre><code>npm install benin-geo</code></pre>` : "",
@@ -34,7 +41,7 @@ const corps = `<div class="wrap">
   <section class="section hero">
     <div>
       <p class="kicker">Données administratives du Bénin</p>
-      <h1>${esc(site.accroche)}</h1>
+      <h1>${titre}</h1>
       <p class="chapo">Départements, communes, arrondissements et pôles de développement. Hors ligne, sans dépendance,
         en JavaScript et en Python, avec les mêmes identifiants et les mêmes résultats. Chaque enregistrement dit d'où il vient,
         à quelle date il a été relevé et avec quelle confiance.</p>
@@ -44,7 +51,7 @@ const corps = `<div class="wrap">
       </div>
     </div>
     <figure class="carte">
-      <img src="/img/benin-departements.svg" alt="Carte du Bénin découpée en ses douze départements" width="300" height="607">
+      ${carteInteractive()}
       <figcaption>${esc(carte.attribution)} Contours de ${esc(carte.anneeRepresentee)}, simplifiés : illustration seulement.</figcaption>
     </figure>
   </section>
@@ -59,6 +66,11 @@ const corps = `<div class="wrap">
     </div>
     <p>Les arrondissements décrivent l'état de 2013 et les pôles n'ont pas encore de décret : la page
        <a href="/provenance">Provenance</a> dit ce que l'on sait et ce que l'on ne sait pas.</p>
+  </section>
+
+  <section class="section" aria-labelledby="emboitement">
+    <h2 id="emboitement">L'emboîtement</h2>
+    ${emboitement()}
   </section>
 
   <section class="section" aria-labelledby="angles">
