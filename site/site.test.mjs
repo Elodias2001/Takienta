@@ -273,9 +273,11 @@ describe("le nom : seulement ce qui est sourcé", () => {
     expect(readme).not.toMatch(/[—–]/);
   });
 
-  it("le README ne parle ni de la source privée, ni d'une installation non publiée", () => {
-    expect(readme).toContain("Pré-publication");
-    expect(readme).not.toMatch(/npm install benin-geo|pip install benin-geo/);
+  it("le README n'annonce une installation que pour ce qui est publié", () => {
+    expect(/npm install benin-geo/.test(readme)).toBe(publie.npm);
+    expect(/pip install benin-geo/.test(readme)).toBe(publie.pypi);
+    if (!publie.npm && !publie.pypi) expect(readme).toContain("Pré-publication");
+    if (!publie.pypi) expect(readme).toContain("pas encore sur PyPI");
   });
 });
 

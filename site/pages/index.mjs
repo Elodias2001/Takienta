@@ -30,7 +30,7 @@ const installation = [
 ].join("");
 
 const statutPublication = publie.npm || publie.pypi
-  ? `<p>Installation :</p>${installation}<p>Sources : <a href="${esc(publie.npm ? registres.npm : registres.pypi)}" rel="noopener noreferrer">registre officiel</a>.</p>`
+  ? `<p>Installation :</p>${installation}<p>${publie.pypi ? "" : "Le paquet Python n'est pas encore sur PyPI : la <a href=\"/docs/01-demarrage.html\">documentation</a> explique comment l'installer depuis les sources. "}Registre : <a href="${esc(publie.npm ? registres.npm : registres.pypi)}" rel="noopener noreferrer">registre officiel</a>.</p>`
   : `<div class="mur">
       <h3>Pré-publication</h3>
       <p>Les paquets ne sont pas encore sur npm ni sur PyPI. Le code est ouvert et la

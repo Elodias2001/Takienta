@@ -17,7 +17,7 @@ Les arrondissements décrivent l'état de 2013 : les lois postérieures n'ont pa
 
 ## Statut
 
-Pré-publication. Les paquets ne sont pas encore sur npm ni sur PyPI. Le code est ouvert, et on peut les utiliser dès maintenant depuis les sources.
+Le paquet JavaScript est publié sur npm : `npm install benin-geo`. Le paquet Python n'est pas encore sur PyPI ; le code est ouvert, et on peut l'utiliser dès maintenant depuis les sources.
 
 ## Démarrer depuis les sources
 
