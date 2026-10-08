@@ -277,14 +277,99 @@ describe("le nom : seulement ce qui est sourcé", () => {
 });
 
 describe("carte des départements", () => {
+  const aLaCarte = (html) => html.includes('class="carte-svg"') || html.includes("benin-departements.svg");
+
   it.each(toutes)("%s n'affiche jamais la carte sans son attribution", (_, html) => {
-    if (!html.includes("benin-departements.svg")) return;
+    if (!aLaCarte(html)) return;
     expect(visible(html)).toContain(donnees.carte.attribution);
     expect(visible(html)).toContain("illustration seulement");
   });
 
-  it("l'accueil affiche bien la carte", () => {
-    expect(pages.accueil).toContain('src="/img/benin-departements.svg"');
+  it("l'accueil affiche la carte intégrée, avec son attribution (le test ci-dessus ne serait pas vide)", () => {
+    expect(aLaCarte(pages.accueil)).toBe(true);
+    expect(visible(pages.accueil)).toContain(donnees.carte.attribution);
+  });
+
+  it("les douze départements de la carte sont ceux des données, chacun avec sa fiche et son étiquette", () => {
+    const ids = [...pages.accueil.matchAll(/<g class="dept" id="([^"]+)"/g)].map((m) => m[1]).sort();
+    expect(ids).toEqual(donnees.departements.map((d) => d.id).sort());
+    for (const d of donnees.departements) {
+      const communes = donnees.communes.filter((c) => c.parent === d.id).length;
+      const arr = donnees.arrondissements.filter((a) => a.id.startsWith(d.id + "-")).length;
+      expect(pages.accueil).toContain(`id="i-${d.id}"`);
+      expect(pages.accueil).toContain(`aria-label="${d.nom} : ${communes} ${communes > 1 ? "communes" : "commune"}, ${arr} arrondissements"`);
+      expect(pages.accueil).toContain(`#${d.id}:hover,#${d.id}:focus) #i-${d.id}{display:block}`);
+    }
+  });
+
+  it("chaque département se parcourt au clavier", () => {
+    expect((pages.accueil.match(/<g class="dept"[^>]*tabindex="0"/g) ?? []).length).toBe(12);
+  });
+
+  it("le fichier SVG autonome existe toujours, avec son attribution dans sa description", () => {
+    expect(readFileSync(join(RACINE, "assets/carte/benin-departements.svg"), "utf8")).toContain("geoBoundaries");
+  });
+});
+
+describe("mouvement : sans JavaScript, et sans imposer le mouvement", () => {
+  const toutesLesFeuilles = (html) => (html.match(/<style>[\s\S]*?<\/style>/g) ?? []).join("\n");
+
+  it.each(toutes)("%s : toute animation est coupée pour les personnes qui le demandent", (_, html) => {
+    const css = toutesLesFeuilles(html);
+    expect(css).toMatch(/@media \(prefers-reduced-motion:reduce\)[\s\S]*\*,\*::before,\*::after\{animation:none!important;transition:none!important\}/);
+    expect(css).toMatch(/@view-transition\{navigation:none\}/);
+  });
+
+  it.each(toutes)("%s : transitions de page et barre de progression au défilement", (_, html) => {
+    const css = toutesLesFeuilles(html);
+    expect(css).toContain("@view-transition{navigation:auto}");
+    expect(css).toMatch(/@supports \(animation-timeline:scroll\(\)\)/);
+  });
+
+  it.each(toutes)("%s : les révélations au défilement ne cachent rien aux navigateurs qui ne les gèrent pas", (_, html) => {
+    const css = toutesLesFeuilles(html);
+    // L'état de départ (opacity:0) ne doit exister que dans des @keyframes, jamais dans une règle de base.
+    const sansKeyframes = css.replace(/@keyframes [\w-]+\{(?:[^{}]|\{[^{}]*\})*\}/g, "");
+    expect(sansKeyframes).not.toMatch(/opacity:\s*0\b(?!\.)/);
+  });
+
+  it.each(toutes)("%s : les ombres sont pleines, jamais diffuses (murs épais)", (_, html) => {
+    for (const m of toutesLesFeuilles(html).matchAll(/box-shadow:([^;}]+)/g)) {
+      expect(m[1].trim(), m[0]).toMatch(/^-?\d+px -?\d+px 0 var\(--tk-[a-z-]+\)$/);
+    }
+  });
+
+  it("le titre de l'accueil garde exactement l'accroche, mot pour mot, malgré l'animation", () => {
+    const h1 = /<h1>([\s\S]*?)<\/h1>/.exec(pages.accueil)[1];
+    const texte = [...h1.matchAll(/<span class="mot" style="--m:\d+">([^<]*)<\/span>/g)].map((m) => m[1]).join(" ");
+    expect(texte.replace(/&#39;/g, "'").replace(/&amp;/g, "&")).toBe(site.accroche);
+  });
+
+  it("l'emblème de l'en-tête se trace au chargement", () => {
+    expect(pages.accueil).toContain('class="emb-mini"');
+    expect(pages.accueil).toMatch(/\.emb-mini \[pathLength\]\{[^}]*stroke-dashoffset:1;animation:trace/);
+  });
+});
+
+describe("l'emboîtement : un schéma piloté par les données", () => {
+  it("les quatre niveaux affichent les vrais comptes", () => {
+    const { compte } = donnees;
+    for (const [id, n] of [["pole", compte.poles], ["dep", compte.departements], ["com", compte.communes], ["arr", compte.arrondissements]]) {
+      expect(pages.accueil).toContain(`id="n-${id}"`);
+      expect(pages.accueil).toContain(`aria-label="${n} `);
+    }
+  });
+
+  it("l'identifiant d'exemple est celui d'un vrai arrondissement, découpé sans rien perdre", () => {
+    const [, dep, com, num] = /BJ-([A-Z]{2})-([A-Z]{2,4})-(\d{2})/.exec(donnees.exemple.id);
+    const anatomie = /<p class="anatomie">([\s\S]*?)<\/p>/.exec(pages.accueil)[1].replace(/<[^>]+>/g, "");
+    expect(anatomie).toBe(`BJ-${dep}-${com}-${num}`);
+    expect(anatomie).toBe(donnees.exemple.id);
+    expect(donnees.arrondissements.some((a) => a.id === anatomie)).toBe(true);
+  });
+
+  it("dit que le pôle n'entre pas dans l'identifiant", () => {
+    expect(visible(pages.accueil)).toContain("Le pôle n'entre jamais dans l'identifiant");
   });
 });
 
