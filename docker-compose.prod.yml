@@ -6,6 +6,8 @@ services:
     build: !reset null
     image: ghcr.io/${GHCR_OWNER:-elodias2001}/takienta-site:${IMAGE_TAG:-main}
     networks: [gcw-public]
+    mem_limit: 128m
+    memswap_limit: 192m
     labels:
       - "traefik.enable=true"
       - "traefik.docker.network=gcw-public"
