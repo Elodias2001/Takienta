@@ -47,6 +47,22 @@ export const VIGNETTES = {
     mono: "Source, date de relevé, niveau de confiance",
     alt: "Vignette Takienta : la page de provenance, d'où vient chaque donnée, avec sa source, sa date et son niveau de confiance.",
   },
+  "/carte": {
+    fichier: "og-carte.png",
+    surtitre: "Carte",
+    lignes: ["Les 77 communes,", "rangées par pôle."],
+    accent: 1,
+    mono: "Contours publics · pôles provisoires",
+    alt: "Vignette Takienta : la carte des 77 communes du Bénin rangées par pôle de développement.",
+  },
+  "/comparer": {
+    fichier: "og-comparer.png",
+    surtitre: "Comparer",
+    lignes: ["Deux communes,", "côte à côte."],
+    accent: 1,
+    mono: "Sans un seul script",
+    alt: "Vignette Takienta : comparer deux communes du Bénin côte à côte.",
+  },
   "/a-propos": {
     fichier: "og-a-propos.png",
     surtitre: "À propos",

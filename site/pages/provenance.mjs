@@ -26,6 +26,43 @@ const style = `
   dd code,.mur code{white-space:normal;overflow-wrap:anywhere}
   .hash{font-size:13px;border:0;padding:0}
   .inconnu li{margin-bottom:10px}
+  .pile{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:44px;padding-top:6px}
+  .tour{display:flex;flex-direction:column-reverse;align-items:center;align-self:start}
+  .assise{border:4px solid var(--tk-texte);background:var(--tk-fond);padding:12px 14px;margin-top:-4px;text-align:center;min-height:84px;
+    display:flex;flex-direction:column;justify-content:center;gap:4px;transition:background .25s,color .25s}
+  .assise:first-child{width:100%;background:var(--tk-texte);color:var(--tk-fond)}
+  .assise:nth-child(2){width:88%}
+  .assise:nth-child(3){width:76%}
+  .assise:nth-child(4){width:64%;border-color:var(--tk-accent);box-shadow:8px 8px 0 var(--tk-texte)}
+  .assise b{font-family:var(--tk-font-titre);font-weight:400;font-size:21px;line-height:1.1}
+  .assise small{font-size:13.5px;font-weight:600}
+  .etapes{display:grid;gap:22px}
+  .etape h3{margin:0 0 8px}
+  .etape .badge{margin-bottom:12px}
+  .etape .src{font-size:14.5px}
+  .pile-note{font-size:14.5px;max-width:46em}
+  @media (max-width:820px){.pile{grid-template-columns:minmax(0,1fr)}.tour{max-width:360px;width:100%;margin:0 auto}}
+  @media (min-width:821px){
+    .tour{position:sticky;top:96px}
+    .etapes{gap:0}
+    .etape{min-height:56vh;padding-top:8px}
+    .etape:last-child{min-height:0}
+  }
+  @media (min-width:821px){
+    @supports (animation-timeline:view()){
+      .pile{timeline-scope:--st1,--st2,--st3,--st4}
+      .etape:nth-child(1){view-timeline:--st1 block}
+      .etape:nth-child(2){view-timeline:--st2 block}
+      .etape:nth-child(3){view-timeline:--st3 block}
+      .etape:nth-child(4){view-timeline:--st4 block}
+      .assise{animation:pose linear both;animation-range:entry 30% entry 90%}
+      .assise:nth-child(1){animation-timeline:--st1}
+      .assise:nth-child(2){animation-timeline:--st2}
+      .assise:nth-child(3){animation-timeline:--st3}
+      .assise:nth-child(4){animation-timeline:--st4}
+    }
+  }
+  @keyframes pose{from{opacity:0;transform:translateY(-90px)}to{opacity:1;transform:none}}
 `;
 
 const badge = (c) => `<span class="badge ${esc(c)}">${esc(c === "derivee" ? "dérivée" : c)}</span>`;
@@ -83,6 +120,26 @@ const corps = `<div class="wrap">
     <h1>D'où vient chaque donnée</h1>
     <p class="chapo">Chaque enregistrement de <code>benin-geo</code> porte sa source, la date du relevé et un niveau de confiance. Cette page
       dit ce que l'on sait, ce que l'on ne sait pas encore, et comment le vérifier soi-même.</p>
+  </section>
+
+  <section class="section" aria-labelledby="pile">
+    <h2 id="pile">Quatre niveaux, quatre sources qui s'empilent</h2>
+    <p>Chaque niveau repose sur le précédent, comme les murs d'une maison s'élèvent les uns sur les autres. Descendez la page : la tour se construit au rythme des sources.
+      C'est une image du projet, pas une affirmation sur la maison dont il emprunte le nom.</p>
+    <div class="pile">
+      <div class="tour" role="img" aria-label="Une tour de quatre assises : départements, communes, arrondissements, pôles">
+        ${niveaux.map((l) => `<div class="assise"><b>${esc(l.niveau)}</b><small>${nombre(l.n)}</small></div>`).join("\n        ")}
+      </div>
+      <div class="etapes">
+        ${niveaux.map((l, i) => `<article class="etape" id="etape-${i + 1}">
+          <p class="kicker">Assise ${i + 1} sur ${niveaux.length}</p>
+          <h3>${esc(l.niveau)} : ${nombre(l.n)}</h3>
+          ${[...new Set([...l.conf, ...(l.provisoire ? ["provisoire"] : [])])].map(badge).join(" ")}
+          <p>${l.statut}</p>
+          <p class="src">Source : <a href="#${esc(l.source)}">${esc(sources[l.source].intitule.split(",")[0])}</a></p>
+        </article>`).join("\n        ")}
+      </div>
+    </div>
   </section>
 
   <section class="section" aria-labelledby="confiance">

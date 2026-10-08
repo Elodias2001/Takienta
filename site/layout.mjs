@@ -128,6 +128,8 @@ const STYLE = `
 
 const NAV = [
   { href: "/provenance", libelle: "Provenance" },
+  { href: "/carte", libelle: "Carte" },
+  { href: "/comparer", libelle: "Comparer" },
   { href: "/docs/", libelle: "Documentation" },
   { href: site.depot, libelle: "GitHub", externe: true },
   ...(publie.npm ? [{ href: registres.npm, libelle: "npm", externe: true }] : []),
@@ -208,6 +210,8 @@ ${page.corps}
     <div class="liens">
       <a href="/">Accueil</a>
       <a href="/provenance">Provenance</a>
+      <a href="/carte">Carte</a>
+      <a href="/comparer">Comparer</a>
       <a href="/docs/">Documentation</a>
       <a href="/a-propos">À propos</a>
       ${liensLegaux}
