@@ -1,11 +1,17 @@
 # Démarrer
 
-Cette fiche montre comment installer `benin-geo` et quels appels faire en premier. Le paquet JavaScript est publié sur npm ; le paquet Python n'est pas encore publié sur PyPI : en attendant, on l'installe depuis le dépôt.
+Cette fiche montre comment installer `benin-geo` et quels appels faire en premier. Le paquet JavaScript est publié sur npm et le paquet Python sur PyPI.
 
 ## Depuis npm
 
 ```bash
 npm install benin-geo
+```
+
+Python, version 3.9 ou plus :
+
+```bash
+pip install benin-geo
 ```
 
 ## Depuis les sources

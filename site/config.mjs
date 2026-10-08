@@ -22,7 +22,7 @@ export const site = {
  * doit annoncer une installation depuis ce registre : un test le verrouille.
  * Passer à `true` le jour de la publication, pas avant.
  */
-export const publie = { npm: true, pypi: false };
+export const publie = { npm: true, pypi: true };
 
 export const registres = {
   npm: "https://www.npmjs.com/package/benin-geo",
