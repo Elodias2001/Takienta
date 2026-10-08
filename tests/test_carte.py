@@ -67,6 +67,54 @@ class Svg(unittest.TestCase):
         self.assertNotIn("—", texte)
 
 
+SOURCE_C = json.load(open(os.path.join(CARTE, "source-communes.json"), encoding="utf-8"))
+SVG_C = open(os.path.join(CARTE, "benin-communes.svg"), encoding="utf-8").read()
+COMMUNES = json.load(open(os.path.join(RACINE, "data", "communes.json"), encoding="utf-8"))
+
+
+class Communes(unittest.TestCase):
+    def test_contours_archives_conformes_a_la_source_declaree(self):
+        octets = open(os.path.join(CARTE, SOURCE_C["fichier"]), "rb").read()
+        self.assertEqual(len(octets), SOURCE_C["octets"])
+        self.assertEqual(hashlib.sha256(octets).hexdigest(), SOURCE_C["sha256"])
+        self.assertIn("/raw/" + SOURCE_C["commit"] + "/", SOURCE_C["url"])
+
+    def test_metadonnees_archivees_concordent(self):
+        meta = json.load(open(os.path.join(RACINE, SOURCE_C["metadonnees"]), encoding="utf-8"))
+        self.assertEqual(meta["boundaryLicense"], SOURCE_C["licenceDeclaree"])
+        self.assertEqual(meta["boundaryID"], SOURCE_C["boundaryID"])
+        self.assertEqual(int(meta["admUnitCount"]), len(COMMUNES))
+        self.assertEqual(int(meta["boundaryYearRepresented"]), SOURCE_C["anneeRepresentee"])
+
+    def test_soixante_dix_sept_communes_identiques_a_data(self):
+        chemins = ET.fromstring(SVG_C).findall(".//s:path", NS)
+        self.assertEqual(sorted(p.get("id") for p in chemins), sorted(c["id"] for c in COMMUNES))
+        noms = {c["id"]: c["nom"] for c in COMMUNES}
+        for p in chemins:
+            self.assertEqual(p.find("s:title", NS).text, noms[p.get("id")])
+
+    def test_rapprochements_manuels_vers_des_communes_existantes_et_limites_a_deux(self):
+        ids = {c["id"] for c in COMMUNES}
+        self.assertEqual(len(SOURCE_C["rapprochementManuel"]), 2)
+        for cible in SOURCE_C["rapprochementManuel"].values():
+            self.assertIn(cible, ids)
+
+    def test_attribution_dans_le_fichier_et_le_readme(self):
+        desc = ET.fromstring(SVG_C).find("s:desc", NS).text
+        self.assertIn("geoBoundaries", desc)
+        self.assertIn(str(SOURCE_C["anneeRepresentee"]), desc)
+        readme = open(os.path.join(CARTE, "README.md"), encoding="utf-8").read()
+        self.assertIn(SOURCE_C["attribution"], readme)
+        self.assertIn(SOURCE_C["sha256"], readme)
+        self.assertNotIn("—", readme)
+
+    def test_svg_sain_et_palette(self):
+        self.assertNotIn("<script", SVG_C.lower())
+        self.assertNotIn("href=", SVG_C.lower())
+        for couleur in re.findall(r"#[0-9A-Fa-f]{6}", SVG_C):
+            self.assertIn(couleur.lower(), {"#d9a441", "#2a211a"})
+
+
 class AucuneGeometrieDansLesDonnees(unittest.TestCase):
     """Contours = licences à part : jamais dans data/ ni dans les paquets (cadrage, section 9)."""
     EXCLUS = {"node_modules", ".venv", "dist", "__pycache__", ".git"}

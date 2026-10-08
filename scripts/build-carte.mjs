@@ -49,6 +49,59 @@ ${corps}
 </svg>
 `;
 
+// --- Communes : contours ADM2 archivés, rattachés aux identifiants de data/ par le nom normalisé et les alias ---
+const sourceC = lire("assets", "carte", "source-communes.json");
+const geoC = lire("assets", "carte", sourceC.fichier);
+const communes = lire("data", "communes.json");
+const norm = (t) => t.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]/g, "");
+const parNom = new Map();
+for (const c of communes) for (const n of [c.nom, ...(c.alias ?? [])]) parNom.set(norm(n), [...(parNom.get(norm(n)) ?? []), c.id]);
+const idsC = new Map();
+for (const f of geoC.features) {
+  const nom = f.properties.shapeName;
+  const cand = sourceC.rapprochementManuel[nom] ? [sourceC.rapprochementManuel[nom]] : [...new Set(parNom.get(norm(nom)) ?? [])];
+  if (cand.length !== 1) throw new Error(`commune non rattachée de façon unique : ${nom} (${cand})`);
+  if (idsC.has(cand[0])) throw new Error(`identifiant de commune en double : ${cand[0]}`);
+  idsC.set(cand[0], f);
+}
+if (JSON.stringify([...idsC.keys()].sort()) !== JSON.stringify(communes.map((c) => c.id).sort())) throw new Error("les contours ne couvrent pas exactement les 77 communes de data/");
+const bornes = anneaux2(geoC);
+function anneaux2(g) { return g.features.flatMap(anneaux).flat(); }
+const [lonC0, lonC1] = [Math.min(...bornes.map((p) => p[0])), Math.max(...bornes.map((p) => p[0]))];
+const [latC0, latC1] = [Math.min(...bornes.map((p) => p[1])), Math.max(...bornes.map((p) => p[1]))];
+const kC = Math.cos(((latC0 + latC1) / 2) * (Math.PI / 180));
+const echC = L / ((lonC1 - lonC0) * kC);
+const HC = Math.ceil((latC1 - latC0) * echC);
+const projC = ([lon, lat]) => [((lon - lonC0) * kC * echC + marge).toFixed(1), ((latC1 - lat) * echC + marge).toFixed(1)];
+const cheminC = (f) => anneaux(f).map((a) => "M" + a.slice(0, -1).map((p) => projC(p).join(" ")).join("L") + "Z").join("");
+const nomsC = Object.fromEntries(communes.map((c) => [c.id, c.nom]));
+const corpsC = [...idsC.entries()].sort(([a], [b]) => (a < b ? -1 : 1))
+  .map(([id, f]) => `<path id="${id}" class="commune" d="${cheminC(f)}"><title>${xml(nomsC[id])}</title></path>`).join("\n");
+const svgC = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${L + 2 * marge} ${HC + 2 * marge}" role="img">
+<title>Carte du Bénin par communes</title>
+<desc>Soixante-dix-sept communes, contours simplifiés et illustratifs, état de ${sourceC.anneeRepresentee}, sans valeur cartographique. ${xml(sourceC.attribution)}</desc>
+<style>.commune{fill:${palette.chaume.hex};stroke:${palette.encre.hex};stroke-width:1.6;stroke-linejoin:bevel;fill-rule:evenodd}</style>
+${corpsC}
+</svg>
+`;
+const readmeC = `
+
+## Communes (77)
+
+Fichier \`benin-communes.svg\`, généré depuis \`${sourceC.fichier}\` (${sourceC.octets} octets, SHA-256 \`${sourceC.sha256}\`).
+
+> ${sourceC.attribution}
+
+- Origine : ${sourceC.url}
+- Source originale : ${sourceC.sourceOriginale}. Année représentée : ${sourceC.anneeRepresentee}. Téléchargé le ${sourceC.dateTelechargement}.
+- Licence déclarée par les métadonnées archivées : **${sourceC.licenceDeclaree}**. Nous attribuons dans tous les cas.
+- Rattachement aux identifiants de \`data/communes.json\` : nom normalisé et alias, plus ${Object.keys(sourceC.rapprochementManuel).length} rapprochements écrits dans \`source-communes.json\`. Le script échoue si une commune manque ou se répète.
+
+Écarts connus :
+
+${sourceC.ecartsConnus.map((e) => "- " + e).join("\n")}
+`;
+
 const sortie = join(racine, "assets", "carte", "benin-departements.svg");
 const readme = `# Carte du Bénin par départements
 
@@ -82,7 +135,7 @@ Fichiers générés par \`scripts/build-carte.mjs\`, sauf \`source.json\` et les
 
 ${source.ecartsConnus.map((e) => "- " + e).join("\n")}
 `;
-const sorties = { [sortie]: svg, [join(racine, "assets", "carte", "README.md")]: readme };
+const sorties = { [sortie]: svg, [join(racine, "assets", "carte", "benin-communes.svg")]: svgC, [join(racine, "assets", "carte", "README.md")]: readme + readmeC };
 let ecarts = 0;
 for (const [chem, contenu] of Object.entries(sorties)) {
   if (verifier) {
@@ -90,4 +143,4 @@ for (const [chem, contenu] of Object.entries(sorties)) {
   } else writeFileSync(chem, contenu);
 }
 if (verifier) process.exit(ecarts ? 1 : 0);
-console.log(`carte générée : ${ids.size} départements, ${(svg.length / 1024).toFixed(1)} Ko, ${L + 2 * marge} x ${H + 2 * marge}`);
+console.log(`carte générée : ${ids.size} départements, ${idsC.size} communes, ${(svg.length / 1024).toFixed(1)} Ko, ${L + 2 * marge} x ${H + 2 * marge}`);

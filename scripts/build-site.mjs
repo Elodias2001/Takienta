@@ -25,6 +25,8 @@ const SORTIE = join(RACINE, "dist-site");
 const ROUTES = [
   { module: "index.mjs", fichier: "index.html", url: "/", priorite: "1.0" },
   { module: "provenance.mjs", fichier: "provenance.html", url: "/provenance", priorite: "0.9" },
+  { module: "carte.mjs", fichier: "carte.html", url: "/carte", priorite: "0.8" },
+  { module: "comparer.mjs", fichier: "comparer.html", url: "/comparer", priorite: "0.8" },
   { module: "a-propos.mjs", fichier: "a-propos.html", url: "/a-propos", priorite: "0.6" },
   { module: "mentions-legales.mjs", fichier: "mentions-legales.html", url: "/mentions-legales", priorite: "0.3" },
   { module: "confidentialite.mjs", fichier: "confidentialite.html", url: "/confidentialite", priorite: "0.3" },

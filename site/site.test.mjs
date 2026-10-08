@@ -7,6 +7,7 @@ import { auteur, pagesLegales, publie, site } from "./config.mjs";
 import { donnees } from "./donnees.mjs";
 import { fiches } from "./docs.mjs";
 import { VIGNETTES, fichierDocs } from "./og.mjs";
+import { sourceCommunes, traces, poleDe } from "./communes.mjs";
 
 /**
  * Le site est bâti par `scripts/build-site.mjs` à partir de modules. On teste le
@@ -21,6 +22,8 @@ const documents = await fiches();
 const pages = {
   accueil: (await import("./pages/index.mjs")).default,
   provenance: (await import("./pages/provenance.mjs")).default,
+  carte: (await import("./pages/carte.mjs")).default,
+  comparer: (await import("./pages/comparer.mjs")).default,
   apropos: (await import("./pages/a-propos.mjs")).default,
   mentions: (await import("./pages/mentions-legales.mjs")).default,
   confidentialite: (await import("./pages/confidentialite.mjs")).default,
@@ -434,14 +437,14 @@ print(json.dumps([b.chercher("abomey calavi")[0].id, len(b.communes_de("BJ-BO"))
 });
 
 describe("liens internes", () => {
-  const routes = new Set(["/", "/provenance", "/a-propos", "/mentions-legales", "/confidentialite", ...documents.map((d) => d.chemin)]);
+  const routes = new Set(["/", "/provenance", "/carte", "/comparer", "/a-propos", "/mentions-legales", "/confidentialite", ...documents.map((d) => d.chemin)]);
   const statiques = new Set(["/favicon.svg", "/favicon-32.png", "/apple-touch-icon.png", "/palette.css", "/fonts.css", "/img/benin-departements.svg"]);
   const ids = (html) => new Set([...html.matchAll(/\sid="([^"]+)"/g)].map((m) => m[1]));
   const pageDe = (chemin) => toutes.find(([nom]) => (nom.startsWith("docs/") ? `/docs/${nom.slice(5)}` === chemin || (nom === "docs/index.html" && chemin === "/docs/") : false))?.[1]
-    ?? { "/": pages.accueil, "/provenance": pages.provenance, "/a-propos": pages.apropos, "/mentions-legales": pages.mentions, "/confidentialite": pages.confidentialite }[chemin];
+    ?? { "/": pages.accueil, "/provenance": pages.provenance, "/carte": pages.carte, "/comparer": pages.comparer, "/a-propos": pages.apropos, "/mentions-legales": pages.mentions, "/confidentialite": pages.confidentialite }[chemin];
 
   it.each(toutes)("%s : chaque lien interne mène quelque part", (nom, html) => {
-    const courant = nom.startsWith("docs/") ? (nom === "docs/index.html" ? "/docs/" : `/${nom}`) : nom === "accueil" ? "/" : `/${{ provenance: "provenance", apropos: "a-propos", mentions: "mentions-legales", confidentialite: "confidentialite" }[nom]}`;
+    const courant = nom.startsWith("docs/") ? (nom === "docs/index.html" ? "/docs/" : `/${nom}`) : nom === "accueil" ? "/" : `/${{ provenance: "provenance", carte: "carte", comparer: "comparer", apropos: "a-propos", mentions: "mentions-legales", confidentialite: "confidentialite" }[nom]}`;
     for (const [, href] of html.matchAll(/<a [^>]*href="([^"]+)"/g)) {
       if (/^(https?:|mailto:)/.test(href)) continue;
       const [chemin, ancre] = href.split("#");
@@ -495,7 +498,7 @@ describe("vignettes de partage", () => {
   });
 
   it("couvre exactement les pages publiées", () => {
-    expect(Object.keys(VIGNETTES).sort()).toEqual(["/", "/a-propos", "/confidentialite", "/mentions-legales", "/provenance"]);
+    expect(Object.keys(VIGNETTES).sort()).toEqual(["/", "/a-propos", "/carte", "/comparer", "/confidentialite", "/mentions-legales", "/provenance"]);
   });
 });
 
@@ -522,5 +525,67 @@ describe("construction", () => {
   it("le site entier reste léger", () => {
     const total = parcourir(sortie).reduce((n, f) => n + statSync(f).size, 0);
     expect(total).toBeLessThan(2 * 1024 * 1024);
+  });
+});
+
+describe("carte des communes et mode comparer", () => {
+  const avecContours = [["carte", pages.carte], ["comparer", pages.comparer]];
+  const ids = donnees.communes.map((c) => c.id).sort();
+
+  it.each(avecContours)("%s n'affiche jamais les contours sans leur attribution", (_, html) => {
+    expect(visible(html)).toContain(sourceCommunes.attribution);
+    expect(visible(html)).toContain(`Contours de ${sourceCommunes.anneeRepresentee}`);
+  });
+
+  it("les tracés couvrent exactement les communes de data/, une fois chacune", () => {
+    expect(traces.map((t) => t.id).sort()).toEqual(ids);
+  });
+
+  it.each(avecContours)("%s n'embarque aucun script ni gestionnaire d'événement", (_, html) => {
+    expect(html).not.toMatch(/<script/i);
+    expect(html).not.toMatch(/\son[a-z]+=/i);
+  });
+
+  it("chaque commune a un pôle et une teinte, et la carte porte les six teintes", () => {
+    for (const c of donnees.communes) expect(poleDe(c.id), c.id).toBeTruthy();
+    for (const p of donnees.poles) expect(pages.carte).toContain(`.p-${p.id}{fill:`);
+  });
+
+  it("la carte annonce que les pôles sont provisoires et chaque fiche de commune le répète", () => {
+    expect(visible(pages.carte)).toContain("Les pôles viennent d'un communiqué");
+    const fiches = pages.carte.match(/<div class="info" id="i-BJ-[^"]+">/g) ?? [];
+    expect(fiches).toHaveLength(donnees.compte.communes);
+    expect((pages.carte.match(/<span class="badge provisoire">provisoire<\/span><br><code class="id">BJ-/g) ?? [])).toHaveLength(donnees.compte.communes);
+  });
+
+  it("chaque commune a une règle de survol sur la carte et deux règles de choix sur la page comparer", () => {
+    for (const id of ids) {
+      expect(pages.carte).toContain(`#${id}:hover,#${id}:focus) #i-${id}{display:block}`);
+      expect(pages.comparer).toContain(`#a-${id}:checked) .va-${id}`);
+      expect(pages.comparer).toContain(`#b-${id}:checked) .vb-${id}`);
+    }
+  });
+
+  it("comparer : deux listes de radios, une valeur par commune et par ligne, une sélection par défaut de chaque côté", () => {
+    const a = pages.comparer.match(/<input type="radio" name="a"/g) ?? [];
+    const b = pages.comparer.match(/<input type="radio" name="b"/g) ?? [];
+    expect(a).toHaveLength(donnees.compte.communes);
+    expect(b).toHaveLength(donnees.compte.communes);
+    expect(pages.comparer.match(/<input type="radio" name="a"[^>]* checked>/g) ?? []).toHaveLength(1);
+    expect(pages.comparer.match(/<input type="radio" name="b"[^>]* checked>/g) ?? []).toHaveLength(1);
+    expect(pages.comparer.match(/class="v va-BJ-AK-NAT"/g) ?? []).toHaveLength(10);
+  });
+
+  it("comparer : le nombre d'arrondissements affiché est celui des données", () => {
+    for (const c of donnees.communes) {
+      const n = donnees.arrondissements.filter((x) => x.parent === c.id).length;
+      expect(pages.comparer, c.id).toContain(`<span class="v va-${c.id}">${n}</span>`);
+    }
+  });
+
+  it("aucune géométrie hors assets : ni data/ ni les paquets ne contiennent de coordonnées", () => {
+    for (const f of ["communes", "poles", "arrondissements", "departements"]) {
+      expect(readFileSync(join(RACINE, "data", `${f}.json`), "utf8")).not.toMatch(/"coordinates"|"geometry"/);
+    }
   });
 });

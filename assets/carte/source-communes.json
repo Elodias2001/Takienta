@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "fichier": "geoBoundaries-BEN-ADM2_simplified.geojson",
+  "octets": 173031,
+  "sha256": "6a72cc64ed016badd2b80b8474b8c05a7da1132558973a4a93b460d446dff171",
+  "url": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/BEN/ADM2/geoBoundaries-BEN-ADM2_simplified.geojson",
+  "depot": "https://github.com/wmgeolab/geoBoundaries",
+  "commit": "9469f09",
+  "boundaryID": "BEN-ADM2-17685819",
+  "metadonnees": "assets/carte/geoBoundaries-BEN-ADM2.metadata.json",
+  "producteur": "geoBoundaries, William & Mary geoLab",
+  "anneeRepresentee": 2007,
+  "sourceOriginale": "Map Maker Ltd., Stanford Earthworks (earthworks.stanford.edu/catalog/stanford-rq343zx0554), jeu « Communes, Benin, 2007 »",
+  "licenceDeclaree": "Public Domain",
+  "licenceBase": "CC BY 4.0 pour les œuvres dérivées du projet geoBoundaries (fichier LICENSE du dépôt)",
+  "attribution": "Contours : geoBoundaries (William & Mary geoLab), jeu BEN-ADM2, d'après Map Maker Ltd. via Stanford Earthworks.",
+  "dateTelechargement": "2026-10-08",
+  "rapprochementManuel": {
+    "Kobli": "BJ-AK-COB",
+    "Akpo-Misserete": "BJ-OU-AKP"
+  },
+  "ecartsConnus": [
+    "Les noms du fichier sont sans accents. 75 sur 77 se rattachent à une commune de data/ par leur nom ou un alias, après normalisation.",
+    "Deux noms diffèrent d'orthographe : « Kobli » est rattaché à Cobly et « Akpo-Misserete » à Akpro-Missérété. C'est le seul reste de part et d'autre, et les deux emplacements concordent (Cobly à l'extrême nord-ouest, Akpro-Missérété au sud-est, en Ouémé). Rapprochement écrit dans source-communes.json.",
+    "Contours de 2007 : ils précèdent les découpages ultérieurs éventuels et sont simplifiés. Illustration seulement."
+  ]
+}

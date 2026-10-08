@@ -198,9 +198,18 @@ Elodias, hors du dépôt.
   « caché » n'existe que dans des `@keyframes` (rien n'est invisible sans le support), les ombres sont
   pleines (`8px 8px 0`), jamais diffuses. Ajouter un script casserait la promesse de confidentialité et la CSP :
   ne pas le faire sans l'accord d'Elodias, et mettre à jour la page confidentialité si c'est décidé.
-- **Carte de l'accueil** : ne jamais la montrer sans son attribution (testé sur la carte intégrée). Une carte au
-  niveau des communes n'est possible qu'avec des contours publics et vérifiés à leur source ; des tracés dont
-  l'origine est inconnue ne se publient pas.
+- **Carte de l'accueil** : ne jamais la montrer sans son attribution (testé sur la carte intégrée). Les 77 communes ont
+  leur carte (`/carte`) et un mode `/comparer`, tous deux sans script : contours geoBoundaries BEN-ADM2
+  (Map Maker Ltd. via Stanford Earthworks, 2007, « Public Domain » selon les métadonnées archivées, téléchargés
+  le 2026-10-08 avec l'accord d'Elodias), archivés avec empreinte dans `assets/carte/` (`source-communes.json`),
+  générés par `scripts/build-carte.mjs`. Deux noms du fichier diffèrent d'orthographe (Kobli = Cobly,
+  Akpo-Misserete = Akpro-Missérété) : rapprochement écrit dans `source-communes.json`, le script échoue si une
+  commune manque ou se répète. Des tracés dont l'origine est inconnue (ceux d'un autre projet) ne se publient pas.
+  Les pôles y sont colorés avec le statut provisoire toujours affiché.
+- **Provenance** : la section « tour » (`#pile`) est un défilement narratif en CSS seul (`view-timeline`,
+  sous `@supports` et seulement au-dessus de 820 px). Son texte vient de `niveaux` dans `site/pages/provenance.mjs`,
+  donc de `data/` : ne pas y écrire de fait à la main. L'image de la maison est celle du projet, pas une affirmation
+  ethnographique.
 - **Charte** : aucune couleur écrite en dur dans le CSS (variables `--tk-*`), jamais de trait de 1 px,
   Caprasimo pour les titres seulement. Une grille à une colonne s'écrit `minmax(0,1fr)`, jamais `1fr`
   (sinon un bloc de code fait déborder un écran de 375 px, c'est arrivé).
