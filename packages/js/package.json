@@ -98,5 +98,9 @@
   ],
   "publishConfig": {
     "access": "public"
+  },
+  "homepage": "https://takienta.sabar.app",
+  "bugs": {
+    "url": "https://github.com/Elodias2001/Takienta/issues"
   }
 }

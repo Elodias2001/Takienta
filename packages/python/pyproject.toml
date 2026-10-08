@@ -6,6 +6,7 @@ build-backend = "hatchling.build"
 name = "benin-geo"
 version = "0.1.0"
 description = "La structure administrative du Bénin, avec la source de chaque enregistrement. Hors ligne, sans dépendance."
+readme = "README.md"
 requires-python = ">=3.9"
 license = "MIT"
 license-files = ["LICENSE"]
@@ -19,7 +20,10 @@ classifiers = [
 dependencies = []
 
 [project.urls]
+Homepage = "https://takienta.sabar.app"
+Documentation = "https://takienta.sabar.app/docs/"
 Repository = "https://github.com/Elodias2001/Takienta"
+Issues = "https://github.com/Elodias2001/Takienta/issues"
 
 [tool.hatch.build]
 # _generated.py est ignoré par Git (généré par scripts/build-data.mjs) mais doit être livré.
