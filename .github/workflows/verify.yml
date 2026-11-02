@@ -10,7 +10,8 @@ on:
 jobs:
   verify:
     name: Types · tests · parité · site
-    runs-on: ubuntu-latest
+    # Épinglé : ubuntu-latest est passé à 26.04, où setup-python ne fournit plus Python 3.9 (minimum testé du projet).
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     strategy:
       matrix:
