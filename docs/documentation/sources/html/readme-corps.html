@@ -1,0 +1,36 @@
+<h1 class="doc">Documentation projet : Takienta</h1>
+<p class="lead">Ce dossier rassemble la documentation de Takienta, la structure administrative du Bénin avec la source de chaque enregistrement : architecture, manuel technique et guide utilisateur. La documentation de travail des développeurs (fiches publiées sur le site) est dans <code>docs/</code> du dépôt.</p>
+
+<h2>1. Sommaire</h2>
+<table>
+  <thead><tr><th style="width:36%">Document</th><th style="width:9%">Version</th><th style="width:25%">Public visé</th><th>Contenu</th></tr></thead>
+  <tbody>
+    <tr><td><code>01-architecture-TAKIENTA.pdf</code></td><td>v1.0</td><td>mainteneurs, relecteurs</td><td>couches, flux de données, infrastructure, choix techniques, limites</td></tr>
+    <tr><td><code>02-manuel-technique-TAKIENTA.pdf</code></td><td>v1.0</td><td>mainteneurs, développeurs</td><td>installation, conventions, opérations, tests, publication, déploiement, dépannage</td></tr>
+    <tr><td><code>03-manuel-utilisateur-TAKIENTA.pdf</code></td><td>v1.0</td><td>visiteurs, développeurs utilisateurs du paquet</td><td>guide de référence du site et du paquet</td></tr>
+  </tbody>
+</table>
+
+<h2>2. Versions documentées</h2>
+<table>
+  <thead><tr><th style="width:30%">Brique</th><th>Local, dépôt et CI</th><th style="width:30%">Déployé (constaté)</th></tr></thead>
+  <tbody>
+    <tr><td>Node, pnpm</td><td><code>&gt;=20</code> ; CI et image en 22 ; pnpm 10.28.2</td><td>sans objet (site statique)</td></tr>
+    <tr><td>Python</td><td><code>&gt;=3.9</code> ; CI en 3.9 et 3.13</td><td>sans objet</td></tr>
+    <tr><td>nginx</td><td>image <code>nginx:1.27-alpine</code></td><td><code>nginx/1.27.5</code> (en-tête <code>server</code>, 26/10/2026)</td></tr>
+    <tr><td>Paquets <code>benin-geo</code></td><td>0.1.0 (JavaScript et Python)</td><td>publiés sur npm et PyPI</td></tr>
+  </tbody>
+</table>
+<p class="tag">Base relevée commune : dépôt <code>Takienta</code>, branche <code>publication</code> (publiée comme <code>main</code>), commit <code>15748a8</code> (08/10/2026). Relevés du 26/10/2026.</p>
+
+<h2>3. Conventions de cette documentation</h2>
+<ul>
+  <li>Les chemins sont cités depuis la racine du dépôt.</li>
+  <li>Les commandes sont recopiées depuis le dépôt ; celles qui viennent de la pratique de l'autrice sont signalées comme telles.</li>
+  <li>Les variables sont nommées sans valeur ; aucun secret ni adresse de serveur ne figure dans ces documents.</li>
+  <li>Un point qui ne se déduit ni du code ni des constats porte le badge <span class="nd">Non déterminé à date</span> et figure en annexe du document.</li>
+  <li>Les constats sont séparés des recommandations ; aucun audit n'a été produit à ce stade.</li>
+</ul>
+
+<h2>4. Mise à jour</h2>
+<div class="callout neutre"><span class="callout-titre">Décision à prendre</span><p>Proposition : mettre à jour ces documents à chaque changement de version des paquets, de l'infrastructure ou du processus de publication, en indiquant le nouveau commit relevé et une ligne d'historique. Cette règle n'est pas encore une décision du projet.</p></div>

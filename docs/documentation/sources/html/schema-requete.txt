@@ -1,0 +1,9 @@
+ navigateur --HTTPS--> Traefik (réseau gcw-public, certificat Let's Encrypt)
+                          |
+                          v
+                 conteneur takienta-site (nginx, port 8080)
+                          |
+                          +-- /health      : 200 "ok" (sans journal d'accès)
+                          +-- /img/og/     : PNG, cache d'un an, CORS ouvert
+                          +-- /img/, /fonts/ : cache 7 jours
+                          +-- autres URL   : try_files $uri $uri/ $uri.html, cache 300 s

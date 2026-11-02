@@ -1,0 +1,179 @@
+<h1 class="doc">03 · Manuel utilisateur</h1>
+<p class="lead">Guide de référence du site Takienta et du paquet <code>benin-geo</code>. Vous y trouvez ce que contient chaque page, comment parcourir les cartes, comment comparer deux communes, comment vérifier d'où vient une donnée et comment installer le paquet.</p>
+
+<div class="intro-box">
+  <table>
+    <tr><td><b>Public</b></td><td>visiteurs du site, et développeurs qui installent le paquet</td></tr>
+    <tr><td><b>Base relevée</b></td><td>dépôt <code>Takienta</code>, commit <code>15748a8</code> (08/10/2026) ; pages relevées le 26/10/2026</td></tr>
+    <tr><td><b>Format</b></td><td>guide de référence, sans capture d'écran : un chapitre par page du site</td></tr>
+    <tr><td><b>Points ouverts</b></td><td>marqués <span class="nd">Non déterminé à date</span> et récapitulés en annexe</td></tr>
+    <tr><td><b>Historique</b></td><td>v1.0 : première version</td></tr>
+  </table>
+</div>
+
+<h2>1. Adresses et navigation</h2>
+<p>Le site est public et ne demande ni compte ni mot de passe. Il n'y a qu'un type de visiteur.</p>
+<table>
+  <thead><tr><th style="width:26%">Ce que vous cherchez</th><th>Adresse</th></tr></thead>
+  <tbody>
+    <tr><td>Le site</td><td><code>https://takienta.sabar.app</code></td></tr>
+    <tr><td>Le code et les sources</td><td><code>https://github.com/Elodias2001/Takienta</code></td></tr>
+    <tr><td>Le paquet JavaScript</td><td><code>https://www.npmjs.com/package/benin-geo</code></td></tr>
+    <tr><td>Le paquet Python</td><td><code>https://pypi.org/project/benin-geo/</code></td></tr>
+  </tbody>
+</table>
+<p>L'en-tête de chaque page contient la marque (retour à l'accueil) et les liens <b>Provenance</b>, <b>Carte</b>, <b>Comparer</b>, <b>Documentation</b>, <b>GitHub</b>, <b>npm</b> et <b>PyPI</b>. Le pied de page ajoute <b>À propos</b>, <b>Mentions légales</b> et <b>Confidentialité</b>. Le lien <b>Aller au contenu</b> apparaît en tête de page quand vous naviguez au clavier.</p>
+<p>Le site suit le thème clair ou sombre de votre navigateur. Si votre système demande moins d'animations, le site les coupe.</p>
+
+<h2>2. Se repérer : le vocabulaire</h2>
+<table>
+  <thead><tr><th style="width:24%">Mot</th><th>Sens dans Takienta</th></tr></thead>
+  <tbody>
+    <tr><td>Département</td><td>12 départements, fixés par la loi n°97-028 (article 6) ; leurs codes sont ceux de la norme ISO 3166-2:BJ</td></tr>
+    <tr><td>Commune</td><td>77 communes, nommées par l'annexe de la loi n°2013-05</td></tr>
+    <tr><td>Arrondissement</td><td>546 arrondissements, d'après la même annexe, état de 2013</td></tr>
+    <tr><td>Pôle de développement</td><td>6 regroupements de communes présentés par communiqué le 23 septembre 2026 ; aucun décret retrouvé</td></tr>
+    <tr><td>Identifiant</td><td>code stable d'un enregistrement, par exemple <code>BJ-AL-KAN-04</code> : département Alibori, commune Kandi, 4e arrondissement de la commune. Un identifiant ne change jamais et n'est jamais réattribué</td></tr>
+    <tr><td>Niveau de confiance</td><td>trois niveaux : <b>officielle</b> (texte de loi ou décret archivé), <b>dérivée</b> (document institutionnel ou ouvrage, recoupé), <b>provisoire</b> (communiqué, ou état que rien ne confirme encore)</td></tr>
+    <tr><td>Provenance</td><td>ce que chaque enregistrement dit de lui-même : sa source, la date du relevé et son niveau de confiance</td></tr>
+    <tr><td>Alias</td><td>variante d'orthographe d'une commune, relevée telle quelle dans une source</td></tr>
+    <tr><td>Graphie</td><td>pour un arrondissement : <b>attestée</b> (écrite ainsi par la loi, ou attestée par un village homonyme) ou <b>déduite du libellé</b> (la loi imprime des majuscules sans accents, les accents ne sont pas vérifiables)</td></tr>
+  </tbody>
+</table>
+<div class="callout note"><span class="callout-titre">Ce qui est provisoire</span><p>Le badge <b>provisoire</b> apparaît sur les arrondissements (état de 2013, lois postérieures non recherchées) et sur les pôles (aucun décret). Un nom d'arrondissement sans accent n'est pas une faute : il n'est pas vérifiable.</p></div>
+
+<h2>3. L'accueil</h2>
+<p>Adresse : <code>/</code>. Vous y trouvez, de haut en bas :</p>
+<ul>
+  <li>le titre du projet et deux boutons : <b>Voir la provenance</b> et <b>Démarrer</b> (vers la documentation) ;</li>
+  <li>la carte des 12 départements : passez la souris sur un département, ou parcourez-les avec la touche Tab, pour afficher son nombre de communes et d'arrondissements, son ou ses pôles et son identifiant ;</li>
+  <li>les chiffres du projet : 12 départements, 77 communes, 546 arrondissements (provisoire) et 6 pôles (provisoire) ;</li>
+  <li>le schéma de l'emboîtement (pôle, département, commune, arrondissement) et l'anatomie d'un identifiant : passer sur un niveau met en évidence le segment correspondant de l'identifiant ;</li>
+  <li>les lignes d'installation du paquet, un aperçu de code, et la liste de ce que le paquet ne fait pas.</li>
+</ul>
+<p>Un département comme l'Atlantique ou l'Ouémé peut appartenir à deux pôles : la carte les affiche tous.</p>
+
+<h2>4. La carte des communes</h2>
+<p>Adresse : <code>/carte</code>. La page montre les 77 communes, colorées selon leur pôle.</p>
+<table>
+  <thead><tr><th style="width:34%">Pour…</th><th>Faites…</th></tr></thead>
+  <tbody>
+    <tr><td>Voir la fiche d'une commune</td><td>passez la souris sur la commune, ou atteignez-la avec la touche Tab. La fiche affiche son département, son nombre d'arrondissements, son pôle et son identifiant</td></tr>
+    <tr><td>Isoler un pôle</td><td>passez la souris sur son nom dans la légende, ou atteignez-le avec Tab : les autres communes s'estompent, et la fiche donne le nombre de communes, le chef-lieu et l'identifiant du pôle</td></tr>
+    <tr><td>Aller plus loin</td><td>suivez <b>Comparer deux communes</b> ou <b>Voir la provenance des données</b> sous la légende</td></tr>
+  </tbody>
+</table>
+<p>Le pôle Grand-Nokoué n'a pas de chef-lieu confirmé : la fiche l'indique.</p>
+<div class="callout avertissement"><span class="callout-titre">Prudence</span><p>Les contours datent de 2007 et sont simplifiés : la carte illustre, elle ne sert pas à mesurer. Elle porte toujours son attribution : « Contours : geoBoundaries (William &amp; Mary geoLab), jeu BEN-ADM2, d'après Map Maker Ltd. via Stanford Earthworks. »</p></div>
+
+<h2>5. Comparer deux communes</h2>
+<p>Adresse : <code>/comparer</code>. La page affiche deux listes : <b>Commune A</b> et <b>Commune B</b>. Au départ, A est Natitingou et B est Cotonou.</p>
+<ol>
+  <li>Dans la liste <b>Commune A</b>, cliquez sur une commune, ou déplacez-vous avec les flèches haut et bas.</li>
+  <li>Faites de même dans la liste <b>Commune B</b>.</li>
+  <li>Lisez le tableau : il suit votre choix sans recharger la page.</li>
+</ol>
+<p>La mini-carte colore la commune A en latérite et la commune B en vert. Le tableau donne, pour chacune : le nom, le département, le pôle (avec le badge provisoire), le nombre d'arrondissements et leurs noms, les autres graphies, la source, la confiance, la date du relevé et l'identifiant.</p>
+<div class="callout note"><span class="callout-titre">Note</span><p>Chaque liste est classée par ordre alphabétique et défile : la commune choisie n'est pas toujours visible dans la liste, mais elle l'est toujours dans le tableau.</p></div>
+
+<h2>6. La provenance</h2>
+<p>Adresse : <code>/provenance</code>. C'est la page qui dit d'où vient chaque donnée.</p>
+<table>
+  <thead><tr><th style="width:34%">Section</th><th>Ce que vous y trouvez</th></tr></thead>
+  <tbody>
+    <tr><td>Quatre niveaux, quatre sources qui s'empilent</td><td>une tour de quatre assises qui se construit quand vous descendez dans la page : départements, communes, arrondissements, pôles, chacun avec sa source. Sur un écran étroit, la tour est affichée sans animation</td></tr>
+    <tr><td>Trois niveaux de confiance</td><td>le sens de <b>officielle</b>, <b>dérivée</b> et <b>provisoire</b></td></tr>
+    <tr><td>Ce que contient chaque niveau</td><td>nombre, confiance et ce que l'on sait pour chaque niveau</td></tr>
+    <tr><td>Un enregistrement, en entier</td><td>l'arrondissement Kandi 1 tel qu'il est dans les données</td></tr>
+    <tr><td>Les 7 sources</td><td>pour chaque source : éditeur, nature, date de publication, date de relevé, adresse, archive dans le dépôt, empreinte SHA-256, note</td></tr>
+    <tr><td>Ce que nous ne savons pas encore</td><td>la liste des points non établis</td></tr>
+    <tr><td>Le vérifier soi-même</td><td>les commandes pour cloner le dépôt, recalculer l'empreinte de la loi et lancer les tests</td></tr>
+  </tbody>
+</table>
+
+<h2>7. La documentation</h2>
+<p>Adresse : <code>/docs/</code>. L'index liste cinq fiches :</p>
+<table>
+  <thead><tr><th style="width:34%">Fiche</th><th>Contenu</th></tr></thead>
+  <tbody>
+    <tr><td>Démarrer</td><td>installation depuis npm, PyPI ou les sources ; premiers appels en JavaScript et en Python</td></tr>
+    <tr><td>Référence de l'API</td><td>fonctions, données, recherche, options, points d'entrée par niveau</td></tr>
+    <tr><td>Modèle de données</td><td>champs d'un enregistrement, niveaux de confiance, arrondissements, pôles, registre des sources</td></tr>
+    <tr><td>Identifiants</td><td>formats, règles pour les communes et les arrondissements, ce qui les garde stables</td></tr>
+    <tr><td>Contribuer</td><td>les cinq invariants, comment corriger une donnée, ce qui est refusé</td></tr>
+  </tbody>
+</table>
+
+<h2>8. Utiliser le paquet</h2>
+<p>Le paquet <code>benin-geo</code> existe en JavaScript et en Python, avec les mêmes identifiants et les mêmes résultats. Il fonctionne hors ligne, sans dépendance.</p>
+<pre>npm install benin-geo
+pip install benin-geo</pre>
+<pre>import { chercher, communesDe, hierarchie } from "benin-geo";
+
+chercher("abomey calavi")[0].id;      // "BJ-AQ-ABO"
+communesDe("BJ-BO").length;           // 8
+hierarchie("BJ-AL-KAN-04").pole.nom;  // "Nord-Est"</pre>
+<pre>from benin_geo import chercher, communes_de, hierarchie
+
+chercher("abomey calavi")[0].id       # "BJ-AQ-ABO"
+len(communes_de("BJ-BO"))             # 8
+hierarchie("BJ-AL-KAN-04").pole.nom   # "Nord-Est"</pre>
+<p>La recherche ignore les accents, la casse, les tirets et les apostrophes, et cherche aussi dans les alias. Elle n'est ni floue ni phonétique : une faute de frappe ne trouve rien. Les arrondissements ne sont cherchés que sur demande (option <code>niveau</code>) ; l'option <code>dans</code> désigne la commune quand plusieurs villes portent le même nom d'arrondissement numéroté. Le détail est dans la fiche <b>Référence de l'API</b>.</p>
+
+<h2>9. Parcours courants</h2>
+<table>
+  <thead><tr><th style="width:36%">Vous voulez…</th><th>Faites…</th></tr></thead>
+  <tbody>
+    <tr><td>Savoir à quel pôle appartient une commune</td><td>ouvrez <b>Carte</b> et passez sur la commune, ou ouvrez <b>Comparer</b> et choisissez-la</td></tr>
+    <tr><td>Comparer deux communes</td><td>ouvrez <b>Comparer</b> (§5)</td></tr>
+    <tr><td>Savoir d'où vient un chiffre</td><td>ouvrez <b>Provenance</b> : la source, la date du relevé et la confiance sont indiquées pour chaque niveau</td></tr>
+    <tr><td>Vérifier une source</td><td>suivez le lien de la source dans <b>Provenance</b>, ou recalculez l'empreinte du document archivé avec <code>shasum -a 256</code> (section « Le vérifier soi-même »)</td></tr>
+    <tr><td>Installer le paquet</td><td>ouvrez <b>Documentation</b>, fiche <b>Démarrer</b></td></tr>
+    <tr><td>Comprendre un identifiant</td><td>ouvrez la fiche <b>Identifiants</b> ou le schéma de l'accueil</td></tr>
+  </tbody>
+</table>
+
+<h2>10. Bonnes pratiques</h2>
+<table>
+  <thead><tr><th class="c" style="width:6%">#</th><th style="width:40%">Règle</th><th>Pourquoi</th></tr></thead>
+  <tbody>
+    <tr><td class="c">1</td><td>Citez la provenance avec la donnée.</td><td>Un nombre d'arrondissements sans « état de 2013 » peut être périmé.</td></tr>
+    <tr><td class="c">2</td><td>Stockez l'identifiant, pas le nom.</td><td>Un nom se corrige, un identifiant ne change jamais.</td></tr>
+    <tr><td class="c">3</td><td>Traitez le badge provisoire comme un avertissement.</td><td>Les pôles et les arrondissements peuvent changer.</td></tr>
+    <tr><td class="c">4</td><td>Ne déduisez pas un accent.</td><td>Un nom d'arrondissement marqué « déduite du libellé » n'est pas vérifié.</td></tr>
+    <tr><td class="c">5</td><td>Utilisez <code>dans</code> pour un arrondissement numéroté.</td><td>« 1er Arrondissement » existe dans plusieurs villes.</td></tr>
+    <tr><td class="c">6</td><td>Ne vous servez pas des cartes pour mesurer.</td><td>Les contours sont simplifiés et datent de 2007 et 2012.</td></tr>
+  </tbody>
+</table>
+
+<h2>11. Que faire si…</h2>
+<table>
+  <thead><tr><th style="width:38%">Situation</th><th>Action</th></tr></thead>
+  <tbody>
+    <tr><td>Une commune ne se trouve pas avec <code>chercher</code></td><td>essayez le nom sans faute de frappe ; la recherche n'est pas floue. Une variante d'orthographe ne marche que si elle est relevée dans une source (alias)</td></tr>
+    <tr><td><code>hierarchie</code> d'un département rend un pôle vide</td><td>c'est voulu : l'Atlantique et l'Ouémé sont répartis sur deux pôles. Utilisez <code>polesDe</code> (JavaScript) ou <code>poles_de</code> (Python)</td></tr>
+    <tr><td>Le chef-lieu du Grand-Nokoué est vide</td><td>c'est voulu : aucun texte officiel ne le désigne</td></tr>
+    <tr><td>Un nom d'arrondissement n'a pas d'accent</td><td>la loi imprime ses libellés en majuscules sans accents ; l'accent n'est ajouté que s'il est attesté</td></tr>
+    <tr><td>Une donnée vous semble fausse</td><td>notez son identifiant, sa source et la date du relevé (page Provenance), puis signalez-la (§12)</td></tr>
+  </tbody>
+</table>
+
+<h2>12. Demande d'assistance</h2>
+<table>
+  <thead><tr><th style="width:38%">Besoin</th><th>Contact</th></tr></thead>
+  <tbody>
+    <tr><td>Question ou correction de donnée</td><td>l'éditrice du site, à l'adresse affichée sur la page <b>À propos</b>, ou une discussion dans les tickets du dépôt GitHub (<code>https://github.com/Elodias2001/Takienta/issues</code>)</td></tr>
+    <tr><td>Protection des données personnelles</td><td>page <b>Confidentialité</b> : le site ne dépose aucun cookie et ne collecte que les journaux d'accès du serveur</td></tr>
+    <tr><td>Questions juridiques sur le site</td><td>page <b>Mentions légales</b></td></tr>
+  </tbody>
+</table>
+<p>Le délai de réponse n'est pas défini <span class="nd">Non déterminé à date</span>.</p>
+
+<h2 class="newpage">Annexe : points non déterminés à date</h2>
+<p>Ces points ne se déduisent ni du code ni des constats disponibles. Ils seront complétés dans une prochaine version du document.</p>
+<table>
+  <thead><tr><th class="c" style="width:6%">#</th><th>Point</th><th style="width:16%">Section</th></tr></thead>
+  <tbody>
+    <tr><td class="c">1</td><td>Délai de réponse aux questions et aux signalements</td><td>§12</td></tr>
+  </tbody>
+</table>

@@ -1,0 +1,279 @@
+<h1 class="doc">02 · Manuel technique</h1>
+<p class="lead">Comment on travaille sur Takienta au quotidien : installer, reconstruire les données, modifier le site, tester, publier, déployer, dépanner. Public : mainteneurs et développeurs qui reprennent le projet. Le document d'architecture (01) décrit la construction ; celui-ci décrit les gestes.</p>
+
+<div class="intro-box">
+  <table>
+    <tr><td><b>Base relevée</b></td><td>dépôt <code>Takienta</code>, branche <code>publication</code> (publiée comme <code>main</code>), commit <code>15748a8</code> (08/10/2026). Relevé le 26/10/2026.</td></tr>
+    <tr><td><b>Méthode</b></td><td>commandes recopiées depuis <code>package.json</code>, les workflows, les scripts et la documentation du dépôt ; comptes de tests rapportés par les outils.</td></tr>
+    <tr><td><b>Points ouverts</b></td><td>marqués <span class="nd">Non déterminé à date</span> et récapitulés en annexe</td></tr>
+    <tr><td><b>Historique</b></td><td>v1.0 : première version</td></tr>
+  </table>
+</div>
+
+<h2>1. Prérequis</h2>
+<table>
+  <thead><tr><th style="width:20%">Outil</th><th style="width:22%">Version</th><th>Rôle</th><th style="width:24%">Source</th></tr></thead>
+  <tbody>
+    <tr><td>Node</td><td><code>&gt;=20</code> ; CI en 22</td><td>build du site, tests, paquet JavaScript</td><td><code>package.json</code>, <code>verify.yml</code></td></tr>
+    <tr><td>pnpm</td><td>10.28.2</td><td>gestionnaire de paquets (<code>corepack enable</code> dans le <code>Dockerfile</code>)</td><td><code>package.json</code></td></tr>
+    <tr><td>Python</td><td><code>&gt;=3.9</code> ; CI en 3.9 et 3.13</td><td>pipeline de données, paquet Python, tests</td><td><code>pyproject.toml</code>, <code>verify.yml</code></td></tr>
+    <tr><td>Outils Python de développement</td><td><code>jsonschema&gt;=4.20</code>, <code>pytest&gt;=8</code>, <code>build&gt;=1.2</code>, <code>mypy&gt;=1.10</code></td><td>tests, build, typage</td><td><code>requirements-dev.txt</code></td></tr>
+    <tr><td>Docker avec buildx</td><td>non épinglée</td><td>image du site</td><td><code>Dockerfile</code></td></tr>
+    <tr><td><code>pdftotext</code> (poppler)</td><td>non épinglée</td><td>extraction de l'annexe de la loi, à la main seulement</td><td><code>scripts/extraire-annexe-2013-05.py</code></td></tr>
+    <tr><td>Chrome ou Chromium</td><td>non épinglée</td><td>rendu des PNG (vignettes, marque)</td><td><code>scripts/chrome.mjs</code></td></tr>
+    <tr><td><code>sips</code></td><td>livré avec macOS</td><td>fabrication de l'ICO de la marque</td><td><code>scripts/rendre-marque.mjs</code></td></tr>
+    <tr><td><code>shasum</code></td><td>livré avec macOS et Linux</td><td>un test compare l'empreinte de la loi archivée</td><td><code>site/site.test.mjs</code></td></tr>
+  </tbody>
+</table>
+
+<h2>2. Mise en route locale</h2>
+<p>Parcours le plus court, tel qu'il figure dans le README et dans <code>docs/01-demarrage.md</code> :</p>
+<pre>git clone https://github.com/Elodias2001/Takienta.git
+cd Takienta
+pnpm install
+pnpm --filter benin-geo build</pre>
+<p>Pour construire et tester le site :</p>
+<pre>pnpm build:site
+pnpm test:site</pre>
+<p><code>pnpm build:site</code> écrit <code>dist-site/</code>. Pour voir le site dans une image locale : <code>docker compose up --build</code>, puis <code>docker compose port takienta-site 8080</code> donne le port publié (commentaire de <code>docker-compose.yml</code>).</p>
+<p>Il n'y a ni compte administrateur, ni jeu de démonstration, ni formulaire de premier accès : le projet n'a ni base ni backend. La création de l'environnement Python local (<code>.venv/</code>) n'est écrite nulle part dans le dépôt <span class="nd">Non déterminé à date</span> ; la CI installe les outils avec <code>python -m pip install -r requirements-dev.txt</code>.</p>
+
+<h2>3. Variables d'environnement</h2>
+<p>Le dépôt ne contient ni <code>.env</code> ni <code>.env.example</code>. Six variables sont lues, aucune au moment du build du site.</p>
+<table>
+  <thead><tr><th style="width:24%">Variable</th><th style="width:26%">Lue par</th><th>Rôle</th><th style="width:16%">Obligatoire</th></tr></thead>
+  <tbody>
+    <tr><td><code>TAKIENTA_CHROME</code></td><td><code>scripts/chrome.mjs</code></td><td>chemin de Chrome pour les rendus PNG</td><td>non (candidats par défaut sur macOS et Linux)</td></tr>
+    <tr><td><code>SITE_HOST</code></td><td><code>docker-compose.prod.yml</code></td><td>nom d'hôte du site dans les étiquettes Traefik ; posée dans le <code>.env</code> du serveur, jamais dans le dépôt</td><td>oui en production</td></tr>
+    <tr><td><code>COMPOSE_PROJECT_NAME</code></td><td>compose de base et de production</td><td>préfixe du conteneur et des routeurs Traefik</td><td>non (défaut <code>takienta</code>)</td></tr>
+    <tr><td><code>GHCR_OWNER</code></td><td><code>docker-compose.prod.yml</code></td><td>propriétaire dans le nom de l'image</td><td>non (défaut <code>elodias2001</code>)</td></tr>
+    <tr><td><code>IMAGE_TAG</code></td><td><code>docker-compose.prod.yml</code></td><td>étiquette de l'image</td><td>non (défaut <code>main</code>)</td></tr>
+    <tr><td><code>PYTHONPATH</code></td><td><code>site/site.test.mjs</code></td><td>donne accès au paquet Python aux tests du site</td><td>posée par le test lui-même</td></tr>
+  </tbody>
+</table>
+<p>Aucune variable n'est déclarée sans être lue, et aucune variable publique n'est incorporée au site. Les valeurs ne figurent pas dans ce document.</p>
+
+<h2>4. Scripts du gestionnaire de paquets</h2>
+<p>Racine (<code>package.json</code>) :</p>
+<table class="compact">
+  <thead><tr><th style="width:20%">Script</th><th style="width:36%">Commande</th><th>Rôle</th></tr></thead>
+  <tbody>
+    <tr><td><code>data</code></td><td><code>node scripts/build-data.mjs</code></td><td>écrit les modules de données des deux paquets</td></tr>
+    <tr><td><code>build</code></td><td><code>pnpm -r build</code></td><td>construit les paquets du dépôt</td></tr>
+    <tr><td><code>test</code></td><td><code>pnpm -r test</code></td><td>tests des paquets (le paquet JavaScript se reconstruit avant)</td></tr>
+    <tr><td><code>type-check</code></td><td><code>pnpm -r type-check</code></td><td>vérification des types</td></tr>
+    <tr><td><code>build:brand</code></td><td><code>node scripts/build-brand.mjs</code></td><td>SVG de marque, <code>palette.css</code>, <code>brand/README.md</code></td></tr>
+    <tr><td><code>build:carte</code></td><td><code>node scripts/build-carte.mjs</code></td><td>cartes SVG des départements et des communes</td></tr>
+    <tr><td><code>build:og</code></td><td><code>node scripts/build-og.mjs</code></td><td>vignettes de partage (Chrome requis)</td></tr>
+    <tr><td><code>build:site</code></td><td><code>node scripts/build-site.mjs</code></td><td>site dans <code>dist-site/</code></td></tr>
+    <tr><td><code>test:site</code></td><td><code>vitest run</code></td><td>tests du site</td></tr>
+  </tbody>
+</table>
+<p>Paquet JavaScript (<code>packages/js/package.json</code>) : <code>data</code> (<code>node ../../scripts/build-data.mjs</code>), <code>build</code> (<code>node ../../scripts/build-data.mjs &amp;&amp; tsup</code>), <code>type-check</code> (<code>build-data.mjs &amp;&amp; tsc --noEmit</code>), <code>test</code> (<code>pnpm build &amp;&amp; vitest run</code>).</p>
+<div class="callout note"><span class="callout-titre">Pas de Makefile, pas de migrations</span><p>Le dépôt n'a pas de <code>Makefile</code> : les commandes ci-dessus et les scripts de <code>scripts/</code> sont les seuls points d'entrée. Il n'a pas non plus de base de données, donc pas de migration.</p></div>
+
+<h2>5. Structure du code</h2>
+<pre>Takienta/
+  assets/carte/          cartes SVG, contours archivés, source*.json, README
+  brand/                 tokens.json, SVG, PNG, polices, palette.css
+  data/                  données canoniques, schémas, sources archivées, calque des pôles
+  docs/                  5 fiches et un index publiés sur le site ; cadrage/ non publié
+  packages/js/           paquet benin-geo (JavaScript)
+  packages/python/       paquet benin-geo (Python)
+  scripts/               pipeline, générateurs, rendus, contrôles
+  site/                  générateur du site, pages, tests (site.test.mjs)
+  tests/                 tests pytest de la racine
+  .github/workflows/     ci.yml, verify.yml
+  Dockerfile, nginx.conf, nginx-securite.conf, docker-compose.yml, docker-compose.prod.yml</pre>
+<h3>Fichiers générés, à ne jamais éditer</h3>
+<table>
+  <thead><tr><th style="width:42%">Fichier ou dossier</th><th>Produit par</th></tr></thead>
+  <tbody>
+    <tr><td><code>packages/js/src/generated/</code>, <code>packages/python/src/benin_geo/_generated.py</code> (ignorés par Git)</td><td><code>scripts/build-data.mjs</code></td></tr>
+    <tr><td><code>data/departements.json</code>, <code>communes.json</code>, <code>arrondissements.json</code>, <code>poles.json</code></td><td><code>scripts/construire-donnees.py</code></td></tr>
+    <tr><td><code>brand/svg/*</code>, <code>brand/palette.css</code>, <code>brand/README.md</code></td><td><code>scripts/build-brand.mjs</code> (<code>--verifier</code> échoue si un fichier diffère)</td></tr>
+    <tr><td><code>assets/carte/benin-departements.svg</code>, <code>benin-communes.svg</code>, <code>README.md</code></td><td><code>scripts/build-carte.mjs</code> (<code>--verifier</code> disponible)</td></tr>
+    <tr><td><code>dist-site/</code>, <code>packages/*/dist</code> (ignorés par Git)</td><td><code>pnpm build:site</code>, <code>tsup</code>, <code>python -m build</code></td></tr>
+    <tr><td>PNG et ICO de la marque, vignettes <code>site/img/og/*.png</code> (commités)</td><td>rendus à la main : <code>scripts/rendre-marque.mjs</code>, <code>pnpm build:og</code></td></tr>
+  </tbody>
+</table>
+<p>Corriger une donnée, c'est corriger <code>data/</code> (ou sa source) puis relancer le pipeline, jamais le fichier généré.</p>
+
+<h2>6. Conventions</h2>
+<table>
+  <thead><tr><th style="width:24%">Sujet</th><th>Règle relevée</th></tr></thead>
+  <tbody>
+    <tr><td>Langue</td><td>Français partout (commentaires, documentation, commits, site) ; identifiants de code en anglais quand c'est plus lisible ; noms de domaine en français. Aucun tiret cadratin dans les textes publiés.</td></tr>
+    <tr><td>Commits</td><td>Convention <code>feat(data):</code>, <code>fix(core):</code>, <code>docs:</code>, <code>chore:</code>, rédigés en français (exemples du dépôt : <code>feat(site): …</code>, <code>chore(infra): …</code>). Rien dans le dépôt n'impose cette convention par un outil : pas de commitlint, pas de hook Git.</td></tr>
+    <tr><td>Identité Git</td><td>Dépôt personnel, identité locale <code>Elodias (Perso)</code>. Avant un commit : <code>git var GIT_AUTHOR_IDENT</code>. Ne pas pousser et ne pas déployer sans demande de l'autrice.</td></tr>
+    <tr><td>Branches</td><td>La branche de travail locale est <code>publication</code> ; elle est publiée comme <code>main</code> (<code>git push origin publication:main</code>). La CI se déclenche sur <code>main</code>.</td></tr>
+    <tr><td>TypeScript</td><td><code>tsconfig.base.json</code> : <code>strict</code>, <code>noUncheckedIndexedAccess</code>, <code>noImplicitOverride</code>, <code>verbatimModuleSyntax</code>, cible ES2022. Python : <code>mypy --strict</code> sans erreur.</td></tr>
+    <tr><td>Outils absents</td><td>Pas d'ESLint, de Prettier, de <code>CODEOWNERS</code> ni de modèle de demande de fusion dans le dépôt.</td></tr>
+    <tr><td>Charte du site (testée)</td><td>Aucune couleur écrite en dur dans le CSS (variables <code>--tk-*</code>) ; aucun trait de 1 px ; ombres pleines, jamais diffuses ; Caprasimo pour les titres seulement ; une grille à une colonne s'écrit <code>minmax(0,1fr)</code>.</td></tr>
+    <tr><td>Données</td><td>Aucune donnée sans source déclarée dans <code>data/sources.json</code>. Un article de presse n'est pas une source. On n'ajuste jamais une valeur attendue pour faire passer un test. Tout nom entrant est contrôlé contre une liste de référence. Un identifiant n'est jamais modifié ni réutilisé.</td></tr>
+    <tr><td>Garde-fou de confidentialité</td><td><code>python3 scripts/verifier-termes-prives.py</code> lit une liste de termes tenue hors dépôt ; l'option <code>--historique</code> contrôle l'historique et <code>--ref &lt;branche&gt;</code> limite le contrôle à la branche poussée. Sans la liste, le script s'arrête avec le code 2.</td></tr>
+  </tbody>
+</table>
+
+<h2>7. Ajouter ou corriger une donnée</h2>
+<p>Il n'y a pas de « collection » à déclarer : les données sont des fichiers produits par le pipeline. La procédure, d'après <code>docs/05-contribuer.md</code> et <code>AGENTS.md</code> :</p>
+<ol>
+  <li>S'appuyer sur un texte : loi, décret ou publication officielle.</li>
+  <li>Ajouter le document dans <code>data/sources/</code> avec son empreinte SHA-256, puis le déclarer dans <code>data/sources.json</code>.</li>
+  <li>Reconstruire : <code>python3 scripts/construire-donnees.py</code>, puis <code>node scripts/build-data.mjs</code>.</li>
+  <li>Lancer les tests (§10).</li>
+</ol>
+<div class="callout avertissement"><span class="callout-titre">Prudence</span><p>Ne jamais régénérer ni éditer les deux instantanés d'identifiants (<code>data/identifiants.snapshot.json</code>, <code>data/identifiants-arrondissements.snapshot.json</code>). Un arrondissement créé plus tard s'ajoute en fin de liste de sa commune ; une suppression laisse un trou. Ne jamais ajouter un accent de mémoire à un libellé : un accent n'est retenu que si un village du même arrondissement l'atteste.</p></div>
+<p>Un alias de commune ne s'ajoute que s'il est relevé dans une source. Les six libellés de la loi qui diffèrent du nom usuel vivent dans <code>data/rapprochement-communes.json</code>.</p>
+
+<h2>8. Autres briques</h2>
+<table>
+  <thead><tr><th style="width:24%">Ajout</th><th>Étapes</th></tr></thead>
+  <tbody>
+    <tr><td>Une page du site</td><td>déposer un module dans <code>site/pages/</code> ; l'inscrire dans <code>ROUTES</code> de <code>scripts/build-site.mjs</code> ; ajouter sa vignette dans <code>site/og.mjs</code> et lancer <code>pnpm build:og</code> (le build du site échoue sans vignette) ; l'ajouter au tableau <code>pages</code> de <code>site/site.test.mjs</code> ; lancer <code>pnpm test:site</code></td></tr>
+    <tr><td>Une fiche de documentation</td><td>déposer <code>docs/NN-nom.md</code> ; l'ordre vient du préfixe numérique ; sa vignette <code>og-docs-*.png</code> est requise (<code>pnpm build:og</code>). Les nombres cités sont comparés aux données par les tests, et les exemples de code sont exécutés contre les vrais paquets</td></tr>
+    <tr><td>Un changement de recherche</td><td>modifier <code>chercher</code> dans <code>packages/js/src/index.ts</code> et dans <code>packages/python/src/benin_geo/__init__.py</code> ; sinon <code>tests/test_croise.py</code> échoue</td></tr>
+    <tr><td>Une couleur ou l'emblème</td><td>couleurs dans <code>brand/tokens.json</code>, forme dans <code>scripts/emblem.mjs</code> ; puis <code>node scripts/build-brand.mjs</code> et <code>node scripts/rendre-marque.mjs</code> ; les contrastes sont calculés par <code>tests/test_marque.py</code></td></tr>
+    <tr><td>Un contour de carte</td><td>archiver le fichier dans <code>assets/carte/</code> avec son empreinte et sa source, puis <code>node scripts/build-carte.mjs</code> ; ne rien télécharger sans l'accord de l'autrice</td></tr>
+  </tbody>
+</table>
+
+<h2>9. Opérations propres au projet</h2>
+<table>
+  <thead><tr><th style="width:22%">Opération</th><th style="width:36%">Commande</th><th>Quand, précautions</th></tr></thead>
+  <tbody>
+    <tr><td>Rejouer le pipeline</td><td><code>python3 scripts/construire-donnees.py</code></td><td>après un changement de source ; <code>--verifier</code> contrôle sans écrire</td></tr>
+    <tr><td>Régénérer les modules des paquets</td><td><code>node scripts/build-data.mjs</code></td><td>après un changement dans <code>data/</code></td></tr>
+    <tr><td>Régénérer les cartes</td><td><code>node scripts/build-carte.mjs</code></td><td>contours ou données changés ; <code>--verifier</code> disponible</td></tr>
+    <tr><td>Régénérer la marque</td><td><code>node scripts/build-brand.mjs</code></td><td><code>tokens.json</code> ou <code>emblem.mjs</code> changés ; <code>--verifier</code> disponible</td></tr>
+    <tr><td>Rendre les vignettes</td><td><code>pnpm build:og</code></td><td>un titre de page a changé ; Chrome requis ; les PNG sont à commiter</td></tr>
+    <tr><td>Rendre les PNG de marque</td><td><code>node scripts/rendre-marque.mjs</code></td><td>emblème changé ; Chrome et <code>sips</code> requis (macOS)</td></tr>
+    <tr><td>Extraire l'annexe de la loi</td><td><code>python3 scripts/extraire-annexe-2013-05.py &lt;transcription.pdf&gt; &lt;loi-2013-05.pdf&gt; &lt;sortie.json&gt;</code></td><td>à la main, une fois ; jamais dans le build ; ne jamais lire les libellés ni les nombres sur le scan océrisé, qui confond des chiffres</td></tr>
+    <tr><td>Contrôler les termes privés</td><td><code>python3 scripts/verifier-termes-prives.py --historique --ref &lt;branche&gt;</code></td><td>avant tout push</td></tr>
+  </tbody>
+</table>
+
+<h2>10. Tests</h2>
+<p>Comptes rapportés par les outils le 26/10/2026, sur le commit <code>15748a8</code>, arbre de travail propre :</p>
+<table>
+  <thead><tr><th style="width:26%">Suite</th><th style="width:38%">Commande</th><th>Résultat</th></tr></thead>
+  <tbody>
+    <tr><td>Site (vitest)</td><td><code>pnpm test:site</code></td><td>1 fichier, 315 tests passés</td></tr>
+    <tr><td>Paquet JavaScript (vitest)</td><td><code>pnpm test</code> dans <code>packages/js</code> (reconstruit d'abord)</td><td>3 fichiers, 42 tests passés (<code>vitest run</code> seul)</td></tr>
+    <tr><td>Tests de la racine (pytest)</td><td><code>python -m pytest tests</code></td><td>87 passés</td></tr>
+    <tr><td>Paquet Python (pytest)</td><td><code>python -m pytest packages/python</code></td><td>34 passés</td></tr>
+    <tr><td>Types Python</td><td><code>python -m mypy --strict packages/python/src/benin_geo</code></td><td>aucune erreur dans 5 fichiers sources</td></tr>
+    <tr><td>Données à jour</td><td><code>python3 scripts/construire-donnees.py --verifier</code></td><td>code de sortie 0</td></tr>
+  </tbody>
+</table>
+<p>Répartition des 87 tests de la racine : <code>test_marque</code> 18, <code>test_carte</code> 17, <code>test_arrondissements</code> 16, <code>test_donnees</code> 14, <code>test_annexe_2013</code> 8, <code>test_schemas</code> 7, <code>test_tiers_non_suivis</code> 2, <code>test_instantane</code> 2, <code>test_croise</code> 2, <code>test_termes_prives</code> 1.</p>
+<p>Particularités :</p>
+<ul>
+  <li><code>tests/test_croise.py</code> lit <code>packages/js/dist</code> : construire le paquet JavaScript d'abord.</li>
+  <li>Les tests du site appellent <code>shasum</code>, <code>python3</code> et <code>node scripts/build-carte.mjs --verifier</code>.</li>
+  <li><code>test_termes_prives</code> est ignoré tant que la liste locale de termes est absente.</li>
+  <li>Aucun test ne pilote un navigateur, et la couverture de code n'est pas mesurée.</li>
+</ul>
+<p>La CI enchaîne ces suites sur Python 3.9 et 3.13 (architecture, §4.4).</p>
+
+<h2>11. Build et déploiement</h2>
+<h3>11.1 Build</h3>
+<p>Site : <code>pnpm build:site</code>. Image locale : <code>docker compose up --build</code>. Image de production, pour le serveur (architecture x86_64) depuis un Mac arm64 : <code>docker buildx build --platform linux/amd64 -t ghcr.io/elodias2001/takienta-site:main --load .</code>. Cette dernière commande vient de la pratique de l'autrice, pas d'un fichier du dépôt.</p>
+<h3>11.2 Déploiement</h3>
+<p>Le déploiement est manuel : le dépôt n'a aucun workflow de déploiement, volontairement. Les adresses et accès du serveur ne sont pas reproduits ici. Ordre à respecter :</p>
+<ol>
+  <li>Le DNS du domaine existe avant le démarrage du conteneur, sinon la validation Let's Encrypt de Traefik échoue.</li>
+  <li>L'image <code>linux/amd64</code> est transférée sur le serveur (<code>docker save</code> compressé, puis <code>docker load</code> à l'arrivée), sans registre.</li>
+  <li>Le fichier <code>docker-compose.prod.yml</code> du serveur est celui du dépôt ; il est comparé avant de le remplacer.</li>
+  <li>Dans le dossier du projet sur le serveur : <code>docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d</code>, avec <code>--force-recreate</code> pour recréer le conteneur à l'identique.</li>
+</ol>
+<div class="callout avertissement"><span class="callout-titre">Prudence</span><p>Le serveur est partagé avec d'autres projets. Le déploiement ne touche que le dossier et le conteneur de Takienta, jamais Traefik ni un autre projet. Une chaîne de commandes qui enchaîne le build et le transfert avec <code>&amp;&amp;</code> peut recharger l'ancienne image si le build échoue au milieu d'un <code>tail</code> : vérifier le code de sortie du build avant le transfert.</p></div>
+<h3>11.3 Vérifications après déploiement</h3>
+<ul>
+  <li><code>docker inspect takienta-site --format '{{.HostConfig.Memory}} {{.HostConfig.MemorySwap}}'</code> : 134217728 et 201326592 attendus (128 Mo et 192 Mo).</li>
+  <li>L'état du conteneur est <code>running</code> et son contrôle de santé <code>healthy</code>.</li>
+  <li>Les pages <code>/</code>, <code>/carte</code>, <code>/comparer</code> et <code>/provenance</code> répondent 200 ; <code>curl -sI</code> montre les en-têtes de sécurité.</li>
+</ul>
+<h3>11.4 Retour arrière</h3>
+<p>Aucun mécanisme n'est écrit : l'étiquette <code>main</code> désigne la dernière image chargée. La procédure de retour à une image précédente n'est pas définie <span class="nd">Non déterminé à date</span>.</p>
+<h3>11.5 Publier les paquets</h3>
+<p>La publication est manuelle et se fait avec un compte et un jeton personnels, conservés hors dépôt. Pratique relevée le 09/10/2026 :</p>
+<pre># JavaScript, depuis packages/js
+npm publish --access public
+
+# Python, depuis packages/python
+python -m build
+twine upload dist/*</pre>
+<p><code>twine</code> n'est pas dans <code>requirements-dev.txt</code>. Après publication, installer le paquet depuis le registre dans un dossier vide et appeler <code>chercher</code> pour vérifier. Quand un registre est publié, passer l'indicateur correspondant de <code>publie</code> à <code>true</code> dans <code>site/config.mjs</code> et écrire la ligne d'installation dans <code>docs/01-demarrage.md</code> : un test échoue sinon.</p>
+
+<h2>12. Observabilité opérationnelle</h2>
+<p>Les journaux sont ceux de Docker : <code>docker logs takienta-site</code>. Le contrôle de santé est <code>GET /health</code> (nginx répond <code>200 ok</code> sans journal d'accès). Il n'y a ni alerte, ni métrique, ni analytics. <code>site/config.mjs</code> annonce une rotation des journaux à 30 Mo cumulés (<code>json-file</code>, 10 Mo, 3 fichiers) ; le compose ne configure pas la journalisation, et le réglage qui s'applique n'est pas établi <span class="nd">Non déterminé à date</span>.</p>
+
+<h2>13. Sécurité opérationnelle</h2>
+<ul>
+  <li>Aucun secret dans le dépôt ; le dossier <code>local-secrets/</code> est ignoré par Git. Ne jamais copier la valeur d'un jeton dans un fichier suivi, une note ou un message.</li>
+  <li>Les jetons npm et PyPI sont personnels et restent sur le poste de travail. Un jeton utilisé une fois dans un outil doit être révoqué ou limité au projet.</li>
+  <li>En-têtes HTTP : voir l'architecture (§4.3). HSTS n'est pas envoyé et la version de nginx est visible.</li>
+  <li>Aucun audit de dépendances n'est défini (ni commande, ni job).</li>
+  <li>Le site n'envoie aucun script ; toute évolution qui introduirait une collecte, un cookie ou un prestataire entraîne la mise à jour de la page de confidentialité et de sa date.</li>
+</ul>
+
+<h2>14. Procédures courantes</h2>
+<table>
+  <thead><tr><th style="width:36%">Besoin</th><th>Comment</th></tr></thead>
+  <tbody>
+    <tr><td>Vérifier que <code>data/</code> est à jour</td><td><code>python3 scripts/construire-donnees.py --verifier</code></td></tr>
+    <tr><td>Vérifier marque et cartes</td><td><code>node scripts/build-brand.mjs --verifier</code> et <code>node scripts/build-carte.mjs --verifier</code></td></tr>
+    <tr><td>Recalculer l'empreinte de la loi 2013-05</td><td><code>shasum -a 256 data/sources/loi-2013-05.pdf</code>, à comparer à la valeur de la page Provenance et de <code>data/sources.json</code></td></tr>
+    <tr><td>Tout reconstruire et tester</td><td><code>python3 scripts/construire-donnees.py</code>, <code>node scripts/build-data.mjs</code>, <code>pnpm --filter benin-geo test</code>, puis <code>python -m pytest tests</code> et <code>python -m pytest packages/python</code></td></tr>
+    <tr><td>Imposer un Chrome pour les rendus</td><td><code>TAKIENTA_CHROME=/chemin/vers/chrome</code> devant la commande</td></tr>
+  </tbody>
+</table>
+
+<h2>15. Dépannage</h2>
+<table>
+  <thead><tr><th style="width:26%">Symptôme</th><th style="width:30%">Cause</th><th>Action</th></tr></thead>
+  <tbody>
+    <tr><td>« Aucun Chromium trouvé »</td><td>aucun Chrome aux emplacements prévus</td><td>définir <code>TAKIENTA_CHROME</code></td></tr>
+    <tr><td>Le build du site échoue avec « Vignette absente »</td><td>une page ou une fiche n'a pas son PNG de partage</td><td><code>pnpm build:og</code>, puis commiter le PNG</td></tr>
+    <tr><td><code>construire-donnees.py</code> s'arrête (« source absente du registre », « commune appariée deux fois »…)</td><td>donnée sans source, ou rapprochement incohérent</td><td>corriger <code>data/sources.json</code> ou <code>data/rapprochement-communes.json</code></td></tr>
+    <tr><td><code>build-carte.mjs</code> échoue (« commune non rattachée de façon unique »)</td><td>un nom de contour ne correspond à aucune commune</td><td>ajouter un rapprochement écrit dans <code>assets/carte/source-communes.json</code></td></tr>
+    <tr><td><code>test_croise</code> échoue</td><td><code>chercher</code> modifié d'un seul côté, ou <code>dist</code> JavaScript absent</td><td>aligner les deux paquets ; construire le paquet JavaScript d'abord</td></tr>
+    <tr><td><code>verifier-termes-prives.py</code> sort avec le code 2</td><td>la liste locale de termes est absente</td><td>recréer <code>local-secrets/termes-prives.txt</code></td></tr>
+    <tr><td>Une grille déborde à 375 px</td><td><code>1fr</code> au lieu de <code>minmax(0,1fr)</code></td><td>corriger la déclaration de la grille</td></tr>
+    <tr><td>Pas de certificat TLS au premier démarrage</td><td>le DNS n'existait pas au démarrage du conteneur</td><td>créer le DNS, puis recréer le conteneur</td></tr>
+  </tbody>
+</table>
+
+<h2>16. Mise à niveau</h2>
+<p>Les versions sont épinglées par <code>pnpm-lock.yaml</code> (<code>--frozen-lockfile</code> en CI et dans le <code>Dockerfile</code>) ; TypeScript reste en 5.x. Les deux versions de paquet (<code>packages/js/package.json</code>, <code>packages/python/pyproject.toml</code>) et <code>__version__</code> dans <code>__init__.py</code> doivent rester identiques : <code>tests/test_croise.py</code> les compare. La pratique de mise à jour des dépendances (au cas par cas ou selon une procédure) n'est pas écrite <span class="nd">Non déterminé à date</span>.</p>
+
+<h2>17. Ressources</h2>
+<table>
+  <thead><tr><th style="width:38%">Document</th><th>Contenu</th></tr></thead>
+  <tbody>
+    <tr><td><code>README.md</code></td><td>présentation, niveaux de données, démarrage</td></tr>
+    <tr><td><code>docs/01..05-*.md</code></td><td>démarrage, référence de l'API, modèle de données, identifiants, contribuer (publiées sur le site)</td></tr>
+    <tr><td><code>docs/cadrage/PROMPT-TAKIENTA.md</code></td><td>cadrage du projet</td></tr>
+    <tr><td><code>docs/cadrage/recherche-nom-takienta.md</code></td><td>recherche sourcée sur le nom</td></tr>
+    <tr><td><code>AGENTS.md</code></td><td>garde-fous et décisions figées</td></tr>
+    <tr><td><code>brand/README.md</code>, <code>assets/carte/README.md</code></td><td>marque et cartes (générés)</td></tr>
+    <tr><td><code>data/sources/NOTES-SOURCING-2026-09-28.md</code></td><td>notes sur l'état des sources officielles</td></tr>
+  </tbody>
+</table>
+
+<h2>18. Contacts internes</h2>
+<p>Le dépôt ne contient pas de <code>CODEOWNERS</code>. Mainteneuse et seule personne identifiée : Elodias Adimou. Aucun canal d'astreinte n'est écrit <span class="nd">Non déterminé à date</span>.</p>
+
+<h2 class="newpage">Annexe : points non déterminés à date</h2>
+<p>Ces points ne se déduisent ni du code ni des constats disponibles. Ils seront complétés dans une prochaine version du document.</p>
+<table>
+  <thead><tr><th class="c" style="width:6%">#</th><th>Point</th><th style="width:16%">Section</th></tr></thead>
+  <tbody>
+    <tr><td class="c">1</td><td>Commande de création de l'environnement Python local (<code>.venv/</code>)</td><td>§2</td></tr>
+    <tr><td class="c">2</td><td>Retour arrière vers une image précédente</td><td>§11.4</td></tr>
+    <tr><td class="c">3</td><td>Réglage réel de la rotation des journaux Docker sur le serveur</td><td>§12</td></tr>
+    <tr><td class="c">4</td><td>Pratique de mise à jour des dépendances</td><td>§16</td></tr>
+    <tr><td class="c">5</td><td>Canal d'astreinte et contacts autres que la mainteneuse</td><td>§18</td></tr>
+  </tbody>
+</table>

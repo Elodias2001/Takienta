@@ -1,0 +1,299 @@
+<h1 class="doc">01 · Architecture</h1>
+<p class="lead">Document de référence sur la construction de Takienta : données, paquets JavaScript et Python, site statique, image et déploiement. Public : mainteneurs, développeurs qui reprennent le projet, relecteurs externes.</p>
+
+<div class="intro-box">
+  <table>
+    <tr><td><b>Base relevée</b></td><td>dépôt <code>Takienta</code>, branche <code>publication</code> (publiée comme <code>main</code>), commit <code>15748a8</code> (08/10/2026). Relevé le 26/10/2026.</td></tr>
+    <tr><td><b>Méthode</b></td><td>chaque affirmation est relevée dans un fichier du dépôt, constatée par une commande de lecture, ou donnée par Elodias Adimou.</td></tr>
+    <tr><td><b>Points ouverts</b></td><td>marqués <span class="nd">Non déterminé à date</span> et récapitulés en annexe</td></tr>
+    <tr><td><b>Historique</b></td><td>v1.0 : première version</td></tr>
+  </table>
+</div>
+
+<h2>1. Vue d'ensemble</h2>
+<p>Takienta expose la structure administrative du Bénin : 12 départements, 77 communes, 546 arrondissements et 6 pôles de développement. Chaque enregistrement porte sa source, la date du relevé et un niveau de confiance. Le projet est personnel, publié sous licence MIT, sans serveur applicatif, sans base de données et sans compte.</p>
+
+<h3>1.1 Ce que le dépôt produit</h3>
+<table>
+  <thead><tr><th style="width:26%">Livrable</th><th>Contenu</th><th style="width:26%">Où</th></tr></thead>
+  <tbody>
+    <tr><td>Données canoniques</td><td>quatre fichiers JSON et un registre de 7 sources, produits par un pipeline hors ligne</td><td><code>data/</code></td></tr>
+    <tr><td>Paquet JavaScript</td><td><code>benin-geo</code> 0.1.0, ESM et CommonJS, avec types</td><td><code>packages/js</code> ; npm</td></tr>
+    <tr><td>Paquet Python</td><td><code>benin-geo</code> 0.1.0, sans dépendance</td><td><code>packages/python</code> ; PyPI</td></tr>
+    <tr><td>Site statique</td><td>7 pages et 6 pages de documentation (un index et 5 fiches), servies par nginx</td><td><code>site/</code>, <code>scripts/build-site.mjs</code></td></tr>
+  </tbody>
+</table>
+<p>Le site est en ligne sur <code>https://takienta.sabar.app</code>. Le dépôt GitHub est <code>Elodias2001/Takienta</code>.</p>
+
+<h3>1.2 Stack</h3>
+<table class="compact">
+  <thead><tr><th style="width:24%">Brique</th><th style="width:34%">Version relevée</th><th>Source</th></tr></thead>
+  <tbody>
+    <tr><td>Node</td><td><code>&gt;=20</code> (racine), <code>&gt;=18</code> à l'exécution du paquet JS ; image de build <code>node:22-alpine</code> ; CI en 22</td><td><code>package.json</code>, <code>Dockerfile</code>, <code>verify.yml</code></td></tr>
+    <tr><td>pnpm</td><td>10.28.2</td><td><code>package.json</code></td></tr>
+    <tr><td>Python</td><td><code>&gt;=3.9</code> ; CI en 3.9 et 3.13</td><td><code>pyproject.toml</code>, <code>verify.yml</code></td></tr>
+    <tr><td>TypeScript, tsup</td><td><code>^5.9.3</code>, <code>^8.5.1</code> (TypeScript 5.x imposé : tsup ne produit pas les types avec TypeScript 7)</td><td><code>packages/js/package.json</code>, <code>AGENTS.md</code></td></tr>
+    <tr><td>vitest, marked</td><td><code>^5.0.1</code>, <code>^18.0.14</code></td><td><code>package.json</code></td></tr>
+    <tr><td>hatchling</td><td><code>&gt;=1.27</code></td><td><code>pyproject.toml</code></td></tr>
+    <tr><td>mypy, pytest, jsonschema</td><td><code>&gt;=1.10</code> (mode strict), <code>&gt;=8</code>, <code>&gt;=4.20</code></td><td><code>requirements-dev.txt</code></td></tr>
+    <tr><td>nginx</td><td><code>1.27-alpine</code> (image) ; <code>nginx/1.27.5</code> annoncé par le serveur en production</td><td><code>Dockerfile</code>, en-têtes HTTP</td></tr>
+  </tbody>
+</table>
+
+<h3>1.3 Chaîne de fabrication</h3>
+<p>Les données vivent dans <code>data/</code>, seule source de vérité. Les deux paquets et le site en sont générés ; rien n'est saisi deux fois.</p>
+<pre class="diagram"> data/sources/ (lois, décret, archives)      data/identifiants*.snapshot.json (figés)
+ data/poles/poles-2026-09-23.json            data/rapprochement-communes.json
+                         |
+                         v
+            scripts/construire-donnees.py
+                         |
+                         v
+ data/departements.json  communes.json  arrondissements.json  poles.json  (+ sources.json)
+          |                                        |
+          v                                        v
+ scripts/build-data.mjs                  scripts/build-site.mjs  (+ assets/carte, brand, docs/*.md)
+     |               |                                    |
+     v               v                                    v
+ packages/js     packages/python                    dist-site/ --&gt; Dockerfile --&gt; nginx
+ (tsup : ESM,    (hatchling : wheel,                (ignoré par Git)             (port 8080)
+  CJS, .d.ts)     sdist)</pre>
+
+<h3>1.4 Chemin d'une requête</h3>
+<pre class="diagram"> navigateur --HTTPS--&gt; Traefik (réseau gcw-public, certificat Let's Encrypt)
+                          |
+                          v
+                 conteneur takienta-site (nginx, port 8080)
+                          |
+                          +-- /health      : 200 "ok" (sans journal d'accès)
+                          +-- /img/og/     : PNG, cache d'un an, CORS ouvert
+                          +-- /img/, /fonts/ : cache 7 jours
+                          +-- autres URL   : try_files $uri $uri/ $uri.html, cache 300 s</pre>
+<p>Les en-têtes de sécurité sont placés dans <code>nginx-securite.conf</code> et inclus dans chaque bloc <code>location</code> : un <code>add_header</code> dans un bloc enfant annule ceux du parent, et l'inclusion rend un oubli visible. Le site n'envoie aucun JavaScript au navigateur.</p>
+
+<h2>2. Couches logicielles</h2>
+
+<h3>2.1 Données : <code>data/</code></h3>
+<p>Trois schémas JSON (<code>data/schema/entite.schema.json</code>, <code>poles.schema.json</code>, <code>sources.schema.json</code>) valident les fichiers ; <code>tests/test_schemas.py</code> les applique. Un enregistrement porte <code>id</code>, <code>type</code>, <code>nom</code>, <code>tri</code>, <code>parent</code>, <code>source</code>, <code>releveLe</code> et <code>confiance</code> (<code>officielle</code>, <code>derivee</code> ou <code>provisoire</code>), plus <code>alias</code> pour les communes, <code>provisoire</code>, <code>graphie</code> et <code>libelleLoi</code> pour les arrondissements.</p>
+<table>
+  <thead><tr><th style="width:20%">Niveau</th><th style="width:10%">Nombre</th><th style="width:30%">Format d'identifiant</th><th>Source déclarée</th></tr></thead>
+  <tbody>
+    <tr><td>Départements</td><td>12</td><td><code>BJ-AK</code> (code ISO 3166-2:BJ)</td><td><code>loi-97-028</code>, confiance officielle</td></tr>
+    <tr><td>Communes</td><td>77</td><td><code>BJ-AK-NAT</code> (3 lettres, 4 en cas de collision)</td><td><code>loi-2013-05</code> (annexe), officielle</td></tr>
+    <tr><td>Arrondissements</td><td>546</td><td><code>BJ-AL-KAN-04</code> (numéro séquentiel par commune)</td><td><code>loi-2013-05</code>, état de 2013, niveau provisoire</td></tr>
+    <tr><td>Pôles</td><td>6</td><td><code>PO-NO</code></td><td><code>communique-marina-2026-09-23</code>, provisoire</td></tr>
+  </tbody>
+</table>
+<p>Les identifiants sont figés par deux instantanés (<code>data/identifiants.snapshot.json</code>, 06/10/2026 ; <code>data/identifiants-arrondissements.snapshot.json</code>, 07/10/2026). Un identifiant n'est jamais modifié ni réutilisé ; <code>tests/test_instantane.py</code> et <code>tests/test_arrondissements.py</code> le vérifient.</p>
+<p>Le registre <code>data/sources.json</code> compte 7 sources : <code>loi-97-028</code>, <code>loi-2013-05</code>, <code>annexe-loi-2013-05-transcription</code>, <code>decret-2009-202</code>, <code>avocevou-2013</code>, <code>communique-marina-2026-09-23</code> et <code>iso-3166-2-bj</code>. Les documents qui fondent les données sont archivés dans <code>data/sources/</code> avec leur empreinte SHA-256. Une copie d'un paquet tiers sous GPL-3.0 reste sur le poste de travail, ignorée par Git (<code>tests/test_tiers_non_suivis.py</code>).</p>
+<p>Le calque des pôles (<code>data/poles.json</code>) est daté du 23/09/2026 et marqué provisoire. Les 6 pôles regroupent 13, 14, 15, 18, 12 et 5 communes, soit 77. Le chef-lieu du Grand-Nokoué est vide.</p>
+
+<h3>2.2 Pipeline : <code>scripts/</code></h3>
+<table>
+  <thead><tr><th style="width:36%">Script</th><th>Rôle</th></tr></thead>
+  <tbody>
+    <tr><td><code>construire-donnees.py</code></td><td>lit les instantanés, le calque des pôles, l'annexe extraite de la loi et le registre ; contrôle chaque nom entrant contre la liste de référence ; écrit les quatre fichiers de <code>data/</code>. L'option <code>--verifier</code> échoue si un fichier diffère. Aucun appel réseau.</td></tr>
+    <tr><td><code>annexe_loi_2013_05.py</code>, <code>arrondissements_donnees.py</code>, <code>libelles_arrondissements.py</code></td><td>modules du pipeline : analyse de l'annexe, rattachement aux communes, graphie des libellés (<code>attestee</code> ou <code>deduite-du-libelle</code>)</td></tr>
+    <tr><td><code>extraire-annexe-2013-05.py</code></td><td>extraction de l'annexe avec <code>pdftotext</code> ; lancée à la main, jamais par le build</td></tr>
+    <tr><td><code>build-data.mjs</code></td><td>écrit <code>packages/js/src/generated/</code> et <code>_generated.py</code> depuis <code>data/</code> ; encode les arrondissements sous forme compacte</td></tr>
+    <tr><td><code>generer-instantane-*.py</code></td><td>n'écrivent que dans un chemin donné en argument ; servent au test de garde-fou, jamais à régénérer l'instantané figé</td></tr>
+  </tbody>
+</table>
+
+<h3>2.3 Paquet JavaScript : <code>packages/js</code></h3>
+<p><code>src/index.ts</code> exporte <code>parId</code>, <code>communesDe</code>, <code>arrondissementsDe</code>, <code>polesDe</code>, <code>hierarchie</code> et <code>chercher</code>, ainsi que les listes <code>departements</code>, <code>communes</code>, <code>arrondissements</code>, <code>poles</code>, <code>calquePoles</code> et <code>sources</code>. Quatre points d'entrée par niveau (<code>benin-geo/departements</code>, <code>/communes</code>, <code>/arrondissements</code>, <code>/poles</code>) servent à ne charger que ce qui est utilisé.</p>
+<p><code>chercher</code> ignore accents, casse, tirets et apostrophes, et cherche dans le nom et les alias relevés. Le classement va de l'égalité au contenu (cinq rangs), puis suit le champ <code>tri</code>. Elle n'est ni floue ni phonétique, par choix. Les arrondissements ne sont cherchés que sur demande (<code>niveau</code>) ; l'option <code>dans</code> désigne la commune quand plusieurs villes portent le même nom d'arrondissement numéroté.</p>
+<p>La construction utilise <code>tsup</code> (ESM et CommonJS, déclarations de types, minification, cible ES2022). <code>test/paquet.test.ts</code> vérifie que l'import par défaut reste sous 150 Ko, qu'il n'y a aucune dépendance d'exécution ni appel réseau, et que ESM et CommonJS exposent la même API.</p>
+
+<h3>2.4 Paquet Python : <code>packages/python</code></h3>
+<p>Le paquet <code>benin_geo</code> (<code>src/benin_geo/</code>) expose la même API en <code>snake_case</code> : <code>par_id</code>, <code>communes_de</code>, <code>arrondissements_de</code>, <code>poles_de</code>, <code>hierarchie</code>, <code>chercher</code>. Les données sont dans <code>_generated.py</code>, ignoré par Git et ajouté explicitement au wheel par <code>pyproject.toml</code> (clé <code>artifacts</code>). Le paquet est typé (<code>py.typed</code>) et <code>mypy --strict</code> ne signale rien.</p>
+
+<h3>2.5 Parité JavaScript et Python</h3>
+<p><code>tests/test_croise.py</code> exécute plus de 3 000 requêtes dans les deux paquets (le côté JavaScript passe par <code>scripts/executer-requetes.mjs</code>, qui lit <code>packages/js/dist</code>) et compare les résultats un à un, ainsi que les deux numéros de version. Modifier <code>chercher</code> d'un seul côté fait échouer ce test.</p>
+
+<h3>2.6 Site statique : <code>site/</code></h3>
+<p>Le site est produit par un générateur Node sans framework. <code>scripts/build-site.mjs</code> importe un module par page (<code>site/pages/*.mjs</code>), les range dans <code>dist-site/</code> et écrit <code>robots.txt</code> et <code>sitemap.xml</code>. <code>site/donnees.mjs</code> lit <code>data/</code> : aucun nombre n'est écrit à la main dans une page, et les tests comparent chaque nombre cité aux comptes réels.</p>
+<table class="compact">
+  <thead><tr><th style="width:28%">Fichier</th><th>Rôle</th></tr></thead>
+  <tbody>
+    <tr><td><code>site/layout.mjs</code></td><td>coquille commune : en-tête, navigation, pied de page, feuille de style globale</td></tr>
+    <tr><td><code>site/config.mjs</code></td><td>identité du site, indicateurs <code>publie</code> (npm, PyPI), hébergement, date des textes légaux</td></tr>
+    <tr><td><code>site/docs.mjs</code></td><td>transforme <code>docs/*.md</code> en pages HTML avec <code>marked</code> ; <code>docs/cadrage/</code> n'est pas publié</td></tr>
+    <tr><td><code>site/carte.mjs</code>, <code>communes.mjs</code></td><td>carte des départements (accueil), tracés et données partagés par <code>/carte</code> et <code>/comparer</code></td></tr>
+    <tr><td><code>site/emboitement.mjs</code></td><td>schéma de l'emboîtement et anatomie d'un identifiant</td></tr>
+    <tr><td><code>site/og.mjs</code></td><td>vignettes de partage : le build échoue si une page n'a pas la sienne</td></tr>
+    <tr><td><code>site/site.test.mjs</code></td><td>tests du HTML produit (vitest)</td></tr>
+  </tbody>
+</table>
+<p>Le mouvement (transitions de page, révélations au défilement, survol des cartes) est écrit en CSS seul : <code>@view-transition</code>, <code>animation-timeline</code> et le sélecteur <code>:has()</code>. Tout est coupé sous <code>prefers-reduced-motion</code>, et un état de départ caché n'existe que dans des <code>@keyframes</code>, si bien que rien n'est invisible sur un navigateur qui ne gère pas ces fonctions. Ces règles sont verrouillées par des tests.</p>
+
+<h3>2.7 Marque et cartes</h3>
+<p><code>brand/tokens.json</code> est la source des couleurs ; <code>scripts/build-brand.mjs</code> écrit les SVG, <code>palette.css</code> et <code>brand/README.md</code>, et <code>scripts/emblem.mjs</code> fournit la géométrie de l'emblème. Les PNG et l'ICO sont rendus à part par <code>scripts/rendre-marque.mjs</code> (Chrome et <code>sips</code>) puis commités. Les polices (Caprasimo et Figtree Variable, licence OFL-1.1) sont hébergées dans <code>brand/fonts/</code> : le site n'appelle aucun service de polices.</p>
+<p><code>scripts/build-carte.mjs</code> génère <code>assets/carte/benin-departements.svg</code> (12 départements) et <code>benin-communes.svg</code> (77 communes) depuis des contours geoBoundaries archivés dans le dépôt avec leur empreinte. Ces cartes sont des assets du site : <code>tests/test_carte.py</code> échoue si une géométrie apparaît dans <code>data/</code> ou dans un paquet. Les contours des départements datent de 2012 et ceux des communes de 2007, simplifiés : ils illustrent, sans valeur cartographique. Deux noms du fichier de communes (Kobli, Akpo-Misserete) sont rapprochés à la main de Cobly et d'Akpro-Missérété dans <code>assets/carte/source-communes.json</code>.</p>
+
+<h3>2.8 Ce qui n'existe pas</h3>
+<table>
+  <thead><tr><th style="width:34%">Couche habituelle</th><th>État</th></tr></thead>
+  <tbody>
+    <tr><td>Base de données, ORM, migrations</td><td>absentes ; les données sont des fichiers JSON versionnés</td></tr>
+    <tr><td>Authentification, rôles, politique d'accès</td><td>absentes ; aucun compte</td></tr>
+    <tr><td>Stockage objet, tâches asynchrones</td><td>absents</td></tr>
+    <tr><td>Observabilité applicative</td><td>absente : pas d'analytics, pas de cookie, pas de script ; seuls les journaux d'accès du serveur existent</td></tr>
+  </tbody>
+</table>
+
+<h2>3. Flux de données clés</h2>
+
+<h3>3.1 Des sources aux données</h3>
+<pre>archives de data/sources/ + instantanés figés + calque des pôles
+  -&gt; construire-donnees.py
+       contrôle : 12 départements et 77 communes identiques à la liste de référence
+       contrôle : chaque libellé de la loi rattaché à une commune, une seule fois
+       contrôle : arrondissements de l'annexe = instantané des identifiants
+  -&gt; data/departements.json, communes.json, arrondissements.json, poles.json
+  -&gt; tests : schémas, comptes (12, 77, 546, 6), sources déclarées</pre>
+
+<h3>3.2 Des données aux paquets et au site</h3>
+<pre>data/*.json
+  -&gt; build-data.mjs -&gt; packages/js/src/generated/ (tsup -&gt; dist)
+                    -&gt; packages/python/src/benin_geo/_generated.py (hatchling)
+  -&gt; build-site.mjs -&gt; dist-site/ -&gt; image nginx</pre>
+
+<h3>3.3 Recherche d'une commune</h3>
+<pre>chercher("seme podji")
+  -&gt; normalisation : minuscules, sans accents, séparateurs ramenés à une espace
+  -&gt; candidats : départements et communes (arrondissements sur demande)
+  -&gt; pour chaque forme (nom, alias) : rang 0 à 4 ou rejet
+  -&gt; tri par rang, puis par le champ tri
+  -&gt; Sèmè-Kpodji, parce que « SEME-PODJI » est un alias relevé dans la loi</pre>
+
+<h3>3.4 Carte des communes et comparaison</h3>
+<pre>assets/carte/geoBoundaries-BEN-ADM2_simplified.geojson (77 contours)
+  -&gt; build-carte.mjs : rattachement par nom normalisé et alias, plus 2 rapprochements écrits
+  -&gt; assets/carte/benin-communes.svg
+  -&gt; /carte : survol ou focus d'une commune affiche sa fiche (sélecteur :has)
+  -&gt; /comparer : deux listes de boutons radio ; la sélection affiche les cellules du tableau</pre>
+
+<h3>3.5 Flux vers des services externes</h3>
+<p>Aucun, ni à l'exécution des paquets ni à la construction : le pipeline se rejoue hors ligne depuis <code>data/sources/</code>. Les seules opérations réseau sont manuelles et hors du build : publication sur npm et PyPI, transfert de l'image vers le serveur, et l'extraction initiale de l'annexe (outil <code>pdftotext</code> sur des fichiers locaux).</p>
+
+<h2 class="newpage">4. Infrastructure et déploiement</h2>
+
+<h3>4.1 Environnements</h3>
+<table>
+  <thead><tr><th style="width:20%">Environnement</th><th>Description</th><th style="width:30%">Source</th></tr></thead>
+  <tbody>
+    <tr><td>Local</td><td><code>docker compose up --build</code>, puis <code>docker compose port takienta-site 8080</code></td><td><code>docker-compose.yml</code></td></tr>
+    <tr><td>Production</td><td><code>https://takienta.sabar.app</code>, un conteneur <code>takienta-site</code> derrière Traefik</td><td><code>docker-compose.prod.yml</code>, <code>site/config.mjs</code></td></tr>
+  </tbody>
+</table>
+<p>Aucun environnement de recette n'est défini dans le dépôt.</p>
+
+<h3>4.2 Image et conteneur</h3>
+<p>Le <code>Dockerfile</code> compte deux étages. Le premier (<code>node:22-alpine</code>) active corepack, installe le seul paquet racine avec <code>pnpm install --frozen-lockfile --filter .</code> et lance <code>pnpm build:site</code>. Le second (<code>nginx:1.27-alpine</code>) copie <code>nginx.conf</code>, <code>nginx-securite.conf</code> et <code>dist-site</code>, et écoute sur le port 8080. Le <code>.dockerignore</code> exclut <code>packages/python</code>, <code>data/sources</code>, les contours bruts et <code>docs/cadrage</code>.</p>
+<p><code>docker-compose.yml</code> déclare le service <code>takienta-site</code> (<code>restart: unless-stopped</code>) et son contrôle de santé : <code>wget -qO- http://127.0.0.1:8080/health</code> toutes les 30 secondes, délai de 5 secondes, 3 essais, 10 secondes de démarrage. Ce contrôle vérifie que nginx répond, pas le contenu des pages. <code>docker-compose.prod.yml</code> remplace la construction par l'image <code>ghcr.io/${GHCR_OWNER:-elodias2001}/takienta-site:${IMAGE_TAG:-main}</code>, branche le conteneur au réseau externe <code>gcw-public</code>, pose <code>mem_limit: 128m</code> et <code>memswap_limit: 192m</code> (commit <code>15748a8</code>) et déclare les étiquettes Traefik (routeur <code>websecure</code>, TLS, <code>certresolver=letsencrypt</code>, port 8080).</p>
+
+<h3>4.3 Topologie déployée constatée</h3>
+<p>Relevé du 26/10/2026 par <code>curl -sI https://takienta.sabar.app/</code> et par <code>docker inspect</code> (mémoire, état) le 08/10/2026 :</p>
+<table>
+  <thead><tr><th style="width:30%">Constat</th><th>Valeur</th></tr></thead>
+  <tbody>
+    <tr><td>Protocole, statut</td><td>HTTP/2, 200</td></tr>
+    <tr><td>Serveur</td><td><code>nginx/1.27.5</code> (version exposée)</td></tr>
+    <tr><td>Cache des pages</td><td><code>public, max-age=300</code></td></tr>
+    <tr><td>Cache des vignettes</td><td><code>public, max-age=31536000, immutable</code>, <code>access-control-allow-origin: *</code></td></tr>
+    <tr><td>Sécurité</td><td><code>content-security-policy</code> (<code>default-src 'none'</code> et exceptions pour images, styles, polices du site), <code>x-content-type-options: nosniff</code>, <code>x-frame-options: SAMEORIGIN</code>, <code>referrer-policy</code>, <code>permissions-policy</code></td></tr>
+    <tr><td>HSTS</td><td>aucun en-tête <code>strict-transport-security</code></td></tr>
+    <tr><td>Intermédiaire CDN</td><td>aucun en-tête de CDN dans la réponse ; <code>site/config.mjs</code> indique un DNS Cloudflare en mode « DNS only »</td></tr>
+    <tr><td>Plafond mémoire du conteneur</td><td>128 Mo, 192 Mo avec le swap ; usage relevé le 08/10/2026 : environ 4 Mo</td></tr>
+  </tbody>
+</table>
+
+<h3>4.4 Intégration continue</h3>
+<p><code>.github/workflows/ci.yml</code> se déclenche sur les demandes de fusion et les pushes vers <code>main</code>, et à la demande, puis appelle <code>verify.yml</code>. Le job <code>verify</code> tourne sur Python 3.9 et 3.13 et enchaîne : installation (<code>pnpm install --frozen-lockfile</code>, <code>pip install -r requirements-dev.txt</code>), <code>construire-donnees.py --verifier</code>, <code>pnpm type-check</code>, tests du paquet JS, <code>mypy --strict</code>, <code>pytest packages/python</code>, <code>pytest tests</code>, <code>pnpm test:site</code>, <code>pnpm build:site</code> et <code>python -m build packages/python</code>. Le job <code>image</code> construit l'image sans la pousser.</p>
+<div class="callout note"><span class="callout-titre">Aucun workflow de déploiement</span><p>Le dépôt ne contient ni workflow de déploiement ni workflow de publication des paquets. C'est voulu (commentaire de <code>verify.yml</code>, <code>AGENTS.md</code>) : un tel workflow serait créé sur demande et ne devrait jamais se déclencher seul sur un push. Le déploiement et la publication se font à la main.</p></div>
+
+<h3>4.5 Déploiement manuel</h3>
+<p>La procédure n'est pas écrite dans le dépôt. Elle suit quatre étapes dans cet ordre :</p>
+<ol>
+  <li>le nom de domaine est créé dans le DNS avant tout démarrage, car Traefik demande le certificat Let's Encrypt dès que le conteneur démarre ;</li>
+  <li>l'image est construite pour <code>linux/amd64</code>, le poste de travail étant en arm64 ;</li>
+  <li>elle est transférée sur le serveur sans passer par un registre ;</li>
+  <li>le conteneur est recréé avec <code>docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d</code>, dans le dossier du projet.</li>
+</ol>
+<p>Les adresses, accès et chemins du serveur ne figurent pas dans cette documentation. Le détail pratique vit dans le manuel technique (§11).</p>
+
+<h3>4.6 Variables et secrets</h3>
+<p>Le dépôt ne contient aucun secret et aucun fichier <code>.env</code>. Les variables lues sont <code>SITE_HOST</code>, <code>COMPOSE_PROJECT_NAME</code>, <code>GHCR_OWNER</code>, <code>IMAGE_TAG</code> (compose) et <code>TAKIENTA_CHROME</code> (rendus d'images) ; <code>SITE_HOST</code> se pose dans le <code>.env</code> du serveur. Les jetons de publication npm et PyPI restent sur le poste de travail, hors dépôt ; le dossier <code>local-secrets/</code> est ignoré par Git.</p>
+
+<h3>4.7 Sauvegardes</h3>
+<p>Il n'y a pas de base à sauvegarder. Le dépôt GitHub contient les données, les sources archivées et le code. Les archives de sources et la copie tierce non suivie existent sur le poste de travail : leur sauvegarde n'est pas décrite <span class="nd">Non déterminé à date</span>.</p>
+
+<h2>5. Choix techniques structurants</h2>
+<table>
+  <thead><tr><th style="width:24%">Décision</th><th>Ce que dit le code ou la documentation</th><th style="width:28%">Source</th></tr></thead>
+  <tbody>
+    <tr><td>Hors ligne, zéro appel réseau</td><td>le pipeline se rejoue depuis <code>data/sources/</code> ; les documents sont archivés avec leur empreinte parce que les portails officiels tombent</td><td><code>docs/05-contribuer.md</code>, page Provenance</td></tr>
+    <tr><td>Zéro dépendance d'exécution</td><td>premier des cinq invariants ; testé</td><td><code>docs/05-contribuer.md</code>, <code>paquet.test.ts</code></td></tr>
+    <tr><td>Identifiants figés</td><td>jamais modifiés ni réattribués ; une commune renommée garde son identifiant et gagne un alias</td><td><code>docs/04-identifiants.md</code>, <code>AGENTS.md</code></td></tr>
+    <tr><td>Aucune géométrie dans les paquets</td><td>licences : GADM interdit, OpenStreetMap contaminant</td><td><code>AGENTS.md</code></td></tr>
+    <tr><td>Arrondissements compacts</td><td>546 objets complets dépasseraient le seuil de 150 Ko de l'import par défaut</td><td><code>build-data.mjs</code>, <code>AGENTS.md</code></td></tr>
+    <tr><td>Recherche ni floue ni phonétique</td><td>une faute de frappe ne trouve rien plutôt qu'un résultat plausible mais faux</td><td><code>docs/02-reference-api.md</code></td></tr>
+    <tr><td>Mouvement en CSS seul</td><td>un script casserait la promesse de la page de confidentialité et la CSP</td><td><code>AGENTS.md</code></td></tr>
+    <tr><td>En-têtes de sécurité dans un fichier inclus</td><td>un <code>add_header</code> d'un bloc enfant annule ceux du parent</td><td>commentaire de <code>nginx-securite.conf</code></td></tr>
+    <tr><td>Vignettes et PNG de marque commités</td><td>le rendu exige un Chrome, absent de l'image Docker</td><td><code>scripts/build-og.mjs</code></td></tr>
+    <tr><td>Aucun workflow de déploiement</td><td>à créer sur demande, jamais déclenché seul</td><td><code>verify.yml</code>, <code>AGENTS.md</code></td></tr>
+  </tbody>
+</table>
+<p>Les compromis assumés (« gagne… perd… ») ne sont pas écrits dans le dépôt pour ces décisions <span class="nd">Non déterminé à date</span>.</p>
+
+<h2>6. Dépendances externes</h2>
+<table>
+  <thead><tr><th style="width:20%">Service</th><th style="width:30%">Rôle</th><th style="width:20%">Variables</th><th>Où c'est branché</th></tr></thead>
+  <tbody>
+    <tr><td>npm</td><td>distribution du paquet JavaScript</td><td>aucune dans le dépôt</td><td>publication manuelle depuis <code>packages/js</code></td></tr>
+    <tr><td>PyPI</td><td>distribution du paquet Python</td><td>aucune dans le dépôt</td><td>publication manuelle depuis <code>packages/python</code></td></tr>
+    <tr><td>GitHub</td><td>dépôt et intégration continue</td><td>aucun secret déclaré</td><td><code>.github/workflows/</code></td></tr>
+    <tr><td>Nom d'image GHCR</td><td>étiquette de l'image (aucun envoi vers le registre)</td><td><code>GHCR_OWNER</code>, <code>IMAGE_TAG</code></td><td><code>docker-compose.prod.yml</code></td></tr>
+    <tr><td>Traefik, Let's Encrypt</td><td>routage et certificat</td><td><code>SITE_HOST</code>, <code>COMPOSE_PROJECT_NAME</code></td><td>étiquettes du compose de production</td></tr>
+    <tr><td>DNS (Cloudflare)</td><td>enregistrement du domaine, mode « DNS only »</td><td>aucune</td><td><code>site/config.mjs</code></td></tr>
+    <tr><td>geoBoundaries</td><td>contours des cartes, archivés localement</td><td>aucune</td><td><code>assets/carte/source.json</code>, <code>source-communes.json</code></td></tr>
+    <tr><td>Chrome ou Chromium</td><td>rendu manuel des PNG</td><td><code>TAKIENTA_CHROME</code></td><td><code>scripts/chrome.mjs</code></td></tr>
+  </tbody>
+</table>
+<p>Aucune variable n'est déclarée sans être lue.</p>
+
+<h2>7. Limites connues et frontières</h2>
+<h3>7.1 Limites des données</h3>
+<table>
+  <thead><tr><th style="width:30%">Limite</th><th>Détail</th></tr></thead>
+  <tbody>
+    <tr><td>Arrondissements après 2013</td><td>l'annexe de la loi n°2013-05 date de 2013 ; les lois postérieures n'ont pas été recherchées ; le niveau reste provisoire</td></tr>
+    <tr><td>Pôles</td><td>présentés par communiqué le 23/09/2026 ; aucun décret retrouvé ; provisoires</td></tr>
+    <tr><td>Chef-lieu du Grand-Nokoué</td><td>laissé vide : le fichier source et le cadrage divergent, aucun texte officiel ne tranche</td></tr>
+    <tr><td>Orthographe des arrondissements</td><td>281 noms sur 546 sont marqués <code>deduite-du-libelle</code> : la loi les imprime en majuscules sans accents et rien ne les atteste</td></tr>
+    <tr><td>Écart dans la loi</td><td>l'annexe annonce 517 villages pour l'Atacora alors que ses communes en totalisent 519 ; l'écart est dans le texte et ne touche pas les arrondissements</td></tr>
+    <tr><td>Sous l'arrondissement</td><td>villages et quartiers de ville hors de la première version</td></tr>
+    <tr><td>Contours</td><td>2012 (départements) et 2007 (communes), simplifiés ; illustration seulement</td></tr>
+  </tbody>
+</table>
+
+<h3>7.2 Limites de l'outillage</h3>
+<ul>
+  <li>Les tests analysent le HTML produit ; aucun test ne pilote un navigateur.</li>
+  <li>La couverture de code n'est pas mesurée.</li>
+  <li>Aucun audit de dépendances (commande ou job) n'est défini.</li>
+  <li>Les en-têtes de production n'incluent pas HSTS, et la version de nginx est exposée.</li>
+</ul>
+
+<div class="callout neutre"><span class="callout-titre">Frontières de responsabilité</span><p>L'hébergement partagé, le DNS et les comptes npm et PyPI relèvent d'Elodias Adimou. Les textes de loi sont la source des données ; le dépôt n'en est que l'archive.</p></div>
+
+<h2 class="newpage">Annexe : points non déterminés à date</h2>
+<p>Ces points ne se déduisent ni du code ni des constats disponibles. Ils seront complétés dans une prochaine version du document.</p>
+<table>
+  <thead><tr><th class="c" style="width:6%">#</th><th>Point</th><th style="width:16%">Section</th></tr></thead>
+  <tbody>
+    <tr><td class="c">1</td><td>Sauvegarde des archives de sources et de la copie tierce locale</td><td>§4.7</td></tr>
+    <tr><td class="c">2</td><td>Compromis assumés (« gagne… perd… ») des choix techniques : non écrits dans le dépôt</td><td>§5</td></tr>
+  </tbody>
+</table>

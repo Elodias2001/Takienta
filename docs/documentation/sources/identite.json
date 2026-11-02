@@ -1,0 +1,18 @@
+{
+  "prestataire": {
+    "nom": "Elodias Adimou",
+    "logo": "logo-elodias.png",
+    "lignes": [
+      "Développeur web indépendant · Cotonou, Bénin",
+      "E-mail : nounagnonadimou@gmail.com",
+      "elodiasadimou.sabar.app · github.com/Elodias2001"
+    ],
+    "couleurs": [
+      "#B4421F",
+      "#1B1712"
+    ]
+  },
+  "mention": "Document réalisé par {prestataire} pour le compte de {client}.",
+  "mention_interne": "Document établi par {prestataire} pour son projet personnel.",
+  "signature": "Elodias Adimou"
+}
