@@ -206,6 +206,9 @@ Elodias, hors du dépôt.
   Akpo-Misserete = Akpro-Missérété) : rapprochement écrit dans `source-communes.json`, le script échoue si une
   commune manque ou se répète. Des tracés dont l'origine est inconnue (ceux d'un autre projet) ne se publient pas.
   Les pôles y sont colorés avec le statut provisoire toujours affiché.
+  Les vignettes de partage de l'accueil et de `/carte` montrent aussi cette carte (`site/og.mjs`, option `carte`) : son
+  attribution est écrite dans l'image et testée. `scripts/chrome.mjs` supprime le PNG avant la capture, sinon un ancien
+  fichier stable passe pour le nouveau rendu.
 - **Provenance** : la section « tour » (`#pile`) est un défilement narratif en CSS seul (`view-timeline`,
   sous `@supports` et seulement au-dessus de 820 px). Son texte vient de `niveaux` dans `site/pages/provenance.mjs`,
   donc de `data/` : ne pas y écrire de fait à la main. L'image de la maison est celle du projet, pas une affirmation

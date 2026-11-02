@@ -1,7 +1,7 @@
 // Capture d'écran par Chrome, partagée par les scripts qui figent des images (marque, vignettes de partage).
 // Chrome ne rend pas la main après --screenshot : on attend que le fichier soit écrit et stable, puis on tue.
 import { spawn } from "node:child_process";
-import { access, stat } from "node:fs/promises";
+import { access, rm, stat } from "node:fs/promises";
 
 const CANDIDATS = [process.env.TAKIENTA_CHROME, "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome", "/Applications/Chromium.app/Contents/MacOS/Chromium", "/usr/bin/google-chrome", "/usr/bin/chromium"].filter(Boolean);
 
@@ -17,6 +17,8 @@ const attendre = (ms) => new Promise((r) => setTimeout(r, ms));
 /** Capture `page` (chemin d'un fichier HTML) dans `sortie`, à la taille de fenêtre donnée. */
 export async function capturer(chrome, page, sortie, largeur, hauteur, { attentePolices = false } = {}) {
   // --virtual-time-budget laisse à Chrome le temps de charger les polices avant la capture.
+  // Sans cela, un ancien fichier déjà stable passe pour le nouveau rendu et la capture n'est jamais remplacée.
+  await rm(sortie, { force: true });
   const extra = attentePolices ? ["--virtual-time-budget=3000"] : [];
   const proc = spawn(chrome, [...extra, "--headless=new", "--disable-gpu", "--allow-file-access-from-files", "--hide-scrollbars", "--force-device-scale-factor=1", `--window-size=${largeur},${hauteur}`, `--screenshot=${sortie}`, `file://${page}`], { stdio: "ignore" });
   const limite = Date.now() + 60000;

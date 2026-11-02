@@ -6,7 +6,7 @@ import { describe, expect, it } from "vitest";
 import { auteur, pagesLegales, publie, site } from "./config.mjs";
 import { donnees } from "./donnees.mjs";
 import { fiches } from "./docs.mjs";
-import { VIGNETTES, fichierDocs } from "./og.mjs";
+import { VIGNETTES, fichierDocs, svgVignette } from "./og.mjs";
 import { sourceCommunes, traces, poleDe } from "./communes.mjs";
 
 /**
@@ -588,6 +588,35 @@ describe("carte des communes et mode comparer", () => {
   it("aucune géométrie hors assets : ni data/ ni les paquets ne contiennent de coordonnées", () => {
     for (const f of ["communes", "poles", "arrondissements", "departements"]) {
       expect(readFileSync(join(RACINE, "data", `${f}.json`), "utf8")).not.toMatch(/"coordinates"|"geometry"/);
+    }
+  });
+});
+
+describe("vignettes avec carte", () => {
+  const avecCarte = Object.entries(VIGNETTES).filter(([, v]) => v.carte);
+
+  it("l'accueil et la carte portent la carte des communes dans leur vignette", () => {
+    expect(avecCarte.map(([chemin]) => chemin).sort()).toEqual(["/", "/carte"]);
+  });
+
+  it.each(avecCarte)("%s : une teinte par commune, les six pôles, et l'attribution des contours écrite sous la carte", (_, v) => {
+    const svg = svgVignette(v);
+    // 77 communes colorées, plus deux couches (mur et ombre) qui redessinent les 77 contours. L'emblème, lui, a un court tracé.
+    const contours = svg.match(/<path d="[^"]{80,}"/g);
+    expect(contours).toHaveLength(donnees.compte.communes * 3);
+    expect(svg.match(/<path d="[^"]+" fill="#[0-9A-Fa-f]{6}"/g)).toHaveLength(donnees.compte.communes);
+    for (const teinte of new Set(svg.match(/fill="#[0-9A-Fa-f]{6}"/g))) expect(teinte).toMatch(/^fill="#[0-9A-Fa-f]{6}"$/);
+    const texte = svg.replace(/<path[^>]*>/g, "").replace(/<[^>]+>/g, " ").replace(/&amp;/g, "&").replace(/\s+/g, " ");
+    expect(texte).toContain("Contours : geoBoundaries (William & Mary geoLab)");
+    expect(texte).toContain("Map Maker Ltd. via Stanford Earthworks");
+    expect(texte).toContain(String(sourceCommunes.anneeRepresentee));
+  });
+
+  it("les autres vignettes n'ont pas de carte, donc pas besoin d'attribution", () => {
+    for (const [chemin, v] of Object.entries(VIGNETTES)) {
+      if (v.carte) continue;
+      expect(svgVignette(v), chemin).not.toMatch(/<path d="[^"]{80,}"/);
+      expect(svgVignette(v), chemin).not.toContain("geoBoundaries");
     }
   });
 });

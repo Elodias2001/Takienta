@@ -14,10 +14,21 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { PLEIN } from "../scripts/emblem.mjs";
 import { site } from "./config.mjs";
+import { poleDe, sourceCommunes, traces, viewBoxCommunes } from "./communes.mjs";
 
 const tokens = JSON.parse(readFileSync(join(dirname(fileURLToPath(import.meta.url)), "..", "brand", "tokens.json"), "utf8"));
 const c = (nom) => tokens.couleurs[nom]?.hex ?? tokens.derivees[nom].hex;
 const BANCO = c("banco"), ENCRE = c("encre"), LATERITE = c("laterite"), LATERITE_TEXTE = c("laterite-texte");
+
+const PLAINE = c("plaine"), CHAUME = c("chaume");
+const hex2 = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16));
+/** Mélange `part` de `a` avec le reste de `b`, comme le color-mix du site. */
+const melange = (a, b, part) => "#" + hex2(a).map((v, i) => Math.round(v * part + hex2(b)[i] * (1 - part)).toString(16).padStart(2, "0")).join("");
+/** Les six teintes de pôle : les mêmes que sur /carte (site/communes.mjs, TEINTES). */
+const TEINTE_POLE = {
+  "PO-NO": LATERITE, "PO-NE": CHAUME, "PO-CE": PLAINE,
+  "PO-SO": melange(LATERITE, BANCO, 0.42), "PO-SE": melange(PLAINE, BANCO, 0.42), "PO-GN": ENCRE,
+};
 
 const TITRE = "'Caprasimo', Georgia, serif";
 const TEXTE = "'Figtree Variable', system-ui, sans-serif";
@@ -28,7 +39,7 @@ const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replac
  * Les vignettes, indexées par chemin publié. `alt` n'est pas décoratif : c'est
  * ce que lisent les personnes qui reçoivent le lien avec un lecteur d'écran.
  *
- * @type {Record<string, {fichier:string, surtitre:string, lignes:string[], accent?:number, mono?:string, alt:string}>}
+ * @type {Record<string, {fichier:string, surtitre:string, lignes:string[], accent?:number, mono?:string, carte?:boolean, alt:string}>}
  */
 export const VIGNETTES = {
   "/": {
@@ -37,6 +48,7 @@ export const VIGNETTES = {
     lignes: ["Le Bénin, avec la", "source de chaque", "donnée."],
     accent: 2,
     mono: "Hors ligne · sans dépendance · MIT",
+    carte: true,
     alt: "Vignette Takienta : l'emblème en cadres emboîtés et le titre « Le Bénin, avec la source de chaque donnée ».",
   },
   "/provenance": {
@@ -53,6 +65,7 @@ export const VIGNETTES = {
     lignes: ["Les 77 communes,", "rangées par pôle."],
     accent: 1,
     mono: "Contours publics · pôles provisoires",
+    carte: true,
     alt: "Vignette Takienta : la carte des 77 communes du Bénin rangées par pôle de développement.",
   },
   "/comparer": {
@@ -96,8 +109,35 @@ export const VIGNETTE_DOCS = {
 /** Chemin publié d'une fiche de doc vers son fichier de vignette. */
 export const fichierDocs = (nomHtml) => `og-docs-${nomHtml.replace(/\.html$/, "")}.png`;
 
+
+/**
+ * La carte des 77 communes colorées par pôle, dessinée dans la colonne de droite (x 840 à 1140).
+ * Mêmes principes que le site : trait épais sombre autour du pays, ombre pleine décalée, jamais de flou.
+ * Les contours sont ceux de assets/carte (attribution obligatoire, écrite sous la carte).
+ */
+const [, , vbL, vbH] = viewBoxCommunes.split(" ").map(Number);
+const HAUTEUR_CARTE = 492;
+const ECHELLE = HAUTEUR_CARTE / vbH;
+const px = (n) => +(n / ECHELLE).toFixed(2);
+const X_CARTE = 848 + (292 - vbL * ECHELLE) / 2 - 6;
+const Y_CARTE = 46;
+
+function carteVignette() {
+  const chemins = (attrs) => traces.map((t) => `<path d="${t.d}" ${attrs(t)}/>`).join("");
+  const ombre = `<g transform="translate(${X_CARTE + 11} ${Y_CARTE + 11}) scale(${ECHELLE.toFixed(5)})" fill="${ENCRE}" stroke="${ENCRE}" stroke-width="${px(9)}" stroke-linejoin="bevel">${chemins(() => "")}</g>`;
+  const mur = `<g transform="translate(${X_CARTE} ${Y_CARTE}) scale(${ECHELLE.toFixed(5)})" fill="${ENCRE}" stroke="${ENCRE}" stroke-width="${px(9)}" stroke-linejoin="bevel">${chemins(() => "")}</g>`;
+  const communes = `<g transform="translate(${X_CARTE} ${Y_CARTE}) scale(${ECHELLE.toFixed(5)})" stroke="${BANCO}" stroke-width="${px(2.4)}" stroke-linejoin="bevel" fill-rule="evenodd">${chemins((t) => `fill="${TEINTE_POLE[poleDe(t.id).id]}"`)}</g>`;
+  // L'attribution des contours accompagne toujours la carte, en deux lignes sous elle.
+  const [l1, l2] = [sourceCommunes.attribution.replace(/, jeu .*$/, ","), sourceCommunes.attribution.replace(/^.*?(?=jeu )/, "")];
+  const credit = [`${l1}`, `${l2.replace(/\.$/, "")}, ${sourceCommunes.anneeRepresentee}, simplifiés.`]
+    .map((l, i) => `<text x="1136" y="${572 + i * 18}" text-anchor="end" font-family="${TEXTE}" font-size="13.5" fill="${ENCRE}">${esc(l)}</text>`)
+    .join("");
+  return `${ombre}${mur}${communes}${credit}`;
+}
+
 /** Le SVG d'une vignette, en 1200x630 exactement. Aucun `<image>`, aucune police distante. */
-export function svgVignette({ surtitre, lignes, accent, mono }) {
+export function svgVignette({ surtitre, lignes, accent, mono, carte }) {
+  const finCadre = carte ? 800 : 1136;
   const taille = lignes.length >= 3 ? 64 : 76;
   const hauteurLigne = Math.round(taille * 1.2);
   const departY = 330 - ((lignes.length - 1) * hauteurLigne) / 2 + taille * 0.15;
@@ -112,11 +152,11 @@ export function svgVignette({ surtitre, lignes, accent, mono }) {
   <polygon points="52,16 1148,16 1184,52 1184,578 1148,614 52,614 16,578 16,52" fill="none" stroke="${ENCRE}" stroke-width="14" stroke-linejoin="miter"/>
   <g transform="translate(64 50) scale(0.72)" color="${ENCRE}">${PLEIN.join("")}</g>
   <text x="150" y="102" font-family="${TITRE}" font-size="38" letter-spacing="2" fill="${ENCRE}">Takienta</text>
-  <text x="1136" y="96" text-anchor="end" font-family="${TEXTE}" font-size="22" font-weight="700" letter-spacing="3" fill="${LATERITE_TEXTE}">${esc(surtitre.toUpperCase())}</text>
-  <rect x="64" y="146" width="1072" height="6" fill="${ENCRE}"/>
+  <text x="${finCadre}" y="96" text-anchor="end" font-family="${TEXTE}" font-size="22" font-weight="700" letter-spacing="3" fill="${LATERITE_TEXTE}">${esc(surtitre.toUpperCase())}</text>
+  <rect x="64" y="146" width="${finCadre - 64}" height="6" fill="${ENCRE}"/>
 ${titre}${ligneMono}
   <text x="64" y="578" font-family="${TEXTE}" font-size="24" font-weight="700" fill="${ENCRE}">${esc(site.url.replace(/^https?:\/\//, ""))}</text>
-  <text x="1136" y="578" text-anchor="end" font-family="${TEXTE}" font-size="22" fill="${ENCRE}">Chaque donnée dit d'où elle vient</text>
+${carte ? carteVignette() : `  <text x="1136" y="578" text-anchor="end" font-family="${TEXTE}" font-size="22" fill="${ENCRE}">Chaque donnée dit d'où elle vient</text>`}
 </svg>`;
 }
 
